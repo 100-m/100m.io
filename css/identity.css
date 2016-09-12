@@ -1,0 +1,67 @@
+:root {
+	--iceblue-70:#033b55;
+	--iceblue-60:#24647b;
+	--iceblue-50:#4d99a6;
+	--iceblue-40:#7cb8c2;
+	--iceblue-30:#9bc9d0;
+	--iceblue-20:#bbdade;
+	--iceblue-10:#d9f5f2;
+	--icewhite:#fefefe;
+	--usain-hair:#51442c;
+	--usain-skin:#774422;
+	--usain-lips:#cb8889;
+	--rolland-garros:#ad7769;
+	--dirt:#997755;
+	--jamaica:#f9cc11;
+	--mustard:#ebdd55;
+	--greenish-white:#edffdd;
+};
+
+body {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--iceblue-70);
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+.nav {
+  background: var(--icewhite);
+  border-bottom: 3px solid var(--iceblue-10);
+}
+.informations {
+  background: var(--light-background);
+}
+.separator {
+  position: relative;
+  border-bottom: 1px solid var(--light-border);
+  margin: 15px;
+}
+.separator span {
+  position: absolute;
+  top: -13px;
+  left: 10px;
+  padding: 0 10px;
+  color: var(--accent);
+  background: var(--light-background);
+  font-variant: small-caps;
+  font-size: 18px;
+}
+.separator button {
+  z-index: 1;
+  position: absolute;
+  top: -15px;
+  left: calc(100% - 15px);
+}
+.d3-chart {
+  position: relative;
+  border: 2px dashed var(--light-border);
+}
