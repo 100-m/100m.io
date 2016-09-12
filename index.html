@@ -12,11 +12,11 @@
 <body layout="rows">
   <section class="nav" layout="row center-justify">
     <img class="brand-logo" alt="100m logo" src="img/100m-logo.png">
-    <!-- <span class="brand-url">100m.io</span> -->
+    <span class="brand-url">100m.io</span>
     <button class="button-ghost">Schedule a demo</button>
   </section>
 
-  <section class="screen" layout="rows center-spread">
+  <section class="screen goal" layout="column center-center">
     <h1>Data-centric applications
       <br>for the finance industry.</h1>
     <h2>Interactive & real-time applications
@@ -24,24 +24,64 @@
     <button class="button-primary">Schedule a demo</button>
   </section>
 
-  <section class="screen" layout="column">
-    <div class="extract">
-      <span>1</span>
-      <span>Extract</span>
-      <span>We connect to any source, normalize, and structure the data.</span>
+  <section class="screen steps" layout="row">
+    <div class="step extract" layout="column spread-spread">
+      <span class="step-number">1 - Extract</span>
+      <span class="step-desc">
+        We connect to any source, normalize, structure the data.
+      </span>
+      <a class="button-ghost" href="#extract">Our process</a>
     </div>
-    <div class="learn">
-      <span>2</span>
-      <span>Learn</span>
-      <span>Build the right model, monitor your metrics and explore your data.</span>
+    <div class="step learn" layout="column spread-spread">
+      <span class="step-number">2 - Learn</span>
+      <span class="step-desc">
+        Build the right model, monitor your metrics and explore your data.
+      </span>
+      <a class="button-ghost" href="#learn">Our process</a>
     </div>
-    <div class="engage">
-      <span>3</span>
-      <span>Engage</span>
-      <span>Share insights with your stakeholders.</span>
+    <div class="step engage" layout="column spread-spread">
+      <span class="step-number">3 - Engage</span>
+      <span class="step-desc">
+        Share insights with your stakeholders.
+      </span>
+      <a class="button-ghost" href="#engage">Our process</a>
     </div>
   </section>
 
+  <section id="extract" class="screen showcase" layout="row">
+    <div layout="column spread-spread">
+      <span class="showcase-number">1 - Extract</span>
+      <p class="showcase-desc">
+        We connect to vendors of structured data,
+        scrape the web in real-time or plug-in to your in-house database.
+        Cleaning, merging, synchronizing feeds to provide the right data to your application.
+      </p>
+    </div>
+    <div layout="column spread-spread">
+      <img class="showcase-img" src="img/1-extract-marbles.gif" />
+    </div>
+  </section>
+
+  <section id="learn" class="screen showcase" layout="row center-center">
+    <span class="showcase-number">2 - Learn</span>
+    <p class="showcase-desc">
+      We can build smart models using machine learning and stochastic calculus. However, if a simple regression can do the job, it makes us even happier.
+    </p>
+    <div>
+      <img class="showcase-img" src="img/2-learn-neural-network.gif" />
+    </div>
+  </section>
+
+  <section id="engage" class="screen showcase" layout="row center-center">
+    <span class="showcase-number">3 - Engage</span>
+    <p class="showcase-desc">
+      We build interactive dashboards so that your stakeholders want to play with them.
+      Support your message with data and maximize your clients engagement.
+    </p>
+    <div>
+      <img class="showcase-img" src="img/3-engage-viz.gif" />
+    </div>
+  </section>
 </body>
 
 </html>

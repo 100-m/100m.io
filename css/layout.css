@@ -13,25 +13,37 @@ html, body {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  color: var(--icewhite);
-  background-color: var(--iceblue-70);
 }
 .brand-logo {
   margin: 5px;
   height: 40px
 }
 .screen {
+  width: 100vw;
   height: 100vh;
 }
 
+.step {
+  padding: 3rem;
+}
+.step-number {
+  padding: .5rem;
+  text-align: center;
+  margin: 1rem;
+  border: 1px solid var(--icewhite);
+}
+.step-desc {
+  margin: 1rem;
+  width: 100%;
+}
 
 
 .button-ghost {
   display: inline-block;
-  margin: 5px;
+  margin: 5px 10px;
   padding: 8px;
   color: var(--icewhite);
-  background-color: var(--iceblue-70);
+  background-color: transparent;
   border: 1px solid var(--icewhite);
   text-align: center;
   outline: none;
@@ -39,16 +51,16 @@ html, body {
 }
 .button-ghost:hover,
 .button-ghost:active {
-  background-color: var(--icewhite);
   color: var(--iceblue-70);
+  background-color: var(--icewhite);
 }
 .button-primary {
+  font-size: 2rem;
   display: inline-block;
-  margin: 5px;
-  padding: 8px;
+  padding: 1rem;
   color: var(--iceblue-70);
-  background-color: var(--icewhite);
-  border: 1px solid var(--icewhite);
+  background-color: var(--jamaica);
+  border: 1px solid var(--jamaica);
   border-radius: 2px;
   text-align: center;
   outline: none;
@@ -56,6 +68,5 @@ html, body {
 }
 .button-primary:hover,
 .button-primary:active {
-  background-color: var(--icewhite);
-  color: var(--iceblue-70);
+  background-color: var(--mustard);
 }
