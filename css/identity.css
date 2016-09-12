@@ -15,53 +15,70 @@
 	--jamaica:#f9cc11;
 	--mustard:#ebdd55;
 	--greenish-white:#edffdd;
-};
+}
 
 body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 50px;
   font-weight: 400;
   color: var(--iceblue-70);
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: var(--accent);
-  font-size: 20px;
-  font-weight: 700;
-  font-variant: small-caps;
+.left #section-1{
+   background-color: var(--iceblue-70);
+   color: var(--icewhite);
 }
-.nav {
-  background: var(--icewhite);
-  border-bottom: 3px solid var(--iceblue-10);
+.left #section-2{
+   background-color: var(--iceblue-60);
+   color: var(--icewhite);
 }
-.informations {
-  background: var(--light-background);
+.left #section-3{
+   background-color: var(--iceblue-50);
+   color: var(--icewhite);  
 }
-.separator {
-  position: relative;
-  border-bottom: 1px solid var(--light-border);
-  margin: 15px;
+.left #section-4{
+   background-color: var(--iceblue-40);
+   color: var(--icewhite);
 }
-.separator span {
-  position: absolute;
-  top: -13px;
-  left: 10px;
-  padding: 0 10px;
-  color: var(--accent);
-  background: var(--light-background);
-  font-variant: small-caps;
-  font-size: 18px;
+.left #section-5{
+   background-color: var(--iceblue-30);
+   color: var(--iceblue-70);
 }
-.separator button {
-  z-index: 1;
-  position: absolute;
-  top: -15px;
-  left: calc(100% - 15px);
+.left #section-6{
+   background-color: var(--iceblue-20);
+   color: var(--iceblue-70);
 }
-.d3-chart {
-  position: relative;
-  border: 2px dashed var(--light-border);
+.left #section-7{
+   background-color: var(--iceblue-10);
+   color: var(--iceblue-70);
+}
+
+
+.right #section-1{
+   background-color: var(--usain-hair);
+   color: var(--greenish-white);
+}
+.right #section-2{
+   background-color: var(--usain-skin);
+   color: var(--greenish-white);
+}
+.right #section-3{
+   background-color: var(--usain-lips);
+   color: var(--greenish-white);  
+}
+.right #section-4{
+   background-color: var(--rolland-garros);
+   color: var(--greenish-white);
+}
+.right #section-5{
+   background-color: var(--jamaica);
+   color: var(--usain-hair);
+}
+.right #section-6{
+   background-color: var(--mustard);
+   color: var(--usain-hair);
+}
+.right #section-7{
+   background-color: var(--greenish-white);
+   color: var(--usain-hair);
 }
