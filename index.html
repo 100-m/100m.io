@@ -5,33 +5,43 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Lato:700,400,300" rel="stylesheet">
   <link href="css/flex-layout-attribute.min.css" rel="stylesheet">
-  <link href="css/d3-chart.css" rel="stylesheet">
   <link href="css/identity.css" rel="stylesheet">
   <link href="css/layout.css" rel="stylesheet">
-  <link href="css/component-json.css" rel="stylesheet">
-  <link href="css/svg.css" rel="stylesheet">
 </head>
 
 <body layout="rows">
-  <div class="left" self="size-x1" layout="columns strech-strech">
-   <div id="section-1" self="size-x1">This is just a title</div>
-   <div id="section-2" self="size-x1">This is just a title</div>
-   <div id="section-3" self="size-x1">This is just a title</div>
-   <div id="section-4" self="size-x1">This is just a title</div>
-   <div id="section-5" self="size-x1">This is just a title</div>
-   <div id="section-6" self="size-x1">This is just a title</div>
-   <div id="section-7" self="size-x1">This is just a title</div>
-  </div>
+  <section class="nav" layout="row center-justify">
+    <img class="brand-logo" alt="100m logo" src="img/100m-logo.png">
+    <!-- <span class="brand-url">100m.io</span> -->
+    <button class="button-ghost">Schedule a demo</button>
+  </section>
 
-  <div class="right" self="size-x1" layout="columns strech-strech">
-   <div id="section-1" self="size-x1">This is just a title</div>
-   <div id="section-2" self="size-x1">This is just a title</div>
-   <div id="section-3" self="size-x1">This is just a title</div>
-   <div id="section-4" self="size-x1">This is just a title</div>
-   <div id="section-5" self="size-x1">This is just a title</div>
-   <div id="section-6" self="size-x1">This is just a title</div>
-   <div id="section-7" self="size-x1">This is just a title</div>
-  </div>
+  <section class="screen" layout="rows center-spread">
+    <h1>Data-centric applications
+      <br>for the finance industry.</h1>
+    <h2>Interactive & real-time applications
+      <br>Tailored to suit your needs.</h2>
+    <button class="button-primary">Schedule a demo</button>
+  </section>
+
+  <section class="screen" layout="column">
+    <div class="extract">
+      <span>1</span>
+      <span>Extract</span>
+      <span>We connect to any source, normalize, and structure the data.</span>
+    </div>
+    <div class="learn">
+      <span>2</span>
+      <span>Learn</span>
+      <span>Build the right model, monitor your metrics and explore your data.</span>
+    </div>
+    <div class="engage">
+      <span>3</span>
+      <span>Engage</span>
+      <span>Share insights with your stakeholders.</span>
+    </div>
+  </section>
+
 </body>
 
 </html>
