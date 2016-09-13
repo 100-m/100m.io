@@ -1,12 +1,11 @@
 :root {
-  --iceblue-70: #033b55;
-  --iceblue-60: #24647b;
-  --iceblue-50: #4d99a6;
-  --iceblue-40: #7cb8c2;
-  --iceblue-30: #9bc9d0;
-  --iceblue-20: #bbdade;
-  --iceblue-10: #d9f5f2;
+  --iceblue: #003C55;
+  --iceblue-step1: #1A566F;
+  --iceblue-step2: #336F88;
+  --iceblue-step3: #4D89A2;
+  --iceblue-step4: #66A2BB;
   --icewhite: #fefefe;
+
   --usain-hair: #51442c;
   --usain-skin: #774422;
   --usain-lips: #cb8889;
@@ -18,30 +17,28 @@
 }
 body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
-  font-size: 2rem;
+  font-size: calc(1em + 1vw);
   font-weight: 400;
   color: var(--icewhite);
-  background-color: var(--iceblue-70);
+  background-color: var(--iceblue);
 }
 h1, h2 { margin:0; margin-bottom: 50px }
 h1 { font-size: 4.5rem }
 h2 { font-size: 3rem }
+button { font-size: 1rem; }
 
 .screen:nth-child(3) {
-	background-color: var(--iceblue-60);
+	background-color: var(--iceblue-step1);
 }
 .screen:nth-child(4) {
-	background-color: var(--iceblue-50);
+	background-color: var(--iceblue-step2);
 }
 .screen:nth-child(5) {
-	background-color: var(--iceblue-40);
+	background-color: var(--iceblue-step3);
 }
 .screen:nth-child(6) {
-	background-color: var(--iceblue-30);
+	background-color: var(--iceblue-step4);
 }
 .screen:nth-child(7) {
-	background-color: var(--iceblue-20);
-}
-.screen:nth-child(8) {
-	background-color: var(--iceblue-10);
+	background-color: var(--iceblue-step5);
 }

@@ -1,28 +1,30 @@
-[layout*=column], [layout*=row] {
-  width: inherit;
-  max-width: inherit;
-}
 html, body {
   margin: 0;
 }
-/*img {
-  max-width: 100%;
-}*/
 .nav {
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
-.brand-logo {
-  margin: 5px;
-  height: 40px
+.nav a {
+  position: fixed;
+  bottom: 0;
+  right: -40px;
+}
+.nav a:hover {
+  fill: url(#effect)
 }
 .screen {
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
-
+.what {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .step {
   padding: 3rem;
 }
@@ -36,8 +38,6 @@ html, body {
   margin: 1rem;
   width: 100%;
 }
-
-
 .button-ghost {
   display: inline-block;
   margin: 5px 10px;
@@ -49,16 +49,14 @@ html, body {
   outline: none;
   text-decoration: none;
 }
-.button-ghost:hover,
-.button-ghost:active {
-  color: var(--iceblue-70);
+.button-ghost:hover, .button-ghost:active {
+  color: var(--iceblue);
   background-color: var(--icewhite);
 }
 .button-primary {
-  font-size: 2rem;
   display: inline-block;
   padding: 1rem;
-  color: var(--iceblue-70);
+  color: var(--iceblue);
   background-color: var(--jamaica);
   border: 1px solid var(--jamaica);
   border-radius: 2px;
@@ -66,11 +64,6 @@ html, body {
   outline: none;
   text-decoration: none;
 }
-.button-primary:hover,
-.button-primary:active {
+.button-primary:hover, .button-primary:active {
   background-color: var(--mustard);
-}
-
-.fixed {
-  position: fixed;
 }
