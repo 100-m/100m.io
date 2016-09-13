@@ -70,3 +70,7 @@ html, body {
 .button-primary:active {
   background-color: var(--mustard);
 }
+
+.fixed {
+  position: fixed;
+}

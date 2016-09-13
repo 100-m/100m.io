@@ -21,15 +21,12 @@ body {
   font-size: 2rem;
   font-weight: 400;
   color: var(--icewhite);
+  background-color: var(--iceblue-70);
 }
 h1, h2 { margin:0; margin-bottom: 50px }
 h1 { font-size: 4.5rem }
 h2 { font-size: 3rem }
 
-.nav,
-.screen:nth-child(2) {
-	background-color: var(--iceblue-70);
-}
 .screen:nth-child(3) {
 	background-color: var(--iceblue-60);
 }
@@ -44,4 +41,7 @@ h2 { font-size: 3rem }
 }
 .screen:nth-child(7) {
 	background-color: var(--iceblue-20);
+}
+.screen:nth-child(8) {
+	background-color: var(--iceblue-10);
 }
