@@ -91,7 +91,7 @@ button {
 .button-primary:hover, .button-primary:active {
   background-color: var(--mustard);
 }
-.demo-form.opened .button-demo-send {
+.form-demo.opened .button-demo-send {
   padding: 1rem;
 }
 .nav {
@@ -118,7 +118,7 @@ button {
   opacity: 0;
   transition: all 500ms ease;
 }
-.demo-form.opened .input-primary {
+.form-demo.opened .input-primary {
   /*display: inline-block;*/
   padding:1rem;
   width: 21rem;
