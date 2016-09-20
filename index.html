@@ -33,12 +33,11 @@
     <form class="demo-form" method="post" action="http://127.0.0.1:2000/form-demo">
       <input class="input-primary" type="email" name="email" placeholder="Email" required>
       <input class="input-primary" type="tel" name="phone" placeholder="Phone">
-      <button class="button-primary button-demo-send" type="submit">Send</button>
       <button class="button-primary button-demo" type="button" id="demo-btn">Schedule a demo</button>
     </form>
   </section>
 
-  <!-- <section class="screen steps" layout="column center-center">
+  <!-- <section class="screen steps" layout="row center-center">
     <div class="step extract" layout="row spread-spread">
       <span class="step-number">1 - Extract</span>
       <span class="step-desc">
@@ -97,6 +96,7 @@
     var btn = document.querySelector("#demo-btn")
     btn.onclick = function() {
       document.querySelector(".demo-form").className += " opened"
+      btn.innerHTML = "Send"
     }
 
   </script>

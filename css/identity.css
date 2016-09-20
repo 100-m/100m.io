@@ -76,7 +76,6 @@ button {
 }
 .button-primary, .input-primary {
   display: inline-block;
-  padding: 1rem;
   font-size: 1.5rem;
   border-radius: 6px;
 }
@@ -85,6 +84,7 @@ button {
   background: var(--jamaica);
   border: 1px solid var(--jamaica);
   text-align: center;
+  padding: 1rem;
   outline: none;
   text-decoration: none;
 }
@@ -111,17 +111,16 @@ button {
     margin-bottom: 50px;
   }
 }
-.button-demo-send, .input-primary {
+.input-primary {
   /*display: none;*/
+  padding:0;
   width: 0;
   opacity: 0;
   transition: all 500ms ease;
 }
-.demo-form.opened .input-primary, .demo-form.opened .button-demo-send {
+.demo-form.opened .input-primary {
   /*display: inline-block;*/
-  width: 200px;
+  padding:1rem;
+  width: 21rem;
   opacity: 1;
-}
-.demo-form.opened .button-demo {
-  display: none;
 }
