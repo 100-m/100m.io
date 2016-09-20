@@ -71,15 +71,17 @@ button {
   color: var(--accent);
   border-color: var(--accent);
 }
-
-.button-primary {
+.button-primary, .input-primary {
   display: inline-block;
   padding: 1rem;
-  font-size:1.5rem;
+  font-size: 1.5rem;
+  border-radius: 6px;
+}
+
+.button-primary{
   color: var(--background);
   background: var(--jamaica);
   border: 1px solid var(--jamaica);
-  border-radius: 6px;
   text-align: center;
   outline: none;
   text-decoration: none;
@@ -87,11 +89,30 @@ button {
 .button-primary:hover, .button-primary:active {
   background-color: var(--mustard);
 }
-.nav{
+.button-demo-send, .input-primary {
+  /*width: 0;
+  padding: 0;
+  opacity: 0;*/
+  display: none;
+}
+.demo-form.opened .input-primary, .demo-form.opened .button-demo-send {
+  /*width: auto;
+  opacity: 1;*/
+  display: inline-block;
+}
+.demo-form.opened .button-demo {
+  display: none;
+}
+
+.demo-form.opened .button-demo-send {
+  padding: 1rem;
+}
+
+.nav {
   display: none;
 }
 @media screen and (min-width: 30em) {
-  .nav{
+  .nav {
     display: inherit;
   }
   h1 {
@@ -101,11 +122,14 @@ button {
     font-size: 3rem;
   }
   h1, h2 {
-      margin-bottom: 50px;
+    margin-bottom: 50px;
   }
-  .button-primary {
-    display: inline-block;
+  .button-primary, .input-primary {
     padding: 1.5rem;
     font-size: 2.5rem;
   }
+  .demo-form.opened .button-demo-send {
+    padding: 1.5rem;
+  }
+
 }
