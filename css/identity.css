@@ -27,10 +27,11 @@ body {
 }
 h1, h2 {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--accent);
 }
 h2 {
@@ -70,9 +71,11 @@ button {
   color: var(--accent);
   border-color: var(--accent);
 }
+
 .button-primary {
   display: inline-block;
   padding: 1rem;
+  font-size:1.5rem;
   color: var(--background);
   background: var(--jamaica);
   border: 1px solid var(--jamaica);
@@ -84,11 +87,25 @@ button {
 .button-primary:hover, .button-primary:active {
   background-color: var(--mustard);
 }
+.nav{
+  display: none;
+}
 @media screen and (min-width: 30em) {
+  .nav{
+    display: inherit;
+  }
   h1 {
     font-size: 5rem;
   }
   h2 {
     font-size: 3rem;
+  }
+  h1, h2 {
+      margin-bottom: 50px;
+  }
+  .button-primary {
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 2.5rem;
   }
 }

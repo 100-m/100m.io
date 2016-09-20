@@ -17,6 +17,7 @@ html, body {
 }
 .screen {
   position: relative;
+  padding:5%;
   width: 100vw;
   height: 100vh;
 }
