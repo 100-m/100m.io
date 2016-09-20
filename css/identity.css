@@ -124,12 +124,12 @@ button {
   h1, h2 {
     margin-bottom: 50px;
   }
-  .button-primary, .input-primary {
+  /*.button-primary, .input-primary {
     padding: 1.5rem;
     font-size: 2.5rem;
   }
   .demo-form.opened .button-demo-send {
     padding: 1.5rem;
-  }
+  }*/
 
 }
