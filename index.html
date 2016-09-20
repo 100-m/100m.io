@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <title>100m.io | Data-centric applications for the finance industry.</title>
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.3.1/css/tachyons.min.css" />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lato:700,400,300" rel="stylesheet"> -->
-  <!-- <link href="css/identity.css" rel="stylesheet">
-  <link href="css/layout.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:700,400,300" rel="stylesheet">
+  <link href="css/flex-layout-attribute.min.css" rel="stylesheet">
+  <link href="css/identity.css" rel="stylesheet">
+  <link href="css/layout.css" rel="stylesheet">
   <style>
     .nav {
       z-index: 10;
@@ -52,8 +52,8 @@
   </style>
 </head>
 
-<body>
-  <section class="nav">
+<body layout="rows">
+  <section class="nav fixed" layout="row center-right">
     <a class="brand-link" href="//100m.io">
       <svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
         <pattern id="effect" width="1" height="1" viewBox="0 0 80 30" preserveAspectRatio="none">
@@ -63,54 +63,54 @@
             fill-rule="evenodd" />
       </svg>
     </a>
-    <button class="button-ghost f6 dim br2 ba ph3 pv2 mb2 dib near-black" href="#0">Demo</button>
+    <button class="button-ghost">Demo</button>
   </section>
 
-  <section class="screen goal tc-l ph3 ph4-ns pt4 pt5-ns">
-    <h1 class="f2 f-subheadline-ns mb4">Data-centric applications
+  <section class="screen goal" layout="column center-center">
+    <h1>Data-centric applications
       <br>for the finance industry.</h1>
     <h2>Interactive & real-time applications
       <br>Tailored to suit your needs.</h2>
     <button class="button-primary">Schedule a demo</button>
   </section>
 
-  <section class="screen steps dt dt--fixed">
-    <div class="step extract dtc tc pv4 bg-black-10">
-      <div class="step-number f3 f-subheadline-ns mb4">1 - Extract</div>
-      <p class="step-desc">
+  <section class="screen steps" layout="column center-center">
+    <div class="step extract" layout="row spread-spread">
+      <span class="step-number">1 - Extract</span>
+      <span class="step-desc">
         We connect to any source, normalize, structure the data.
       </p>
       <a class="button-ghost" href="#extract">Our process</a>
     </div>
-    <div class="step learn dtc tc pv4 bg-black-05">
-      <div class="step-number f3 f-subheadline-ns mb4">2 - Learn</div>
-      <p class="step-desc">
+    <div class="step learn" layout="row spread-spread">
+      <span class="step-number">2 - Learn</span>
+      <span class="step-desc">
         Build the right model, monitor your metrics and explore your data.
       </p>
       <a class="button-ghost" href="#learn">Our process</a>
     </div>
-    <div class="step engage dtc tc pv4 bg-black-10">
-      <div class="step-number f3 f-subheadline-ns mb4">3 - Engage</div>
-      <p class="step-desc">
+    <div class="step engage" layout="row spread-spread">
+      <span class="step-number">3 - Engage</span>
+      <span class="step-desc">
         Share insights with your stakeholders.
       </p>
       <a class="button-ghost" href="#engage">Our process</a>
     </div>
   </section>
 
-  <section id="extract" class="screen showcase dt dt--fixed">
-    <div class="dtc tc pv4 bg-black-10">
+  <section id="extract" class="screen showcase" layout="row">
+    <div layout="column spread-spread">
       <span class="showcase-number">1 - Extract</span>
       <p class="showcase-desc">
         We connect to vendors of structured data, scrape the web in real-time or plug-in to your in-house database. Cleaning, merging, synchronizing feeds to provide the right data to your application.
       </p>
     </div>
-    <div class="dtc tc pv4 bg-black-10">
+    <div>
       <img class="showcase-img" src="img/1-extract-marbles.gif" />
     </div>
   </section>
 
-  <section id="learn" class="screen showcase">
+  <section id="learn" class="screen showcase" layout="row center-center">
     <span class="showcase-number">2 - Learn</span>
     <p class="showcase-desc">
       We can build smart models using machine learning and stochastic calculus. However, if a simple regression can do the job, it makes us even happier.
@@ -120,7 +120,7 @@
     </div>
   </section>
 
-  <section id="engage" class="screen showcase">
+  <section id="engage" class="screen showcase" layout="row center-center">
     <span class="showcase-number">3 - Engage</span>
     <p class="showcase-desc">
       We build interactive dashboards so that your stakeholders want to play with them. Support your message with data and maximize your clients engagement.

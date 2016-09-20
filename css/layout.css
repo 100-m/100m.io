@@ -38,32 +38,3 @@ html, body {
   margin: 1rem;
   width: 100%;
 }
-.button-ghost {
-  display: inline-block;
-  margin: 5px 10px;
-  padding: 8px;
-  color: var(--icewhite);
-  background-color: transparent;
-  border: 1px solid var(--icewhite);
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-}
-.button-ghost:hover, .button-ghost:active {
-  color: var(--iceblue);
-  background-color: var(--icewhite);
-}
-.button-primary {
-  display: inline-block;
-  padding: 1rem;
-  color: var(--iceblue);
-  background-color: var(--jamaica);
-  border: 1px solid var(--jamaica);
-  border-radius: 2px;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-}
-.button-primary:hover, .button-primary:active {
-  background-color: var(--mustard);
-}

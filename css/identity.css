@@ -5,7 +5,6 @@
   --iceblue-step3: #4D89A2;
   --iceblue-step4: #66A2BB;
   --icewhite: #fefefe;
-
   --usain-hair: #51442c;
   --usain-skin: #774422;
   --usain-lips: #cb8889;
@@ -14,31 +13,82 @@
   --jamaica: #f9cc11;
   --mustard: #ebdd55;
   --greenish-white: #edffdd;
+  --primary: var(--jamaica);
+  --accent: #fff;
+  --color: rgba(255, 255, 255, .9);
+  --background: var(--iceblue);
 }
 body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: calc(1em + 1vw);
   font-weight: 400;
-  color: var(--icewhite);
-  background-color: var(--iceblue);
+  color: var(--color);
+  background: var(--background);
 }
-h1, h2 { margin:0; margin-bottom: 50px }
-h1 { font-size: 4.5rem }
-h2 { font-size: 3rem }
-button { font-size: 1rem; }
-
+h1, h2 {
+  margin: 0;
+  margin-bottom: 50px;
+}
+h1 {
+  font-size: 3rem;
+  color: var(--accent);
+}
+h2 {
+  font-size: 1.5rem;
+}
+button {
+  font-size: 1rem;
+}
 .screen:nth-child(3) {
-	background-color: var(--iceblue-step1);
+  background-color: var(--iceblue-step1);
 }
 .screen:nth-child(4) {
-	background-color: var(--iceblue-step2);
+  background-color: var(--iceblue-step2);
 }
 .screen:nth-child(5) {
-	background-color: var(--iceblue-step3);
+  background-color: var(--iceblue-step3);
 }
 .screen:nth-child(6) {
-	background-color: var(--iceblue-step4);
+  background-color: var(--iceblue-step4);
 }
 .screen:nth-child(7) {
-	background-color: var(--iceblue-step5);
+  background-color: var(--iceblue-step5);
+}
+.button-ghost {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 8px;
+  color: var(--color);
+  border: 1px solid var(--color);
+  border-radius: 4px;
+  background: transparent;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.button-ghost:hover, .button-ghost:active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.button-primary {
+  display: inline-block;
+  padding: 1rem;
+  color: var(--background);
+  background: var(--jamaica);
+  border: 1px solid var(--jamaica);
+  border-radius: 6px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.button-primary:hover, .button-primary:active {
+  background-color: var(--mustard);
+}
+@media screen and (min-width: 30em) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
 }
