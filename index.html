@@ -9,7 +9,7 @@
   <link href="css/flex-layout-attribute.min.css" rel="stylesheet">
   <link href="css/identity.css" rel="stylesheet">
   <link href="css/layout.css" rel="stylesheet">
-  
+
 </head>
 
 <body layout="rows">
@@ -31,7 +31,12 @@
       <br>for the finance industry.</h1>
     <h2>Interactive & real-time applications,
       <br>tailored to suit your needs.</h2>
-    <button class="button-primary">Schedule a demo</button>
+    <form class="demo-form" method="post" action="http://form.100m.io/demo">
+      <input class="input-primary" type="email" name="email" placeholder="Email" required>
+      <input class="input-primary" type="tel" name="phone" placeholder="Phone">
+      <button class="button-primary" type="submit">Send</button>
+      <button class="button-primary" type="button">Schedule a demo</button>
+    </form>
   </section>
 
   <!-- <section class="screen steps" layout="column center-center">
@@ -39,22 +44,22 @@
       <span class="step-number">1 - Extract</span>
       <span class="step-desc">
         We connect to any source, normalize, structure the data.
-      </p>
-      <a class="button-ghost" href="#extract">Our process</a>
+        </p>
+        <a class="button-ghost" href="#extract">Our process</a>
     </div>
     <div class="step learn" layout="row spread-spread">
       <span class="step-number">2 - Learn</span>
       <span class="step-desc">
         Build the right model, monitor your metrics and explore your data.
-      </p>
-      <a class="button-ghost" href="#learn">Our process</a>
+        </p>
+        <a class="button-ghost" href="#learn">Our process</a>
     </div>
     <div class="step engage" layout="row spread-spread">
       <span class="step-number">3 - Engage</span>
       <span class="step-desc">
         Share insights with your stakeholders.
-      </p>
-      <a class="button-ghost" href="#engage">Our process</a>
+        </p>
+        <a class="button-ghost" href="#engage">Our process</a>
     </div>
   </section>
 
