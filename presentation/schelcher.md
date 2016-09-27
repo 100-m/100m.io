@@ -96,6 +96,16 @@
 * A1 a moitie
 * T1
 
-#Sellings points
-* Digitaliser votre reporting
-* Creer un 
+#Objectifs
+* Pour le gerant:
+	*Simplifier la creation, la distribution de l'information
+	*Ameliorer la qualite de l'analyse de l'information (rapidite d'analyse, profondeur de l'analyse), gain de productivite (prend sur nous le dev' et conception produit). Hierarchie de l'information. 
+	* un gain en terme d'image (competitivite++, transparence ++).
+* Pour l'utilisateur : Simplifier l'acces a l''information de reporting,
+	* acces facilite (pas de telechargement, cross plateforme, information condensee, regroupee et dynamique)
+	* information pre-package, pre-digeree.
+* Cote systeme et tech:
+	* automatisation complete de la chaine de reporting.
+	* suivi des interactions clients via les analytics (monitoring ouverture, interaction, temps passe etc.)
+	* maintenabilite de l'infra
+	* unification des systemes de reporting (interne, externe) 
