@@ -27,6 +27,10 @@ Who we are:
 
 ## Styleguide
 
+Color:
+- Base #003C55 - 13% brightness per step
+- http://www.cssfontstack.com/oldsites/hexcolortool/
+
 Inspiration:
 - https://marvelapp.com/styleguide
 - https://www.behance.net/gallery/7226653/Medium-Brand-Development
