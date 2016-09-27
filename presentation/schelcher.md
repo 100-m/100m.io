@@ -1,82 +1,88 @@
 #Inventaire du reporting existant
 
-* Commentaire	
+* Commentaire `Label SP-C`
 	- Texte
-* Actif	Spge	
+* Actif	Spge `Label SP-A1`
 	- Number pour Spge
-* Allocation par Classe  d'Actif	 
+* Allocation par Classe  d'Actif `Label SP-A2`
 	- Data table + Bar Chart pour (Sgpe)
-* Allocation To PIIGS 
+* Allocation To PIIGS `Label SP-A3`
 	- Data table pour (Spge & ECI)
-* Breakdown Secteur	
+* Breakdown Secteur	`Label SP-A4`
 	- Bar Chart pour (Spge & ECI)
-* Breakdown Country	
+* Breakdown Country	`Label SP-A5`
 	- Bar Chart pour (Spge & ECI)
-* Breakdown par Notations	
+* Breakdown par Notations `Label SP-A6`
 	- Data table pour (Spge & ECI)
-* Top Positions	
+* Top Positions	`Label SP-A7`
 	- Data table pour (Spge & ECI)
-* Top mouvements
+* Top mouvements `Label SP-A8`
 	- Data table pour (Sgpe)
-* Exposition devise	
+* Exposition devise	`Label SP-A9`
 	- Data table pour (Spge)
-* Distribution Des Maturites
+* Distribution Des Maturites `Label SP-A10`
 	- Bar Chart + Table  pour (Sgpe)
-* Breakdown Action By Sector And By Name and 1M/3M perf'	
+* Breakdown Action By Sector And By Name and 1M/3M perf' `Label SP-A11`
 	- Data Table pour (Spge & ECI)
-* Distribution Des Sensi Equity	
+* Distribution Des Sensi Equity	`Label SP-A12`
 	- Data Table pour (Spge & ECI)
-* Performance par secteurs	
-	- Data Table pour (Spge & ECI)
-* Serie Temporelle de Performance
+* Performance par secteurs `Label SP-A1) `Label SP-P1`
+	- Data Table pour (Spge & ECI) 
+* Serie Temporelle de Performance `Label SP-P2`
 	- Line Chart + Recap Numbers pour (Spge, ECI & EuroStoxx)
-* PnL Explain (Greek)	
+* PnL Explain (Greek) `Label SP-P3`
 	- Data Table pour (Spge & ECI)
-* Risques Aggreges (Delta, Vega, Gamma, Convexite)	
+* Risques Aggreges (Delta, Vega, Gamma, Convexite) `Label SP-A13`
 	- Data table pour (Spge & ECI)
-* Indicateurs Techniques (Spreads, Rating, IG/non-IG)	
+* Indicateurs Techniques (Spreads, Rating, IG/non-IG) `Label SP-T1`
 	- Data table pour (Spge & ECI)
-* Solvency 2
+* Solvency 2 `Label SP-T2`
 	- Data table pour Spge
 
 # Que l'on peut re-organiser
-* Un ecran de gestion
-	- 
-	-
-	-
-	-
+* Un ecran de gestion (G1)
+	- un commentaire
+	- les tops mouvements
+	- (possible) un lien vers une detail ligne a ligne du portfeuille. (G2)
 
-* A1
-	Ecran avec :
-•	Un top 3 (Dynamique drill-down pour le gérant, Static pour le public)
-•	Une somme 
-•	Une distribution (Gerant)
-Section par :
-•	Pays
-•	Secteur
-•	Rating
-•	Classe d’actif.
-Une vue Credit, Action, Devise, Maturite et Convexite.
-Une comparaison.
-+ un filtre PIIGS.
-+ un lien vers une table de position (Gerant)
+* Un description du portefeuille (G2)
+	- a detailler dans un second temps.
 
+* Une presentation de l'allocation en termes de positions et de risques (A1)
+	Ecran presentant pour differentes vues i.e. Credit, Action, Devise, Convexite, et Maturite
+	- Un top 3 (Dynamique drill-down pour le gérant, Static pour le public) -> limited -> `table`
+	- Une somme sur la vue et sur le filtre actif -> `nombre`
+	- Une vision de la distribution sur la vue et sur le filtre actif (Gerant) -> private -> `bar chart`
+	Un filtrage dynamique par: 
+	- Pays -> `bar chart`
+	- Secteur -> `bar chart`
+	- Rating -> `bar chart`
+	- Classe d’actif -> `pie chart`
+	Fonctionalite de:
+	- comparaison avec l'indice
+	- passage facile d'une vue a une autre (Credit a Action, et vis versa) -> 'toggle button'
+	- un filtre PIIGS.
+	- un lien vers une table de position (private)
 
+* Une presentation de la performance en serie temporelle (P1) -> serie temporelle avec brush
 
+* Une explication de cette performance (P2)
+	Ecran presentant :
+	•	Un split alpha-beta -> `waterfall`
+	•	Une somme `nombre`
+	•	Une repartition par grecs `waterfall chart`
+	Un filtrage dynamique par: 
+	•	Pays -> `bar chart`
+	•	Secteur -> `bar chart`
+	•	Rating -> `bar chart`
+	•	Classe d’actif -> `pie chart`
+	Fonctionalite de:
+		- comparaison avec l'indice
+		- passage de la vue Credit, a Action, a Devise, a Maturite et a Convexite.
+		- un filtre PIIGS.
+		- un lien vers une table de position (private)
 
-* A2
-* P1
-* P2
-Ecran avec :
-•	Un split alpha-beta (waterfall chart)
-•	Une somme (nombre en gros)
-•	Une repartition par grecs  (waterfall chart)
-Section par :
-•	Pays (bar chart)
-•	Secteur (bar chart)
-•	Rating (bar chart)
-•	Classe d’actif (pie chart)
-Une comparaison avec l’index (?)
-+ un lien vers une table de position (Gerant)
+* Reprise de indicateurs techniques figurant dans le reporting actuel (T1)
 
-* T1
+# Les additions que cela represente:
+	* 
