@@ -1,6 +1,6 @@
 #Inventaire du reporting existant
 
-* Commentaire `Label SP-C`
+* Commentaire `Label SP-G`
 	- Texte
 * Actif	Spge `Label SP-A1`
 	- Number pour Spge
