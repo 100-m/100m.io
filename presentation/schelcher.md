@@ -86,8 +86,8 @@
 
 * Reprise de indicateurs techniques figurant dans le reporting actuel (T1)
 
-#La maquette aujourd'hui couvre:
-	* G1
-	* P1 a moitie
-	* A1 a moitie
-	* T1
+#La maquette aujourd'hui couvre
+* G1
+* P1 a moitie
+* A1 a moitie
+* T1
