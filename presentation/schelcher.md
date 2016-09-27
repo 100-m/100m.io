@@ -53,11 +53,13 @@
 	- Un top 3 (Dynamique drill-down pour le gérant, Static pour le public) -> limited -> `table`
 	- Une somme sur la vue et sur le filtre actif -> `nombre`
 	- Une vision de la distribution sur la vue et sur le filtre actif (Gerant) -> private -> `bar chart`
-  Un filtrage dynamique par: 
+	
+	Un filtrage dynamique par: 
 	- Pays -> `bar chart`
 	- Secteur -> `bar chart`
 	- Rating -> `bar chart`
 	- Classe d’actif -> `pie chart`
+	
 	Fonctionalite de:
 	- comparaison avec l'indice
 	- passage facile d'une vue a une autre (Credit a Action, et vis versa) -> 'toggle button'
@@ -72,11 +74,13 @@
 	*	Un split alpha-beta -> `waterfall`
 	*	Une somme `nombre`
 	*	Une repartition par grecs `waterfall chart`
+	
   Un filtrage dynamique par: 
 	*	Pays -> `bar chart`
 	*	Secteur -> `bar chart`
 	*	Rating -> `bar chart`
 	*	Classe d’actif -> `pie chart`
+  
   Fonctionalite de:
 		- comparaison avec l'indice
 		- passage de la vue Credit, a Action, a Devise, a Maturite et a Convexite.
