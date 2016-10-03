@@ -41,6 +41,7 @@ html, body {
   font-variant:small-caps;
 }
 .button-primary:hover, .button-primary:active {
+  transition: all 0s;
   background-color: var(--background);
   color : var(--jamaica);
   border: 3px solid var(--jamaica);
@@ -93,6 +94,14 @@ html, body {
 .extract div {
   font-size : 2rem;
   margin-bottom:10px;
+}
+.logo-container {
+  width:40%;
+  margin:auto;
+  height:110px;
+}
+.logo-container img{
+  max-height:100%;
 }
 
 .learn {
