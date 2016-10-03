@@ -9,7 +9,7 @@
     <link href="css/flex-layout-attribute.min.css" rel="stylesheet">
     <link href="css/identity.css" rel="stylesheet">
     <link href="css/layout.css" rel="stylesheet">
-    <script src="scripts/smooth-scroll.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
   </head>
 
   <body layout="rows">
@@ -46,7 +46,7 @@
       </div>
     </section>
 
-    <section class="screen steps" id="summary" layout="row center-center">
+    <section class="screen steps" id="summary" layout="row center-spread">
       <div class="step extract" layout="column spread-spread">
         <span class="step-number">1 - Extract</span>
         <span class="step-desc">
@@ -77,11 +77,11 @@
         </a>
       </div>
     </section>
-
+  
     <section id="extract" class="screen showcase" layout="row">
-      <div layout="column top-center">
-        <span class="showcase-number">1 - Extract</span>
-        <p class="showcase-desc">
+      <div >
+        <span self="top" class="showcase-number">1 - Extract</span>
+        <p self="bottom" class="showcase-desc">
           We connect to vendors of structured data, scrape the web in real-time or plug-in to your in-house database. Cleaning, merging, synchronizing feeds to provide the right data to your application.
         </p>
       </div>

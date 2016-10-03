@@ -16,14 +16,14 @@
   --primary: var(--jamaica);
   --accent: #fff;
   --color: rgba(255, 255, 255, .9);
-  --background: var(--iceblue);
+  --background: var(--iceblue-step1);
 }
 body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: calc(1em + 1vw);
   font-weight: 400;
   color: var(--color);
-  background: var(--background);
+  /*background: var(--background);*/
 }
 svg {
   fill: var(--color);
@@ -40,25 +40,38 @@ h1 {
 h2 {
   font-size: 1.5rem;
 }
+
 button {
   font-size: 1rem;
 }
-.screen:nth-child(3) {
+
+.first-screen {
   background-color: var(--iceblue-step1);
 }
-.screen:nth-child(4) {
+/*.screen:nth-of-type(2) {
+  background-color: var(--iceblue-step1);
+}
+.screen:nth-of-type(3) {
   background-color: var(--iceblue-step2);
 }
-.screen:nth-child(5) {
+.screen:nth-of-type(4) {
   background-color: var(--iceblue-step3);
 }
-.screen:nth-child(6) {
+.screen:nth-of-type(5) {
   background-color: var(--iceblue-step4);
 }
-.screen:nth-child(7) {
+.screen:nth-of-type(5) {
   background-color: var(--iceblue-step5);
+}*/
+/*.step:nth-of-type(1){
+  background-color: var(--iceblue-step2)
 }
-
+.step:nth-of-type(2){
+  background-color: var(--iceblue-step3)
+}
+.step:nth-of-type(3){
+  background-color: var(--iceblue-step4)
+}*/
 .button-ghost {
   display: inline-block;
   margin: 5px 10px;
@@ -75,27 +88,7 @@ button {
   color: var(--accent);
   border-color: var(--accent);
 }
-.button-primary, .input-primary {
 
-  display: inline-block;
-  font-size: 2rem;
-  border-radius: 6px;
-}
-.button-primary {
-  color: var(--background);
-  background: var(--jamaica);
-  border: 1px solid var(--jamaica);
-  text-align: center;
-  padding: 1rem;
-  outline: none;
-  text-decoration: none;
-}
-.button-primary:hover, .button-primary:active {
-  background-color: var(--mustard);
-}
-.form-demo.opened .button-demo-send {
-  padding: 1rem;
-}
 .nav {
   display: none;
 }

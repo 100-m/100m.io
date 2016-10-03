@@ -1,50 +1,191 @@
 html, body {
   margin: 0;
 }
+/*img {
+  width:100%;
+  max-width: 100%;
+  max-height: 100%;
+}*/
 .nav {
   z-index: 10;
   position: fixed;
   top: 0;
   right: 0;
 }
-.nav a {
-  position: fixed;
-  bottom: 0;
-  right: -40px;
-}
-.nav a:hover {
-  fill: url(#effect)
-}
+
 .screen {
   position: relative;
   padding:5%;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
-.bottom-arrow{
-  position: absolute;
-  bottom:10px;
-  left: calc(50% - 20px);
-  stroke-width:4;
-  fill-opacity:0.0;
-  stroke:white;
+
+.form-demo {
+  margin-top:10%;
+  text-align: center;
 }
-.what {
-  position: absolute;
-  top: 0;
-  left: 0;
+.button-primary, .input-primary {
+
+  display: inline-block;
+  font-size: 2rem;
+}
+.button-primary {
+  color: var(--background);
+  background: var(--mustard);
+  border: 3px solid var(--mustard);
+  text-align: center;
+  padding: 1rem;
+  outline: none;
+  text-decoration: none;
+  transition:all .35s cubic-bezier(.08,.59,.29,.99);
+  font-variant:small-caps;
+}
+.button-primary:hover, .button-primary:active {
+  background-color: var(--background);
+  color : var(--jamaica);
+  border: 3px solid var(--jamaica);
+}
+.form-demo.opened .button-demo-send {
+  padding: 1rem;
 }
 
-.step {
-  padding: 3rem;
+.learnmore{
+  height :90px;
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  text-decoration :none;
+  font-variant:small-caps;
+  color : var(--icewhite);
+  text-align:center;
+  font-size: 1.5rem;
+  padding-top:10px;
 }
-.step-number {
-  padding: .5rem;
+
+.learnmore:hover {
+  background : rgba(0,0,0,0.3);
+}
+.steps {
+  position:relative;
   text-align: center;
-  margin: 1rem;
-  border: 1px solid var(--icewhite);
+  color : var(--iceblue);
 }
-.step-desc {
-  margin: 1rem;
+
+.steps h2 {
+  margin-top:10px;
+  font-size: 2.5rem;
+  margin-bottom:20px;
+}
+.step-mark {
+  width:72px;
+}
+.steps span {
+  color : #0A9BCC;
+}
+.extract{
+
+  padding-top:60px;
+  height : 800px;
+  background-color: var(--icewhite);
+  border-bottom: 1px dotted #b3b3b3;
+}
+.extract div {
+  font-size : 2rem;
+  margin-bottom:10px;
+}
+
+.learn {
+  background-color: #F0F0F0;
+  height:800px;
+  border-bottom: 1px dotted #b3b3b3;
+}
+
+.learn .step-mark, .engage .step-mark {
+  position:relative;
+  top:-35px;
+}
+.container-img {
+  height :50%;
+}
+.container-img img{
+  border:1px solid #DCDCDC;
+  max-height: 100%;
+}
+.chart-examples {
+  height:50%;
+}
+.container-chart {
+  width:300px;
+  height:300px;
+  border: 1px solid #DCDCDC;
+  margin-right:30px;
+  background-color: white;
+}
+
+.engage {
+  height :110vh;
+  background-color: var(--icewhite);
+}
+.fake-browser {
+  margin-top:20px;
+  width:90%;
+  height:100%;
+  border:1px solid #DCDCDC;
+}
+
+
+
+
+
+
+
+
+/*
+
+.step {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  height :100vh;
+  size :
+
+}
+
+.step-text {
+  padding: .5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  height : 150px;
+}
+.step-text p {
+  padding : .5rem;
+  font-size: 1.5rem;
+
+}
+.step-image{
+  padding: 1rem;
   width: 100%;
 }
+
+.step-arrow {
+  height : 150px;
+  position:relative;
+}
+.step-arrow svg{
+  height:100%;
+}
+.list-icons {
+  width :50px;
+}
+.icon-container {
+  height :40px;
+  width:40px;
+  margin : 5px;
+
+}
+
+.image-spreadsheet {
+  border :1px solid white;
+  background-color: white;
+  width :200px;
+}*/
