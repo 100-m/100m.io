@@ -10,62 +10,35 @@
     <link href="css/identity.css" rel="stylesheet">
     <link href="css/layout.css" rel="stylesheet">
     <link href="css/browser-mockup.css" rel="stylesheet">
-    <script src="js/smooth-scroll.min.js"></script>
   </head>
 
   <body>
     <div class="browser-mockup">
 
-      <a href="#" class="tab" onclick="openTab(event, 'aaa');">
-        <span>  merde </span>
+      <a href="#" class="tab" onclick="openTab(event,'url');">
+        <span>
+          Tab1
+        </span>
       </a>
 
       <a class="tab">
-        <span>  merde </span>
+        <span>
+          Tab2
+        </span>
       </a>
-      <a class="tab">
-      </a>
-    <iframe class="content" src="http://schelcher.100m.io/#allocation" />
-  </div>
+      <a class="tab"></a>
+      <iframe class="content" src="http://schelcher.100m.io/#allocation"/>
+    </div>
 
     <script>
-
-
-      var btn = document.querySelector(".button-demo")
-      var form = document.querySelector(".form-demo")
-      btn.onclick = function() {
-        form.className += " opened"
-        btn.innerHTML = "Send"
-        btn.type = "submit"
-      }
-      form.onsubmit = function(e) {
-        e.preventDefault()
-        fetch(form.action, {
-          method: form.method,
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-          },
-          mode: 'cors',
-          body: JSON.stringify({
-            email: form
-              .querySelector('[name="email"]')
-              .value,
-            phone: form
-              .querySelector('[name="phone"]')
-              .value,
-          }),
-          })
-          .then(function() {
-            form.innerHTML = '<span>We will contact you ASAP !</span>'
-          })
-          .catch(function() {
-            form.innerHTML = '<span>Error</span>'
-          })
-      }
-      smoothScroll.init();
+      console.log("aaa")
+      test = 1
+      var wtf = 4
+      window.wtf = wtf
+      window.test = 2
     </script>
     <script src="js/browser-mockup.js"></script>
+    <!-- <script src="js/smooth-scroll.min.js"></script> -->
 
   </body>
 

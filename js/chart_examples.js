@@ -29,11 +29,24 @@ var chart_ex2 = d3.chart({
   fieldsY: ['value', 'value2','value3'],
   colors: ["var(--iceblue-step1)", "var(--iceblue-step2)","var(--iceblue-step3)"],
 })
+var chart_ex3 = d3.chart({
+  bindto: '#chart-ex3',
+  type: 'line',
+  fieldX: 'key',
+  fieldsY: ['value'],
+  colors: ["var(--iceblue-step1)", "var(--iceblue-step2)","var(--iceblue-step3)"],
+  _scaleX: c => d3.scaleBand().rangeRound([0, c.innerWidth]),
+  _domainX: c => c.data.map(g => g.key),
+})
+
+
 chart_ex1.cycleIndex = chart_ex2.cycleIndex = 0
 
 chart_ex1.data = data
 chart_ex2.data = data
+chart_ex3.data = data
 fields = [['value', 'value2','value3'],['value', 'value2'],['value']]
+window.data = data
 
 function click(chart) {
   return function () {

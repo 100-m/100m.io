@@ -128,3 +128,11 @@ button {
   z-index: 1;
   top: -12px;
 }
+.grid.x .domain,
+.grid.x .tick line {
+  stroke: transparent;
+}
+
+path.value{
+  stroke: var(--iceblue-step1);
+}

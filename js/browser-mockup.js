@@ -1,4 +1,6 @@
 function openTab(event,url) {
-  alert('eazeaz')
+  alert(url)
 
 }
+
+window.test = 3

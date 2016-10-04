@@ -43,6 +43,9 @@
 .browser-mockup .tab:nth-of-type(3) {
   left: calc(40% + 5.5em);
 }
+.tab {
+  text-decoration: none;
+}
 .tab span {
   position:relative;
   top:2.9em;
