@@ -21,7 +21,7 @@ html, body {
 }
 
 .form-demo {
-  margin-top:10%;
+  margin-top:5%;
   text-align: center;
 }
 .button-primary, .input-primary {
@@ -51,7 +51,7 @@ html, body {
 }
 
 .learnmore{
-  height :90px;
+  height :50px;
   position:absolute;
   left:0;
   bottom:0;
@@ -63,10 +63,13 @@ html, body {
   font-size: 1.5rem;
   padding-top:10px;
 }
-
 .learnmore:hover {
   background : rgba(0,0,0,0.3);
 }
+.bottom-arrow {
+  display:none;
+}
+
 .steps {
   position:relative;
   text-align: center;
@@ -75,7 +78,7 @@ html, body {
 
 .steps h2 {
   margin-top:10px;
-  font-size: 2.5rem;
+  /*font-size: 2.5rem;*/
   margin-bottom:20px;
 }
 .step-mark {
@@ -87,18 +90,19 @@ html, body {
 .extract{
 
   padding-top:60px;
-  height : 800px;
+  height : 600px;
   background-color: var(--icewhite);
   border-bottom: 1px dotted #b3b3b3;
 }
 .extract div {
-  font-size : 2rem;
+  /*font-size : 2rem;*/
   margin-bottom:10px;
 }
 .logo-container {
   width:40%;
   margin:auto;
   height:110px;
+  display:none;
 }
 .logo-container img{
   max-height:100%;
@@ -106,7 +110,7 @@ html, body {
 
 .learn {
   background-color: #F0F0F0;
-  height:800px;
+  height:600px;
   border-bottom: 1px dotted #b3b3b3;
 }
 
@@ -120,6 +124,7 @@ html, body {
 .container-img img{
   border:1px solid #DCDCDC;
   max-height: 100%;
+  max-width: 100%;
 }
 .chart-examples {
   margin-top:3%;
@@ -129,8 +134,12 @@ html, body {
   width:300px;
   height:300px;
   border: 1px solid #DCDCDC;
-  margin-right:30px;
+  margin-right:15px;
+  margin-left:15px;
   background-color: white;
+}
+.container-chart:nth-of-type(2), .container-chart:nth-of-type(3){
+  display:none;
 }
 
 .engage {
@@ -144,58 +153,40 @@ html, body {
   border:1px solid #DCDCDC;
 }
 
-
-
-
-
-
-
-
-/*
-
-.step {
-  margin-left: .5rem;
-  margin-right: .5rem;
-  height :100vh;
-  size :
-
+@media screen and (min-width: 600px) { /* Non mobile but still tablet */
+  .container-chart:nth-of-type(2){
+    display:inline;
+  }
+  .logo-container{
+    display:flex;
+  }
+  .extract, .learn {
+    height:800px;
+  }
 }
 
-.step-text {
-  padding: .5rem;
-  margin-left: .5rem;
-  margin-right: .5rem;
-  height : 150px;
-}
-.step-text p {
-  padding : .5rem;
-  font-size: 1.5rem;
-
-}
-.step-image{
-  padding: 1rem;
-  width: 100%;
+@media screen and (min-width: 1024px) {
+  .container-chart:nth-of-type(3){
+    display:inline;
+  }
 }
 
-.step-arrow {
-  height : 150px;
-  position:relative;
-}
-.step-arrow svg{
-  height:100%;
-}
-.list-icons {
-  width :50px;
-}
-.icon-container {
-  height :40px;
-  width:40px;
-  margin : 5px;
+@media screen and (min-height: 600px) {
 
+  .learnmore {
+    height :70px;
+  }
+  .bottom-arrow{
+    display:inline;
+  }
 }
 
-.image-spreadsheet {
-  border :1px solid white;
-  background-color: white;
-  width :200px;
-}*/
+@media screen and (min-height: 800px) {
+  .form-demo {
+    margin-top:10%;
+  }
+
+  .learnmore {
+    height :90px;
+  }
+}

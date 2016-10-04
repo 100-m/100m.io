@@ -97,10 +97,10 @@ button {
     display: inherit;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   h1, h2 {
     margin-bottom: 50px;
@@ -119,4 +119,12 @@ button {
   padding:1rem;
   width: 21rem;
   opacity: 1;
+}
+
+.d3-chart {
+  position: relative;
+}
+.d3-chart span {
+  z-index: 1;
+  top: -12px;
 }
