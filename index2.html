@@ -9,123 +9,28 @@
     <link href="css/flex-layout-attribute.min.css" rel="stylesheet">
     <link href="css/identity.css" rel="stylesheet">
     <link href="css/layout.css" rel="stylesheet">
+    <link href="css/browser-mockup.css" rel="stylesheet">
     <script src="js/smooth-scroll.min.js"></script>
   </head>
 
-  <body layout="rows">
-    <section class="nav fixed" layout="row center-right">
-      <a class="brand-link" href="//100m.io">
-        <svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
-          <pattern id="effect" width="1" height="1" viewBox="0 0 80 30" preserveAspectRatio="none">
-            <image id="effect-image" xlink:href="/img/logo-color.gif" width="80" height="30" preserveAspectRatio="none"></image>
-          </pattern>
-          <path d="M73.854 5.37H54.255V-.06h-7.504v19.5h7.504v-5.48h27.053V.68h-7.454v4.69zm-23.35 4.493v6.27h-.396V3.248h.395v6.17h27.053V3.94h.395v5.924H50.503zM81.95 36.176c0-7.01-4.344-12.885-11.898-12.885H57.958c-7.554 0-11.898 5.875-11.898 12.885 0 7.158 4.344 12.984 11.898 12.984h12.094c7.554 0 11.898-5.826 11.898-12.984zm-32.187 0c0-4.838 3.11-8.985 8.392-8.985h11.75c5.331 0 8.342 4.147 8.342 8.985 0 4.986-3.01 9.083-8.343 9.083H58.155c-5.282 0-8.392-4.097-8.392-9.083zm4.146 0c0-2.518 1.432-4.493 4.246-4.493h11.75c2.715 0 4.146 1.975 4.146 4.493 0 2.616-1.431 4.64-4.147 4.64H58.155c-2.814 0-4.246-2.024-4.246-4.64zm23.894 0c0-4.591-2.814-8.442-7.899-8.442H58.155c-5.035 0-7.948 3.85-7.948 8.442 0 4.74 2.913 8.491 7.948 8.491h11.75c5.084 0 7.898-3.752 7.898-8.491zM81.95 68.61c0-7.01-4.344-12.885-11.898-12.885H57.958c-7.554 0-11.898 5.875-11.898 12.885 0 7.158 4.344 12.984 11.898 12.984h12.094c7.554 0 11.898-5.826 11.898-12.984zm-32.187 0c0-4.838 3.11-8.985 8.392-8.985h11.75c5.331 0 8.342 4.147 8.342 8.985 0 4.986-3.01 9.084-8.343 9.084H58.155c-5.282 0-8.392-4.098-8.392-9.084zm4.146 0c0-2.518 1.432-4.492 4.246-4.492h11.75c2.715 0 4.146 1.974 4.146 4.492 0 2.617-1.431 4.64-4.147 4.64H58.155c-2.814 0-4.246-2.023-4.246-4.64zm23.894 0c0-4.59-2.814-8.442-7.899-8.442H58.155c-5.035 0-7.948 3.851-7.948 8.442 0 4.74 2.913 8.491 7.948 8.491h11.75c5.084 0 7.898-3.752 7.898-8.49zM66.4 106.623l15.008-13.527v-3.258H46.751v9.034h15.403l-7.702 7.307v.987l7.702 7.356H46.75v9.034h34.656v-3.16l-15.008-13.773zm-16.242 12.194h22.265l-12.737-12.194 12.737-11.996H50.157v-.494h22.907v.642l-12.638 11.848 12.638 11.996v.691H50.157v-.493z" fill-rule="evenodd"/>
-        </svg>
+  <body>
+    <div class="browser-mockup">
+
+      <a href="#" class="tab" onclick="openTab(event, 'aaa');">
+        <span>  merde </span>
       </a>
-      <!-- <button class="button-ghost">Demo</button> -->
-    </section>
 
-    <section class="screen goal" layout="column center-center">
-      <h1>Data-centric applications
-        <br>for the finance industry.</h1>
-      <h2>Interactive & real-time applications,
-        <br>tailored to suit your needs.</h2>
-      <div margin="-100px">
-        <form class="form-demo" method="post" action="http://surface.100m.io/form-demo">
-          <input class="input-primary" type="email" name="email" placeholder="Email" required>
-          <input class="input-primary" type="tel" name="phone" placeholder="Phone">
-          <button class="button-primary button-demo" type="button">Schedule a demo</button>
-        </form>
-      </div>
-      <div class="bottom-arrow">
-        <a data-scroll href="#summary">
-          <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="40" height="40" stroke="white">
-            <path d="M30 12 L16 24 2 12"/>
-          </svg>
-        </a>
-      </div>
-    </section>
+      <a class="tab">
+        <span>  merde </span>
+      </a>
+      <a class="tab">
+      </a>
+    <iframe class="content" src="http://schelcher.100m.io/#allocation" />
+  </div>
 
-    <section class="screen steps" id="summary" layout="row center-spread">
-      <div class="step extract" layout="column spread-spread">
-        <span class="step-number">1 - Extract</span>
-        <span class="step-desc">
-          We connect to any source, normalize, structure the data.
-        </span>
-        <a class="button-ghost" href="#extract">Our process</a>
-      </div>
-      <div class="step learn" layout="column spread-spread">
-        <span class="step-number">2 - Learn</span>
-        <span class="step-desc">
-          Build the right model, monitor your metrics and explore your data.
-        </span>
-        <a class="button-ghost" href="#learn">Our process</a>
-      </div>
-      <div class="step engage" layout="column spread-spread">
-        <span class="step-number">3 - Engage</span>
-        <span class="step-desc">
-          Share insights with your stakeholders
-        </span>
-
-        <a class="button-ghost" href="#engage">Our process</a>
-      </div>
-      <div class="bottom-arrow">
-        <a  data-scroll href="#extract">
-          <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="40" height="40" stroke="white">
-            <path d="M30 12 L16 24 2 12"/>
-          </svg>
-        </a>
-      </div>
-    </section>
-  
-    <section id="extract" class="screen showcase" layout="row">
-      <div >
-        <span self="top" class="showcase-number">1 - Extract</span>
-        <p self="bottom" class="showcase-desc">
-          We connect to vendors of structured data, scrape the web in real-time or plug-in to your in-house database. Cleaning, merging, synchronizing feeds to provide the right data to your application.
-        </p>
-      </div>
-      <div>
-        <img class="showcase-img" src="img/1-extract-marbles.gif"/>
-      </div>
-      <div class="bottom-arrow">
-        <a data-scroll href="#learn">
-          <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="40" height="40" stroke="white">
-            <path d="M30 12 L16 24 2 12"/>
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <section id="learn" class="screen showcase" layout="row">
-      <div layout="column top-center">
-        <span class="showcase-number">2 - Learn</span>
-        <p class="showcase-desc">
-          We can build smart models using machine learning and stochastic calculus. However, if a simple regression can do the job, it makes us even happier.
-        </p>
-        <div>
-          <img class="showcase-img" src="img/2-learn-neural-network.gif"/>
-        </div>
-        <div class="bottom-arrow">
-          <a data-scroll href="#engage">
-            <svg id="i-chevron-bottom" viewBox="0 0 32 32" width="40" height="40" stroke="white">
-              <path d="M30 12 L16 24 2 12"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="engage" class="screen showcase" layout="row center-center">
-      <span class="showcase-number">3 - Engage</span>
-      <p class="showcase-desc">
-        We build interactive dashboards so that your stakeholders want to play with them. Support your message with data and maximize your clients engagement.
-      </p>
-      <div>
-        <img class="showcase-img" src="img/3-engage-viz.gif"/>
-      </div>
-    </section>
     <script>
+
+
       var btn = document.querySelector(".button-demo")
       var form = document.querySelector(".form-demo")
       btn.onclick = function() {
@@ -160,6 +65,7 @@
       }
       smoothScroll.init();
     </script>
+    <script src="js/browser-mockup.js"></script>
 
   </body>
 
