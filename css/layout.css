@@ -26,9 +26,24 @@ img.responsive {
   display: inline-block;
   font-size: 2rem;
 }
+.input-primary {
+  /*display: none;*/
+  padding: 0;
+  width: 0;
+  opacity: 0;
+  border:none;
+  transition: all 500ms ease-out;
+}
+.form-demo.opened .input-primary {
+  /*display: inline-block;*/
+  padding: 1rem;
+  width: 21rem;
+  border: 2px inset #EBE9ED;
+  opacity: 1;
+}
 .button-primary {
-  color: var(--background);
-  background: var(--mustard);
+  background-color: var(--background);
+  color: var(--jamaica);
   border: 3px solid var(--mustard);
   text-align: center;
   padding: 1rem;
@@ -39,8 +54,8 @@ img.responsive {
 }
 .button-primary:hover, .button-primary:active {
   transition: all 0s;
-  background-color: var(--background);
-  color: var(--jamaica);
+  color: var(--background);
+  background: var(--mustard);
   border: 3px solid var(--jamaica);
 }
 .form-demo.opened .button-demo-send {

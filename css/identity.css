@@ -107,19 +107,7 @@ button {
     margin-bottom: 50px;
   }
 }
-.input-primary {
-  /*display: none;*/
-  padding: 0;
-  width: 0;
-  opacity: 0;
-  transition: all 500ms ease;
-}
-.form-demo.opened .input-primary {
-  /*display: inline-block;*/
-  padding: 1rem;
-  width: 21rem;
-  opacity: 1;
-}
+
 .d3-chart {
   position: relative;
 }
