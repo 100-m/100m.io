@@ -3,18 +3,18 @@
 <grid style="margin-bottom: 2rem;">
   <div col="1/2">
     <card>
-      <h5 style="margin: 0;">Client</h5>
+      <h5 style="margin: 0;text-align: center;">Client</h5>
       <hr>
-      <p style="margin: 0;">Fintex Partners Limited</p>
+      <p style="margin: 0;"><a att href="#fintex" target="_blank">Fintex Partners Limited</a></p>
       <p style="margin: 0;">10a Chandos Street</p>
       <p style="margin: 0;">London W1G 9DQ</p>
     </card>
   </div>
   <div col="1/2">
     <card>
-      <h5 style="margin: 0;">Service Provider</h5>
+      <h5 style="margin: 0;text-align: center;">Service Provider</h5>
       <hr>
-      <p style="margin: 0;">100M S.A.S.</p>
+      <p style="margin: 0;"><a att href="https://100m.io" target="_blank">100M S.A.S.</a></p>
       <p style="margin: 0;">62 Rue Jean-Jacques Rousseau</p>
       <p style="margin: 0;">75001 Paris</p>
     </card>
@@ -106,7 +106,7 @@ If you have any questions, please contact **Clement Miglietti** at _+33 6 77 73 
       <p>Created by <strong>Clement Miglietti</strong> from <a att href="https://100m.io" target="_blank">100M S.A.S.</a></p>
     </div>
     <div col="1/2" txt="r">
-      for <strong>Fintex Partners Limited</strong>
+      for <a att href="#fintex" target="_blank">Fintex Partners Limited</a>
       on the <strong>01/04/2017</strong>
     </div>
   </grid>
