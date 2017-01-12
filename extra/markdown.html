@@ -13,11 +13,13 @@ section:not([class]) {padding-bottom: 0;}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
 <script>
+var url = location.hash.replace('#', location.pathname.replace('markdown.html', ''))
+var selector = document.querySelector('section')
 axios
-.get(location.hash.replace('#', '/'))
+.get(url)
 .then(res => res.data)
 .then(md => marked(md))
-.then(html => document.querySelector('section').innerHTML = html)
+.then(html => selector.innerHTML = html)
 </script>
 </body>
 </html>
