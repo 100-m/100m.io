@@ -88,7 +88,6 @@ StatPro is a global provider of award winning portfolio analytics solutions for 
 ##Novus
 ##Bonita
 ##Vize.io/vize-desktop
-
 ##Nalo: gestion d'épargne. Assurance vie avec Generali. Guillaume Piard.
 ##Yomoney
 
