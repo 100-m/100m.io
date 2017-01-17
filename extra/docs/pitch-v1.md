@@ -2,7 +2,7 @@
 ## A platform for Asset Managers to market their products and Wealth Managers to advise their clients.
 <button>See A Demo</button>
 
-# All that Asset Managers need to talk to their clients
+# All that Asset Managers need to market their product
 <button>See A Demo</button>
 
 1. Risks Vizualization  
@@ -18,7 +18,7 @@ Communicate with your clients, sales and risk teams within the application or ex
 Javelot integrates easily with your portfolio management and risk system. Choose a cloud solution or host it in house.
 
 
-# All that Wealth Managers need to advize their clients
+# All that Wealth Managers need to advize their Clients
 <button>See A Demo</button>
 
 1. Goal Definitions  
@@ -34,24 +34,28 @@ Play with ideas, simulate any investment decision and evaluate the risks and the
 Advisors can invite their clients to take advantage of current opportunities through the platform.
 
 
-# 100% Digital
-1. we  
-2. we  
-3. qwe  
+# Easy and Intuitive
+1. Intuitive interface you will want to play with.
+2. Workflow tailored for your processes.  
+3. Mobile and desktop experience.
+<button>See A Demo</button>
 
 
-# Selling point 2
-1. we  
-2. we  
-3. we  
+# One Collaborative Application For All
+1. Collaborative content editing.  
+2. Push notifications to other users.  
+3. Flag bad data and correct it quickly.
+<button>See A Demo</button>
 
 
-# Selling point 3
-1. we  
-2. we  
-3. we  
+# Secure and Integrated
+1. Up to the latest security standards.
+2. Compatible with all major vendors.  
+3. Lightweight and agile integration.  
+<button>See A Demo</button>
 
-
+#Footer
+Contact | Jobs | Blog
 ---
 
 Javelot is set to transform the way you vizualize your portfolio and communicate around your performance.
