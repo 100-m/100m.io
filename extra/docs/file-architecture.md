@@ -47,6 +47,24 @@ Their is 2 different use cases illustrated:
 - Backend Messaging uses security rules configurable in Firebase
 - Backend PDF uses client Token to generates a PDF
 
+### Third Party:
+
+- Google - Firebase
+  - Secure/Reliable/Fast
+  - Backup system
+  - Synchronisation between users
+  - Logs/Usage stats
+- Amazon - AWS Lambda
+  - Secure/Reliable/Fast
+  - Minimal code focus on business
+  - Logs/Usage stats
+- Auth0
+  - Single purpose, security
+  - Integrate with many Providers
+  - Integrate with SSO
+  - Private cloud option
+  - Logs/Usage stats
+
 <footer>
   <grid>
     <div col="1/2">

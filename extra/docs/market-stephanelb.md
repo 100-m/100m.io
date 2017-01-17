@@ -1,5 +1,5 @@
-Pricing 
-#use case 
+Pricing
+#use case
 industriel qui vend en B2B.
 
 ## Willingness to pay -> value created for customer.
@@ -16,9 +16,9 @@ Vise des boites d'inge qui reduise les couts, mais qui ne savent pas travailler 
 le sujet pricing:
 1. les trops petits n'ont pas assez de points,
 2. a partir d'une certaine taille (100M de chiffre), commence a avoir un dpt pricing.
-le sujet n'existe pas partout. 
+le sujet n'existe pas partout.
 
-pricing consiste: 
+pricing consiste:
 au moment ou le client rentre dans un appel d'offre, a quel niveau de prix il se positionne.
 quel est le bon prix ?
 
@@ -38,10 +38,7 @@ Litterature: ?
 
 Definition du prix
 Implementation
-Controle du prix 
+Controle du prix
 
 Impression:
-* pbm complexe + large => 
-
-
-
+* pbm complexe + large =>
