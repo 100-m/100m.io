@@ -5,7 +5,7 @@
     <card>
       <h5 style="margin: 0;text-align: center;">Client</h5>
       <hr>
-      <p style="margin: 0;"><a att href="highbridge" target="_blank">Highbridge Capital Management</a></p>
+      <p style="margin: 0;"><a att href="#highbridge" target="_blank">Highbridge Capital Management</a></p>
       <p style="margin: 0;">40 W 57th St # E</p>
       <p style="margin: 0;">New York, NY 10019, USA</p>
     </card>
