@@ -3,9 +3,9 @@
 <head>
 <link rel="stylesheet" href="https://cdn.rawgit.com/longsien/BareCSS/master/css/bare.min.css">
 <style>
-body {font-family: Helvetica Neue;}
 h1, h2 {text-align: center;}
 section:not([class]) {padding-bottom: 0;}
+footer::before {width: 100vw;}
 </style>
 </head>
 <body>
@@ -20,6 +20,23 @@ axios
 .then(res => res.data)
 .then(md => marked(md))
 .then(html => selector.innerHTML = html)
+</script>
+<script src="https://cdn.rawgit.com/lrsjng/pagemap/master/dist/pagemap.min.js"></script>
+<style>
+#map {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 100;
+}
+</style>
+<script>
+var canvas = document.createElement('canvas')
+canvas.id = 'map'
+document.body.appendChild(canvas)
+pagemap(canvas, { styles: { '*': 'rgba(0,0,0,.03)' }})
 </script>
 </body>
 </html>
