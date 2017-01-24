@@ -1,0 +1,46 @@
+<style>
+  #modal {
+    z-index: 1000;
+    position: fixed;
+    /* top: 0; left: 0; */
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+  }
+
+  #modal .content {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    max-height: calc(100% - 80px);
+    max-width: calc(100% - 20px);
+    margin: 60px auto;
+    padding: 20px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07)
+  }
+
+  #modal .close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    top: -40px;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+  }
+
+</style>
+<div id="modal">
+  <div class="content">
+    <svg class="close" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="2" y1="2" x2="18" y2="18" />
+        <line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="18" y1="2" x2="2" y2="18" />
+      </g>
+    </svg>
+
+    <h1>Popup Title</h1>
+  </div>
+</div>
