@@ -6,27 +6,27 @@
 2. Backend CDN+DNS+HTTPS - Cloudflare
 3. Backend Authentication - Auth0
 4. Backend Database - Firebase
-5. Backend 100m Normalizing - AWS Lambda
-6. Backend 100m Computing - AWS Lambda + API Gateway
-7. Backend 100m Messaging - AWS Lambda + API Gateway
-8. Backend 100m PDF - AWS Lambda + API Gateway
+5. Backend Database - AWS Aurora/MySQL
+6. Backend 100m ETL - Private (AWS Lambda + AWS Step Function)
+7. Backend 100m Workflow - Public/Secure (AWS Lambda + AWS Step Function + API Gateway)  
+  Modules: Compute / Message / PDF
 
 ### Schema:
 
-Their is 2 different use cases illustrated:
+There are 2 different use cases illustrated:
 1. Server to server data loading (Step S1 & S2)
 2. Client to server app usage (Step 1 to 4)  
 
 ![Architecture Schema](https://100m.io/extra/docs/schema-architecture.png)
 
-- Step S1 - 100m Normalizing Service extracts data from client Finance Server ou client data exchange system
+- Step S1 - 100m Normalizing Service extracts data from client Finance Server or client data exchange system
 - Step S2 - 100m Normalizing Service transforms, cleans, adapts and then loads data into Firebase
-- Step 1 - User request 100m App through HTTPS (Cloudflare CDN)
-- Step 2 - User log in to 100m App through Auth0
-- Step 3 - User receive a Secure Token
-- Step 4 - User send the Secure Token to DB or Backends
+- Step 1 - User requests 100m App through HTTPS (Cloudflare CDN)
+- Step 2 - User logs in to 100m App through Auth0
+- Step 3 - User receives a Secure Token
+- Step 4 - User sends the Secure Token to DB or Backends
 
-### Choices:
+### Choices made:
 
 - Frontend code is static (No Backend Templating)
 - Frontend code is packed + versionned during deployment
@@ -68,10 +68,10 @@ Their is 2 different use cases illustrated:
 <footer>
   <grid>
     <div col="1/2">
-      Created by <strong>Valentin Brajon</strong> from <a att href="https://100m.io" target="_blank">100M S.A.S.</a>
+      Created by <strong>Valentin Brajon</strong> from <strong><a att href="https://100m.io" target="_blank">100M S.A.S.</a></strong>
     </div>
     <div col="1/2" txt="r">
-      <a att href="https://100m.io/extra/markdown.html#docs/file-architecture.md" target="_blank">https://100m.io/extra/markdown.html#docs/file-architecture.md</a>
+      Last Update <strong>Q1 2017</strong> - <a att href="https://github.com/100-m/100m.io/commits/master/extra/docs/file-architecture.md" target="_blank">Versions</a> - <a att href="https://100m.io/extra/markdown.html#docs/file-architecture.md" target="_blank">Link</a>
     </div>
   </grid>
 </footer>
