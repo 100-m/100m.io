@@ -1,3 +1,64 @@
+Page de Garde.
+
+# Le Contexte
+# L'Application
+# La Methodo
+# Le Projet
+# Le Budget
+
+----
+# Reporting OnDemand :  Schelcher Prince Gestion
+
+Dans le cadre du projet Digitalisation de Arkéa Investment Services, l’initiative « Reporting On Demand » a été retenue comme prioritaire.
+
+Schelcher Prince Gestion souhaite avancer dans sa digitalisation et adopter une solution de reporting performante qui réponde à la fois aux attentes des clients, des gérants et de la maîtrise des risques.
+
+100M est la solution de choix pour mettre en valeur la qualité de la gestion et organiser la product. 100M apporte le logiciel, le savoir-faire technique et la connaissance des métiers de l'investissement necessaires à la bonne réalisation du projet.
+
+L'objectif est de permettre aux gérant et aux clients institutionnels d’avoir une vision dynamique et personnalisée de leurs portefeuilles et leurs mandats.  (base mensuelle pour les clients avec différents niveaux de lecture, et base quotidienne à terme pour les gérants)
+
+
+
+
+
+
+
+---
+AVANTAGE.
+
+Expliquer le positionnement sous un format engageant
+Customiser le reporting pour chaque client/investisseur, et exporter en pdf
+Informer le client sur le respect des mandats confiés,
+Présenter le contexte économique et ses perspectives,
+Mettre en avant la qualité et la performance de la gestion,
+Identifier les risques de marché, sectoriel ou encore de crédit…
+Détailler la structure des portefeuilles,
+Lecture visuelle et synthétique du portefeuille
+Fournir une analyse par poche d'actifs selon les indicateurs choisis
+Augmenter l'engagement des clients et connecter au CRM
+
+Monitorer les risques, allocation et performance simplement au sein d’une même application compatible desktop, tablette et mobile.
+Illustrez les alpha-positionnement par rapport au benchmark
+Auditez les chiffres jusque dans le moindre détail
+Meilleur pilotage du fonds grâce à une attribution de performance multi-critères et mise en adéquation des portefeuilles et de la stratégie d’investissement
+
+
+Intensifier la relation client
+Visualiser instantanément les indicateurs de Risque et Performance
+Développer une attribution de performance souple 
+Gagner en productivité
+Reporting industriel et automatisé pour assurer le traitement en temps réel (passer d’un suivi des risques mensuel à un suivi en temps réel)
+
+---
+# Le projet
+## Phase 1: Prototypage sur un fonds convertible Schelcher Prince Gestion
+
+## Phase 2: Déploiement sur la gamme convertible Schelcher Prince Gestion
+
+
+# Le Budget
+
+
 # Catalogue Produit
 ### Reporting Connecté
 L'application de reporting connecté 100m sert de support au suivi et à la commercialisation des produits d'investissement. 
@@ -76,10 +137,10 @@ La solution de reporting 100m est suffisemment flexible pour être déclinée su
 Les développements se font en cycles *Agiles* en partenariat avec le client.  
 Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 
-- Développeur junior: 500 Euros / Jour.
+- Développeur junior: 550 Euros / Jour.
 - Développeur senior: 800 Euros / Jour.
 - Data Scientist: 850 Euros / Jour.
-- Chef de Projet: 650 Euros / Jour.
+- Chef de Projet: 800 Euros / Jour.
 - Graphiste: 600 Euros / Jour.
 
 ### Création d'une nouvelle déclinaison
@@ -148,3 +209,9 @@ Il a été l'Architecte et le Développeur Web de nombreuses plateformes financi
 Valentin est ingénieur informatique diplômé de Sciences U.
 
 ---
+
+Votre Contact est:
+
+Clément Miglietti
+06 77 73 68 74
+clement@100m.io
