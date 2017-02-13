@@ -1,62 +1,66 @@
-Page de Garde.
-
-# Le Contexte
-# L'Application
-# La Methodo
-# Le Projet
-# Le Budget
-
+Page de Garde
 ----
-# Reporting OnDemand :  Schelcher Prince Gestion
+# Reporting OnDemand
 
 Dans le cadre du projet Digitalisation de Arkéa Investment Services, l’initiative « Reporting On Demand » a été retenue comme prioritaire.
 
 Schelcher Prince Gestion souhaite avancer dans sa digitalisation et adopter une solution de reporting performante qui réponde à la fois aux attentes des clients, des gérants et de la maîtrise des risques.
 
-100M est la solution de choix pour mettre en valeur la qualité de la gestion et organiser la product. 100M apporte le logiciel, le savoir-faire technique et la connaissance des métiers de l'investissement necessaires à la bonne réalisation du projet.
+100M est la solution de choix pour mettre en valeur la qualité de la gestion et communiquer efficacement sous un format engageant. 100M apporte le logiciel, le savoir-faire technique et la connaissance des métiers de l'investissement; éléments primordiaux à la bonne et rapide exécution du projet.
 
-L'objectif est de permettre aux gérant et aux clients institutionnels d’avoir une vision dynamique et personnalisée de leurs portefeuilles et leurs mandats.  (base mensuelle pour les clients avec différents niveaux de lecture, et base quotidienne à terme pour les gérants)
-
-
-
-
-
-
+L'objectif est de permettre aux gérant et aux clients institutionnels d’avoir une vision dynamique et personnalisée de leurs portefeuilles et de leurs mandats.
 
 ---
-AVANTAGE.
+# Le Contexte
+L'initiative conjointe de Arkea IS et de 100m s'articule autours des 3 objectifs: Engager, Analyser et Automatiser.
 
-Expliquer le positionnement sous un format engageant
-Customiser le reporting pour chaque client/investisseur, et exporter en pdf
-Informer le client sur le respect des mandats confiés,
-Présenter le contexte économique et ses perspectives,
-Mettre en avant la qualité et la performance de la gestion,
-Identifier les risques de marché, sectoriel ou encore de crédit…
-Détailler la structure des portefeuilles,
-Lecture visuelle et synthétique du portefeuille
-Fournir une analyse par poche d'actifs selon les indicateurs choisis
-Augmenter l'engagement des clients et connecter au CRM
+## Engager
+Schelcher Prince et Federal Finance souhaitent expliquer le positionnement de leur gestion, mettre en avant sa qualité et sa performance sous un format attrayant.  
+Pour maximiser l'engagement, SPG souhaite déployer un reporting connecté et pouvoir le customiser pour chaque client.
 
-Monitorer les risques, allocation et performance simplement au sein d’une même application compatible desktop, tablette et mobile.
-Illustrez les alpha-positionnement par rapport au benchmark
-Auditez les chiffres jusque dans le moindre détail
-Meilleur pilotage du fonds grâce à une attribution de performance multi-critères et mise en adéquation des portefeuilles et de la stratégie d’investissement
+## Analyser
+Un des objectifs primordiaux est de faciliter l'analyse pour le client qui veut rester informé sur le respect des mandats confiés; 
+L'équipe de gestion et de risques souhaite également monitorer ses expositions en tant réel et améliorer son attribution et sa contribution de performance.
 
-
-Intensifier la relation client
-Visualiser instantanément les indicateurs de Risque et Performance
-Développer une attribution de performance souple 
-Gagner en productivité
-Reporting industriel et automatisé pour assurer le traitement en temps réel (passer d’un suivi des risques mensuel à un suivi en temps réel)
+## Automatiser
+SPG souhaite mettre en place un reporting industriel et automatisé pour pouvoir assurer un traitement en temps réel et gagner en productivité.
 
 ---
-# Le projet
+# L'Application
+100M a developpé une plateforme en-ligne sécurisée d’analyse de données, de reporting sur-mesure et de marketing dédiée aux Asset Managers.
+
+## Visualisation et Exploration
+L'application facilite une lecture visuelle rapide et synthétique du portefeuille. 
+La possibilité d'effectuer un 'drill-down' dans les aggrégats permet une analyse par poche d'actifs selon les indicateurs choisis.
+
+## Collaboration
+L'application 100m comporte des fonctionalités de collaboration innovantes. Le partage d'écran et l'édition de contenu collaborative permettent de gagner en productivité et en agilité.
+
+## Mobile
+L'application 100m est concue pour une utilisation complètement mobile et est compatible desktop, tablette et mobile.
+
+## Attribution de performance
+
+
+# Le Projet
 ## Phase 1: Prototypage sur un fonds convertible Schelcher Prince Gestion
 
 ## Phase 2: Déploiement sur la gamme convertible Schelcher Prince Gestion
+(base mensuelle pour les clients avec différents niveaux de lecture, et base quotidienne à terme pour les gérants)
 
+## La Méthodo
+### 100m aura à charge
+
+### Schelcher aura à charge
+
+---
 
 # Le Budget
+
+## Conditions De Paiement
+Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
+Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la redevance.
+Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
 
 
 # Catalogue Produit
