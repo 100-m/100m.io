@@ -1,7 +1,6 @@
 Page de Garde
 ----
 # Reporting OnDemand
-
 Dans le cadre du projet Digitalisation de Arkéa Investment Services, l’initiative « Reporting On Demand » a été retenue comme prioritaire.
 
 Schelcher Prince Gestion souhaite avancer dans sa digitalisation et adopter une solution de reporting performante qui réponde à la fois aux attentes des clients, des gérants et de la maîtrise des risques.
@@ -11,7 +10,7 @@ Schelcher Prince Gestion souhaite avancer dans sa digitalisation et adopter une 
 L'objectif est de permettre aux gérant et aux clients institutionnels d’avoir une vision dynamique et personnalisée de leurs portefeuilles et de leurs mandats.
 
 ---
-# Le Contexte
+# Les Objectifs
 L'initiative conjointe de Arkea IS et de 100m s'articule autours des 3 objectifs: Engager, Analyser et Automatiser.
 
 ## Engager
@@ -27,43 +26,78 @@ SPG souhaite mettre en place un reporting industriel et automatisé pour pouvoir
 
 ---
 # L'Application
-100M a developpé une plateforme en-ligne sécurisée d’analyse de données, de reporting sur-mesure et de marketing dédiée aux Asset Managers.
+100M a developpé une plateforme en-ligne sécurisée de reporting sur-mesure et de marketing dédiée aux Asset Managers.
 
-## Visualisation et Exploration
+## La Solution
+### Visualisation et Exploration
 L'application facilite une lecture visuelle rapide et synthétique du portefeuille. 
 La possibilité d'effectuer un 'drill-down' dans les aggrégats permet une analyse par poche d'actifs selon les indicateurs choisis.
 
-## Collaboration
-L'application 100m comporte des fonctionalités de collaboration innovantes. Le partage d'écran et l'édition de contenu collaborative permettent de gagner en productivité et en agilité.
+### Connexion & Collaboration
+En plus d'être directement connectée au données, l'application 100m comporte des fonctionalités de collaboration innovantes. Le partage d'écran et l'édition de contenu collaborative permettent de gagner en productivité et en agilité.
+La solution permet un réduction des couts associés au reporting de l'ordre de 75% et tout en augmentant la qualité du contenu.
 
-## Mobile
+### Multi-format & Cross-Platform
 L'application 100m est concue pour une utilisation complètement mobile et est compatible desktop, tablette et mobile.
+La solution permet l'export de rapport au format PDF. Le format des rapports est défini par le biais de templates customisables.
 
-## Attribution de performance
+### Attribution et Contribution de Performance
+Dans le cadre de l'amélioration du reporting, 100m produira une contribution de performance et améliorera l'attribution de performance existante.
 
+## La Techno
+### Le front-end
+100m a developpé le front-end software propriétaire en Javascript permettant la reactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de donnée, et avec les écrans d'autres utilisateurs.
+
+### Les moteurs de calculs en back-end
+100m a developpé un back-end en Python permettant d'effectuer le traitement de la donnée, le calcul des differents indicateurs et une contributions de performance.
+
+### Hébergement de l'application
+L'hébergement du front-end de l'application se fait sur des serveurs AWS dont le taux de disponibilité est garanti à 99.99%.
+
+Les applications qui nécessitent une importante puissance de calcul sont hébergées sur un serveur dédié (4CPU, 7.5GB of RAM - c4.xlarge).
+
+Pour des questions d'encapsulation et de sécurité, notre API est hébergée sur AWS Lambda (2CPU, 1GB of RAM, 500MB SDD).
+
+### Hébergement base de données
+Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB of RAM, 80GB SDD - r3.xlarge avec postgresql sur Aurora).
 
 # Le Projet
 ## Phase 1: Prototypage sur un fonds convertible Schelcher Prince Gestion
+L'objectif de la phase de prototypage est de:
+    * cadrer le besoin, 
+    * de définir les indicateurs de suivi de portefeuille,
+    * d'établir le parcours utilisateur au sein de l'application,
+    * 
 
-## Phase 2: Déploiement sur la gamme convertible Schelcher Prince Gestion
-(base mensuelle pour les clients avec différents niveaux de lecture, et base quotidienne à terme pour les gérants)
+### Le livrable
 
-## La Méthodo
+
 ### 100m aura à charge
 
 ### Schelcher aura à charge
 
----
 
+## Phase 2: Déploiement sur la gamme convertible Schelcher Prince Gestion
+(base mensuelle pour les clients avec différents niveaux de lecture, et base quotidienne à terme pour les gérants)
+
+### Le livrable
+
+### 100m aura à charge
+
+### Schelcher aura à charge
+
+## L'attribution de performance
+
+---
 # Le Budget
 
 ## Conditions De Paiement
-Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
-Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la redevance.
+Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.  
+Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la redevance.  
 Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
 
 
-# Catalogue Produit
+## Catalogue Produit
 ### Reporting Connecté
 L'application de reporting connecté 100m sert de support au suivi et à la commercialisation des produits d'investissement. 
 
@@ -88,10 +122,6 @@ L'application est interactive et compatible au format tablette / mobile / deskto
 _Nombre d'utilisateurs illimité - inclus_
 
 _\*par ISIN unique._
-
-### Génération de rapports PDF
-L'application 100m permet l'export de rapport au format PDF.  
-Le format des rapports est défini par le biais de templates customisables.
 
 _La fonctionalité d'édition de rapport PDF est incluse avec la solution Reporting Connecté_
 
@@ -121,21 +151,12 @@ Les droits d'accès au différents composantes de l'application 100m sont config
 
 _La gestion des droits accès et profils utilisateurs est inclue dans la solution de Reporting Connecté_
 
-### Hébergement serveur
-L'hébergement du front-end de l'application se fait sur des serveurs AWS dont le taux de disponibilité est garanti à 99.99%.
-
-Les applications qui nécessitent une importante puissance de calcul sont hébergées sur un serveur dédié (4CPU, 7.5GB of RAM - c4.xlarge).
-
-Pour des questions d'encapsulation et de sécurité, notre API est hébergée sur AWS Lambda (2CPU, 1GB of RAM, 500MB SDD).
-
 _L'hébergement des serveurs de calcul est inclu dans le module de Reporting Connecté_
-
-### Hébergement base de données
-Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB of RAM, 80GB SDD - r3.xlarge avec postgresql sur Aurora).
 
 _L'hébergement de la base de données est inclu dans le module de Reporting Connecté_
 
 ---
+
 # Développements Customs et Prestations
 La solution de reporting 100m est suffisemment flexible pour être déclinée sur une large gamme d'applications.  
 Les développements se font en cycles *Agiles* en partenariat avec le client.  
@@ -176,7 +197,6 @@ La création d'un template de reporting PDF qui sera mis à jour automatiquement
 *Estimation*: 4,625 Euros.
 
 ---
-
 # Scénarios
 
 ### Proof Of Concept
