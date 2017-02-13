@@ -1,6 +1,15 @@
 # Architecture
 
-### Parts:
+This document explains server architecture at 100m.io for the asset manager and wealth manager cloud based platforms.
+
+This document is focused on making exhaustive lists about:
+  - Hosting: apis, code and database names and locations
+  - Structure: choices
+  - Third party: choices, advantages
+
+---
+
+### Hosting:
 
 1. Frontend - Code on Github
 2. Backend CDN+DNS+HTTPS - Cloudflare
@@ -11,22 +20,7 @@
 7. Backend 100m Workflow - Public/Secure (AWS Lambda + AWS Step Function + API Gateway)  
   Modules: Compute / Message / PDF
 
-### Schema:
-
-There are 2 different use cases illustrated:
-1. Server to server data loading (Step S1 & S2)
-2. Client to server app usage (Step 1 to 4)  
-
-![Architecture Schema](https://100m.io/extra/docs/schema-architecture.png)
-
-- Step S1 - 100m Normalizing Service extracts data from client Finance Server or client data exchange system
-- Step S2 - 100m Normalizing Service transforms, cleans, adapts and then loads data into Firebase
-- Step 1 - User requests 100m App through HTTPS (Cloudflare CDN)
-- Step 2 - User logs in to 100m App through Auth0
-- Step 3 - User receives a Secure Token
-- Step 4 - User sends the Secure Token to DB or Backends
-
-### Choices made:
+### Structure Choices:
 
 - Frontend code is static (No Backend Templating)
 - Frontend code is packed + versionned during deployment
@@ -46,6 +40,21 @@ There are 2 different use cases illustrated:
 - Backend Messaging sends email/sms/push notifications
 - Backend Messaging uses security rules configurable in Firebase
 - Backend PDF uses client Token to generates a PDF
+
+### Schema:
+
+There are 2 different use cases illustrated:
+1. Server to server data loading (Step S1 & S2)
+2. Client to server app usage (Step 1 to 4)  
+
+![Architecture Schema](https://100m.io/extra/docs/schema-architecture.png)
+
+- Step S1 - 100m Normalizing Service extracts data from client Finance Server or client data exchange system
+- Step S2 - 100m Normalizing Service transforms, cleans, adapts and then loads data into Firebase
+- Step 1 - User requests 100m App through HTTPS (Cloudflare CDN)
+- Step 2 - User logs in to 100m App through Auth0
+- Step 3 - User receives a Secure Token
+- Step 4 - User sends the Secure Token to DB or Backends
 
 ### Third Party:
 
