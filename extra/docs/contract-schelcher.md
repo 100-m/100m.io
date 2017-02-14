@@ -130,10 +130,10 @@ Le livrable sera une version de production du prototype, augmentée d'un écran 
 
 ### Planning De Livraison
 Le deploiement et l'extension se feront en 4 sprints de 2 semaines:
-Sprint 1: connexion au système pour les updates du fonds pilote.
-Sprint 2: modification du front-end et customisation des pages pour la gamme convertible.
-Sprint 3: connexion au système pour les mise-à-jour de l'ensemble des fonds de la gamme convertible.
-Sprint 4: testing, monitoring de l'application et correction d'erreurs.
+- *Sprint 1:* connexion au système pour les updates du fonds pilote.
+- *Sprint 2:* modification du front-end et customisation des pages pour la gamme convertible.
+- *Sprint 3:* connexion au système pour les mise-à-jour de l'ensemble des fonds de la gamme convertible.
+- *Sprint 4:* testing, monitoring de l'application et correction d'erreurs.
 
 ---
 
@@ -144,9 +144,9 @@ L'objectif est d'atteindre une attribution de performance ligne-à-ligne mise-à
 
 ### Planning De Livraison
 L'amélioration de l'attribution de performance se fera en 3 sprints initiaux et une phase d'amélioration continue.
-- *Sprint 1*: Etablissement d'une contribution journalière de la performance décomposée par Classe d'Actif, Zone Géographique, Secteur d'Activité et Notation. Le sprint 1 sera livré avec le prototype.
-- *Sprint 2*: Etablissement d'une attribution de performance décomposée en 'Grecques' du 1er ordre (delta action, delta crédit, delta taux, et theta). Le sprint 2 sera livré à l'occasion du déploiement.
-- *Sprint 3*: Etablissement d'une attribution de performance pour le benchmark et comparaison .
+- *Sprint 1:* Etablissement d'une contribution journalière de la performance décomposée par Classe d'Actif, Zone Géographique, Secteur d'Activité et Notation. Le sprint 1 sera livré avec le prototype.
+- *Sprint 2:* Etablissement d'une attribution de performance décomposée en 'Grecques' du 1er ordre (delta action, delta crédit, delta taux, et theta). Le sprint 2 sera livré à l'occasion du déploiement.
+- *Sprint 3:* Etablissement d'une attribution de performance pour le benchmark et comparaison .
 - Amélioration Continue: revue continue du calcul des grecques, ajout des effets du 2nd ordre et amélioreration des process opérationnels (gestion des erreurs de booking, des données manquantes dans les risques).
 
 ---
@@ -230,9 +230,13 @@ Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
 ## Chiffrage de la Phase de Prototypage et de Déploiement
 
 ![](/extra/table1.png)
+
 ---
+
 ![](/extra/table2.png)
----
+
+
+
 ![](/extra/table3.png)
 
 ---
@@ -253,16 +257,4 @@ Valentin est ingénieur informatique diplômé de Sciences U.
 ---
 
 ## Votre Contact:
-# clement@100m.io 
-
-<footer>
-  <grid>
-    <div col="1/2">
-      <p>Votre Contact est <a att href="https://100m.io" target="_blank"><strong>Clement Miglietti</strong></a></p>
-    </div>
-    <div col="1/2" txt="r">
-      <a att href="#fintex" target="_blank">06 77 73 68 74</a>
-      - <strong>clement@100m.io</strong>
-    </div>
-  </grid>
-</footer>
+# clement@100m.io

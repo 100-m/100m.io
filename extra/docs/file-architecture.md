@@ -80,7 +80,7 @@ There are 2 different use cases illustrated:
       Created by <strong>Valentin Brajon</strong> from <strong><a att href="https://100m.io" target="_blank">100M S.A.S.</a></strong>
     </div>
     <div col="1/2" txt="r">
-      Last Update <strong>Q1 2017</strong> - <a att href="https://github.com/100-m/100m.io/commits/master/extra/docs/file-architecture.md" target="_blank">Versions</a> - <a att href="https://100m.io/extra/markdown.html#docs/file-architecture.md" target="_blank">Link</a>
+      Last Update <strong>Q1 2017</strong> - <a att href="https://github.com/100-m/100m.io/commits/master/extra/docs/file-architecture.md" target="_blank">Versions</a> - <a att href="https://100m.io/extra/markdown.html?docs/file-architecture.md" target="_blank">Link</a>
     </div>
   </grid>
 </footer>
