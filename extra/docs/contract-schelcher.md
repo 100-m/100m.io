@@ -250,6 +250,11 @@ Il a été l'Architecte et le Développeur Web de nombreuses plateformes financi
 
 Valentin est ingénieur informatique diplômé de Sciences U.
 
+---
+
+## Votre Contact:
+# clement@100m.io 
+
 <footer>
   <grid>
     <div col="1/2">
