@@ -216,9 +216,7 @@ Les prix sont dégressifs avec le nombre de fonds portés au sein de la solution
 
 Les prix sont valables pour un engagement de 12 mois.
 
----
-
-## Conditions De Paiement
+### Conditions De Paiement
 Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
 
 Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la license.  
