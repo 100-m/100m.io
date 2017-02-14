@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>100m.io | Visualize Docs.</title>
 <link rel="stylesheet" href="https://cdn.rawgit.com/longsien/BareCSS/master/css/bare.min.css">
 <style>
 @font-face {
@@ -66,7 +69,7 @@ footer::before {width: 100vw;}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
 <script>
-var url = location.search.replace('?', location.pathname.replace('markdown.html', ''))
+var url = location.search.replace('?', '/extra/docs/')
 var selector = document.querySelector('section')
 axios
 .get(url)
