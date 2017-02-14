@@ -131,11 +131,26 @@ L'amélioration de l'attribution de performance se fera en 3 sprints initiaux et
 ---
 # Le Budget
 
-Se decompose sur:
+##  Les développements spécifiques 
+100m met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projets pour accompagner pour conseiller 
 
-## La conception et le paramétrage de la solution
+Les développements spécifiques comprennent, à titre d'exemple:
+* la customisation du progiciel, 
+* l'intégration au système Client et le spécifiques des données,
+* le calcul de l'attribution de performance,
+* la création d'un nouveau template PDF pour l'application 100m,
+* la création de Web Widgets intégrable par le Client.
 
-## Le traitement des données et l'attribution de performance
+Les développements se font en cycles *Agiles* en partenariat avec le client.  
+
+Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
+
+- Développeur junior: 550 Euros / Jour.
+- Développeur senior: 800 Euros / Jour.
+- Data Scientist: 850 Euros / Jour.
+- Analyste Quantitatif Senior: 990 Euros / Jour.
+- Chef de Projet: 800 Euros / Jour.
+- Graphiste: 600 Euros / Jour.
 
 ## La license
 ### Description de le Solution 100m
@@ -168,89 +183,22 @@ La license couvre le droit d’utilisation du progiciel et de ses développement
 
 La license inclue également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration de Schelcher du progiciel et le support téléphonique.
 
+Afin de permettre une large diffusion et de faciliter la collaboration, la license est chiffrée uniquement sur la base du nombre de documents créés et comprend un accès pour un nombre illimités d'utilisateurs.
+
 Les prix sont dégressifs avec le nombre de fonds portés au sein de la solution:
 - Les 5 premiers fonds: 700 Euros / mois / fonds.
 - Entre le 6ème et 10ème fonds: 400 Euros / mois / fonds.
 - Au-delà du 11ème fonds: 280 Euros / mois / fonds. 
 
-
-## Développements Spécifiques
-### Web Widgets
-Les composants de l'application de reporting 100m sont mis à disposition sous la forme de Widgets Embeddable qui peuvent être intégrés au sein de page web internet ou intranet.
-
-Les Widgets bénéficient de la même connectivité que les rapports 100m et sont également mis à jour automatiquement.
-    
-L'intégration se fait en 1 ligne par le moyen d'iFrames. 
-
-Leur création se fait à la demande client et est facturée au Jour Homme. Estimation du temps requis à la création d'un widget: 1 jour.
-
-### Création d'une nouvelle déclinaison
-La création d'une nouvelle déclinaison qui comprend la création d'une charte, la conception des indicateurs du rapport, la créations de nouveaux templates et la création des graphiques nécessitent typiquement:
-
-- 5 jours d'1 Graphiste
-- 15 jours d'1 Développeur junior
-- 15 jours d'1 Développeur senior
-- 4 jours d'1 Chef de projet
-- 4 jours d'1 Data scientist
-
-*Estimation*: 28,500 Euros
-
-### Modification d'une déclinaison existante
-La modification d'une déclinaison existante pour adapter un rapport aux spécificités d'un fonds nécessite typiquement:
-
-- 4 jours d'1 Graphiste.
-- 5 jours d'1 Developpeur junior.
-- 0.5 jour d'1 Chef de projet.
-
-*Estimation*: 5,225 Euros.
-
-### Création d'un nouveau template PDF
-La création d'un template de reporting PDF qui sera mis à jour automatiquement et généré On Demand au sein de l'application 100m requiert typiquement:
-- 3 jours d'1 Graphiste.
-- 5 jours d'1 Developpeur junior.
-- 0.5 jour d'1 Chef de projet.
-
-*Estimation*: 4,625 Euros.
-
----
-
-# 
-La solution de reporting 100m est suffisemment flexible pour être déclinée sur une large gamme d'applications.  
-Les développements se font en cycles *Agiles* en partenariat avec le client.  
-Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
-
-- Développeur junior: 550 Euros / Jour.
-- Développeur senior: 800 Euros / Jour.
-- Data Scientist: 850 Euros / Jour.
-- Chef de Projet: 800 Euros / Jour.
-- Graphiste: 600 Euros / Jour.
-
-
+Les prix sont valables pour un engagement de 12 mois.
 
 ## Conditions De Paiement
 Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.  
 Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la redevance.  
 Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
----
-# Scénarios
 
-### Proof Of Concept
-Création de la déclinaison et customisation du design: 26,000 Euros.  
-Module Reporting Connecté et génération de PDF de gestion et réglementaires: 350 Euros / mois.  
-Module Attribution et Contribution de Performance: 350 Euros / mois.
+## Chiffrage de la Phase de Prototypage et de Déploiement
 
-*Total*: 26,000 Euros initialement et 700 Euros / mois.
-
-### Deploiement sur 30 fonds de la solution Reporting Connecté 
-Application Reporting Connecté et génération des rapports PDF de gestion et des rapports réglementaires.
-
-*Total*: 7,000 Euros / mois.
-
-### Déploiement sur 10 fonds de la solution Reporting Connecté et Attribution de Performance
-Module Reporting Connecté et génération de PDF de gestion et réglementaires: 3,100 Euros / mois.  
-Module Attribution et Contribution de Performance: 3,250 Euros / mois.
-
-*Total*: 6,300 Euros / mois.
 
 ---
 
