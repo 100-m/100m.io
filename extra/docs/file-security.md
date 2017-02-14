@@ -13,31 +13,33 @@ All users receive a role post authentication, by default **USER**.
 User roles are created per application and are dynamic (as many roles per application and as many read/write rules per role).
 
 ### Database
-Data stored in Firebase are dynamic or application related and non-business critical. (Text, Translation, Screenshare...). Firebase suse it's own token & authentication system.
+Data stored in Firebase are dynamic or application related and non-business critical. (Text, Translation, Screenshare...). Firebase uses it's own token & authentication system.
 
-Data stored in AWS Aurora are financial and business critical. The database cluster is composed of 2 databases, on master with read/write access and one replicated with 1s latency and only read access. Requests are done through a small request layer using Auth0 Token and 100m authorization layer.
+Data stored in AWS Aurora are financial and business critical. The database cluster is composed of 2 databases, one master with read/write access and one replicated with 1s latency and only read access. Requests are done through a small request layer using Auth0 Token and 100m authorization layer.
 
 ### Hosting
-All code is hosted in AWS Lambda for logs/backup/security.
-Current Modules: ETL, Request, Compute, Message, PDF.
+All code is hosted in AWS Lambda for logs/backup/security.  
+Current Modules: ETL, Request, Compute, Message, PDF.  
 Frontend code as well as backend services are accessed through HTTPS only.
 
 ---
 
 ### Company structure
-Roles:
-- Cloud, Hosting Security > Valentin Brajon
-- Data Structure, Data access > Clément Miglietti, Valentin Brajon
-- Code Access - Data Model Algorithm > Clément Miglietti
-- Code Access - Proprietary 100m Code > Valentin Brajon
-- Physical Access > Clément Miglietti
+Subject | In charge
+- | -
+Cloud, Hosting Security | Valentin Brajon
+Data Structure | Valentin Brajon
+Data access | Clément Miglietti
+Code Access - Data Model Algorithm | Clément Miglietti
+Code Access - Proprietary 100m Code | Valentin Brajon
+Physical Access | Clément Miglietti
 
 ### Access Administration
 Private services are only accessible by 100m developers with a Two-Factor Authentication:
-- Google Suite (GMail - Firebase) - 3 user/admin accounts
-- Amazon Web Services - 1 admin account + 1 db admin account
-- Cloudflare - 1 admin account
-- Github - 3 user/admin accounts + 3 ssh keys (with passphrase)
+- **Google** Suite (Firebase, GTM, GA, GMail) - 1 user account per 100m member
+- **Amazon Web Services** - 1 admin account + 1 subaccount per projects
+- **Cloudflare** - 1 admin account + 1 API Token
+- **Github** - 1 user account + 1 ssh keys (with passphrase) per developer
 
 ### Incidents
 - Frontend and Backend code exceptions **are monitored** and will automatically notify **support@100m.io**.
@@ -54,7 +56,7 @@ Private services are only accessible by 100m developers with a Two-Factor Authen
       Created by <strong>Valentin Brajon</strong> from <strong><a att href="https://100m.io" target="_blank">100M S.A.S.</a></strong>
     </div>
     <div col="1/2" txt="r">
-      Last Update <strong>Q1 2017</strong> - <a att href="https://github.com/100-m/100m.io/commits/master/extra/docs/file-security.md" target="_blank">Versions</a> - <a att href="https://100m.io/extra/markdown.html#docs/file-security.md" target="_blank">Link</a>
+      Last Update <strong>Q1 2017</strong> - <a att href="https://github.com/100-m/100m.io/commits/master/extra/docs/file-security.md" target="_blank">Versions</a> - <a att href="https://100m.io/extra/markdown.html?docs/file-security.md" target="_blank">Link</a>
     </div>
   </grid>
 </footer>

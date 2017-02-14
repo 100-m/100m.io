@@ -57,11 +57,8 @@ section:not([class]) {width: 600px;padding-bottom: 0;}
 footer::before {width: 100vw;}
 @media print {
   canvas {display: none;}
-  hr:not([class]) {height: 60px;background: transparent;page-break-before: always;}
-  #footer:not([class]) {position: fixed;bottom: 0;left: 0;height: 150px;width: 100%;border: 3px solid hotpink!important;}
-  body {margin: 0 0 150px 0;}
+  hr:not([class]) {height: 0;background: transparent;page-break-before: always;}
 }
-/*@page {margin: 30mm 30mm 30mm 30mm;}*/
 </style>
 </head>
 <body>
