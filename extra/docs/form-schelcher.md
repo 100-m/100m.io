@@ -1,11 +1,11 @@
 L'ensemble des domaines concernés par la SSI a-t-il un responsable désigné [sécurité informatique et télécom, sécurité générale de l'environnement de travail (documents, télécopie, téléphone), sécurité physique générale des sites et locaux] ou un interlocuteur privilégié [ex : DRH pour les actions de sensibilisation, la formation, les contrats de travail,  la gestion des comptes utilisateurs et des droits d'accès divers, le traitement des opérations délictueuses ou illicites et  la négligence interne] ?
 
-Responsable Sécurité Informatique et Télécom: Valentin Brajon
-Responsable Sécurité Physique: Clément Miglietti
+- Responsable Sécurité Informatique et Télécom: Valentin Brajon
+- Responsable Sécurité Physique: Clément Miglietti
 
 La démarche de sécurité est-elle reconnue, soutenue et validée par la Direction Générale ?
 
-Oui, TODO
+Oui, la sécurité et l'architecture de la plateforme sont des points clés sur lesquels une grande partie des ressources est investi.
 
 Existe-t-il un document décrivant la politique de sécurité des systèmes d'information et, en particulier, les principes d'organisation, de gestion et de pilotage de la sécurité (rôles et responsabilités) ainsi que les principes fondamentaux structurant le management de la sécurité de l'information ?
 
@@ -38,6 +38,7 @@ Nous n'avons pas actuellement d'audit effectué par un tiers certifié.
 Pouvez-vous présenter l'ensemble des clauses SSI standards qui sont adossées à tout accord signé avec un tiers impliquant un accès au système d'information ou aux locaux contenant de l'information ?
 
 ??? TODO
+Nous réduisons les accès aux données en écriture et au serveur d'extraction de donnée aux employés de 100M seulement. Les prestataires n'ont accès qu'au code applicatifs actuellement.
 
 Si oui, tout accès d'un tiers au système d'information ou aux locaux contenant des données du groupe Crédit Mutuel Arkéa n'est-il autorisé qu'après la signature d'un accord formel reprenant ces clauses ?
 
@@ -116,6 +117,7 @@ Pouvez-vous présenter un document ou une procédure opérationnelle spécifique
 Cette politique devrait traiter de la protection de l'information, mais aussi de la protection des biens et procédés et des comportements interdits.
 
 ??? TODO
+Non
 
 Les décisions de changements majeurs des équipements et systèmes font-elles l'objet de procédures de contrôle (enregistrement, planification, approbation formelle, communication à l'ensemble des personnes concernées, etc.) ?
 

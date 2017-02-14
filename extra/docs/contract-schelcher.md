@@ -1,6 +1,14 @@
-Page de Garde
-----
-# Reporting OnDemand
+<div style="margin-bottom: 140px;">
+  <img src="/extra/background.png"/>
+  <img src="/extra/logo.png" style="position: absolute;top: 50%;left: 50px;width: 100px;" />
+  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Reporting OnDemand</h1>
+</div>
+
+# Arkea Investment Solutions
+
+---
+
+# Introduction
 Dans le cadre du projet Digitalisation de Arkéa Investment Services, l’initiative « Reporting On Demand » a été retenue comme prioritaire.
 
 Schelcher Prince Gestion souhaite avancer dans sa digitalisation et adopter une solution de reporting performante qui réponde à la fois aux attentes des clients, des gérants et de la maîtrise des risques.
@@ -10,6 +18,7 @@ Schelcher Prince Gestion souhaite avancer dans sa digitalisation et adopter une 
 L'objectif est de permettre aux gérant et aux clients institutionnels d’avoir une vision dynamique et personnalisée de leurs portefeuilles et de leurs mandats.
 
 ---
+
 # Les Objectifs
 L'initiative conjointe de Arkea IS et de 100m s'articule autours des 3 objectifs: Engager, Analyser et Automatiser.
 
@@ -18,19 +27,20 @@ Schelcher Prince et Federal Finance souhaitent expliquer le positionnement de le
 Pour maximiser l'engagement, SPG souhaite déployer un reporting connecté et pouvoir le customiser pour chaque client.
 
 ## Analyser
-Un des objectifs primordiaux est de faciliter l'analyse pour le client qui veut rester informé sur le respect des mandats confiés; 
+Un des objectifs primordiaux est de faciliter l'analyse pour le client qui veut rester informé sur le respect des mandats confiés;
 L'équipe de gestion et de risques souhaite également monitorer ses expositions en tant réel et améliorer son attribution et sa contribution de performance.
 
 ## Automatiser
 SPG souhaite mettre en place un reporting industriel et automatisé pour pouvoir assurer un traitement en temps réel et gagner en productivité.
 
 ---
+
 # L'Application
 100M a developpé une plateforme en-ligne sécurisée de reporting sur-mesure et de marketing dédiée aux Asset Managers.
 
 ## La Solution
 ### Visualisation & Exploration
-L'application facilite une lecture visuelle rapide et synthétique du portefeuille. 
+L'application facilite une lecture visuelle rapide et synthétique du portefeuille.
 La possibilité d'effectuer un 'drill-down' dans les aggrégats permet une analyse par poche d'actifs selon les indicateurs choisis.
 
 ### Connexion & Collaboration
@@ -41,8 +51,12 @@ La solution permet un réduction des couts associés au reporting de l'ordre de 
 L'application 100m est concue pour une utilisation complètement mobile et est compatible desktop, tablette et smart phone.
 Elle est également multi-format et permet l'export de rapport PDF. Le format des rapports est défini par le biais de templates customisables.
 
+---
+
 ### Attribution et Contribution de Performance
 Dans le cadre de l'amélioration du reporting, 100m produira une contribution de performance et améliorera l'attribution de performance existante.
+
+---
 
 ## La Technologie
 ### Le Front-End
@@ -61,14 +75,17 @@ Pour des questions d'encapsulation et de sécurité, notre API est hébergée su
 ### Hébergement base de données
 Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB of RAM, 80GB SDD - r3.xlarge avec postgresql sur Aurora).
 
+---
+
 # Le Projet
 ## Phase 1: Prototypage sur un rapport convertible Schelcher Prince Gestion
+
 L'objectif de la phase de prototypage est de:
-    * cadrer le besoin, 
-    * de définir les indicateurs de suivi de portefeuille,
-    * d'établir le parcours utilisateur au sein de l'application,
-    * de définir les formats d'échange de données,
-    * de produire une application prototype 
+- cadrer le besoin,
+- de définir les indicateurs de suivi de portefeuille,
+- d'établir le parcours utilisateur au sein de l'application,
+- de définir les formats d'échange de données,
+- de produire une application prototype
 
 ### Le livrable
 Le livrable sera une application en ligne interactive. L'application 100m sera personnalisée et accordée avec la charte graphique de Schelcher Prince.
@@ -92,6 +109,8 @@ Le prototype sera livré avec une mise-à-jour mensuelle des données.
 ### Planning de livraison
 Le prototype sera livrée fin Février pour un premier rapport mensuel produit en Mars.
 
+---
+
 ## Phase 2: Déploiement et extension sur la gamme convertible Schelcher Prince Gestion
 L'objectif de la phase de déploiement et extension est de:
 * connecter l'application pour permettre une mise-à-jour des données automatique et quotidienne,
@@ -103,11 +122,11 @@ Le livrable sera une version de production du prototype, augmentée d'un écran 
 ### 100m aura à charge
 * de créer les connecteurs nécessaires pour alimenter l'application en données,
 * concevoir l'écran de sélection de fonds,
-* de customiser les graphiques et le rapport de gestion pour les particularités de chaque fonds. 
+* de customiser les graphiques et le rapport de gestion pour les particularités de chaque fonds.
 
 ### Schelcher aura à charge
 * mettre à disposition les flux de données sur les mouvements, les valorisations ligne-à-ligne (NAV) et de parts (VL),  
-* mettre à disposition les risques sur les 
+* mettre à disposition les risques sur les
 
 ### Planning De Livraison
 Le deploiement et l'extension se fera en 4 sprints de 2 semaines:
@@ -116,26 +135,29 @@ Sprint 2: modification du front-end et customisation des pages pour la gamme con
 Sprint 3: connexion au système pour les mise-à-jour de l'ensemble des fonds de la gamme convertible.
 Sprint 4: testing, monitoring de l'application et correction d'erreurs.
 
+---
+
 ## L'attribution de performance
 
 ### L'objectif
-L'objectif est d'atteindre une attribution de performance ligne-à-ligne mise-à-jour sur une base quotidienne. 
+L'objectif est d'atteindre une attribution de performance ligne-à-ligne mise-à-jour sur une base quotidienne.
 
 ### Planning De Livraison
 L'amélioration de l'attribution de performance se fera en 3 sprints initiaux et une phase d'amélioration continue.
-    * *Sprint 1*: Etablissement d'une contribution journalière de la performance décomposée par Classe d'Actif, Zone Géographique, Secteur d'Activité et Notations. Le sprint 1 sera livré avec le prototype.
-    * *Sprint 2*: Etablissement d'une attribution de performance décomposée en 'Grecques' du 1er ordre (delta action, delta crédit, delta taux, et theta). Le sprint 2 sera livré à l'occasion du déploiement. 
-    * *Sprint 3*: Etablissemnt d'une attribution de performance pour le benchmark et comparaison .
-    * Amélioration Continue: revue continue du calcul des grecques, ajout des effets du 2nd ordre et amélioreration des process opérationnels (gestion des erreurs de booking, des données manquantes dans les risques).
+- *Sprint 1*: Etablissement d'une contribution journalière de la performance décomposée par Classe d'Actif, Zone Géographique, Secteur d'Activité et Notations. Le sprint 1 sera livré avec le prototype.
+- *Sprint 2*: Etablissement d'une attribution de performance décomposée en 'Grecques' du 1er ordre (delta action, delta crédit, delta taux, et theta). Le sprint 2 sera livré à l'occasion du déploiement.
+- *Sprint 3*: Etablissemnt d'une attribution de performance pour le benchmark et comparaison .
+- Amélioration Continue: revue continue du calcul des grecques, ajout des effets du 2nd ordre et amélioreration des process opérationnels (gestion des erreurs de booking, des données manquantes dans les risques).
 
 ---
+
 # Le Budget
 
-##  Les développements spécifiques 
-100m met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projets pour accompagner pour conseiller 
+##  Les développements spécifiques
+100m met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projets pour accompagner pour conseiller
 
 Les développements spécifiques comprennent, à titre d'exemple:
-* la customisation du progiciel, 
+* la customisation du progiciel,
 * l'intégration au système Client et le spécifiques des données,
 * le calcul de l'attribution de performance,
 * la création d'un nouveau template PDF pour l'application 100m,
@@ -152,19 +174,21 @@ Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 - Chef de Projet: 800 Euros / Jour.
 - Graphiste: 600 Euros / Jour.
 
+---
+
 ## La license
 ### Description de le Solution 100m
-L'application de reporting connecté 100m sert de support au suivi et à la commercialisation des produits d'investissement. 
+L'application de reporting connecté 100m sert de support au suivi et à la commercialisation des produits d'investissement.
 
 Elle permet aux équipes de gestion, de risques et des relations investisseurs de collaborer au sein d'une même plateforme.
 
 Nativement, l'application 100m permet de:
 - Visualiser les risques et les performances d'un portefeuille.
-- 'Drill-down' dans les risques et les positions jusqu'au ligne à ligne. 
+- 'Drill-down' dans les risques et les positions jusqu'au ligne à ligne.
 - Comparer le positionnement d'un portefeuille avec un benchmark.
 - Collaborer à l'édition du commentaire de gestion.
 - Effectuer des présentations à distance en utilisant la synchronisation d'écran intégrée.
-- Synchroniser la donnée des rapports avec un PMS interne. 
+- Synchroniser la donnée des rapports avec un PMS interne.
 - Sécuriser le contenu par un mécanisme d'authentification.
 
 L'application est interactive et compatible au format tablette / mobile / desktop et fonctionne avec Chrome (version 33 et suivante), Safari (version 8 et suivante) et Internet Explorer (11 et suivante).
@@ -188,17 +212,24 @@ Afin de permettre une large diffusion et de faciliter la collaboration, la licen
 Les prix sont dégressifs avec le nombre de fonds portés au sein de la solution:
 - Les 5 premiers fonds: 700 Euros / mois / fonds.
 - Entre le 6ème et 10ème fonds: 400 Euros / mois / fonds.
-- Au-delà du 11ème fonds: 280 Euros / mois / fonds. 
+- Au-delà du 11ème fonds: 280 Euros / mois / fonds.
 
 Les prix sont valables pour un engagement de 12 mois.
+
+---
 
 ## Conditions De Paiement
 Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.  
 Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la redevance.  
 Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
 
+---
+
 ## Chiffrage de la Phase de Prototypage et de Déploiement
 
+![](/extra/table1.png)
+![](/extra/table2.png)
+![](/extra/table3.png)
 
 ---
 
@@ -210,15 +241,19 @@ Avant de créer 100m, Clément a passé 10 ans dans la Finance à New York, Lond
 Clément est diplômé de l'Ecole Polytechnique, et membre du Corps des Ponts et Chaussées (X-Ponts).
 
 ### Valentin Brajon - Directeur Technique.
-Avant de créer 100m, Valentin a developpé des solutions Web pendant 9 ans. 
+Avant de créer 100m, Valentin a developpé des solutions Web pendant 9 ans.
 Il a été l'Architecte et le Développeur Web de nombreuses plateformes financières et notamment de celle de Parvest.
 
 Valentin est ingénieur informatique diplômé de Sciences U.
 
----
-
-Votre Contact est:
-
-Clément Miglietti
-06 77 73 68 74
-clement@100m.io
+<footer>
+  <grid>
+    <div col="1/2">
+      <p>Votre Contact est <a att href="https://100m.io" target="_blank"><strong>Clement Miglietti</strong></a></p>
+    </div>
+    <div col="1/2" txt="r">
+      <a att href="#fintex" target="_blank">06 77 73 68 74</a>
+      - <strong>clement@100m.io</strong>
+    </div>
+  </grid>
+</footer>
