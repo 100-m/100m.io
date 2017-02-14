@@ -193,13 +193,13 @@ Nativement, l'application 100M permet de:
 
 L'application est interactive et compatible au format tablette / mobile / desktop et fonctionne avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (11 et suivantes).
 
-Sont inclus dans le pricing de la solution:
--_Un nombre d'utilisateurs illimités_
--_La gestion des droits d'accès et profils utilisateurs_
--_L'hébergement des serveurs de calcul_
--_L'hébergement de la base de données_
--_La fonctionalité d'édition de rapport PDF_
--_Les Web Widgets crées à partir des rapports existants_
+*Sont inclus* dans le pricing de la solution:
+- _Un nombre d'utilisateurs illimités_
+- _La gestion des droits d'accès et profils utilisateurs_
+- _L'hébergement des serveurs de calcul_
+- _L'hébergement de la base de données_
+- _La fonctionalité d'édition de rapport PDF_
+- _Les Web Widgets crées à partir des rapports existants_
 
 
 ### Les conditions
@@ -219,8 +219,10 @@ Les prix sont valables pour un engagement de 12 mois.
 ---
 
 ## Conditions De Paiement
-Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.  
+Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
+
 Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la redevance.  
+
 Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
 
 ---
