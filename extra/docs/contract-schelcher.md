@@ -230,7 +230,9 @@ Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
 ## Chiffrage de la Phase de Prototypage et de Déploiement
 
 ![](/extra/table1.png)
+---
 ![](/extra/table2.png)
+---
 ![](/extra/table3.png)
 
 ---
