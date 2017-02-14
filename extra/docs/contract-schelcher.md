@@ -194,12 +194,12 @@ Nativement, l'application 100M permet de:
 L'application est interactive et compatible au format tablette / mobile / desktop et fonctionne avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (11 et suivantes).
 
 Sont inclus dans le pricing de la solution:
-_Un nombre d'utilisateurs illimités_
-_La gestion des droits d'accès et profils utilisateurs_
-_L'hébergement des serveurs de calcul_
-_L'hébergement de la base de données_
-_La fonctionalité d'édition de rapport PDF_
-_Les Web Widgets crées à partir des rapports existants_
+-_Un nombre d'utilisateurs illimités_
+-_La gestion des droits d'accès et profils utilisateurs_
+-_L'hébergement des serveurs de calcul_
+-_L'hébergement de la base de données_
+-_La fonctionalité d'édition de rapport PDF_
+-_Les Web Widgets crées à partir des rapports existants_
 
 
 ### Les conditions
