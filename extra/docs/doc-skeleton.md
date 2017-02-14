@@ -4,7 +4,7 @@ git init
 git remote add origin git@github.com:100-m/<PROJECT>.git
 git remote add skeleton git@github.com:100-m/m100-skeleton.git
 git fetch skeleton
-git rebase -s recursive -X their skeleton/master
+git rebase -s recursive -X theirs skeleton/master
 git push
 ```
 
