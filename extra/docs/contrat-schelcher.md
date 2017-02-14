@@ -29,26 +29,26 @@ SPG souhaite mettre en place un reporting industriel et automatisé pour pouvoir
 100M a developpé une plateforme en-ligne sécurisée de reporting sur-mesure et de marketing dédiée aux Asset Managers.
 
 ## La Solution
-### Visualisation et Exploration
+### Visualisation & Exploration
 L'application facilite une lecture visuelle rapide et synthétique du portefeuille. 
 La possibilité d'effectuer un 'drill-down' dans les aggrégats permet une analyse par poche d'actifs selon les indicateurs choisis.
 
 ### Connexion & Collaboration
 En plus d'être directement connectée au données, l'application 100m comporte des fonctionalités de collaboration innovantes. Le partage d'écran et l'édition de contenu collaborative permettent de gagner en productivité et en agilité.
-La solution permet un réduction des couts associés au reporting de l'ordre de 75% et tout en augmentant la qualité du contenu.
+La solution permet un réduction des couts associés au reporting de l'ordre de 75%, tout en augmentant la qualité du contenu.
 
 ### Multi-format & Cross-Platform
-L'application 100m est concue pour une utilisation complètement mobile et est compatible desktop, tablette et mobile.
-La solution permet l'export de rapport au format PDF. Le format des rapports est défini par le biais de templates customisables.
+L'application 100m est concue pour une utilisation complètement mobile et est compatible desktop, tablette et smart phone.
+Elle est également multi-format et permet l'export de rapport PDF. Le format des rapports est défini par le biais de templates customisables.
 
 ### Attribution et Contribution de Performance
 Dans le cadre de l'amélioration du reporting, 100m produira une contribution de performance et améliorera l'attribution de performance existante.
 
-## La Techno
-### Le front-end
+## La Technologie
+### Le Front-End
 100m a developpé le front-end software propriétaire en Javascript permettant la reactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de donnée, et avec les écrans d'autres utilisateurs.
 
-### Les moteurs de calculs en back-end
+### Les moteurs de calculs en Back-End
 100m a developpé un back-end en Python permettant d'effectuer le traitement de la donnée, le calcul des differents indicateurs et une contributions de performance.
 
 ### Hébergement de l'application
@@ -62,111 +62,127 @@ Pour des questions d'encapsulation et de sécurité, notre API est hébergée su
 Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB of RAM, 80GB SDD - r3.xlarge avec postgresql sur Aurora).
 
 # Le Projet
-## Phase 1: Prototypage sur un fonds convertible Schelcher Prince Gestion
+## Phase 1: Prototypage sur un rapport convertible Schelcher Prince Gestion
 L'objectif de la phase de prototypage est de:
     * cadrer le besoin, 
     * de définir les indicateurs de suivi de portefeuille,
     * d'établir le parcours utilisateur au sein de l'application,
-    * 
+    * de définir les formats d'échange de données,
+    * de produire une application prototype 
 
 ### Le livrable
+Le livrable sera une application en ligne interactive. L'application 100m sera personnalisée et accordée avec la charte graphique de Schelcher Prince.
 
+L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (version 33 et suivante), Safari (version 8 et suivante) et Internet Explorer (11 et suivante).
+
+Le prototype sera livré avec une mise-à-jour mensuelle des données.
 
 ### 100m aura à charge
+* de concevoir le parcours utilisateur et les écrans,
+* de traiter les données fournies par Schelcher Prince,
+* de customiser le progiciel et d'adapter les graphiques,
+* de mettre à disposition en ligne, et protégée par mot de passe l'application prototype.
 
 ### Schelcher aura à charge
+* de fournir un fichier model du format de données,
+* de fournir un model papier ou PDF de reporting existant,
+* la validation des écrans et du parcours utilisateur,
+* de mettre à disposition les données mensuellement pour mise-à-jour.
 
+### Planning de livraison
+Le prototype sera livrée fin Février pour un premier rapport mensuel produit en Mars.
 
-## Phase 2: Déploiement sur la gamme convertible Schelcher Prince Gestion
-(base mensuelle pour les clients avec différents niveaux de lecture, et base quotidienne à terme pour les gérants)
+## Phase 2: Déploiement et extension sur la gamme convertible Schelcher Prince Gestion
+L'objectif de la phase de déploiement et extension est de:
+* connecter l'application pour permettre une mise-à-jour des données automatique et quotidienne,
+* étendre la couverture du reporting à l'ensemble de la gamme convertible
 
 ### Le livrable
+Le livrable sera une version de production du prototype, augmentée d'un écran de sélection de fonds avec un connecteur back-end pour mise-à-jour des données.
 
 ### 100m aura à charge
+* de créer les connecteurs nécessaires pour alimenter l'application en données,
+* concevoir l'écran de sélection de fonds,
+* de customiser les graphiques et le rapport de gestion pour les particularités de chaque fonds. 
 
 ### Schelcher aura à charge
+* mettre à disposition les flux de données sur les mouvements, les valorisations ligne-à-ligne (NAV) et de parts (VL),  
+* mettre à disposition les risques sur les 
+
+### Planning De Livraison
+Le deploiement et l'extension se fera en 4 sprints de 2 semaines:
+Sprint 1: connexion au système pour les updates du fonds pilote.
+Sprint 2: modification du front-end et customisation des pages pour la gamme convertible.
+Sprint 3: connexion au système pour les mise-à-jour de l'ensemble des fonds de la gamme convertible.
+Sprint 4: testing, monitoring de l'application et correction d'erreurs.
 
 ## L'attribution de performance
+
+### L'objectif
+L'objectif est d'atteindre une attribution de performance ligne-à-ligne mise-à-jour sur une base quotidienne. 
+
+### Planning De Livraison
+L'amélioration de l'attribution de performance se fera en 3 sprints initiaux et une phase d'amélioration continue.
+    * *Sprint 1*: Etablissement d'une contribution journalière de la performance décomposée par Classe d'Actif, Zone Géographique, Secteur d'Activité et Notations. Le sprint 1 sera livré avec le prototype.
+    * *Sprint 2*: Etablissement d'une attribution de performance décomposée en 'Grecques' du 1er ordre (delta action, delta crédit, delta taux, et theta). Le sprint 2 sera livré à l'occasion du déploiement. 
+    * *Sprint 3*: Etablissemnt d'une attribution de performance pour le benchmark et comparaison .
+    * Amélioration Continue: revue continue du calcul des grecques, ajout des effets du 2nd ordre et amélioreration des process opérationnels (gestion des erreurs de booking, des données manquantes dans les risques).
 
 ---
 # Le Budget
 
-## Conditions De Paiement
-Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.  
-Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la redevance.  
-Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
+Se decompose sur:
 
+## La conception et le paramétrage de la solution
 
-## Catalogue Produit
-### Reporting Connecté
+## Le traitement des données et l'attribution de performance
+
+## La license
+### Description de le Solution 100m
 L'application de reporting connecté 100m sert de support au suivi et à la commercialisation des produits d'investissement. 
 
 Elle permet aux équipes de gestion, de risques et des relations investisseurs de collaborer au sein d'une même plateforme.
 
 Nativement, l'application 100m permet de:
-
 - Visualiser les risques et les performances d'un portefeuille.
 - 'Drill-down' dans les risques et les positions jusqu'au ligne à ligne. 
 - Comparer le positionnement d'un portefeuille avec un benchmark.
 - Collaborer à l'édition du commentaire de gestion.
-- Fiabiliser la donnée et collaborer à la correction des points aberrants.
 - Effectuer des présentations à distance en utilisant la synchronisation d'écran intégrée.
 - Synchroniser la donnée des rapports avec un PMS interne. 
+- Sécuriser le contenu par un mécanisme d'authentification.
 
-L'application est interactive et compatible au format tablette / mobile / desktop.
+L'application est interactive et compatible au format tablette / mobile / desktop et fonctionne avec Chrome (version 33 et suivante), Safari (version 8 et suivante) et Internet Explorer (11 et suivante).
 
-- Les 5 premiers fonds: 350 Euros / mois / fonds.
-- Entre le 6ème et 15ème fonds: 270 Euros / mois / fonds.
-- Au-delà du 16ème fonds: 170 Euros / mois / fonds. 
+Sont inclus dans le pricing de la solution:
+_Un nombre d'utilisateurs illimités_
+_La gestion des droits d'accès et profils utilisateurs_
+_L'hébergement des serveurs de calcul_
+_L'hébergement de la base de données_
+_La fonctionalité d'édition de rapport PDF_
+_Les Web Widgets crées à partir des rapports existants_
 
-_Nombre d'utilisateurs illimité - inclus_
 
-_\*par ISIN unique._
+### Les conditions
+La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour Schelcher, 24h/24 et 7j/7
 
-_La fonctionalité d'édition de rapport PDF est incluse avec la solution Reporting Connecté_
+La license inclue également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration de Schelcher du progiciel et le support téléphonique.
 
+Les prix sont dégressifs avec le nombre de fonds portés au sein de la solution:
+- Les 5 premiers fonds: 700 Euros / mois / fonds.
+- Entre le 6ème et 10ème fonds: 400 Euros / mois / fonds.
+- Au-delà du 11ème fonds: 280 Euros / mois / fonds. 
+
+
+## Développements Spécifiques
 ### Web Widgets
 Les composants de l'application de reporting 100m sont mis à disposition sous la forme de Widgets Embeddable qui peuvent être intégrés au sein de page web internet ou intranet.
+
+Les Widgets bénéficient de la même connectivité que les rapports 100m et sont également mis à jour automatiquement.
     
-L'intégration se fait en 1 ligne par le moyen d'iFrames.
+L'intégration se fait en 1 ligne par le moyen d'iFrames. 
 
-_les Web Widgets sont inclus dans la solution Reporting Connecté_
-
-### Attribution de performance.
-100m assure le calcul de l'attribution de performance et des contributions de performance sur une base ligne à ligne.
-
-L'attribution de performance est calculée à partir des états de portefeuille fournis par le dépositaire, des prix fournis par le valorisateur, et des risques fournis par le système client. 
-
-Grille de prix:
-
-- 0 - 10 fonds*: 365 Euros / mois / fonds.
-- 10 - 20 fonds*: 285 Euros / mois / fonds.
-- 20 - 30 fonds*: 185 Euros / mois / fonds. 
-
-_Nombre d'utilisateurs illimité - inclus_
-_\*par ISIN unique._
-
-### Gestion des droits accès et profils utilisateurs
-Les droits d'accès au différents composantes de l'application 100m sont configurables utilisateur par utilisateur.
-
-_La gestion des droits accès et profils utilisateurs est inclue dans la solution de Reporting Connecté_
-
-_L'hébergement des serveurs de calcul est inclu dans le module de Reporting Connecté_
-
-_L'hébergement de la base de données est inclu dans le module de Reporting Connecté_
-
----
-
-# Développements Customs et Prestations
-La solution de reporting 100m est suffisemment flexible pour être déclinée sur une large gamme d'applications.  
-Les développements se font en cycles *Agiles* en partenariat avec le client.  
-Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
-
-- Développeur junior: 550 Euros / Jour.
-- Développeur senior: 800 Euros / Jour.
-- Data Scientist: 850 Euros / Jour.
-- Chef de Projet: 800 Euros / Jour.
-- Graphiste: 600 Euros / Jour.
+Leur création se fait à la demande client et est facturée au Jour Homme. Estimation du temps requis à la création d'un widget: 1 jour.
 
 ### Création d'une nouvelle déclinaison
 La création d'une nouvelle déclinaison qui comprend la création d'une charte, la conception des indicateurs du rapport, la créations de nouveaux templates et la création des graphiques nécessitent typiquement:
@@ -196,6 +212,25 @@ La création d'un template de reporting PDF qui sera mis à jour automatiquement
 
 *Estimation*: 4,625 Euros.
 
+---
+
+# 
+La solution de reporting 100m est suffisemment flexible pour être déclinée sur une large gamme d'applications.  
+Les développements se font en cycles *Agiles* en partenariat avec le client.  
+Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
+
+- Développeur junior: 550 Euros / Jour.
+- Développeur senior: 800 Euros / Jour.
+- Data Scientist: 850 Euros / Jour.
+- Chef de Projet: 800 Euros / Jour.
+- Graphiste: 600 Euros / Jour.
+
+
+
+## Conditions De Paiement
+Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.  
+Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la redevance.  
+Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
 ---
 # Scénarios
 
