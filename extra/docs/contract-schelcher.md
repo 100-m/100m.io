@@ -221,7 +221,7 @@ Les prix sont valables pour un engagement de 12 mois.
 ## Conditions De Paiement
 Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
 
-Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la redevance.  
+Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la license.  
 
 Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
 
