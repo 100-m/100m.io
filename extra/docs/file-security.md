@@ -17,10 +17,17 @@ Data stored in Firebase are dynamic or application related and non-business crit
 
 Data stored in AWS Aurora are financial and business critical. The database cluster is composed of 2 databases, one master with read/write access and one replicated with 1s latency and only read access. Requests are done through a small request layer using Auth0 Token and 100m authorization layer.
 
+AWS Aurora is backuped weekly automatically (one snapshot) and can be rollbacked any time for the last week. The rollback procedure lasts several hours.
+
+Firebase is backuped weekly automatically.
+
 ### Hosting
 All code is hosted in AWS Lambda for logs/backup/security.  
 Current Modules: ETL, Request, Compute, Message, PDF.  
 Frontend code as well as backend services are accessed through HTTPS only.
+
+Each deployed version are backuped on AWS Lambda. Frontend source code is available on Github and Frontend deployed files are available on another branch on Github Pages.
+
 
 ---
 
