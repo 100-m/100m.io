@@ -11,7 +11,7 @@
 ### QU-1
 **L'ensemble des domaines concernés par la SSI a-t-il un responsable désigné [sécurité informatique et télécom, sécurité générale de l'environnement de travail (documents, télécopie, téléphone), sécurité physique générale des sites et locaux] ou un interlocuteur privilégié [ex : DRH pour les actions de sensibilisation, la formation, les contrats de travail,  la gestion des comptes utilisateurs et des droits d'accès divers, le traitement des opérations délictueuses ou illicites et  la négligence interne] ?**
 
-http://127.0.0.1:8000/md.html?file-security.md#company-structure
+http://100m.io/md.html?file-security.md#company-structure
 
 ### QU-2
 **La démarche de sécurité est-elle reconnue, soutenue et validée par la Direction Générale ?**
