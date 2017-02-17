@@ -31,29 +31,27 @@ Le Crédit Agricole souhaite progressivement développer un espace de "Coaching"
 Le but est ici d'améliorer l'*experience* client en lui fournissant des outils de conseil à forte valeur ajoutée qui viendront se positionner en complément ou en support de la discussion avec un conseiller.
 
 ## L'Acquisition Client
-Les outils développés dans le cadre du présent projet ont pour but d'être un vecteur d'aquisition Client. A la fois dans une persepctive de conversion de prospects, mais également dans la perspective d'équiper la base Client existante avec d'autres solutions Credit Agricole.  
+Les outils développés dans le cadre du présent projet ont pour but d'être un vecteur d'aquisition Client. A la fois dans une persepctive de conversion de prospects, mais également dans la perspective d'équiper la base Client existante avec d'autres solutions du Credit Agricole.  
 
 ---
 
 # La Solution 100m
-100M a developpé une plateforme en-ligne sécurisée de reporting sur-mesure et de marketing dédiée aux Asset Managers.
+100M a developpé une plateforme de dashboarding et de marketing en-ligne dédiée à l'industrie financière. Notre plateforme permet la déclinaison d'applications customisables pour nos clients.
 
+Nous sommes des spécialistes du chiffre et de la vulgarisation de concepts financiers. Nos applications ont le plus souvent vocation à supporter une relation commerciale.
 
-## Le Conseil
-
-
-## L'Application
+## Les Obsessions 100M
 ### Expérience Utilisateur
-L'application facilite une lecture visuelle rapide et synthétique du portefeuille.
-La possibilité d'effectuer un 'drill-down' dans les aggrégats permet une analyse par poche d'actifs selon les indicateurs choisis.
+Le minimalisme de nos applications facilitent une lecture visuelle rapide et synthétique de l'information.
+100M a developpé une bibliothèque de répresentations graphiques qui savent mettre en confiance, favoriser la transparence du chiffre et communiquer une information aussi technique soit-elle.
 
 ### Connexion & Collaboration
-En plus d'être directement connectée aux données, l'application 100M comporte des fonctionalités de collaboration innovantes. Le partage d'écran et l'édition de contenu collaborative permettent de gagner en productivité et en agilité.
-La solution permet une réduction des couts associés au reporting de l'ordre de 75%, tout en augmentant la qualité du contenu.
+Nos solutions sont directement connectées aux données tierces via une intégration simplifiée au maximum. 
+La solution 100M comporte des modules de collaboration innovants comme le partage d'écran et l'édition de contenu collaborative afin d'éliminer toute friction dans la communication entre utilisateurs (ex: entre conseiller et client).
 
 ### Multi-format & Cross-Platform
-L'application 100M est concue pour une utilisation complètement mobile et est compatible desktop, tablette et smart phone.
-Elle est également multi-format et permet l'export de rapports PDF. Le format des rapports est défini par le biais de templates customisables.
+Les applications 100M sont concues pour une utilisation complètement mobile et sont compatibles desktop, tablette et smart phone.
+Notre plateforme est également multi-format: nos applications permettent l'export de rapports PDF ou d'email de synthèse en conclusion d'une discussion client.
 
 ---
 
@@ -62,7 +60,7 @@ Elle est également multi-format et permet l'export de rapports PDF. Le format d
 100M a developpé le front-end software propriétaire en Javascript permettant la reactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de donnée, et avec les écrans d'autres utilisateurs.
 
 ### Les moteurs de calculs en Back-End
-100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée, le calcul des differents indicateurs et une contribution de performance.
+100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des differents indicateurs.
 
 ### Hébergement de l'application
 L'hébergement du front-end de l'application se fait sur des serveurs AWS dont le taux de disponibilité est garanti à 99.99%.
@@ -73,6 +71,7 @@ Pour des questions d'encapsulation et de sécurité, notre API est hébergée su
 
 ### Hébergement base de données
 Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB of RAM, 80GB SDD - r3.xlarge avec postgresql sur Aurora).
+
 
 ---
 
