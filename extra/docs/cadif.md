@@ -145,10 +145,10 @@ L'objectif est de fournir au conseiller un support à la vente sous la forme d'u
 ## La license
 *En attente de définition du périmètre.*
 
-### Les conditions
+## Les conditions
 *En attente de définition du périmètre.*
 
-### Conditions De Paiement
+## Conditions De Paiement
 *En attente de définition du périmètre.*
 
 ---
