@@ -43,12 +43,13 @@ Nous sommes des spécialistes du chiffre et de la vulgarisation de concepts fina
 
 ## L'expertise 100M
 ### Expérience Utilisateur
-Le minimalisme de nos applications facilitent une lecture visuelle, rapide et synthétique de l'information.  
+Nos applications facilitent une lecture visuelle, rapide et synthétique de l'information.  
 100M a developpé une bibliothèque de répresentations graphiques qui savent mettre en confiance, favoriser la transparence du chiffre et communiquer une information aussi technique soit-elle.
 
 ### Connexion & Collaboration
 Nos solutions sont directement connectées aux données tierces via une intégration simplifiée au maximum.   
-La solution 100M comporte des modules de collaboration innovants comme le partage d'écran et l'édition de contenu collaborative afin d'éliminer toute friction dans la communication entre utilisateurs (ex: entre conseiller et client).
+La solution 100M comporte des modules de collaboration innovants afin d'éliminer toute friction dans la communication entre utilisateurs (ex: entre conseiller et client).
+comme le partage d'écran et la crétion collaborative de contenu  
 
 ### Multi-format & Cross-Platform
 Les applications 100M sont concues pour une utilisation complètement mobile et sont compatibles desktop, tablette et smart phone.  
@@ -83,7 +84,7 @@ L'application invitera le client à comparer les offres des différents compéti
 
 L'application sera mise directement à disposition du public et pourra servir de canal d'aquisition client.
 
-### Séquencage:
+### Séquençage:
 1. recueil d'information sur l'offre CADIF et celle des compétiteurs,
 2. segmentation du marché, et positionnement compétitif, 
 3. identification de la cible client et définition des objectifs marketing,
@@ -131,7 +132,7 @@ L'objectif est de fournir au conseiller un support à la vente sous la forme d'u
 # L'équipe dirigeante
 
 ### Clément Miglietti - Directeur Général
-Avant de créer 100M, Clément a passé 10 ans dans la Finance à New York, Londres et Paris en tant que Directeur de la Recherche Quantitative (Crédit) chez BNP Paribas, puis Gérant chez Blue Mountain Capital.
+Avant de créer `100M`, Clément a passé 10 ans dans la Finance à New York, Londres et Paris en tant que Directeur de la Recherche Quantitative (Crédit) chez BNP Paribas, puis Gérant chez Blue Mountain Capital.
 
 Clément est diplômé de l'Ecole Polytechnique, et membre du Corps des Ponts et Chaussées (X-Ponts).
 
