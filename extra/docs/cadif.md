@@ -1,56 +1,57 @@
 <div style="margin-bottom: 140px;">
   <img src="/extra/background.png"/>
   <img src="/extra/logo.png" style="position: absolute;top: 50%;left: 50px;width: 100px;" />
-  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Reporting OnDemand</h1>
+  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);"></h1>
 </div>
 
-# Crédit Agricole Ile De France
+# Crédit Agricole
+<h1 style="margin-top:-50px; color:rgba(116, 228, 162, .7)"><small>Ile De France</small></h1>
 
 ---
 
 # Introduction
-Dans le cadre du projet Digitalisation .
+Dans le cadre de son projet de digitalisation et d'aquisition de nouveaux clients, le Crédit Agricole lance une initiative pour s'équiper d'outils commerciaux innovants.
 
-CLIENT NAME souhaite avancer dans sa digitalisation et adopter une solution de reporting performante qui réponde à la fois aux attentes des clients, des gérants et de la maîtrise des risques.
+Le Crédit Agricole Ile de France souhaite développer un comparateur d'offres bancaires pour illustrer en toute transparence sa politique de tarification et afficher sa compétitivité.
 
-100M est la solution de choix pour mettre en valeur la qualité de la gestion et communiquer efficacement sous un format engageant. 100M apporte le logiciel, le savoir-faire technique et la connaissance des métiers de l'investissement; éléments primordiaux à la bonne et rapide exécution du projet.
+100M est la solution de choix pour développer 
 
-L'objectif est de permettre aux gérant et aux clients institutionnels d’avoir une vision dynamique et personnalisée de leurs portefeuilles et de leurs mandats.
+L'objectif de ce projet est de développer un comparateur qui puisse être mis à disposition du public et des conseillers et servir de canal d'acquisition client.
 
 ---
 
 # Les Objectifs
-L'initiative conjointe du Crédit Agricole d'Ile de France et de 100M s'articule autours des 3 objectifs: Renforcer la relation Client, Se concentrer sur l'expérience Client et Créer des nouveaux vecteurs d'acquisition client.
+L'initiative conjointe du Crédit Agricole d'Ile de France et de 100M s'articule autours des 3 objectifs: Renforcer la relation Client, Améliorer l'Expérience Client et Créer de nouveaux vecteurs d'acquisition client.
 
 ## La Relation Client
-Le Crédit Agricole souhaite jouer la carte de la transparence tarifaire avec ses Clients et offrir à ceux-ci la possibilité de comparer les prix avec ceux des offres concurrentes.
+Le Crédit Agricole souhaite jouer la carte de la transparence tarifaire avec ses Clients et offrir à ceux-ci la possibilité de comparer les prix avec ceux des offres concurrentes.  
 L'objectif est de renforcer la *confiance* que ses Clients lui accordent et de favoriser la *rétention*.
 
 ## Le Conseil Client
-Le Crédit Agricole souhaite progressivement développer un espace de "Coaching" client.
-Le but est ici d'améliorer l'*experience* client en lui fournissant des outils de conseil à forte valeur ajoutée qui viendront se positionner en complément ou en support de la discussion avec un conseiller.
+Le Crédit Agricole souhaite progressivement développer un espace de "Coaching" client.  
+Le but est ici d'améliorer l'*expérience* client en lui fournissant des outils de conseil à forte valeur ajoutée qui viendront se positionner en complément ou en support de la discussion avec un conseiller.
 
 ## L'Acquisition Client
-Les outils développés dans le cadre du présent projet ont pour but d'être un vecteur d'aquisition Client. A la fois dans une persepctive de conversion de prospects, mais également dans la perspective d'équiper la base Client existante avec d'autres solutions du Credit Agricole.  
+Les outils développés dans le cadre du présent projet ont pour but d'être un vecteur d'aquisition Client: à la fois dans une perspective de *conversion de prospects*, mais également dans la perspective d'*équiper la base Client existante* avec d'autres solutions du Crédit Agricole.  
 
 ---
 
-# La Solution 100m
+# La Solution 100M
 100M a developpé une plateforme de dashboarding et de marketing en-ligne dédiée à l'industrie financière. Notre plateforme permet la déclinaison d'applications customisables pour nos clients.
 
 Nous sommes des spécialistes du chiffre et de la vulgarisation de concepts financiers. Nos applications ont le plus souvent vocation à supporter une relation commerciale.
 
-## Les Obsessions 100M
+## L'expertise 100M
 ### Expérience Utilisateur
-Le minimalisme de nos applications facilitent une lecture visuelle rapide et synthétique de l'information.
+Le minimalisme de nos applications facilitent une lecture visuelle, rapide et synthétique de l'information.  
 100M a developpé une bibliothèque de répresentations graphiques qui savent mettre en confiance, favoriser la transparence du chiffre et communiquer une information aussi technique soit-elle.
 
 ### Connexion & Collaboration
-Nos solutions sont directement connectées aux données tierces via une intégration simplifiée au maximum. 
+Nos solutions sont directement connectées aux données tierces via une intégration simplifiée au maximum.   
 La solution 100M comporte des modules de collaboration innovants comme le partage d'écran et l'édition de contenu collaborative afin d'éliminer toute friction dans la communication entre utilisateurs (ex: entre conseiller et client).
 
 ### Multi-format & Cross-Platform
-Les applications 100M sont concues pour une utilisation complètement mobile et sont compatibles desktop, tablette et smart phone.
+Les applications 100M sont concues pour une utilisation complètement mobile et sont compatibles desktop, tablette et smart phone.  
 Notre plateforme est également multi-format: nos applications permettent l'export de rapports PDF ou d'email de synthèse en conclusion d'une discussion client.
 
 ---
@@ -72,171 +73,63 @@ Pour des questions d'encapsulation et de sécurité, notre API est hébergée su
 ### Hébergement base de données
 Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB of RAM, 80GB SDD - r3.xlarge avec postgresql sur Aurora).
 
-
 ---
+# Le Projet Proof-Of-Concept
+## Phase 1: Comparateur 'Simplifié' à destination du grand public 
 
-# Le Projet
-## Phase 1: Prototypage sur un rapport convertible CLIENT NAME
+L'objectif de cette phase 1 est de produire une application simple qui _démontre_ au client que l'offre du Crédit Agricole est la plus compétitive. 
 
-L'objectif de la phase de prototypage est de:
-- cadrer le besoin,
-- de définir les indicateurs de suivi de portefeuille,
-- d'établir le parcours utilisateur au sein de l'application,
-- de définir les formats d'échange de données,
-- de produire une application prototype
+L'application invitera le client à comparer les offres des différents compétiteurs en fonction de ses *besoins propres*. La comparaison entre les différentes offres se mettra à jour *en temps réel* au fur et à mesure que le client donne de l'information sur son profil d'utilisation.
+
+L'application sera mise directement à disposition du public et pourra servir de canal d'aquisition client.
+
+### Séquencage:
+1. recueil d'information sur l'offre CADIF et celle des compétiteurs,
+2. segmentation du marché, et positionnement compétitif, 
+3. identification de la cible client et définition des objectifs marketing,
+4. définition du parcours utilisateur,
+5. production de l'application,
+6. test et itérations
 
 ### Le livrable
-Le livrable sera une application en ligne interactive. L'application 100M sera personnalisée et accordée avec la charte graphique de CLIENT NAME.
+Le livrable sera une application en ligne, type 'single-screen' et interactive. L'application 100M sera personnalisée et accordée avec la charte graphique du Crédit Agricole.
 
 L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivante).
 
-Le prototype sera livré avec une mise-à-jour mensuelle des données.
-
 ### 100M aura à charge
-* de concevoir le parcours utilisateur et les écrans,
-* de traiter les données fournies par CLIENT NAME,
-* de customiser le progiciel et d'adapter les graphiques,
+* recueillir l'information sur les offres des compétiteurs de CADIF,
+* établir une comparaison rigoureuse de ces offres,
+* proposer un ciblage client,
+* établir un questionnaire client qui permette d'effectuer une comparaison ciblée,
+* proposer une interface client qui permette de comparer les offres,
 * de mettre à disposition en ligne, et protégée par mot de passe l'application prototype.
 
-### CLIENT NAME aura à charge
-* de fournir un fichier model du format de données,
-* de fournir un model papier ou PDF de reporting existant,
-* la validation des écrans et du parcours utilisateur,
-* de mettre à disposition les données mensuellement pour mise-à-jour.
+### Le Crédit Agricole aura à charge,
+* Fournir la fiche produit concernée,
+* Donner le nom de 5 concurrents,
+* Participer à la segmentation marché,
+* Donner feedbacks et commentaires sur les rendus.
 
 ### Planning de livraison
-Le prototype sera livrée fin Février pour un premier rapport mensuel produit en Mars.
+L'application sera livrée dans un delais de 8 semaines à compter de la date de l'accord client.
 
 ---
+## Phase 2: Comparateur 'Expert' à destination des conseillers
 
-## Phase 2: Déploiement et extension sur la gamme convertible CLIENT NAME
-L'objectif de la phase de déploiement et extension est de:
-* connecter l'application pour permettre une mise-à-jour des données automatique et quotidienne,
-* étendre la couverture du reporting à l'ensemble de la gamme convertible.
+En phase 2, on produira une application experte dans la continuité de la précédente.
 
-### Le livrable
-Le livrable sera une version de production du prototype, augmentée d'un écran de sélection de fonds avec un connecteur back-end pour mise-à-jour des données.
+L'objectif est de fournir au conseiller un support à la vente sous la forme d'un outil de comparaison détaillé.
 
-### 100M aura à charge
-* de créer les connecteurs nécessaires pour alimenter l'application en données,
-* concevoir l'écran de sélection de fonds,
-* de customiser les graphiques et le rapport de gestion pour les particularités de chaque fonds.
-
-### CLIENT NAME aura à charge
-* mettre à disposition les flux de données sur les mouvements, les valorisations ligne-à-ligne (NAV) et de parts (VL),  
-* mettre à disposition les risques, ligne-à-ligne sur les portefeuilles.
-
-### Planning De Livraison
-Le deploiement et l'extension se feront en 4 sprints de 2 semaines:
-- *Sprint 1:* connexion au système pour les updates du fonds pilote.
-- *Sprint 2:* modification du front-end et customisation des pages pour la gamme convertible.
-- *Sprint 3:* connexion au système pour les mise-à-jour de l'ensemble des fonds de la gamme convertible.
-- *Sprint 4:* testing, monitoring de l'application et correction d'erreurs.
 
 ---
-
-## L'attribution de performance
-
-### L'objectif
-L'objectif est d'atteindre une attribution de performance ligne-à-ligne mise-à-jour sur une base quotidienne.
-
-### Planning De Livraison
-L'amélioration de l'attribution de performance se fera en 3 sprints initiaux et une phase d'amélioration continue.
-- *Sprint 1:* Etablissement d'une contribution journalière de la performance décomposée par Classe d'Actif, Zone Géographique, Secteur d'Activité et Notation. Le sprint 1 sera livré avec le prototype.
-- *Sprint 2:* Etablissement d'une attribution de performance décomposée en 'Grecques' du 1er ordre (delta action, delta crédit, delta taux, et theta). Le sprint 2 sera livré à l'occasion du déploiement.
-- *Sprint 3:* Etablissement d'une attribution de performance pour le benchmark et comparaison .
-- Amélioration Continue: revue continue du calcul des grecques, ajout des effets du 2nd ordre et amélioreration des process opérationnels (gestion des erreurs de booking, des données manquantes dans les risques).
-
----
-
 # Le Budget
-
-##  Les développements spécifiques
-100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projets pour conseiller CLIENT NAME et pour effectuer les développements spécifiques nécessaires.
-
-Les développements spécifiques comprennent, à titre d'exemple:
-* la customisation du progiciel,
-* l'intégration au système Client et le travail spécifique des données,
-* le calcul de l'attribution de performance,
-* la création d'un nouveau template PDF pour l'application 100M,
-* la création de Web Widgets intégrables par le Client.
-
-Les développements se font en cycles *Agiles* en partenariat avec le client.  
-
-Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
-
-- Développeur junior: 550 Euros / Jour.
-- Développeur senior: 800 Euros / Jour.
-- Data Scientist: 850 Euros / Jour.
-- Analyste Quantitatif Senior: 990 Euros / Jour.
-- Chef de Projet: 800 Euros / Jour.
-- Graphiste: 600 Euros / Jour.
-
----
-
+## Les développements spécifiques
 ## La license
-### Description de le Solution 100M
-L'application de reporting connecté 100M sert de support au suivi et à la commercialisation des produits d'investissement.
-
-Elle permet aux équipes de gestion, de risques et des relations investisseurs de collaborer au sein d'une même plateforme.
-
-Nativement, l'application 100M permet de:
-- Visualiser les risques et les performances d'un portefeuille.
-- 'Drill-down' dans les risques et les positions jusqu'au ligne à ligne.
-- Comparer le positionnement d'un portefeuille avec un benchmark.
-- Collaborer à l'édition du commentaire de gestion.
-- Effectuer des présentations à distance en utilisant la synchronisation d'écran intégrée.
-- Synchroniser la donnée des rapports avec un PMS interne.
-- Sécuriser le contenu par un mécanisme d'authentification.
-
-L'application est interactive et compatible au format tablette / mobile / desktop et fonctionne avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (11 et suivantes).
-
-*Sont inclus* dans le pricing de la solution:
-- _Un nombre d'utilisateurs illimités_
-- _La gestion des droits d'accès et profils utilisateurs_
-- _L'hébergement des serveurs de calcul_
-- _L'hébergement de la base de données_
-- _La fonctionalité d'édition de rapport PDF_
-- _Les Web Widgets crées à partir des rapports existants_
-
-
 ### Les conditions
-La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour CLIENT NAME, 24h/24 et 7j/7
-
-La license inclue également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration de CLIENT NAME du progiciel et le support téléphonique.
-
-Afin de permettre une large diffusion et de faciliter la collaboration, la license est chiffrée uniquement sur la base du nombre de documents créés et comprend un accès pour un nombre illimités d'utilisateurs.
-
-Les prix sont dégressifs avec le nombre de fonds portés au sein de la solution:
-- Les 5 premiers fonds: 700 Euros / mois / fonds.
-- Entre le 6ème et 10ème fonds: 400 Euros / mois / fonds.
-- Au-delà du 11ème fonds: 280 Euros / mois / fonds.
-
-Les prix sont valables pour un engagement de 12 mois.
-
 ### Conditions De Paiement
-Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
-
-Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la license.  
-
-Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
-
 ---
-
 ## Chiffrage de la Phase de Prototypage et de Déploiement
-
-![](/extra/table1.png)
-
 ---
-
-![](/extra/table2.png)
-
-
-
-![](/extra/table3.png)
-
----
-
 # L'équipe dirigeante
 
 ### Clément Miglietti - Directeur Général
