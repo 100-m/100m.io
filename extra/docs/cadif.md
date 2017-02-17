@@ -97,7 +97,7 @@ Le livrable sera une application en ligne, type 'single-screen' et interactive. 
 
 L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivante).
 
-### 100M aura à charge
+### 100M aura à charge de
 * recueillir l'information sur les offres des compétiteurs de CADIF,
 * établir une comparaison rigoureuse de ces offres,
 * proposer un ciblage client,
@@ -105,11 +105,11 @@ L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous C
 * proposer une interface client qui permette de comparer les offres,
 * de mettre à disposition en ligne, et protégée par mot de passe l'application prototype.
 
-### Le Crédit Agricole aura à charge,
-* Fournir la fiche produit concernée,
-* Donner le nom de 5 concurrents,
-* Participer à la segmentation marché,
-* Donner feedbacks et commentaires sur les rendus.
+### Le Crédit Agricole aura à charge de
+* fournir la fiche produit concernée,
+* donner le nom de 5 concurrents,
+* participer à la segmentation marché,
+* donner feedbacks et commentaires sur les rendus.
 
 ### Planning de livraison
 L'application sera livrée dans un delais de 8 semaines à compter de la date de l'accord client.
@@ -121,13 +121,36 @@ En phase 2, on produira une application experte dans la continuité de la préc�
 
 L'objectif est de fournir au conseiller un support à la vente sous la forme d'un outil de comparaison détaillé.
 
+### Séquençage
+*En attente de la validation du périmètre de la phase 1.*
+
+### Le livrable
+*En attente de la validation du périmètre de la phase 1.*
+
+### 100M aura à charge de
+*En attente de la validation du périmètre de la phase 1.*
+
+### Le Crédit Agricole aura à charge de
+*En attente de la validation du périmètre de la phase 1.*
+
+### Planning de livraison
+*En attente de la validation du périmètre de la phase 1.*
 
 ---
 # Le Budget
+
 ## Les développements spécifiques
+*En attente de définition du périmètre.*
+
 ## La license
+*En attente de définition du périmètre.*
+
 ### Les conditions
+*En attente de définition du périmètre.*
+
 ### Conditions De Paiement
+*En attente de définition du périmètre.*
+
 ---
 # L'équipe dirigeante
 
