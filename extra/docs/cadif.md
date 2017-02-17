@@ -14,14 +14,14 @@ Dans le cadre de son projet de digitalisation et d'aquisition de nouveaux client
 
 Le Crédit Agricole Ile de France souhaite développer un comparateur d'offres bancaires pour illustrer en toute transparence sa politique de tarification et afficher sa compétitivité.
 
-100M est la solution de choix pour développer 
+100M est la solution de choix pour communiquer efficacement sous un format engageant. 100M apporte le logiciel, le savoir-faire technique et la connaissance des métiers de la banque et de la finance; éléments primordiaux à la bonne et rapide exécution du projet. 
 
-L'objectif de ce projet est de développer un comparateur qui puisse être mis à disposition du public et des conseillers et servir de canal d'acquisition client.
+L'objectif de ce projet est de développer un comparateur qui puisse être mis à disposition du public et des conseillers, et servir de canal d'acquisition client.
 
 ---
 
 # Les Objectifs
-L'initiative conjointe du Crédit Agricole d'Ile de France et de 100M s'articule autours des 3 objectifs: Renforcer la relation Client, Améliorer l'Expérience Client et Créer de nouveaux vecteurs d'acquisition client.
+L'initiative conjointe du Crédit Agricole d'Ile de France et de 100M s'articule autours des 3 objectifs: renforcer la relation Client, améliorer son expérience et créer de nouveaux vecteurs d'acquisition de part de marché.
 
 ## La Relation Client
 Le Crédit Agricole souhaite jouer la carte de la transparence tarifaire avec ses Clients et offrir à ceux-ci la possibilité de comparer les prix avec ceux des offres concurrentes.  
