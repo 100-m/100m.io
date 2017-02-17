@@ -32,7 +32,7 @@ Le Crédit Agricole souhaite progressivement développer un espace de "Coaching"
 Le but est ici d'améliorer l'*expérience* client en lui fournissant des outils de conseil à forte valeur ajoutée qui viendront se positionner en complément ou en support de la discussion avec un conseiller.
 
 ## L'Acquisition Client
-Les outils développés dans le cadre du présent projet ont pour but d'être un vecteur d'aquisition Client: à la fois dans une perspective de *conversion de prospects*, mais également dans la perspective d'*équiper la base Client existante* avec d'autres solutions du Crédit Agricole.  
+Les outils développés dans le cadre du présent projet ont pour but d'être un vecteur d'aquisition Client: à la fois dans une perspective de *conversion de prospects*, mais également dans la perspective d'*équiper la base clients existante* avec d'autres solutions du Crédit Agricole.  
 
 ---
 
