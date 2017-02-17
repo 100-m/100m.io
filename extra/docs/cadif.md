@@ -128,8 +128,6 @@ L'objectif est de fournir au conseiller un support à la vente sous la forme d'u
 ### Les conditions
 ### Conditions De Paiement
 ---
-## Chiffrage de la Phase de Prototypage et de Déploiement
----
 # L'équipe dirigeante
 
 ### Clément Miglietti - Directeur Général
