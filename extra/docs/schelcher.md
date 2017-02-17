@@ -212,24 +212,33 @@ Afin de permettre une large diffusion et de faciliter la collaboration, la licen
 Les prix sont dégressifs avec le nombre de fonds portés au sein de la solution:
 - Les 5 premiers fonds: 700 Euros / mois / fonds.
 - Entre le 6ème et 10ème fonds: 400 Euros / mois / fonds.
-- Au-delà du 11ème fonds: 280 Euros / mois / fonds.
+- Au-delà du 11ème fonds, prix dégressifs jusqu'à 90 Euros / mois / fonds\*
 
-Les prix sont valables pour un engagement de 12 mois.
+\* sous réserve d'un examen préalable de la complexité de la donnée des portefeuilles.
 
-### Conditions De Paiement
+Les prix sont valables pour un engagement de 18 mois.
+
+## L'attribution de performance
+La facturation de l'attribution de performance se fera sur une base de Jour Homme.
+
+L'évaluation actuelle de la charge sur la gamme des fonds Schelcher est de 1 à 4 JH / mois, suivant le nombre de fonds déployés et les complexités opérationnelles rencontrées, soit entre 850 Euros et 3400 Euros / mois au total.
+
+## Conditions De Paiement
 Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
 
 Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la license.  
 
-Les termes de cette proposition restent valables jusqu’au 28 Fevrier 2017.
+Les termes de cette proposition restent valables jusqu’au 3 Mars 2017.
 
 ---
 
-## Chiffrage de la Phase de Prototypage et de Déploiement
+## Chiffrage de la Phase de Prototypage 
 
 ![](/extra/table1.png)
 
 ---
+
+## Chiffrage de la Phase de Deploiement
 
 ![](/extra/table2.png)
 
@@ -246,11 +255,15 @@ Avant de créer 100M, Clément a passé 10 ans dans la Finance à New York, Lond
 
 Clément est diplômé de l'Ecole Polytechnique, et membre du Corps des Ponts et Chaussées (X-Ponts).
 
+[Profil LinkedIn](https://fr.linkedin.com/in/clement-miglietti-05a3203)
+
 ### Valentin Brajon - Directeur Technique.
 Avant de créer 100M, Valentin a developpé des solutions Web pendant 9 ans.
 Il a été l'Architecte et le Développeur Web de nombreuses plateformes financières et notamment de celle de Parvest.
 
 Valentin est ingénieur informatique diplômé de Sciences U.
+
+[Profil LinkedIn](https://fr.linkedin.com/in/vbrajon/en)
 
 ---
 

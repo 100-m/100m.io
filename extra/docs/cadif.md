@@ -48,18 +48,17 @@ Nos applications facilitent une lecture visuelle, rapide et synthétique de l'in
 
 ### Connexion & Collaboration
 Nos solutions sont directement connectées aux données tierces via une intégration simplifiée au maximum.   
-La solution 100M comporte des modules de collaboration innovants afin d'éliminer toute friction dans la communication entre utilisateurs (ex: entre conseiller et client).
-comme le partage d'écran et la crétion collaborative de contenu  
+La solution 100M comporte des modules de collaboration innovants afin d'éliminer toute friction dans la communication entre utilisateurs (ex: entre conseiller et client). Le partage d'écran et la création collaborative de contenu en sont des exemples.
 
 ### Multi-format & Cross-Platform
-Les applications 100M sont concues pour une utilisation complètement mobile et sont compatibles desktop, tablette et smart phone.  
+Les applications 100M sont conçues pour une utilisation complètement mobile et sont compatibles desktop, tablette et smart phone.  
 Notre plateforme est également multi-format: nos applications permettent l'export de rapports PDF ou d'email de synthèse en conclusion d'une discussion client.
 
 ---
 
 ## La Technologie
 ### Le Front-End
-100M a developpé le front-end software propriétaire en Javascript permettant la reactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de donnée, et avec les écrans d'autres utilisateurs.
+100M a developpé le front-end software propriétaire en Javascript permettant la réactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
 
 ### Les moteurs de calculs en Back-End
 100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des differents indicateurs.
@@ -71,7 +70,7 @@ Les applications qui nécessitent une importante puissance de calcul sont héber
 
 Pour des questions d'encapsulation et de sécurité, notre API est hébergée sur AWS Lambda (2CPU, 1GB of RAM, 500MB SDD).
 
-### Hébergement base de données
+### Hébergement des bases de données
 Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB of RAM, 80GB SDD - r3.xlarge avec postgresql sur Aurora).
 
 ---
