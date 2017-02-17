@@ -154,7 +154,7 @@ L'objectif est de fournir au conseiller un support à la vente sous la forme d'u
 # L'équipe dirigeante
 
 ### Clément Miglietti - Directeur Général
-Avant de créer `100M`, Clément a passé 10 ans dans la Finance à New York, Londres et Paris en tant que Directeur de la Recherche Quantitative (Crédit) chez BNP Paribas, puis Gérant chez Blue Mountain Capital.
+Avant de créer 100M, Clément a passé 10 ans dans la Finance à New York, Londres et Paris en tant que Directeur de la Recherche Quantitative (Crédit) chez BNP Paribas, puis Gérant chez Blue Mountain Capital.
 
 Clément est diplômé de l'Ecole Polytechnique, et membre du Corps des Ponts et Chaussées (X-Ponts).
 
