@@ -216,7 +216,7 @@ Les prix sont dégressifs avec le nombre de fonds portés au sein de la solution
 
 \* sous réserve d'un examen préalable de la complexité de la donnée des portefeuilles.
 
-Les prix sont valables pour un engagement de 18 mois.
+Les prix sont valables pour un engagement de 12 mois.
 
 ## L'attribution de performance
 La facturation de l'attribution de performance se fera sur une base de Jour Homme.
