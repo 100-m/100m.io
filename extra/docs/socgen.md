@@ -93,12 +93,12 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 2. Un gros Hedge Fund New Yorkais cherchait une solution de dataviz pour analyser visuellement la relation entre actifs financiers.
 !["Serie Temporelle"](/extra/series.gif)
 
-3. Le laboratoire de recherche qui exploite la plus grande base de données Santé au monde à decidé de s'équiper de la solution 100M pour manipuler intéractivement la donnée.
+3. Le laboratoire de recherche qui exploite la plus grande base de données Santé au monde a decidé de s'équiper de la solution 100M pour manipuler interactivement la donnée.
 !["Manipulation Interactive"](/extra/explorer.gif)
 
 ---
 
-# Le Projet: Projet Proof Of Concept
+# Le Projet: Proof Of Concept
 L'objectif de la phase de Proof Of Concept est de développer une application adaptée à un premier cas d'usage concret.  
 
 *Le cas d'usage qui a été identifié est celui de la construction d'un modèle, de l'évaluation de sa performance et du benchmarking d'un client spécifique.*
@@ -108,21 +108,21 @@ Dans un second temps, l'application pourra être déclinée sur d'autres cas d'u
 ## Le livrable
 Le livrable sera une application en ligne interactive.
 
-L'application va permettre d'évaluer le pouvoir prédictif d'une variable, de définir un modèle, d'évaluer sa performance et finalement de benchmarker un client contre un indicateur crée au sein de l'application.
+L'application va permettre d'évaluer le pouvoir prédictif d'une variable, de définir un modèle, d'évaluer sa performance et finalement de benchmarker un client contre un indicateur créer au sein de l'application.
 
-De manière abstraite, l'application donne la possibilité:
-* de définir et calculer des mesures (i.e. de ‘reduce function’) via une fonction inputée par l'utilisateur dans l'interface.
-* de choisir les indicateurs et variables à afficher.
-* de définir un périmètre (i.e. ‘record filter’) d’analyse.
-* de définir le type de ‘chart’ à afficher.
-* de voir les données d'un groupe de clients (ou de 'records').
-* d’afficher les details d’un client (i.e. de 'records').
+De manière abstraite, l'application donne la possibilité de:
+* définir et calculer des mesures (i.e. ‘reduce function’) via une fonction inputée par l'utilisateur dans l'interface
+* choisir les indicateurs et variables à afficher
+* définir un périmètre (i.e. ‘record filter’) d’analyse
+* définir le type de ‘chart’ à afficher
+* voir les données d'un groupe de clients (ou de 'records')
+* afficher les details d’un client (i.e. de 'records')
 
 L'application 100M sera personnalisée et accordée avec la charte graphique de la Société Générale.
 
-L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivante).
+L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivantes).
 
-Dans la phase de Proof of Concept, la connexion au donnée se fera via un upload simple.
+Dans la phase de Proof of Concept, la connexion aux données se fera via un upload simple.
 
 ## 100M aura à charge
 * de concevoir le parcours utilisateur et les écrans,
@@ -131,7 +131,7 @@ Dans la phase de Proof of Concept, la connexion au donnée se fera via un upload
 
 ## La Société Générale aura à charge
 * de fournir un fichier model du format de données,
-* la validation des écrans et du parcours utilisateur.
+* de valider les écrans et les parcours utilisateur.
 
 ## Planning de livraison
 L'application sera livrée dans un délai de 6 semaines à compter de l'accord client.
@@ -156,7 +156,7 @@ Le détail du chiffrage de la phase de Proof Of Concept est presenté ci-dessous
 
 ---
 
-## La license
+## La licence
 ### Description de le Solution 100M
 L'application de reporting connecté 100M sert de support au suivi et à la commercialisation des produits d'investissement.
 
@@ -178,20 +178,20 @@ L'application est interactive et compatible au format tablette / mobile / deskto
 - _L'hébergement des serveurs de calcul_
 - _L'hébergement de la base de données_
 
-La license pour le projet de Proof Of Concept sera de 800 Euros / mois.
+La licence pour le projet de Proof Of Concept sera de 800 Euros / mois.
 
 ### Les conditions
-La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour la Société Générale, 24h/24 et 7j/7
+La licence couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour la Société Générale, 24h/24 et 7j/7
 
-La license inclue également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration de la Société Générale du progiciel et le support téléphonique.
+La licence inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration de la Société Générale du progiciel et le support téléphonique.
 
-Afin de permettre une large diffusion et de faciliter la collaboration, la license est chiffrée uniquement sur la base du nombre de documents créés et comprend un accès pour un nombre illimités d'utilisateurs.
+Afin de permettre une large diffusion et de faciliter la collaboration, la licence est chiffrée uniquement sur la base du nombre de documents créés et comprend un accès pour un nombre illimités d'utilisateurs.
 
 
 ## Conditions De Paiement
 Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
 
-Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la license.  
+Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la licence.  
 
 Les termes de cette proposition restent valables jusqu’au 1 Avril 2017.
 
