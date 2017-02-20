@@ -20,41 +20,37 @@ L'objectif est de développer un outil facilement intégrable, dont le design, l
 ---
 
 # Les Objectifs
-L'initiative conjointe de la Société Générale et de 100M s'articule autours des 3 objectifs: Analyser, Engager, et Collaborer.
+L'initiative conjointe de la Société Générale et de 100M s'articule autour des 3 objectifs: Analyser, Engager, et Collaborer.
 
 ## Analyser
-Un des objectifs primordiaux est de faciliter l'analyse pour le client qui veut rester informé sur le respect des mandats confiés.
-L'équipe de gestion et de risques souhaite également monitorer ses expositions en tant réel et améliorer son attribution et sa contribution de performance.
+Un des objectifs primordiaux est de faciliter l'analyse de la donnée, et dans le présent cas d'usage, la modélisation du risque de crédit.  
+L'équipe souhaite pouvoir construire trés facilement des indicateurs statistiques et produire des graphiques qui facilitent l'exploration de la donnée, notamment via du 'drill-down'.
 
 ## Engager
-Schelcher Prince et Federal Finance souhaitent expliquer le positionnement de leur gestion, mettre en avant sa qualité et sa performance sous un format attrayant.  
-Pour maximiser l'engagement, SPG souhaite déployer un reporting connecté et pouvoir le customiser pour chaque client.
+L'équipe de modélisation souhaite pouvoir communiquer sur la modélisation sous un format attrayant et faciliter la discussion autour des modèles.
+Pour maximiser l'engagement, elle souhaite déployer une solution connectée, interactive et compatible sur des supports tactiles.
 
-## Automatiser
-SPG souhaite mettre en place un reporting industriel et automatisé pour pouvoir assurer un traitement en temps réel et gagner en productivité.
+## Collaborer
+La collaboration est un enjeu et la solution doit permettre de co-produire un travail, de le partager et d'en exposer les résultats facilement.
 
 ---
 
 # L'Application
-100M a developpé une plateforme en-ligne sécurisée de reporting sur-mesure et de marketing dédiée aux Asset Managers.
+100M a developpé une plateforme en-ligne de data visualisation.
 
 ## La Solution
 ### Visualisation & Exploration
 L'application facilite une lecture visuelle rapide et synthétique du portefeuille.
-La possibilité d'effectuer un 'drill-down' dans les aggrégats permet une analyse par poche d'actifs selon les indicateurs choisis.
+La possibilité d'effectuer un 'drill-down' dans les aggrégats permet une analyse par poche de risque selon les indicateurs choisis.
 
-### Connexion & Collaboration
+### Collaboration
 En plus d'être directement connectée aux données, l'application 100M comporte des fonctionalités de collaboration innovantes. Le partage d'écran et l'édition de contenu collaborative permettent de gagner en productivité et en agilité.
-La solution permet une réduction des couts associés au reporting de l'ordre de 75%, tout en augmentant la qualité du contenu.
+La solution permet également de transformer une analyse en 'rapport régulier' et de réduire les couts associés au reporting de 75%, tout en augmentant la qualité du contenu.
 
-### Multi-format & Cross-Platform
-L'application 100M est concue pour une utilisation complètement mobile et est compatible desktop, tablette et smart phone.
-Elle est également multi-format et permet l'export de rapports PDF. Le format des rapports est défini par le biais de templates customisables.
-
----
-
-### Attribution et Contribution de Performance
-Dans le cadre de l'amélioration du reporting, 100M produira une contribution de performance et améliorera l'attribution de performance existante.
+### Flexibilité
+L'application 100M est concue pour supporter une utilisation complètement mobile, tactile et est compatible desktop, tablette et smart phone.  
+Elle est également multi-format et permet l'export de rapports PDF.  
+La solution 100M est flexible et permet l'ajout de visualisation et de modèles customs.
 
 ---
 
@@ -65,20 +61,34 @@ Dans le cadre de l'amélioration du reporting, 100M produira une contribution de
 ### Les moteurs de calculs en Back-End
 100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée, le calcul des differents indicateurs et une contribution de performance.
 
-### Hébergement de l'application
+### Hébergement 'Cloud' de l'application et des bases de données    
 L'hébergement du front-end de l'application se fait sur des serveurs AWS dont le taux de disponibilité est garanti à 99.99%.
 
 Les applications qui nécessitent une importante puissance de calcul sont hébergées sur un serveur dédié (4CPU, 7.5GB of RAM - c4.xlarge).
 
 Pour des questions d'encapsulation et de sécurité, notre API est hébergée sur AWS Lambda (2CPU, 1GB of RAM, 500MB SDD).
 
-### Hébergement base de données
 Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB of RAM, 80GB SDD - r3.xlarge avec postgresql sur Aurora).
 
+### Hébergement 'On-Premise'
+100M offre également la possibilité à ses clients d'héberger l'application et les bases de données On-Premise. 
+
+## Quelques exemples clients
+100m est en croissance rapide et notre solution a été adoptée par des sociétés des Banques, des sociétés d'Asset Management, et des Fintechs et des laboratoires de Recherche.
+
+1. Un gros acteur financier a adopté la solution 100M pour visualiser et explorer les risques de son portefeuille.
+!["Drill-Down Risks"](/extra/drilldown.gif)
+https://100m.tinytake.com/sf/MTM1MzA4OF80OTU1OTY1
+
+2. Un gros Hedge Fund New Yorkais cherchait une solution de dataviz pour analyser visuellement la relation entre actifs financiers.
+!["Serie Temporelle"](/extra/timeseries.png)
+
+3. Le laboratoire de recherche qui exploite la plus grande base de données Santé au monde à decidé de s'équiper de la solution 100M pour manipuler intéractivement la donnée.
+!["Manipulation Interactive"](/extra/table1.png)
 ---
 
 # Le Projet
-## Phase 1: Prototypage sur un rapport convertible Schelcher Prince Gestion
+## Phase 1: Projet Proof Of Concept
 
 L'objectif de la phase de prototypage est de:
 - cadrer le besoin,
@@ -100,7 +110,7 @@ Le prototype sera livré avec une mise-à-jour mensuelle des données.
 * de customiser le progiciel et d'adapter les graphiques,
 * de mettre à disposition en ligne, et protégée par mot de passe l'application prototype.
 
-### Schelcher aura à charge
+### La Société Générale aura à charge
 * de fournir un fichier model du format de données,
 * de fournir un model papier ou PDF de reporting existant,
 * la validation des écrans et du parcours utilisateur,
@@ -209,26 +219,13 @@ La license inclue également la maintenance corrective et évolutive, en particu
 
 Afin de permettre une large diffusion et de faciliter la collaboration, la license est chiffrée uniquement sur la base du nombre de documents créés et comprend un accès pour un nombre illimités d'utilisateurs.
 
-Les prix sont dégressifs avec le nombre de fonds portés au sein de la solution:
-- Les 5 premiers fonds: 700 Euros / mois / fonds.
-- Entre le 6ème et 10ème fonds: 400 Euros / mois / fonds.
-- Au-delà du 11ème fonds, prix dégressifs jusqu'à 90 Euros / mois / fonds\*
-
-\* sous réserve d'un examen préalable de la complexité de la donnée des portefeuilles.
-
-Les prix sont valables pour un engagement de 18 mois.
-
-## L'attribution de performance
-La facturation de l'attribution de performance se fera sur une base de Jour Homme.
-
-L'évaluation actuelle de la charge sur la gamme des fonds Schelcher est de 1 à 4 JH / mois, suivant le nombre de fonds déployés et les complexités opérationnelles rencontrées, soit entre 850 Euros et 3400 Euros / mois au total.
 
 ## Conditions De Paiement
 Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
 
 Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la license.  
 
-Les termes de cette proposition restent valables jusqu’au 3 Mars 2017.
+Les termes de cette proposition restent valables jusqu’au 1 Avril 2017.
 
 ---
 
@@ -238,20 +235,10 @@ Les termes de cette proposition restent valables jusqu’au 3 Mars 2017.
 
 ---
 
-## Chiffrage de la Phase de Deploiement
-
-![](/extra/table2.png)
-
-
-
-![](/extra/table3.png)
-
----
-
 # L'équipe dirigeante
 
 ### Clément Miglietti - Directeur Général
-Avant de créer 100M, Clément a passé 10 ans dans la Finance à New York, Londres et Paris en tant que Directeur de la Recherche Quantitative (Crédit) chez BNP Paribas, puis Gérant chez Blue Mountain Capital.
+Avant de créer 100M, Clément a passé 10 ans dans la Finance à New York, Londres et Paris en tant que Directeur de la Recherche Quantitative Crédit chez BNP Paribas, puis Gérant chez Blue Mountain Capital.
 
 Clément est diplômé de l'Ecole Polytechnique, et membre du Corps des Ponts et Chaussées (X-Ponts).
 
