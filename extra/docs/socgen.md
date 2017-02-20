@@ -47,16 +47,16 @@ La possibilité d'effectuer un 'drill-down' dans les aggrégats permet une analy
 ### Connexion & Collaboration
 En plus d'être directement connectée aux données, l'application 100M comporte des fonctionalités de collaboration innovantes. Le partage d'écran et l'édition de contenu collaborative permettent de gagner en productivité et en agilité.
 
-La solution permet également de transformer une analyse en 'rapport régulier' et de réduire les couts associés au reporting de 75%, tout en augmentant la qualité du contenu.
+La solution permet également de transformer une analyse en 'rapport régulier' et de réduire les coûts associés au reporting de 75%, tout en augmentant la qualité du contenu.
 
 Le modèle de facturation à "l'application" et non pas à "l'utilisateur" permet une diffusion non-restreinte des dashboards.
 
 ### Flexibilité
-L'application 100M est concue pour supporter une utilisation complètement mobile, tactile et est compatible desktop, tablette et smart phone.   
+L'application 100M est conçue pour supporter une utilisation complètement mobile, tactile et est compatible desktop, tablette et smart phone.   
 
-Elle est également multi-format et permet l'export de rapports PDF. 
+Elle est également multi-format et permet l'export de rapports PDF.
 
-La solution 100M est flexible et permet l'ajout de visualisation customs et l'intégration de fonction de calcul customs également.  
+La solution 100M est flexible et permet l'ajout de visualisations customs et l'intégration de fonction de calcul customs également.  
 
 
 ---
@@ -66,11 +66,11 @@ La solution 100M est flexible et permet l'ajout de visualisation customs et l'in
 100M a developpé le front-end software propriétaire en Javascript permettant la reactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de donnée, et avec les écrans d'autres utilisateurs.
 
 ### Les moteurs de calculs en Back-End
-100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée, le calcul des differents indicateurs et une contribution de performance.
+100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée, le calcul des différents indicateurs et une contribution de performance.
 
-### Hébergement 
+### Hébergement
 #### On-Premise
-100M offre également la possibilité à ses clients d'héberger l'application et les bases de données On-Premise. 
+100M offre également la possibilité à ses clients d'héberger l'application et les bases de données On-Premise.
 
 #### Cloud
 L'alternative à l'hébergement On-Premise est l'hébergement Cloud.
@@ -85,7 +85,7 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 
 
 ## Quelques exemples clients
-100m est en croissance rapide et notre solution a été adoptée par des sociétés des Banques, des sociétés d'Asset Management, et des Fintechs et des laboratoires de Recherche.
+100M est en croissance rapide et notre solution a été adoptée par des sociétés des Banques, des sociétés d'Asset Management, des Fintechs et des laboratoires de Recherche.
 
 1. Un gros acteur financier a adopté la solution 100M pour visualiser et explorer les risques de son portefeuille.
 !["Drill-Down Risks"](/extra/drilldown.gif)
@@ -122,7 +122,7 @@ L'application 100M sera personnalisée et accordée avec la charte graphique de 
 
 L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivante).
 
-Dans la phase de Proof of Concept, la connexion au donnée se fera via un upload simple.
+Dans la phase de Proof of Concept, la connexion aux données se fera via un upload simple.
 
 ## 100M aura à charge
 * de concevoir le parcours utilisateur et les écrans,
@@ -197,7 +197,7 @@ Les termes de cette proposition restent valables jusqu’au 1 Avril 2017.
 
 ---
 
-## Chiffrage de la Phase de Prototypage 
+## Chiffrage de la Phase de Prototypage
 
 ![](/extra/socgen-chiffrage.png)
 
