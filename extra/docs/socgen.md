@@ -34,25 +34,28 @@ Pour maximiser l'engagement, elle souhaite déployer une solution connectée, in
 La collaboration est un enjeu et la solution doit permettre de co-produire un travail, de le partager librement et d'en exposer les résultats facilement lors de présentation.
 
 ---
+# Notre Approche
+---
 
 # L'Application
-100M a developpé une plateforme en-ligne de data visualisation.
+100M a developpé une plateforme online de data visualisation déclinable en applications sur mesure.
+Nous vous proposons de concevoir une application adressant vos besoins métiers.
 
 ## La Solution
 ### Visualisation & Exploration
-L'application facilite une lecture visuelle rapide et synthétique du portefeuille de risques.
+Nos applications facilitent une lecture visuelle rapide et synthétique du portefeuille de risques.
 
 La possibilité d'effectuer un 'drill-down' dans les aggrégats permet une analyse par poche de risque selon les indicateurs choisis.
 
 ### Connexion & Collaboration
-En plus d'être directement connectée aux données, l'application 100M comporte des fonctionalités de collaboration innovantes. Le partage d'écran et l'édition de contenu collaborative permettent de gagner en productivité et en agilité.
+En plus d'être directement connectée aux données, la solution 100M comporte des fonctionalités de collaboration innovantes. Le partage d'écran et la création collaborative de contenu permettent de gagner en productivité et en agilité.
 
 La solution permet également de transformer une analyse en 'rapport régulier' et de réduire les couts associés au reporting de 75%, tout en augmentant la qualité du contenu.
 
 Le modèle de facturation à "l'application" et non pas à "l'utilisateur" permet une diffusion non-restreinte des dashboards.
 
 ### Flexibilité
-L'application 100M est concue pour supporter une utilisation complètement mobile, tactile et est compatible desktop, tablette et smart phone.   
+La solution 100M est concue pour supporter une utilisation complètement mobile, tactile et est compatible desktop, tablette et smart phone.   
 
 Elle est également multi-format et permet l'export de rapports PDF. 
 
@@ -70,7 +73,7 @@ La solution 100M est flexible et permet l'ajout de visualisation customs et l'in
 
 ### Hébergement 
 #### On-Premise
-100M offre également la possibilité à ses clients d'héberger l'application et les bases de données On-Premise. 
+100M offre la possibilité à ses clients d'héberger l'application et les bases de données On-Premise. 
 
 #### Cloud
 L'alternative à l'hébergement On-Premise est l'hébergement Cloud.
