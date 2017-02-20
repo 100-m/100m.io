@@ -78,13 +78,12 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 
 1. Un gros acteur financier a adopté la solution 100M pour visualiser et explorer les risques de son portefeuille.
 !["Drill-Down Risks"](/extra/drilldown.gif)
-https://100m.tinytake.com/sf/MTM1MzA4OF80OTU1OTY1
 
 2. Un gros Hedge Fund New Yorkais cherchait une solution de dataviz pour analyser visuellement la relation entre actifs financiers.
-!["Serie Temporelle"](/extra/timeseries.png)
+!["Serie Temporelle"](/extra/timeseries.gif)
 
 3. Le laboratoire de recherche qui exploite la plus grande base de données Santé au monde à decidé de s'équiper de la solution 100M pour manipuler intéractivement la donnée.
-!["Manipulation Interactive"](/extra/table1.png)
+!["Manipulation Interactive"](/extra/explorer.gif)
 ---
 
 # Le Projet
