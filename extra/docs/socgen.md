@@ -19,7 +19,7 @@ L'objectif est de développer un outil facilement intégrable, dont le design, l
 
 ---
 
-# Les Objectifs
+# Notre compréhension de vos Objectifs
 L'initiative conjointe de la Société Générale et de 100M s'articule autour des 3 objectifs: Analyser, Engager, et Collaborer.
 
 ## Analyser
@@ -31,7 +31,7 @@ L'équipe de modélisation souhaite pouvoir communiquer sur la modélisation sou
 Pour maximiser l'engagement, elle souhaite déployer une solution connectée, interactive et compatible sur des supports tactiles.
 
 ## Collaborer
-La collaboration est un enjeu et la solution doit permettre de co-produire un travail, de le partager et d'en exposer les résultats facilement.
+La collaboration est un enjeu et la solution doit permettre de co-produire un travail, de le partager librement et d'en exposer les résultats facilement lors de présentation.
 
 ---
 
