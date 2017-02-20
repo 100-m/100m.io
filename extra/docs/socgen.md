@@ -80,7 +80,7 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 !["Drill-Down Risks"](/extra/drilldown.gif)
 
 2. Un gros Hedge Fund New Yorkais cherchait une solution de dataviz pour analyser visuellement la relation entre actifs financiers.
-!["Serie Temporelle"](/extra/timeseries.gif)
+!["Serie Temporelle"](/extra/series.gif)
 
 3. Le laboratoire de recherche qui exploite la plus grande base de données Santé au monde à decidé de s'équiper de la solution 100M pour manipuler intéractivement la donnée.
 !["Manipulation Interactive"](/extra/explorer.gif)
