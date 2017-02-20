@@ -28,7 +28,7 @@ Pour maximiser l'engagement, SPG souhaite déployer un reporting connecté et po
 
 ## Analyser
 Un des objectifs primordiaux est de faciliter l'analyse pour le client qui veut rester informé sur le respect des mandats confiés.
-L'équipe de gestion et de risques souhaite également monitorer ses expositions en tant réel et améliorer son attribution et sa contribution de performance.
+L'équipe de gestion et de risques souhaite également monitorer ses expositions en temps réel et améliorer son attribution et sa contribution de performance.
 
 ## Automatiser
 SPG souhaite mettre en place un reporting industriel et automatisé pour pouvoir assurer un traitement en temps réel et gagner en productivité.
@@ -45,10 +45,10 @@ La possibilité d'effectuer un 'drill-down' dans les aggrégats permet une analy
 
 ### Connexion & Collaboration
 En plus d'être directement connectée aux données, l'application 100M comporte des fonctionalités de collaboration innovantes. Le partage d'écran et l'édition de contenu collaborative permettent de gagner en productivité et en agilité.
-La solution permet une réduction des couts associés au reporting de l'ordre de 75%, tout en augmentant la qualité du contenu.
+La solution permet une réduction des coûts associés au reporting de l'ordre de 75%, tout en augmentant la qualité du contenu.
 
 ### Multi-format & Cross-Platform
-L'application 100M est concue pour une utilisation complètement mobile et est compatible desktop, tablette et smart phone.
+L'application 100M est conçue pour une utilisation complètement mobile et est compatible desktop, tablette et smart phone.
 Elle est également multi-format et permet l'export de rapports PDF. Le format des rapports est défini par le biais de templates customisables.
 
 ---
@@ -216,7 +216,7 @@ Les prix sont dégressifs avec le nombre de fonds portés au sein de la solution
 
 \* sous réserve d'un examen préalable de la complexité de la donnée des portefeuilles.
 
-Les prix sont valables pour un engagement de 18 mois.
+Les prix sont valables pour un engagement de 12 mois.
 
 ## L'attribution de performance
 La facturation de l'attribution de performance se fera sur une base de Jour Homme.
@@ -232,7 +232,7 @@ Les termes de cette proposition restent valables jusqu’au 3 Mars 2017.
 
 ---
 
-## Chiffrage de la Phase de Prototypage 
+## Chiffrage de la Phase de Prototypage
 
 ![](/extra/table1.png)
 
