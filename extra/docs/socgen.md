@@ -34,8 +34,6 @@ Pour maximiser l'engagement, elle souhaite déployer une solution connectée, in
 La collaboration est un enjeu et la solution doit permettre de co-produire un travail, de le partager librement et d'en exposer les résultats facilement lors de présentation.
 
 ---
-# Notre Approche
----
 
 # L'Application
 100M a developpé une plateforme online de data visualisation déclinable en applications sur mesure.
