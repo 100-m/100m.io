@@ -24,7 +24,7 @@ L'initiative conjointe de la Société Générale et de 100M s'articule autour d
 
 ## Analyser
 Un des objectifs primordiaux est de faciliter l'analyse de la donnée, et dans le présent cas d'usage, la modélisation du risque de crédit.  
-L'équipe souhaite pouvoir construire trés facilement des indicateurs statistiques et produire des graphiques qui facilitent l'exploration de la donnée, notamment via du 'drill-down'.
+L'équipe souhaite pouvoir construire très facilement des indicateurs statistiques et produire des graphiques qui facilitent l'exploration de la donnée, notamment via du 'drill-down'.
 
 ## Engager
 L'équipe de modélisation souhaite pouvoir communiquer sur la modélisation sous un format attrayant et faciliter la discussion autour des modèles.
@@ -40,17 +40,24 @@ La collaboration est un enjeu et la solution doit permettre de co-produire un tr
 
 ## La Solution
 ### Visualisation & Exploration
-L'application facilite une lecture visuelle rapide et synthétique du portefeuille.
+L'application facilite une lecture visuelle rapide et synthétique du portefeuille de risques.
+
 La possibilité d'effectuer un 'drill-down' dans les aggrégats permet une analyse par poche de risque selon les indicateurs choisis.
 
-### Collaboration
+### Connexion & Collaboration
 En plus d'être directement connectée aux données, l'application 100M comporte des fonctionalités de collaboration innovantes. Le partage d'écran et l'édition de contenu collaborative permettent de gagner en productivité et en agilité.
+
 La solution permet également de transformer une analyse en 'rapport régulier' et de réduire les couts associés au reporting de 75%, tout en augmentant la qualité du contenu.
 
+Le modèle de facturation à "l'application" et non pas à "l'utilisateur" permet une diffusion non-restreinte des dashboards.
+
 ### Flexibilité
-L'application 100M est concue pour supporter une utilisation complètement mobile, tactile et est compatible desktop, tablette et smart phone.  
-Elle est également multi-format et permet l'export de rapports PDF.  
-La solution 100M est flexible et permet l'ajout de visualisation et de modèles customs.
+L'application 100M est concue pour supporter une utilisation complètement mobile, tactile et est compatible desktop, tablette et smart phone.   
+
+Elle est également multi-format et permet l'export de rapports PDF. 
+
+La solution 100M est flexible et permet l'ajout de visualisation customs et l'intégration de fonction de calcul customs également.  
+
 
 ---
 
@@ -91,13 +98,14 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 
 ---
 
-# Le Projet
-## Phase 1: Projet Proof Of Concept
-L'objectif de la phase de Proof Of Concept est de développer une application adaptée à un premier cas d'usage concret.
+# Le Projet: Projet Proof Of Concept
+L'objectif de la phase de Proof Of Concept est de développer une application adaptée à un premier cas d'usage concret.  
 
 *Le cas d'usage qui a été identifié est celui de la construction d'un modèle, de l'évaluation de sa performance et du benchmarking d'un client spécifique.*
 
-### Le livrable
+Dans un second temps, l'application pourra être déclinée sur d'autres cas d'usage ou étendue pour couvrir des cas d'usage génériques.
+
+## Le livrable
 Le livrable sera une application en ligne interactive.
 
 L'application va permettre d'évaluer le pouvoir prédictif d'une variable, de définir un modèle, d'évaluer sa performance et finalement de benchmarker un client contre un indicateur crée au sein de l'application.
@@ -116,27 +124,20 @@ L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous C
 
 Dans la phase de Proof of Concept, la connexion au donnée se fera via un upload simple.
 
-### 100M aura à charge
+## 100M aura à charge
 * de concevoir le parcours utilisateur et les écrans,
 * de customiser le progiciel et d'adapter les graphiques,
 * de mettre à disposition en ligne, et protégée par mot de passe l'application Proof Of Concept.
 
-### La Société Générale aura à charge
+## La Société Générale aura à charge
 * de fournir un fichier model du format de données,
 * la validation des écrans et du parcours utilisateur.
 
-### Planning de livraison
+## Planning de livraison
 L'application sera livrée dans un délai de 6 semaines à compter de l'accord client.
 
 ---
-
-## Phase 2: Générisation
-Dans 
-
----
-
 # Le Budget
-
 ##  Les développements spécifiques
 100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projets pour conseiller la Société Générale et pour effectuer les développements spécifiques nécessaires.
 
@@ -172,7 +173,7 @@ Nativement, l'application 100M permet de:
 L'application est interactive et compatible au format tablette / mobile / desktop et fonctionne avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (11 et suivantes).
 
 *Sont inclus* dans le pricing de la solution:
-- _Un nombre d'utilisateurs illimités_
+- __Un nombre d'utilisateurs illimités__
 - _La gestion des droits d'accès et profils utilisateurs_
 - _L'hébergement des serveurs de calcul_
 - _L'hébergement de la base de données_
@@ -198,7 +199,7 @@ Les termes de cette proposition restent valables jusqu’au 1 Avril 2017.
 
 ## Chiffrage de la Phase de Prototypage 
 
-![](/extra/socgen.png)
+![](/extra/socgen-chiffrage.png)
 
 ---
 
