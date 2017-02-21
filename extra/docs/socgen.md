@@ -11,7 +11,7 @@
 # Introduction
 Société Générale cherche une solution de data visualisation qui lui permette de traiter l’information de manière interactive sur sa clientèle de contreparties.
 
-L'équipe de modélisation du risque de crédit souhaite une solution flexible et évolutive pour travailler sur ses données, effectuer des calculs statistiques, des benchmarking et les partager avec les parties prenantes de l'entreprise.
+L'équipe de modélisation du risque de crédit souhaite une solution flexible et évolutive pour travailler sur ses données, effectuer des calculs statistiques, des benchmarkings et les partager avec les parties prenantes de l'entreprise.
 
 100M est la solution de choix pour analyser la donnée et collaborer efficacement sous un format engageant. 100M apporte le logiciel, le savoir-faire technique et la connaissance des métiers du risque; éléments primordiaux à la bonne et rapide exécution du projet.
 
@@ -37,7 +37,7 @@ La collaboration est un enjeu et la solution doit permettre de co-produire un tr
 
 # L'Application
 100M a developpé une plateforme online de data visualisation déclinable en applications sur mesure.
-Nous vous proposons de concevoir une application adressant vos besoins métiers.
+Nous vous proposons de concevoir tout d'abord une première application adressant vos besoins métiers dans un format générique.
 
 ## La Solution
 ### Visualisation & Exploration
@@ -57,7 +57,7 @@ La solution 100M est concue pour supporter une utilisation complètement mobile,
 
 Elle est également multi-format et permet l'export de rapports PDF.
 
-La solution 100M est flexible et permet l'ajout de visualisations customs et l'intégration de fonction de calcul customs également.  
+La solution 100M est flexible et évolutive. Elle permet l'ajout de visualisations customs et l'intégration de fonction de calcul customs également.  
 
 
 ---
@@ -67,7 +67,7 @@ La solution 100M est flexible et permet l'ajout de visualisations customs et l'i
 100M a developpé le front-end software propriétaire en Javascript permettant la reactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de donnée, et avec les écrans d'autres utilisateurs.
 
 ### Les moteurs de calculs en Back-End
-100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée, le calcul des différents indicateurs et une contribution de performance.
+100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée, le calcul des différents indicateurs et mesures de risques.
 
 ### Hébergement
 #### On-Premise
@@ -86,12 +86,12 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 
 
 ## Quelques exemples clients
-100M est en croissance rapide et notre solution a été adoptée par des sociétés des Banques, des sociétés d'Asset Management, des Fintechs et des laboratoires de Recherche.
+100M est en croissance rapide et notre solution a été adoptée par des Banques, des sociétés d'Asset Management, des Fintechs et des Laboratoires de Recherche.
 
 1. Un gros acteur financier a adopté la solution 100M pour visualiser et explorer les risques de son portefeuille.
 !["Drill-Down Risks"](/extra/drilldown.gif)
 
-2. Un gros Hedge Fund New Yorkais cherchait une solution de dataviz pour analyser visuellement la relation entre actifs financiers.
+2. Un des principaux Hedge Fund New Yorkais cherchait une solution de dataviz pour analyser visuellement la relation entre actifs financiers.
 !["Serie Temporelle"](/extra/series.gif)
 
 3. Le laboratoire de recherche qui exploite la plus grande base de données Santé au monde a decidé de s'équiper de la solution 100M pour manipuler interactivement la donnée.
@@ -100,16 +100,16 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 ---
 
 # Le Projet: Proof Of Concept
-L'objectif de la phase de Proof Of Concept est de développer une application adaptée à un premier cas d'usage concret.  
+L'objectif de la phase de Proof Of Concept est de développer une application adaptée à un premier cas d'usage concret relativement générique.
 
 *Le cas d'usage qui a été identifié est celui de la construction d'un modèle, de l'évaluation de sa performance et du benchmarking d'un client spécifique.*
 
-Dans un second temps, l'application pourra être déclinée sur d'autres cas d'usage ou étendue pour couvrir des cas d'usage génériques.
+Dans un second temps, l'application pourra être déclinée sur d'autres cas d'usage ou étendue.
 
 ## Le livrable
-Le livrable sera une application en ligne interactive.
+Le livrable sera une application en ligne interactive et évolutive.
 
-L'application va permettre d'évaluer le pouvoir prédictif d'une variable, de définir un modèle, d'évaluer sa performance et finalement de benchmarker un client contre un indicateur créer au sein de l'application.
+L'application va permettre d'évaluer le pouvoir prédictif d'une variable, de définir un modèle, d'évaluer sa performance et finalement de benchmarker un client contre un indicateur créé au sein de l'application.
 
 De manière abstraite, l'application donne la possibilité de:
 * définir et calculer des mesures (i.e. ‘reduce function’) via une fonction inputée par l'utilisateur dans l'interface
@@ -159,9 +159,9 @@ Le détail du chiffrage de la phase de Proof Of Concept est presenté ci-dessous
 
 ## La licence
 ### Description de le Solution 100M
-L'application de reporting connecté 100M sert de support au suivi et à la commercialisation des produits d'investissement.
+L'application de visualisation connectée 100M sert de support à l'analyse de données et à sa diffusion.
 
-Elle permet aux équipes de gestion, de risques et des relations investisseurs de collaborer au sein d'une même plateforme.
+Elle permet aux équipes de risques, au management et aux autres parties prenantes de travailler et collaborer au sein d'une même plateforme.
 
 Nativement, l'application 100M permet de:
 - Visualiser les risques, les performances et les indicateurs 'user-defined' d'un portefeuille.
