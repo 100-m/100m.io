@@ -243,18 +243,6 @@ Il a été l'Architecte et le Développeur Web de nombreuses plateformes financi
 <h2 id="votre-contact-">Votre Contact:</h2>
 <h1 id="clement-100m-io">clement@100m.io</h1>
 </section>
-<script src="./socgen_files/axios.js"></script>
-<script src="./socgen_files/marked.js"></script>
-<script>
-var url = location.search.replace('?', '/extra/docs/')
-var selector = document.querySelector('section')
-axios
-.get(url)
-.then(res => res.data)
-.then(md => marked(md))
-.then(html => selector.innerHTML = html)
-if (location.hash) setTimeout(() => document.querySelector(location.hash).scrollIntoView(), 500)
-</script>
 <script src="./socgen_files/pagemap.min.js"></script>
 <style>
 #map {
