@@ -36,7 +36,7 @@ La collaboration est un enjeu et la solution doit permettre de co-produire un tr
 ---
 
 # L'Application
-100M a developpé une plateforme online de data visualisation déclinable en applications sur mesure.
+100M a developpé une plateforme online de data visualisation déclinable en applications sur mesure.  
 Nous vous proposons de concevoir tout d'abord une première application adressant vos besoins métiers dans un format générique.
 
 ## La Solution
