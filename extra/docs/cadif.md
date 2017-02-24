@@ -20,7 +20,7 @@ L'objectif de ce projet est de développer un comparateur qui puisse être mis �
 
 ---
 
-# Les Objectifs
+# Ce que nous avons compris de vos Objectifs
 L'initiative conjointe du Crédit Agricole d'Ile de France et de 100M s'articule autours des 3 objectifs: renforcer la relation Client, améliorer son expérience et créer de nouveaux vecteurs d'acquisition de part de marché.
 
 ## La Relation Client
@@ -56,7 +56,7 @@ Notre plateforme est également multi-format: nos applications permettent l'expo
 
 ---
 
-## La Technologie
+## La Technologie 100M
 ### Le Front-End
 100M a developpé le front-end software propriétaire en Javascript permettant la réactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
 
@@ -83,27 +83,27 @@ L'application invitera le client à comparer les offres des différents compéti
 
 L'application sera mise directement à disposition du public et pourra servir de canal d'aquisition client.
 
-### Séquençage:
-1. recueil d'information sur l'offre de CADIF et celle de 25 compétiteurs
-Les compétiteurs envisagés sont les suivants: Allianz Banque, AXA Banque, Banque Palatine, Banque Populaire Rives de Paris, Banque Privée Européenne, Barclays, BforBank, BNP Paribas, Boursorama Banque, Caisse d'Epargne Ile-de-France , CIC, Crédit Agricole Ile-de-France, Crédit Coopératif, Crédit Mutuel Île-de-France, e.LCL, Fortuneo, Groupama Banque, Hello Bank, HSBC, ING Direct, La Banque Postale, LCL, Macif, Monabanq, Société Générale, Soon.
+### Séquençage:  
+1. recueil d'information sur l'offre de CADIF et celle de 25 compétiteurs  
+Les compétiteurs envisagés sont les suivants: Allianz Banque, AXA Banque, Banque Palatine, Banque Populaire Rives de Paris, Banque Privée Européenne, Barclays, BforBank, BNP Paribas, Boursorama Banque, Caisse d'Epargne Ile-de-France , CIC, Crédit Agricole Ile-de-France, Crédit Coopératif, Crédit Mutuel Île-de-France, e.LCL, Fortuneo, Groupama Banque, Hello Bank, HSBC, ING Direct, La Banque Postale, LCL, Macif, Monabanq, Société Générale, Soon.  
 
-2. conception de la grille de comparaison, normalisation des offres et classification au sein de la grille
-Livraison d'un tableau excel présentant le comparatif de l'ensemble des offres concurrentes.
+2. conception de la grille de comparaison, normalisation des offres et classification au sein de la grille  
+Livraison d'un tableau excel présentant le comparatif de l'ensemble des offres concurrentes.  
 
-3. revue de la segmentation du marché et identification de la cible client
-Le Crédit Agricole fournira une segmentation marché sous la forme de profiles de clients types, de tailles de segments, ainsi que des statistiques de consommation (et moyenne et variabilité de consommation) sur chaque composante de l'offre.
+3. revue de la segmentation du marché et identification de la cible client  
+Le Crédit Agricole fournira une segmentation marché sous la forme de profiles de clients types, de tailles de segments, ainsi que des statistiques de consommation (moyenne et variabilité de consommation) sur chaque composante de l'offre.  
 
-4. définition du parcours utilisateur au sein du questionnaire robot
-Sur la base de la segmentation client, 100M établira 'l'arbre de décision' correspondant au questionnaire robot dans l'application qui permet de placer l'utilisateur dans un segment de marché, et au sein du segment.
-Livraison de l'arbre de questions à poser.
+4. définition du parcours utilisateur au sein du questionnaire robot  
+Sur la base de la segmentation client, 100M établira 'l'arbre de décision' correspondant au questionnaire robot dans l'application qui permet de placer l'utilisateur dans un segment de marché, et au sein de ce segment.
+Livraison de l'arbre de questions à poser.  
 
-5. design de l'application
-Livraison de l'UI/UX.
+5. design de l'application  
+Livraison de l'UI/UX.  
 
-6. développement de l'application 
-Itération en mode agile sur le développement.
+6. développement de l'application   
+Itérations agiles sur le développement.  
 
-7. test et mise en ligne
+7. tests et mise en ligne  
 
 ### L'application livrée
 Le livrable sera une application en ligne, type 'single-screen' et interactive. L'application 100M sera personnalisée et accordée avec la charte graphique du Crédit Agricole.
@@ -111,20 +111,18 @@ Le livrable sera une application en ligne, type 'single-screen' et interactive. 
 L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivante).
 
 ### 100M aura à charge de
-* recueillir l'information sur les offres des compétiteurs de CADIF,
-* établir une comparaison rigoureuse de ces offres,
-* établir un questionnaire client qui permette d'effectuer une comparaison ciblée,
-* proposer une interface client qui permette de comparer les offres,
-* de mettre à disposition en ligne, et protégée par mot de passe l'application prototype.
+* recueillir l'information sur les offres des compétiteurs de CADIF,  
+* établir une comparaison rigoureuse de ces offres,  
+* établir un questionnaire client qui permette d'effectuer une comparaison ciblée,  
+* proposer une interface client qui permette de comparer les offres,  
+* de mettre à disposition en ligne, et protégée par mot de passe l'application prototype.  
 
 ### Le Crédit Agricole aura à charge de
-* fournir la fiche produit concernée,
-* donner le nom de 5 concurrents,
-* fournir la segmentation marché,
-* donner feedbacks et commentaires sur les rendus.
+* fournir la segmentation marché,  
+* donner feedbacks et commentaires sur les rendus.  
 
 ### Planning de livraison
-L'application sera livrée dans un delais de 8 semaines à compter de la date de l'accord client.
+L'application sera livrée dans un delais de 8 semaines à compter de la date de l'accord client.  
 
 ---
 ## Phase 2: Comparateur 'Expert' à destination des conseillers
@@ -163,7 +161,7 @@ Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 ## La license
 La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour la Crédit Agricole Ile de France, 24h/24 et 7j/7
 
-La license inclue également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration de Schelcher du progiciel et le support téléphonique.
+La license inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration de Schelcher du progiciel et le support téléphonique.
 
 Afin de permettre une large diffusion de nos applications et de faciliter la collaboration, la license est chiffrée uniquement "à l'application" et non pas à l'utilisateur.
 
