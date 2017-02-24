@@ -74,8 +74,8 @@ Pour des questions d'encapsulation et de sécurité, notre API est hébergée su
 Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB of RAM, 80GB SDD - r3.xlarge avec postgresql sur Aurora).
 
 ---
-# Le Projet Proof-Of-Concept
-## Phase 1: Comparateur 'Simplifié' à destination du grand public 
+# Le Projet
+## Phase Proof-Of-Concept:  Comparateur 'Simplifié' à destination du grand public 
 
 L'objectif de cette phase 1 est de produire une application simple qui _démontre_ au client que l'offre du Crédit Agricole est la plus compétitive. 
 
@@ -84,14 +84,28 @@ L'application invitera le client à comparer les offres des différents compéti
 L'application sera mise directement à disposition du public et pourra servir de canal d'aquisition client.
 
 ### Séquençage:
-1. recueil d'information sur l'offre CADIF et celle des compétiteurs,
-2. segmentation du marché, et positionnement compétitif, 
-3. identification de la cible client et définition des objectifs marketing,
-4. définition du parcours utilisateur,
-5. production de l'application,
-6. test et itérations
+1. recueil d'information sur l'offre de CADIF et celle de 25 compétiteurs
+Les compétiteurs envisagés sont les suivants: Allianz Banque, AXA Banque, Banque Palatine, Banque Populaire Rives de Paris, Banque Privée Européenne, Barclays, BforBank, BNP Paribas, Boursorama Banque, Caisse d'Epargne Ile-de-France , CIC, Crédit Agricole Ile-de-France, Crédit Coopératif, Crédit Mutuel Île-de-France, e.LCL, Fortuneo, Groupama Banque, Hello Bank, HSBC, ING Direct, La Banque Postale, LCL, Macif, Monabanq, Société Générale, Soon.
 
-### Le livrable
+2. conception de la grille de comparaison, normalisation des offres et classification au sein de la grille
+Livraison d'un tableau excel présentant le comparatif de l'ensemble des offres concurrentes.
+
+3. revue de la segmentation du marché et identification de la cible client
+Le Crédit Agricole fournira une segmentation marché sous la forme de profiles de clients types, de tailles de segments, ainsi que des statistiques de consommation (et moyenne et variabilité de consommation) sur chaque composante de l'offre.
+
+4. définition du parcours utilisateur au sein du questionnaire robot
+Sur la base de la segmentation client, 100M établira 'l'arbre de décision' correspondant au questionnaire robot dans l'application qui permet de placer l'utilisateur dans un segment de marché, et au sein du segment.
+Livraison de l'arbre de questions à poser.
+
+5. design de l'application
+Livraison de l'UI/UX.
+
+6. développement de l'application 
+Itération en mode agile sur le développement.
+
+7. test et mise en ligne
+
+### L'application livrée
 Le livrable sera une application en ligne, type 'single-screen' et interactive. L'application 100M sera personnalisée et accordée avec la charte graphique du Crédit Agricole.
 
 L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivante).
@@ -99,7 +113,6 @@ L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous C
 ### 100M aura à charge de
 * recueillir l'information sur les offres des compétiteurs de CADIF,
 * établir une comparaison rigoureuse de ces offres,
-* proposer un ciblage client,
 * établir un questionnaire client qui permette d'effectuer une comparaison ciblée,
 * proposer une interface client qui permette de comparer les offres,
 * de mettre à disposition en ligne, et protégée par mot de passe l'application prototype.
@@ -107,7 +120,7 @@ L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous C
 ### Le Crédit Agricole aura à charge de
 * fournir la fiche produit concernée,
 * donner le nom de 5 concurrents,
-* participer à la segmentation marché,
+* fournir la segmentation marché,
 * donner feedbacks et commentaires sur les rendus.
 
 ### Planning de livraison
@@ -120,35 +133,48 @@ En phase 2, on produira une application experte dans la continuité de la préc�
 
 L'objectif est de fournir au conseiller un support à la vente sous la forme d'un outil de comparaison détaillé.
 
-### Séquençage
-*En attente de la validation du périmètre de la phase 1.*
-
-### Le livrable
-*En attente de la validation du périmètre de la phase 1.*
-
-### 100M aura à charge de
-*En attente de la validation du périmètre de la phase 1.*
-
-### Le Crédit Agricole aura à charge de
-*En attente de la validation du périmètre de la phase 1.*
-
-### Planning de livraison
-*En attente de la validation du périmètre de la phase 1.*
+Il s'agit là d'etoffer l'étude réalisée lors de la proof-of-concept:
+* en élargissant le périmètre concurrentiel
+* en élargissant les cibles clients
+* en packageant l'application au sein d'un outil déployable auprès des conseillers.
 
 ---
 # Le Budget
-
 ## Les développements spécifiques
-*En attente de définition du périmètre.*
+100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projets pour conseiller le Credit Agricole et pour effectuer les développements spécifiques nécessaires.
+
+Les développements spécifiques comprennent, à titre d'exemple:
+* la customisation du progiciel,
+* l'intégration au système Client et le travail spécifique des données,
+
+Les développements se font en cycles *Agiles* en partenariat avec le client.  
+Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
+
+- Développeur junior: 550 Euros / Jour.
+- Développeur senior / Architecte: 800 Euros / Jour.
+- Data Scientist: 850 Euros / Jour.
+- Analyste Quantitatif Senior: 990 Euros / Jour.
+- Chef de Projet: 800 Euros / Jour.
+- Graphiste: 600 Euros / Jour.
+
+## Chiffrage de la Proof-Of-Concept
+![](/extra/cadif-poc.png)
 
 ## La license
-*En attente de définition du périmètre.*
+La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour la Crédit Agricole Ile de France, 24h/24 et 7j/7
 
-## Les conditions
-*En attente de définition du périmètre.*
+La license inclue également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration de Schelcher du progiciel et le support téléphonique.
+
+Afin de permettre une large diffusion de nos applications et de faciliter la collaboration, la license est chiffrée uniquement "à l'application" et non pas à l'utilisateur.
+
+La license pour l'application 'proof-of-concept' est de 600 Euros / mois, hébergement inclus.
+
+Les prix sont valables pour un engagement de 6 mois renouvelables.
 
 ## Conditions De Paiement
-*En attente de définition du périmètre.*
+Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
+
+Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la license.  
 
 ---
 # L'équipe dirigeante
