@@ -100,7 +100,7 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 ---
 
 # Le Projet: Proof Of Concept
-L'objectif de la phase de Proof Of Concept est d'illustrer la façon dont un utilisateur peut intéragir avec l'application 100M sur un cas d'usage simple: analyser le portefeuille de contrepartie.
+**L'objectif de la phase de Proof Of Concept est d'illustrer la façon dont un utilisateur peut intéragir avec l'application 100M sur un cas d'usage simple: analyser le portefeuille de contrepartie.**
 
 La Proof Of Concept servira de socle pour une application plus générique qui permet *la construction d'un modèle, de l'évaluation de sa performance et du benchmarking d'un client spécifique.*
 
