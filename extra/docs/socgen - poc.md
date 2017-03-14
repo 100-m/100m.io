@@ -100,31 +100,23 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 ---
 
 # Le Projet: Proof Of Concept
-L'objectif de la phase de Proof Of Concept est d'illustrer la façon dont un utilisateur peut intéragir avec l'application 100M.
+L'objectif de la phase de Proof Of Concept est d'illustrer la façon dont un utilisateur peut intéragir avec l'application 100M sur un cas d'usage simple: analyser le portefeuille de contrepartie.
 
 La Proof Of Concept servira de socle pour une application plus générique qui permet *la construction d'un modèle, de l'évaluation de sa performance et du benchmarking d'un client spécifique.*
 
 Dans un second temps, l'application pourra être déclinée sur d'autres cas d'usage ou étendue.
 
 ## Le livrable
-Le livrable sera une application en ligne interactive et évolutive.
+Le livrable est une application en ligne interactive et évolutive.
 
-#################################################
-#################################################
-#################################################
-#################################################
-L'application va permettre d'évaluer le pouvoir prédictif d'une variable, de définir un modèle, d'évaluer sa performance et finalement de benchmarker un client contre un indicateur créé au sein de l'application.
-
-De manière abstraite, l'application donne la possibilité de:
-* définir et calculer des mesures (i.e. ‘reduce function’) via une fonction inputée par l'utilisateur dans l'interface
-* choisir les indicateurs et variables à afficher
-* définir un périmètre (i.e. ‘record filter’) d’analyse
-* définir le type de ‘chart’ à afficher
-* voir les données d'un groupe de clients (ou de 'records')
-* afficher les details d’un client (i.e. de 'records')
-#################################################
-#################################################
-#################################################
+L'application, configurée en mode 'single-screen' va permettre de:
+* évaluer la distribution des contreparties sur 4 axes catégoriques
+* filtrer de manière dynamique au sein de ces catégories
+* voir la table de contrepartie résultant du filtrage
+* trier la table selon différents critères
+* selection une contrepartie dans la table.
+* pour une contrepartie, afficher une fiche descriptive
+* afficher 2 charts pour cette contrepartie
 
 L'application 100M sera personnalisée et accordée avec la charte graphique de la Société Générale.
 
