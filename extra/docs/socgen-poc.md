@@ -100,7 +100,7 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 ---
 
 # Le Projet: Proof Of Concept
-**L'objectif de la phase de Proof Of Concept est d'illustrer la façon dont un utilisateur peut intéragir avec l'application 100M sur un cas d'usage simple: analyser le portefeuille de contrepartie.**
+**L'objectif** de la phase de Proof Of Concept **est d'illustrer** la façon dont un utilisateur peut intéragir avec l'application 100M sur **un cas d'usage simple: l'analyse du portefeuille de contreparties.**
 
 La Proof Of Concept servira de socle pour une application plus générique qui permet *la construction d'un modèle, de l'évaluation de sa performance et du benchmarking d'un client spécifique.*
 
@@ -114,7 +114,7 @@ L'application, configurée en mode 'single-screen' va permettre de:
 * filtrer de manière dynamique au sein de ces catégories
 * voir la table de contrepartie résultant du filtrage
 * trier la table selon différents critères
-* selection une contrepartie dans la table.
+* selectionner une contrepartie dans la table.
 * pour une contrepartie, afficher une fiche descriptive
 * afficher 2 charts pour cette contrepartie
 
@@ -189,7 +189,7 @@ Afin de permettre une large diffusion et de faciliter la collaboration, la licen
 
 
 ## Conditions De Paiement
-Le paiement sera demandé à la livraison.
+Le paiement s'effectue en 2 temps, 50% à la commande, 50% à la livraison.
 
 Les termes de cette proposition restent valables jusqu’au 1 Avril 2017.
 
