@@ -52,13 +52,14 @@ La solution permet également de transformer une analyse en 'rapport régulier' 
 
 Le modèle de facturation à "l'application" et non pas à "l'utilisateur" permet une diffusion non-restreinte des dashboards.
 
+---
+
 ### Flexibilité
 La solution 100M est concue pour supporter une utilisation complètement mobile, tactile et est compatible desktop, tablette et smart phone.   
 
 Elle est également multi-format et permet l'export de rapports PDF.
 
 La solution 100M est flexible et évolutive. Elle permet l'ajout de visualisations customs et l'intégration de fonction de calcul customs également.  
-
 
 ---
 
@@ -137,6 +138,7 @@ Pour la phase de Proof of Concept, la connexion aux données se fera via un uplo
 L'application sera livrée dans un délai d'1 semaine à compter de l'accord client.
 
 ---
+
 # Le Budget
 ##  Les développements spécifiques
 100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projets pour conseiller la Société Générale et pour effectuer les développements spécifiques nécessaires.
@@ -179,6 +181,8 @@ L'application est interactive et compatible au format tablette / mobile / deskto
 - _L'hébergement de la base de données_
 
 La licence pour le projet de Proof Of Concept sera offerte.
+
+---
 
 ### Les conditions
 La licence couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour la Société Générale, 24h/24 et 7j/7
