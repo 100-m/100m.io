@@ -6,7 +6,7 @@
 <div style="margin-bottom: 140px; background: #b10f3e">
   <img src="/extra/background.png" style="visibility:hidden"/>
   <img src="/extra/logo.png" style="position: absolute;top: 50%;left: 50px;width: 100px;" />
-  <!-- <img src="/extra/logo-clustaar.png" style="position: absolute;top: 50%;right: 50px;width: 100px;" /> -->
+  <img src="/extra/logo-clustaar.png" style="position: absolute;top: 55%;right: 20px;width: 150px;" />
   <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);"></h1>
 </div>
 
@@ -16,13 +16,13 @@
 ---
 
 # Exec Sum
-Dans le cadre de XXXXX, le ClubMed XXXXX.
+Dans le cadre du suivi de son action marketing online, le ClubMed souhaite revoir ses KPIs et se doter d'un Tableau de Bord pour les suivre.
 
-Le Crédit Agricole Ile de France souhaite développer un comparateur d'offres bancaires pour illustrer en toute transparence sa politique de tarification et afficher sa compétitivité.
+L'objectif du Dashboard est de reconstituer une image claire, en utilisant des métriques actionnables. Le Dashboard sera présenté sous un format engageant et pourra être diffusé largement. 
 
-100M est la solution de choix pour communiquer efficacement sous un format engageant. 100M apporte le logiciel, le savoir-faire technique et la connaissance des métiers de la banque et de la finance; éléments primordiaux à la bonne et rapide exécution du projet. 
+L'expertise S.E.O de Clustaar, le logiciel 100M ainsi que le savoir-faire technique de l'équipe sont des éléments primordiaux à la bonne et rapide exécution du projet. 
 
-L'objectif de ce projet est de développer un comparateur qui puisse être mis à disposition du public et des conseillers, et servir de canal d'acquisition client.
+Le livrable sera une application online, interactive dont la mise à jour sera automatique.
 
 ---
 
@@ -153,7 +153,6 @@ La technologie __Clustaar Deep Query__ est un developpement propriétaire qui pe
 ### Une Equipe Pluri-Disciplinaire 
 Clustaar réunit des __consultants S.E.O., des data scientists et des développeurs__. 
 
-
 ---
 
 # Déroulement Projet
@@ -177,7 +176,7 @@ L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous C
 ## ClubMed aura à charge de
 * Fournir l'accès aux données GAP.  
 * Valider les indicateurs choisis.  
-* Valider les ecrans et les interactions utilisateurs.  
+* Valider les écrans et les interactions utilisateurs.  
 
 ## Clustaar aura à charge de
 * Fournir l'accès aux données Clustaar Continuous Testing.  
@@ -186,7 +185,7 @@ L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous C
 ## 100M aura à charge de
 * Concevoir les indicateurs.  
 * Concevoir les parcours utilisateurs.  
-* Concevoir les graphiques et les intéractions.
+* Concevoir les graphiques et les interactions.
 * Implémenter le front-end.
 * Collecter les données via les differentes API.
 * Automatiser le traitement de la données et le calcul les indicateurs.
@@ -221,7 +220,7 @@ La license couvre le droit d’utilisation du progiciel et de ses développement
 
 La license inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration du progiciel et le support téléphonique.
 
-Afin de permettre une large diffusion de nos applications et de faciliter la collaboration, la license est chiffrée uniquement "à l'application" et non pas à l'utilisateur.
+La license est chiffrée uniquement "à l'application" et inclut **un nombre illimité d'utilisateurs**.
 
 Prix de la license pour l'application 800 EUR / mois.
 
