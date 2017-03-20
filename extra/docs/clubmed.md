@@ -74,8 +74,8 @@ __Indicateurs:__
 * Repartition du Trafic par type de page et Evolution (autres, destinations, home, landing, village, village-infos) - _Graphique avec Filtrage Dynamique_ 
 * Repartition du trafic par device et Evolution (Desktop, Mobile, Tablet) - _Graphique avec Filtrage Dynamique_ 
 * Evolution nombre de backlink - _Indicateur Chiffre_
-* Nouveaux Domaines referents - _Liste de Noms_
-(_optionnelle_)* Qualité des visites S.E.O.  (pages session, temps moyen passe sur le site, taux de rebond, Be Entry)
+* Nouveaux Domaines referents - _Liste de Noms_    
+_(optionnelle)_* Qualité des visites S.E.O.  (pages session, temps moyen passe sur le site, taux de rebond, Be Entry)
 
 
 ## Ecran de Conversion
@@ -213,7 +213,7 @@ Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 - Graphiste: 600 Euros / Jour.
 
 ## Chiffrage du Projet
-_En attente de validation périmètre. **Ordre de grandeur entre 25k et 30k.**_
+![](/extra/clubmed-chiffrage.png)
 
 ## La license
 La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour le ClubMed, 24h/24 et 7j/7
