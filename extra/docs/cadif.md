@@ -163,7 +163,7 @@ Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 ## La license
 La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour la Crédit Agricole Ile de France, 24h/24 et 7j/7
 
-La license inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration de Schelcher du progiciel et le support téléphonique.
+La license inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration du progiciel et le support téléphonique.
 
 Afin de permettre une large diffusion de nos applications et de faciliter la collaboration, la license est chiffrée uniquement "à l'application" et non pas à l'utilisateur.
 

@@ -1,5 +1,10 @@
-<div style="margin-bottom: 140px;">
-  <img src="/extra/background.png"/>
+<style>
+	h1 small, h2{
+		color: hotpink! important ;
+	}
+</style>
+<div style="margin-bottom: 140px; background: #b10f3e">
+  <img src="/extra/background.png" style="visibility:hidden"/>
   <img src="/extra/logo.png" style="position: absolute;top: 50%;left: 50px;width: 100px;" />
   <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);"></h1>
 </div>
@@ -26,95 +31,107 @@ L'initiative conjointe du ClubMed et de 100M s'articule autours des 3 objectifs:
 Interet croiser des sources.
 ## CROISER LES SOURCES ?? / UNE EFFORT SUR LA DONNEE, 
 ## CROISER INFOS
+## HISTORISER
 ## AIDER DECISION ET IMPLEMENTATIONS
 ## SUIVRE IMPLEMENTATION
 ## Définir des Indicateurs Actionnables
 ## Favoriser l'Engagement sur les Dashboards
 ## S'adapter Aux Spécificités Pays / 	Comparer des pays.
+## PLUSIEURS NIVEAUX DE LECTURE, SIMPLIFIER, VULGARISER
 
 ---
 
-# POC: digitalisation et automatisation du reporting existant. 
-On vous propose de revoir les indicateurs, de 
+# Tableau de Bord
+
+Structure de l'application
+
+## Overview
+* visites du mois - number & last month change. (visiteurs uniques ??)
+* visites SEO mois - number & last month change. (part du SEO ?)
+* visibilité 'Top 20 Google': % change.
+* conversion: Be Entry &  Confirmation. number and last month change.
+* temps de telechargement moyen (vs last month)
+* Part du mobile (vs last year)
+* Indice de visibilité (vs last month)
+* Valeur trafic SEO (vs last year)
 
 
-SEO: 1er niveau globlal. Revue des indicateurs. 
+## Ecran d'Audience
+__Objectifs:__ 
+* Evaluer le volume de traffic, 
+* Déterminer l'origine du trafic,
 
-	Traffic:
-		* Nb de visites par source, 
-		* Entree SEO par type de page Home / Destinations / LandingPages / Village / Autres.
-			Evolution du traffic sur des segments. (YoY or MoM or WoW)
-		* Production de contenu
+__Follow-up Actions:__ Orienter la production de contenu  
 
+__Data Sources__ Google Analytics, Majestic, Search Metrics  
+__Historization__ ???????????????    
 
-Structure de l'appli:
-
-## Indicateur 'High-Level' Indicateur API Google Analytics Premium
-__Objectif 1__ Evaluer le volume de traffic, comprendre son origine et améliorer sa conversion   
-__Data Sources__ 
-__Indicateurs Proposés__  
-
-### Analyse du traffic total par source.
-  	          juste sur le SEO.
-			  par type de page.
-			  par device
+__Indicateurs:__
+* Repartition du Trafic par source et Evolution (Direct, Direct Access, Display, Email, Partnerships, Referral, SEA, SEO) - _Graphique avec Filtrage Dynamique_ 
+* Repartition du Trafic par type de page et Evolution (autres, destinations, home, landing, village, village-infos) - _Graphique avec Filtrage Dynamique_ 
+* Repartition du trafic par device et Evolution (Desktop, Mobile, Tablet) - _Graphique avec Filtrage Dynamique_ 
+* Evolution nombre de backlink - _Indicateur_
+* Nouveaux Domaines referents - _Liste de Noms_
+* SEO: qualite de la visite i.e. comportement: pages session, temps moyen passe sur le site, taux de rebond, Be Entry)
 
 
- Backlink
-	- nombre de backlink (evolution), nouveaux domaines referents. cf. MAJESTIC. Donne les backlinks pour site. La liste des backlinks. Score. 
-	- comment evolue par rapport aux concurrents. indicateur notoriete.
+## Ecran de Conversion
+__Objectifs:__ 
+__Follow-up Actions:__ Orienter la production de contenu  
+__Data Sources__ Google Analytics, Majestic  
+__Historization__ ???????????????    
+__Indicateurs:__
 
-## Conversion 
+Conversion 
 	En line vs. Off line
 	Contribution du SEO au chiffre.
+	* evolution conversion vs. trafic SEO. (categories: Newsletter, confirmation. ROPO call freespee, be entry, store locator, ropo webcallback, ropo call freespee 300s, visite seo)
+	* top 10 pages generants conversion pour BE Entry et pour Confirmation.
+
 
 ## Ecran S.E.O. Technique
-__Objectif 1__ Faire remonter l'information   
-__Data Sources__ Google Search Console, Clustaar Continuous Testing  
-__Historization__ Google Search Console  
-__Indicateurs Proposés__  
+__Objectif:__ Identifier les problèmes techniques sur le site  
+__Follow-up Actions:__ Envoie d'une demande de correction à la personne en charge  
 
-	PAGE INDEXED
-	- nombre de page exploree par jour.
-	- nombre de page indexee.
-	- Temps de Chargement.
-	- Code reponse / erreur sur les pages (404 et 50X)
-	- Profondeur des pages, voir si qqch a changé.
+__Data Sources:__ Google Search Console, Clustaar Continuous Testing    
+__Data Historization Requise:__  Requise, pour Google Search Console  
 
-	voir ce qui est attaquable par l'API.
-	cf. acces: vue dashboard search-foresight.
-
-	Evaluation du maillage ?? 
+__Indicateurs:__ 
+- Nombre pages indexees - _Graphique:_Evolution du nombre de pages indexées.
+- Erreur sur les pages  (404 et 50X) - _Graphique:_Evolution du nombre d'erreurs.
+- Temps de Chargement - _Graphique:_Distribution du temps et Evolution.
+- Profondeur des pages - _Graphique:_Distribution de la profondeur et Evolution.
+- Affichage des pages concernées et export CSV prêt à envoyer - _Affichage Table_
 
 
 ## Ecran S.E.O. Semantique
-__Objectif 1.__ Evaluer les résultats d'un effort sur une thématique sémantique  
-__Objectif 2.__ Evaluer la visibilité de la marque vs. concurrent sur une thématique sémantique   
-__Data Sources__ SEM Rush, SearchMetrics.  
-__Indicateurs Proposés__
-	* Nb de mots sur lequel est positionne (TOP3, 1st page) et comment evolue dans le temps (80M de mots clefs).
-Identifie les topics: et evolution du taux de couverture, et share visibility.
+__Objectifs:__ 
+- Evaluer les résultats d'un effort sur une thématique sémantique  
+- Evaluer la visibilité de la marque vs. concurrent sur une thématique sémantique  
 
-Actions Possibles (hors application): 
-Creation de page ou augmenter la creation de contenu sur une page en cours. 
-	
-	Les plus gros changements sur certains topics.
+__Follow-up Actions:__ Creation de page ou augmenter la creation de contenu sur une page en cours.
 
-	GSC: sur les mots clefs: google donne des requetes qui ont donne des impressions et des clicks sur le site / ou sur une page / par pays/ par appareil.
-	Donne les elements qui marchent pour l'aquisition.
+__Data Sources__ SEM Rush, SearchMetrics, Google Search Console.   
 
-	NOTE: avec Vuitton, defini 5 categories. Definir share visibilite sur ces 5 categories. Benchmarking.
-	Donnee de mots clefs: selectionne une liste de mots clefs. Mesurer l'evolution de la part de visibilité.
+__Indicateurs:__
+* Taux de couverture de thèmes clefs - Situation et principaux changements
+* Part de visibilité sur les thèmes clefs - Situation et principaux changements (DIFFERENCE ENTRE VISIBILITE ET COUVERTURE.... )
+* Données Keywords:
+	* Top 20 keyword: Marque et Hors marque (Impression, Clics et CTR)
+	* Evolution des mots clefs prioritaires
+	* Evolution des mots clefs par categories (Aide au choix, Activites, Destinations)
 
-	Dans GAP: on peut requester les aggregats.
-	Rien qui n'est user-centric.
-	Prendre la vue journaliere.
-	limite sur les call API ?
+Ranking:
+* Evolution des positions mots-clefs dans le top 20 (Top3, 4-10, 11-20) (ici faire un weighting par le trafic potentiel genere ?)
 
 ---
 
-# La Solution 100M
-100M a developpé une plateforme de dashboarding et de marketing en-ligne dédiée à l'industrie financière. Notre plateforme permet la __déclinaison d'applications customisables__ pour nos clients.
+# L'expertise Clustaar
+
+---
+
+# L'expertise 100M
+100M a developpé une plateforme de dashboarding en-ligne dédiée à l'industrie financière. Notre plateforme permet la __déclinaison d'applications customisables__ pour nos clients.
 
 Nous sommes des spécialistes du chiffre et de la vulgarisation de concepts financiers. Nos applications ont le plus souvent vocation à supporter une relation commerciale.
 
@@ -133,45 +150,31 @@ Notre plateforme est également multi-format: nos applications permettent l'expo
 
 ---
 
-## La Technologie 100M
-### Le Front-End
-100M a developpé le front-end software propriétaire en Javascript permettant la réactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
+# Déroulement Projet
 
-### Les moteurs de calculs en Back-End
-100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des differents indicateurs.
+L'objectif du projet est de produire un tableau de bord simple, actionnable et évolutif. 
 
-### Hébergement de l'application
-L'hébergement du front-end de l'application se fait sur des serveurs AWS dont le taux de disponibilité est garanti à 99.99%.
+## Séquençage projet
 
-Les applications qui nécessitent une importante puissance de calcul sont hébergées sur un serveur dédié (4CPU, 7.5GB of RAM - c4.xlarge).
-
-Pour des questions d'encapsulation et de sécurité, notre API est hébergée sur AWS Lambda (2CPU, 1GB of RAM, 500MB SDD).
-
-### Hébergement des bases de données
-Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB of RAM, 80GB SDD - r3.xlarge avec postgresql sur Aurora).
-
----
-# Le Projet
-## Phase 1:  XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-L'objectif de cette première phase est de produire une application simple qui __démontre__ au client que l'offre du Crédit Agricole est la plus compétitive. 
-
-### L'application livrée
+## L'application livrée
 Le livrable sera une application en ligne et interactive. L'application 100M sera personnalisée et accordée avec la charte graphique du ClubMed.
 
 L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivante).
 
-### 100M aura à charge de
-* de mettre à disposition en ligne, et protégée par mot de passe l'application prototype.  
+## 100M aura à charge de
+_En attente de validation périmètre_
 
-### Le Crédit Agricole aura à charge de
-* donner feedbacks et commentaires sur les rendus.  
+## ClubMed aura à charge de
+_En attente de validation périmètre_
 
-### Planning de livraison
-L'application sera livrée dans un delais de 6 semaines à compter de la date de l'accord client.  
+## Clustaar aura à charge de
+_En attente de validation périmètre_
+
+## Planning de livraison
+L'application sera livrée dans un delais de 4 semaines à compter de la date de l'accord client.  
 
 ---
-# Le Budget
+# Budget
 ## Les développements spécifiques
 100M met à disposition son équipe de développeurs front-end, ses data scientists et ses chefs de projets pour conseiller le ClubMed et pour effectuer les développements spécifiques nécessaires.
 
@@ -188,8 +191,8 @@ Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 - Chef de Projet: 800 Euros / Jour.
 - Graphiste: 600 Euros / Jour.
 
-## Chiffrage de la Proof-Of-Concept
-![](/extra/clubmed.png)
+## Chiffrage du Projet
+_En attente de validation périmètre. **Ordre de grandeur entre 25k et 30k.**_
 
 ## La license
 La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour le ClubMed, 24h/24 et 7j/7
@@ -198,7 +201,7 @@ La license inclut également la maintenance corrective et évolutive, en particu
 
 Afin de permettre une large diffusion de nos applications et de faciliter la collaboration, la license est chiffrée uniquement "à l'application" et non pas à l'utilisateur.
 
-La license pour l'application XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx.
+Prix de la license/maintenance pour l'application: _En attente de validation périmètre_.
 
 Les prix sont valables pour un engagement de 6 mois renouvelables.
 
@@ -228,9 +231,3 @@ Clément est diplômé de l'Ecole Polytechnique, et membre du Corps des Ponts et
 ## Vos Contacts:
 # nicolas@clustaar.com
 # clement@100m.io
-
-info: 
-300 page par sites
-30 sites (clubMed.xxx)
-
-Marketing: qui porte le projet ? on le brande Clustaar, on le brand 100M ? 
