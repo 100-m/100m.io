@@ -42,29 +42,29 @@ Par ailleurs, certaines données n'étant disponibles que sur des fenêtres de t
 
 ---
 
-# Notre Approche
-## PLUSIEURS NIVEAUX DE LECTURE, SIMPLIFIER, VULGARISER
+# Proposition
 
-----
-
-# Tableau de Bord
-
+Nous vous proposons de créer une application Tableau de Bord qui présente plusieurs niveaux de lecture; le but étant de garder une interface simple sans perdre en richesse d'information.  
 L'application sera structurée autour de 4 thèmes: l'audience, la conversion, la technique et la sémantique.
 
 ## Ecran d'Overview
-__Objectifs:__ Fournir les indicateurs clefs et mettre en évidence les grandes tendances ou actions à prendre.
+__Objectifs:__ Fournir les indicateurs clefs et mettre en évidence les grandes tendances ou actions à prendre.  
+__Follow-up Actions:__ Creuser les questions d'intérêt.  
+__Indicateurs:__  
 * Audience: nombres visites, MoM, YoY. SEO: Number, MoM, YoY et % Contribution. 
 * Conversion: Be Entry & Confirmation: Number, MoM and YoY.
 * Technique: QUEL INDICATEUR PRENDRE ICI ?
 * Semantique: Indice de visibilite: Number, MoM, YoY.
 
+__Section Recommandation:__
+Encart dédié au chargé de S.E.O. Clustaar pour y placer ses commentaires d'analyse.
 
 ## Ecran d'Audience
 __Objectifs:__ 
-* Evaluer le volume de traffic, 
-* Déterminer l'origine du trafic,
+* Evaluer le volume de traffic.  
+* Déterminer l'origine du trafic.  
 
-__Follow-up Actions:__ Orienter la production de contenu  
+__Follow-up Actions:__ Orienter la production de contenu.  
 
 __Data Sources__ Google Analytics, Majestic, Search Metrics  
 __Historization__ BESOIN OU PAS ?    
@@ -142,9 +142,17 @@ Pour augmenter la productivité des équipes, il est ainsi possible d'intégrer 
 
 
 ## L'expertise Clustaar
-### Selling point A
-### Selling point B
-### Selling point C
+Clustaar a bâti sa réputation d'excellence sur sa capacité à allier l’expertise de nos consultants et la __puissance des algorithmes de machine learning__ pour offrir de meilleures expériences de Search
+
+### Des Consultants de Haut Niveau
+L'équipe de Clustaar est constituée de talents, bien formés, dont le professionalisme a su séduire SeLoger, Orange, Hachette, FNAC, Louis Vuitton, Rolex, Maisons du Monde, Nestlé, Mappy, ENGIE etc.
+
+### Clustaar Deep Query
+La technologie __Clustaar Deep Query__ est un developpement propriétaire qui permet de porter les études sémantiques et concurrentielles à un niveau supérieur.
+
+### Une Equipe Pluri-Disciplinaire 
+Clustaar réunit des __consultants S.E.O., des data scientists et des développeurs__. 
+
 
 ---
 
@@ -153,20 +161,36 @@ Pour augmenter la productivité des équipes, il est ainsi possible d'intégrer 
 L'objectif du projet est de produire un tableau de bord simple, actionnable et évolutif. 
 
 ## Séquençage projet
+1. Validation du périmètre avec __ClubMed__.
+2. Revue des indicateurs avec __Clustaar__.
+3. Livraison d'un P.O.C. par __100M__.
+4. Revue et validation des fonctionalités par __ClubMed__.
+5. Mise en production dans un environnement de recette par __100M__.
+6. Revue par __ClubMed__.
+7. Livraison de l'environnement de production par __100M__.
 
 ## L'application livrée
 Le livrable sera une application en ligne et interactive. L'application 100M sera personnalisée et accordée avec la charte graphique du ClubMed.
 
 L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivante).
 
-## 100M aura à charge de
-_En attente de validation périmètre_
-
 ## ClubMed aura à charge de
-_En attente de validation périmètre_
+* Fournir l'accès aux données GAP.  
+* Valider les indicateurs choisis.  
+* Valider les ecrans et les interactions utilisateurs.  
 
 ## Clustaar aura à charge de
-_En attente de validation périmètre_
+* Fournir l'accès aux données Clustaar Continuous Testing.  
+* Conseiller dans la conception des indicateurs.  
+
+## 100M aura à charge de
+* Concevoir les indicateurs.  
+* Concevoir les parcours utilisateurs.  
+* Concevoir les graphiques et les intéractions.
+* Implémenter le front-end.
+* Collecter les données via les differentes API.
+* Automatiser le traitement de la données et le calcul les indicateurs.
+* Mettre en place un environnement de production.
 
 ## Planning de livraison
 L'application sera livrée dans un delai de 4 semaines à compter de la date de l'accord client.  
@@ -199,7 +223,7 @@ La license inclut également la maintenance corrective et évolutive, en particu
 
 Afin de permettre une large diffusion de nos applications et de faciliter la collaboration, la license est chiffrée uniquement "à l'application" et non pas à l'utilisateur.
 
-Prix de la license/maintenance pour l'application: _En attente de validation périmètre_.
+Prix de la license pour l'application 800 EUR / mois.
 
 Les prix sont valables pour un engagement de 6 mois renouvelables.
 
