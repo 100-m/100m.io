@@ -6,6 +6,7 @@
 <div style="margin-bottom: 140px; background: #b10f3e">
   <img src="/extra/background.png" style="visibility:hidden"/>
   <img src="/extra/logo.png" style="position: absolute;top: 50%;left: 50px;width: 100px;" />
+  <!-- <img src="/extra/logo-clustaar.png" style="position: absolute;top: 50%;right: 50px;width: 100px;" /> -->
   <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);"></h1>
 </div>
 
@@ -15,7 +16,7 @@
 ---
 
 # Exec Sum
-Dans le cadre de son projet de digitalisation et d'aquisition de nouveaux clients, le Crédit Agricole lance une initiative pour s'équiper d'outils commerciaux innovants.
+Dans le cadre de XXXXX, le ClubMed XXXXX.
 
 Le Crédit Agricole Ile de France souhaite développer un comparateur d'offres bancaires pour illustrer en toute transparence sa politique de tarification et afficher sa compétitivité.
 
@@ -26,34 +27,36 @@ L'objectif de ce projet est de développer un comparateur qui puisse être mis �
 ---
 
 # Ce que nous avons compris de vos objectifs
-L'initiative conjointe du ClubMed et de 100M s'articule autours des 3 objectifs: 1. 2. et 3.
+L'initiative conjointe du ClubMed, de Clustaar et 100M s'articule autours de 3 objectifs:
 
-Interet croiser des sources.
-## CROISER LES SOURCES ?? / UNE EFFORT SUR LA DONNEE, 
-## CROISER INFOS
-## HISTORISER
-## AIDER DECISION ET IMPLEMENTATIONS
-## SUIVRE IMPLEMENTATION
-## Définir des Indicateurs Actionnables
-## Favoriser l'Engagement sur les Dashboards
-## S'adapter Aux Spécificités Pays / 	Comparer des pays.
-## PLUSIEURS NIVEAUX DE LECTURE, SIMPLIFIER, VULGARISER
+## Fournir des indicateurs actionnables
+Le Tableau de Bord aidera la prise de décision et participera au suivi de l'implémentation.  
+
+## Faciliter l'accès et l'engagement 
+ClubMed souhaite que le Dashboard soit utilisé par les équipes en Centrale et dans les Business Units.  
+Il doit pouvoir être adapté aux besoins de chacun et diffusable sous un format qui maximise l'engagement.  
+
+## Consolider et enrichir les données
+Pour avoir une image globale et complète du SEO, le Tableau de Bord doit permettre d'aggréger des données provenant de Google Analytics Premium, de Majestic, Search Metrics, SEM Rush, ainsi que du crawl Clustaar.  
+Par ailleurs, certaines données n'étant disponibles que sur des fenêtres de temps courtes, l'infrastructure du Tableau de Bord devra les historiser quand nécessaire.  
 
 ---
 
+# Notre Approche
+## PLUSIEURS NIVEAUX DE LECTURE, SIMPLIFIER, VULGARISER
+
+----
+
 # Tableau de Bord
 
-Structure de l'application
+L'application sera structurée autour de 4 thèmes: l'audience, la conversion, la technique et la sémantique.
 
-## Overview
-* visites du mois - number & last month change. (visiteurs uniques ??)
-* visites SEO mois - number & last month change. (part du SEO ?)
-* visibilité 'Top 20 Google': % change.
-* conversion: Be Entry &  Confirmation. number and last month change.
-* temps de telechargement moyen (vs last month)
-* Part du mobile (vs last year)
-* Indice de visibilité (vs last month)
-* Valeur trafic SEO (vs last year)
+## Ecran d'Overview
+__Objectifs:__ Fournir les indicateurs clefs et mettre en évidence les grandes tendances ou actions à prendre.
+* Audience: nombres visites, MoM, YoY. SEO: Number, MoM, YoY et % Contribution. 
+* Conversion: Be Entry & Confirmation: Number, MoM and YoY.
+* Technique: QUEL INDICATEUR PRENDRE ICI ?
+* Semantique: Indice de visibilite: Number, MoM, YoY.
 
 
 ## Ecran d'Audience
@@ -64,29 +67,27 @@ __Objectifs:__
 __Follow-up Actions:__ Orienter la production de contenu  
 
 __Data Sources__ Google Analytics, Majestic, Search Metrics  
-__Historization__ ???????????????    
+__Historization__ BESOIN OU PAS ?    
 
 __Indicateurs:__
 * Repartition du Trafic par source et Evolution (Direct, Direct Access, Display, Email, Partnerships, Referral, SEA, SEO) - _Graphique avec Filtrage Dynamique_ 
 * Repartition du Trafic par type de page et Evolution (autres, destinations, home, landing, village, village-infos) - _Graphique avec Filtrage Dynamique_ 
 * Repartition du trafic par device et Evolution (Desktop, Mobile, Tablet) - _Graphique avec Filtrage Dynamique_ 
-* Evolution nombre de backlink - _Indicateur_
+* Evolution nombre de backlink - _Indicateur Chiffre_
 * Nouveaux Domaines referents - _Liste de Noms_
-* SEO: qualite de la visite i.e. comportement: pages session, temps moyen passe sur le site, taux de rebond, Be Entry)
+(_optionnelle_)* Qualité des visites S.E.O.  (pages session, temps moyen passe sur le site, taux de rebond, Be Entry)
 
 
 ## Ecran de Conversion
-__Objectifs:__ 
-__Follow-up Actions:__ Orienter la production de contenu  
+__Objectifs:__ Identifier les vecteurs de conversion et leur évolution.
+__Follow-up Actions:__ NICO ? QUELS SONT LES ACTIONABLES CONVERSION ?  
 __Data Sources__ Google Analytics, Majestic  
-__Historization__ ???????????????    
+__Historization__ BESOIN OU PAS ?    
 __Indicateurs:__
 
-Conversion 
-	En line vs. Off line
-	Contribution du SEO au chiffre.
-	* evolution conversion vs. trafic SEO. (categories: Newsletter, confirmation. ROPO call freespee, be entry, store locator, ropo webcallback, ropo call freespee 300s, visite seo)
-	* top 10 pages generants conversion pour BE Entry et pour Confirmation.
+* Achat provenant du S.E.O - En volume, MoM, YoY et % contribution. _Indicateurs Chiffrés_
+* Source des Achats par categorie (Newsletter, confirmation. ROPO call freespee, be entry, store locator, ropo webcallback, ropo call freespee 300s, vs. visite seo).
+* Top 10 pages generants conversion pour BE Entry et pour Confirmation.
 
 
 ## Ecran S.E.O. Technique
@@ -107,7 +108,7 @@ __Indicateurs:__
 ## Ecran S.E.O. Semantique
 __Objectifs:__ 
 - Evaluer les résultats d'un effort sur une thématique sémantique  
-- Evaluer la visibilité de la marque vs. concurrent sur une thématique sémantique  
+- Evaluer la visibilité de la marque vs. ses concurrents sur une thématique sémantique  
 
 __Follow-up Actions:__ Creation de page ou augmenter la creation de contenu sur une page en cours.
 
@@ -116,37 +117,34 @@ __Data Sources__ SEM Rush, SearchMetrics, Google Search Console.
 __Indicateurs:__
 * Taux de couverture de thèmes clefs - Situation et principaux changements
 * Part de visibilité sur les thèmes clefs - Situation et principaux changements (DIFFERENCE ENTRE VISIBILITE ET COUVERTURE.... )
-* Données Keywords:
-	* Top 20 keyword: Marque et Hors marque (Impression, Clics et CTR)
-	* Evolution des mots clefs prioritaires
-	* Evolution des mots clefs par categories (Aide au choix, Activites, Destinations)
-
-Ranking:
-* Evolution des positions mots-clefs dans le top 20 (Top3, 4-10, 11-20) (ici faire un weighting par le trafic potentiel genere ?)
+* Top keyword: Marque et Hors marque (Impression, Clics et CTR)
+* Evolution du positionnement sur les mots clefs prioritaires
 
 ---
 
-# L'expertise Clustaar
-
----
-
-# L'expertise 100M
-100M a developpé une plateforme de dashboarding en-ligne dédiée à l'industrie financière. Notre plateforme permet la __déclinaison d'applications customisables__ pour nos clients.
-
-Nous sommes des spécialistes du chiffre et de la vulgarisation de concepts financiers. Nos applications ont le plus souvent vocation à supporter une relation commerciale.
+# Notre Expertise
 
 ## L'expertise 100M
+100M a developpé une plateforme de dashboarding en-ligne qui permet la __déclinaison d'applications customisables__ pour nos clients.
+L'équipe de 100M est constituée de spécialistes du chiffre qui savent vulgariser les concepts les plus quantitatifs.
+
 ### Expérience Utilisateur
-Nos applications facilitent une __lecture graphique, rapide et synthétique__ de l'information.  
+Les applications 100M facilitent une __lecture graphique, rapide et synthétique__ de l'information.  
 100M a developpé une bibliothèque de répresentations graphiques qui savent mettre en confiance, favoriser la transparence du chiffre et communiquer une information aussi technique soit-elle.
 
-### Connexion & Collaboration
-Nos solutions sont directement __connectées__ aux données tierces via une intégration simplifiée au maximum.   
-La solution 100M comporte des modules de collaboration innovants afin d'éliminer toute friction dans la communication entre utilisateurs (ex: entre conseiller et client). Le partage d'écran et la création collaborative de contenu en sont des exemples.
+### Automatisation 
+Les solutions 100M sont directement __connectées__ aux données tierces via une intégration simplifiée au maximum.  
+Ceci permet l'automatisation de la mise à jour des Tableaux de Bord.
 
-### Multi-format & Cross-Platform
-Les applications 100M sont conçues pour une __utilisation complètement mobile__ et sont compatibles desktop, tablette et smart phone.  
-Notre plateforme est également multi-format: nos applications permettent l'export de rapports PDF ou d'email de synthèse en conclusion d'une discussion client.
+### Collaboration
+La solution 100M comporte des modules de collaboration innovants qui permettent d'éliminer toute friction dans la communication entre utilisateurs.  
+Pour augmenter la productivité des équipes, il est ainsi possible d'intégrer de l'édition de commentaire, des notifications, ou de la synchronisation d'ecran.
+
+
+## L'expertise Clustaar
+### Selling point A
+### Selling point B
+### Selling point C
 
 ---
 
@@ -171,7 +169,7 @@ _En attente de validation périmètre_
 _En attente de validation périmètre_
 
 ## Planning de livraison
-L'application sera livrée dans un delais de 4 semaines à compter de la date de l'accord client.  
+L'application sera livrée dans un delai de 4 semaines à compter de la date de l'accord client.  
 
 ---
 # Budget
@@ -197,7 +195,7 @@ _En attente de validation périmètre. **Ordre de grandeur entre 25k et 30k.**_
 ## La license
 La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour le ClubMed, 24h/24 et 7j/7
 
-La license inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration de Schelcher du progiciel et le support téléphonique.
+La license inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration du progiciel et le support téléphonique.
 
 Afin de permettre une large diffusion de nos applications et de faciliter la collaboration, la license est chiffrée uniquement "à l'application" et non pas à l'utilisateur.
 

@@ -124,7 +124,7 @@ L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous C
 * donner feedbacks et commentaires sur les rendus.  
 
 ### Planning de livraison
-L'application sera livrée dans un delais de 8 semaines à compter de la date de l'accord client.  
+L'application sera livrée dans un delai de 8 semaines à compter de la date de l'accord client.  
 
 ---
 ## Phase 2: Comparateur 'Expert' à destination des conseillers
