@@ -45,7 +45,7 @@ Par ailleurs, certaines données n'étant disponibles que sur des fenêtres de t
 # Proposition
 
 Nous vous proposons de créer une application Tableau de Bord qui présente plusieurs niveaux de lecture; le but étant de garder une interface simple sans perdre en richesse d'information.  
-L'application sera structurée autour de 4 thèmes: l'audience, la conversion, la technique et la sémantique.
+L'application sera structurée autour de 4 thèmes: l'audience et sa conversion, la technique, la notoriété et la sémantique.
 
 
 ## Ecran d'Overview
