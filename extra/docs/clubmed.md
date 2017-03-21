@@ -69,8 +69,8 @@ __Objectifs:__
 
 __Follow-up Actions:__ Orienter la production de contenu en fonction du R.O.I.
 
-__Data Sources__ Google Analytics
-__Historization__ _optionnielle, si import historique omniture_    
+__Data Sources__ Google Analytics  
+__Historization__ _optionnelle, si import historique omniture_    
 
 __Indicateurs:__
 * Repartition du Trafic par source et Evolution (Direct, Direct Access, Display, Email, Partnerships, Referral, SEA, SEO) - _Graphique avec Filtrage Dynamique_ 
@@ -95,9 +95,9 @@ __Indicateurs:__
 - Affichage des pages concernées et export CSV prêt à envoyer, _Affichage Table_
 
 ## Ecran Netlinking
-__Objectif:__  Evaluer la notoriété, les efforts R.P.
-__Follow-up Actions:__ Re-cibler les efforts de construction de notoriété
-__Data Sources:__ Google Analytics, Majestic  
+__Objectif:__  Evaluer la notoriété, les efforts R.P.  
+__Follow-up Actions:__ Re-cibler les efforts de construction de notoriété  
+__Data Sources:__ Google Analytics, Majestic    
 __Indicateurs:__  
 
 * Nouveaux Domaines référents - _Liste de Noms_    
