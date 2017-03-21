@@ -18,11 +18,17 @@
 # Exec Sum
 Dans le cadre du suivi de son action marketing online, le ClubMed souhaite revoir ses KPIs et se doter d'un Tableau de Bord pour les suivre.
 
-L'objectif du Dashboard est de reconstituer une image claire, en utilisant des métriques actionnables. Le Dashboard sera présenté sous un format engageant et pourra être diffusé largement. 
+__L'objectif du Dashboard est de reconstituer une image claire, en utilisant des métriques actionnables. Le Dashboard sera présenté sous un format engageant et pourra être diffusé largement.__
 
 L'expertise S.E.O de Clustaar, le logiciel 100M ainsi que le savoir-faire technique de l'équipe sont des éléments primordiaux à la bonne et rapide exécution du projet. 
 
 Le livrable sera une application online, interactive dont la mise à jour sera automatique.
+
+__Next Steps:__
+* __ClubMed confirme l'interêt pour le projet (sans engagement) et valide l'approche.__
+* __100M et Clustaar produisent une version démo de l'application.__
+
+
 
 ---
 
@@ -141,7 +147,7 @@ Pour augmenter la productivité des équipes, il est ainsi possible d'intégrer 
 
 
 ## L'expertise Clustaar
-Clustaar a bâti sa réputation d'excellence sur sa capacité à allier l’expertise de nos consultants et la __puissance des algorithmes de machine learning__ pour offrir de meilleures expériences de Search
+Clustaar a bâti sa réputation d'excellence sur sa capacité à allier l’expertise de ses consultants à la __puissance des algorithmes de machine learning__ pour offrir de meilleures expériences de Search
 
 ### Des Consultants de Haut Niveau
 L'équipe de Clustaar est constituée de talents, bien formés, dont le professionalisme a su séduire SeLoger, Orange, Hachette, FNAC, Louis Vuitton, Rolex, Maisons du Monde, Nestlé, Mappy, ENGIE etc.
