@@ -47,46 +47,36 @@ Par ailleurs, certaines données n'étant disponibles que sur des fenêtres de t
 Nous vous proposons de créer une application Tableau de Bord qui présente plusieurs niveaux de lecture; le but étant de garder une interface simple sans perdre en richesse d'information.  
 L'application sera structurée autour de 4 thèmes: l'audience, la conversion, la technique et la sémantique.
 
+
 ## Ecran d'Overview
 __Objectifs:__ Fournir les indicateurs clefs et mettre en évidence les grandes tendances ou actions à prendre.  
 __Follow-up Actions:__ Creuser les questions d'intérêt.  
 __Indicateurs:__  
 * Audience: nombres visites, MoM, YoY. SEO: Number, MoM, YoY et % Contribution. 
-* Conversion: Be Entry & Confirmation: Number, MoM and YoY.
-* Technique: QUEL INDICATEUR PRENDRE ICI ?
+* Conversion: Number, MoM and YoY.
+* Technique: Erreurs + temps de réponse
 * Semantique: Indice de visibilite: Number, MoM, YoY.
 
 __Section Recommandation:__
 Encart dédié au chargé de S.E.O. Clustaar pour y placer ses commentaires d'analyse.
 
-## Ecran d'Audience
+
+## Ecran d'Audience et de Conversion
 __Objectifs:__ 
 * Evaluer le volume de traffic.  
 * Déterminer l'origine du trafic.  
+* Identifier les vecteurs de conversion et leur évolution.
 
-__Follow-up Actions:__ Orienter la production de contenu.  
+__Follow-up Actions:__ Orienter la production de contenu en fonction du R.O.I.
 
-__Data Sources__ Google Analytics, Majestic, Search Metrics  
-__Historization__ BESOIN OU PAS ?    
+__Data Sources__ Google Analytics
+__Historization__ _optionnielle, si import historique omniture_    
 
 __Indicateurs:__
 * Repartition du Trafic par source et Evolution (Direct, Direct Access, Display, Email, Partnerships, Referral, SEA, SEO) - _Graphique avec Filtrage Dynamique_ 
 * Repartition du Trafic par type de page et Evolution (autres, destinations, home, landing, village, village-infos) - _Graphique avec Filtrage Dynamique_ 
 * Repartition du trafic par device et Evolution (Desktop, Mobile, Tablet) - _Graphique avec Filtrage Dynamique_ 
-* Evolution nombre de backlink - _Indicateur Chiffre_
-* Nouveaux Domaines referents - _Liste de Noms_    
-_(optionnelle)_* Qualité des visites S.E.O.  (pages session, temps moyen passe sur le site, taux de rebond, Be Entry)
-
-
-## Ecran de Conversion
-__Objectifs:__ Identifier les vecteurs de conversion et leur évolution.
-__Follow-up Actions:__ NICO ? QUELS SONT LES ACTIONABLES CONVERSION ?  
-__Data Sources__ Google Analytics, Majestic  
-__Historization__ BESOIN OU PAS ?    
-__Indicateurs:__
-
 * Achat provenant du S.E.O - En volume, MoM, YoY et % contribution. _Indicateurs Chiffrés_
-* Source des Achats par categorie (Newsletter, confirmation. ROPO call freespee, be entry, store locator, ropo webcallback, ropo call freespee 300s, vs. visite seo).
 * Top 10 pages generants conversion pour BE Entry et pour Confirmation.
 
 
@@ -97,12 +87,21 @@ __Follow-up Actions:__ Envoie d'une demande de correction à la personne en char
 __Data Sources:__ Google Search Console, Clustaar Continuous Testing    
 __Data Historization Requise:__  Requise, pour Google Search Console  
 
-__Indicateurs:__ 
-- Nombre pages indexees - _Graphique:_Evolution du nombre de pages indexées.
-- Erreur sur les pages  (404 et 50X) - _Graphique:_Evolution du nombre d'erreurs.
-- Temps de Chargement - _Graphique:_Distribution du temps et Evolution.
-- Profondeur des pages - _Graphique:_Distribution de la profondeur et Evolution.
-- Affichage des pages concernées et export CSV prêt à envoyer - _Affichage Table_
+__Indicateurs:__   
+- Nombre pages indexees, _Graphique:_ Evolution du nombre de pages indexées.
+- Erreur sur les pages (404 et 50X),  _Graphique:_ Evolution du nombre d'erreurs.
+- Temps de Chargement, _Graphique:_ Distribution du temps et Evolution.
+- Profondeur des pages, _Graphique:_ Distribution de la profondeur et Evolution.
+- Affichage des pages concernées et export CSV prêt à envoyer, _Affichage Table_
+
+## Ecran Netlinking
+__Objectif:__  Evaluer la notoriété, les efforts R.P.
+__Follow-up Actions:__ Re-cibler les efforts de construction de notoriété
+__Data Sources:__ Google Analytics, Majestic  
+__Indicateurs:__  
+
+* Nouveaux Domaines référents - _Liste de Noms_    
+* Qualité des visites référents. (pages session, temps moyen passe sur le site, taux de rebond, Conversion)
 
 
 ## Ecran S.E.O. Semantique
@@ -112,11 +111,11 @@ __Objectifs:__
 
 __Follow-up Actions:__ Creation de page ou augmenter la creation de contenu sur une page en cours.
 
-__Data Sources__ SEM Rush, SearchMetrics, Google Search Console.   
+__Data Sources__ SearchMetrics, Google Search Console.   
 
 __Indicateurs:__
 * Taux de couverture de thèmes clefs - Situation et principaux changements
-* Part de visibilité sur les thèmes clefs - Situation et principaux changements (DIFFERENCE ENTRE VISIBILITE ET COUVERTURE.... )
+* Part de visibilité sur les thèmes clefs - Situation et principaux changements
 * Top keyword: Marque et Hors marque (Impression, Clics et CTR)
 * Evolution du positionnement sur les mots clefs prioritaires
 
