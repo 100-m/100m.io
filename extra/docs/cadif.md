@@ -55,16 +55,16 @@ Les recommendations sont générées sur la base des informations transmises par
 ## 1. Eprouver la solution sur un P.O.C.
 Nous vous proposons d'éprouver le design de la solution en faisant un P.O.C. sur un périmétre restreint en termes: de produit, de base de données de contrats, de nombre de questions posées au Client, et de règles de gestion.
 Spécifiquement, nous vous suggérons de se concenter sur:
-	* l'assurance habitation,
-	* avec une base constituée des 15 contrats les plus courants,
-	* une interview robot de 10 questions conclue par un bilan,
-	* un ensemble de règles de gestions d'une trentaine de règles,
+* l'assurance habitation,
+* avec une base constituée des 12 contrats les plus courants,
+* une interview robot de 10 questions conclue par un bilan,
+* un ensemble de règles de gestions d'une trentaine de règles.
 
 ## 2. Industrialisation
 Suite au P.O.C., on pourra industrialiser le comparateur et à cette occasion: 
-	* on enrichira la base de donnée de contrats 
-	* on étoffera l'interview robot 
-	* on complexifiera le moteur de recommendations
+* on enrichira la base de donnée de contrats 
+* on étoffera l'interview robot 
+* on complexifiera le moteur de recommendations
 
 ## 3. Elargissement
 Dans un troisième temps, on pourra étendre l'approche à d'autres produits d'assurance.
@@ -112,7 +112,7 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 # Le Projet
 ## Phase Proof-Of-Concept:  Comparateur 'Simplifié' d'Assurance Habitation 
 
-L'objectif de cette première phase est de produire une application simple qui __démontre__ au client que l'offre du Crédit Agricole est la plus compétitive. 
+L'objectif de cette première phase est double: présenter une première version fonctionnelle de l'application et poser l'ensemble des fondations techniques.  
 
 ### L'application livrée
 Le livrable sera une application en ligne, personnalisée et accordée avec la charte graphique du Crédit Agricole.
@@ -121,47 +121,46 @@ L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous C
 
 Le livrable sera constitué de:
 * une application Client qui conduira l'interview robot.  
-L'application invitera le client à comparer les offres des différents compétiteurs en fonction de ses __besoins propres__. La comparaison entre les différentes offres se mettra à jour __en temps réel__au fur et à mesure que le client donne de l'information sur son profil d'utilisation.  
-L'update en temps réel de l'écran sert d'incitation à remplir le profil.  
+L'application invitera le client à comparer les offres des différents compétiteurs en fonction de ses __besoins propres__. La comparaison entre les différentes offres se mettra à jour __en temps réel__ au fur et à mesure que le client donne de l'information sur son profil d'utilisation.  
 
 * une interface Administrateur pour paramétrer l'interview robot.  
-L'interface permettra à l'administrateur d'éditer les questions posée par le robot lors de l'interview et de paramétrer leur enchainement.
+L'interface permettra à l'administrateur d'éditer les questions posées par le robot lors de l'interview et de paramétrer leur enchainement.
 
 * une interface Administrateur pour paramétrer le moteur de Conseil.
 L'interface permettra à l'administrateur d'éditer les règles de gestion des recommendations.
 
 * une base de données de contrats d'assurance habitation, normalisée.
 
-L'application Client sera mise directement à disposition du public et pourra servir de canal d'aquisition client.
+L'application Client pourra être mise à disposition du public et servir de canal d'aquisition client.
 
 ### Séquençage:  
-1. recueil d'information sur l'offre de CADIF et celle de 15 compétiteurs.
+1. recueil d'information sur l'offre de CADIF et celle de 12 compétiteurs.
 Les compétiteurs envisagés sont les suivants: 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Axa, Maaf, Macif, Matmut, GMF, Allianz, Mma, Groupama, Maif, Credit Mutuel, Generali, Direct Assurance, 
 
-2. conception de la grille de comparaison, normalisation des offres et classification au sein de la grille.
+2. conception de la grille de comparaison, normalisation des offres et classification au sein de la grille.  
 __Livraison d'un tableau excel présentant le comparatif de l'ensemble des offres concurrentes.__  
 
 3. revue de la segmentation du marché, des recommendations conseils cibles et définition du parcours utilisateur au sein du questionnaire-robot.
 Le Crédit Agricole fournira une segmentation marché sous la forme de profiles de clients types parmi lesquels l'interview devra discriminer.  
 
-4. design de l'application Client.
+4. design de l'application Client.  
 __Livraison de l'UI/UX application Client.__
 
-5. design de l'interface administrateur interview-robot.
+5. design de l'interface administrateur interview-robot.  
 __Livraison de l'UI/UX interface administrateur moteur interview.__
 
-6. design de l'interface administrateur moteur de conseil.
-__Livraison de l'UI/UX interface administrateur moteur conseil
+6. design de l'interface administrateur moteur de conseil.  
+__Livraison de l'UI/UX interface administrateur moteur conseil.__
 
 7. développement du back-end.
 
-8. tests et mise en ligne.
+8. tests et mise en ligne.  
 __Livraison de l'application__
 
 
 ### Le Crédit Agricole aura à charge de
-* établir la liste de questions à poser au Client ou à défaut de fournir une segmentation Client.
+* établir la liste de questions à poser au Client ou, à défaut, de fournir une segmentation Client.
 * fournir la liste des situations que le moteur de conseil doit examiner.
 * donner feedbacks et commentaires sur les rendus.  
 
@@ -201,7 +200,7 @@ Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 - Graphiste: 600 Euros / Jour.
 
 ## Chiffrage de la Proof-Of-Concept
-![](/extra/cadif-poc.png)
+![](/extra/cadif-assurance-poc.png)
 
 ## La license
 La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour la Crédit Agricole Ile de France, 24h/24 et 7j/7
