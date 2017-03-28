@@ -12,27 +12,62 @@
 # Introduction
 Dans le cadre de son projet de digitalisation et d'aquisition de nouveaux clients, le Crédit Agricole lance une initiative pour s'équiper d'outils commerciaux innovants.
 
-Le Crédit Agricole Ile de France souhaite développer un comparateur d'offres bancaires pour illustrer en toute transparence sa politique de tarification et afficher sa compétitivité.
+Le Crédit Agricole Ile de France souhaite développer un comparateur d'assurance pour identifier les manques dans la couverture de ses clients, et leur proposer des solutions adaptées. Il est à la recherche d'une solution sur-mesure dont le périmètre puisse évoluer dans le temps.
 
-100M est la solution de choix pour communiquer efficacement sous un format engageant. 100M apporte le logiciel, le savoir-faire technique et la connaissance des métiers de la banque et de la finance; éléments primordiaux à la bonne et rapide exécution du projet. 
+100M est la solution de choix pour communiquer efficacement sous un format engageant. 100M apporte la base logiciel, le savoir-faire technique et la connaissance des métiers de la banque et de la finance; éléments primordiaux à la bonne et rapide exécution du projet. 
 
-L'objectif de ce projet est de développer un comparateur qui puisse être mis à disposition du public et des conseillers, et servir de canal d'acquisition client.
+L'objectif de ce projet est de développer un comparateur d'assurance qui puisse être mis à disposition du public et des conseillers, et servir de canal d'acquisition client.
 
 ---
 
 # Ce que nous avons compris de vos Objectifs
-L'initiative conjointe du Crédit Agricole d'Ile de France et de 100M s'articule autours des 3 objectifs: renforcer la relation Client, améliorer son expérience et créer de nouveaux vecteurs d'acquisition de part de marché.
+L'initiative conjointe du Crédit Agricole d'Ile de France et de 100M s'articule autours de 3 objectifs: améliorer l'expérience Client, apporter un conseil de qualité et créer de nouveaux vecteurs d'acquisition de parts de marché.
 
-## La Relation Client
-Le Crédit Agricole souhaite jouer la carte de la transparence tarifaire avec ses Clients et offrir à ceux-ci la possibilité de comparer les prix avec ceux des offres concurrentes.  
-L'objectif est de renforcer la __confiance__ que ses Clients lui accordent et de favoriser la __rétention__.
+## Améliorer l'Expérience Client 
+Le Crédit Agricole souhaite allier l'__instantanéité__ du conseil d'un robo-advisor à la __rassurance__ du dialogue avec un conseiller. L'application doit donc proposer un expérience fluide et faire remonter informations et recommendations auprès du conseiller qui pourra ensuite rentrer en relation avec son Client.
 
-## Le Conseil Client
-Le Crédit Agricole souhaite progressivement développer un espace de "Coaching" client.  
-Le but est ici d'améliorer l'__expérience__ client en lui fournissant des outils de conseil à forte valeur ajoutée qui viendront se positionner en complément ou en support de la discussion avec un conseiller.
+## Renforcer La Dimension Conseil
+L'objectif est de __vendre mieux__, en identifiant les manques dans la couverture du Client, et en lui proposant des produits qui correspondent à son profil de risque et à ses besoins.
 
-## L'Acquisition Client
-Les outils développés dans le cadre du présent projet ont pour but d'être un vecteur d'aquisition Client: à la fois dans une perspective de __conversion de prospects__, mais également dans la perspective d'__équiper la base clients existante__ avec d'autres solutions du Crédit Agricole.  
+## Augmenter l'Acquisition Client
+Les outils développés dans le cadre du présent projet ont pour but d'être un vecteur d'aquisition Client: à la fois dans une perspective de __conversion de prospects__, mais également dans la perspective d'__équiper la base clients existante__ avec d'autres solutions du Crédit Agricole.
+L'application développée devra permettre de suivre le 'funnel' d'acquisition Client.  
+
+---
+
+# Notre Perception Des Enjeux
+En terme de réalisation, le projet se décompose en 3 grandes composantes: la données, le moteur d'interview, et le moteur de conseil.
+
+## La Donnée
+L'enjeu est ici de constituer, ou d'acquérir une base de données de contrats d'assurance, et de la maintenir à jour.
+
+## Le Moteur d'Interview
+La seconde composante du projet est la construction d'un moteur d'interview paramétrable. Le moteur doit être capable d'adapter les questions en fonction des réponses précédemment fournies. En plus de l'interface Client, il doit comporter une interface Administrateur qui permette de changer la séquence de questions et les liens logiques entre les questions.
+
+## Le Moteur de Conseil
+Le moteur de conseil est constitué d'un ensemble de règles de gestion qui doit permettre de générer des recommendations.
+Les recommendations sont générées sur la base des informations transmises par le moteur de questions. Le moteur de conseil doit comporter une interface Administrateur qui permettre l'ajout ou la suppression de règles de gestion.
+
+---
+
+# Notre Approche
+
+## 1. Eprouver la solution sur un P.O.C.
+Nous vous proposons d'éprouver le design de la solution en faisant un P.O.C. sur un périmétre restreint en termes: de produit, de base de données de contrats, de nombre de questions posées au Client, et de règles de gestion.
+Spécifiquement, nous vous suggérons de se concenter sur:
+	* l'assurance habitation,
+	* avec une base constituée des 15 contrats les plus courants,
+	* une interview robot de 10 questions conclue par un bilan,
+	* un ensemble de règles de gestions d'une trentaine de règles,
+
+## 2. Industrialisation
+Suite au P.O.C., on pourra industrialiser le comparateur et à cette occasion: 
+	* on enrichira la base de donnée de contrats 
+	* on étoffera l'interview robot 
+	* on complexifiera le moteur de recommendations
+
+## 3. Elargissement
+Dans un troisième temps, on pourra étendre l'approche à d'autres produits d'assurance.
 
 ---
 
@@ -46,11 +81,11 @@ Nous sommes des spécialistes du chiffre et de la vulgarisation de concepts fina
 Nos applications facilitent une __lecture graphique, rapide et synthétique__ de l'information.  
 100M a developpé une bibliothèque de répresentations graphiques qui savent mettre en confiance, favoriser la transparence du chiffre et communiquer une information aussi technique soit-elle.
 
-### Connexion & Collaboration
+### Collaboration
 Nos solutions sont directement __connectées__ aux données tierces via une intégration simplifiée au maximum.   
 La solution 100M comporte des modules de collaboration innovants afin d'éliminer toute friction dans la communication entre utilisateurs (ex: entre conseiller et client). Le partage d'écran et la création collaborative de contenu en sont des exemples.
 
-### Multi-format & Cross-Platform
+### Cross-Platform
 Les applications 100M sont conçues pour une __utilisation complètement mobile__ et sont compatibles desktop, tablette et smart phone.  
 Notre plateforme est également multi-format: nos applications permettent l'export de rapports PDF ou d'email de synthèse en conclusion d'une discussion client.
 
@@ -75,73 +110,81 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 
 ---
 # Le Projet
-## Phase Proof-Of-Concept:  Comparateur 'Simplifié' à destination du grand public 
+## Phase Proof-Of-Concept:  Comparateur 'Simplifié' d'Assurance Habitation 
 
 L'objectif de cette première phase est de produire une application simple qui __démontre__ au client que l'offre du Crédit Agricole est la plus compétitive. 
 
-L'application invitera le client à comparer les offres des différents compétiteurs en fonction de ses __besoins propres__. La comparaison entre les différentes offres se mettra à jour __en temps réel__au fur et à mesure que le client donne de l'information sur son profil d'utilisation.  
-L'update en temps réel de l'écran sert d'incitation à remplir le profil.
-
-L'application sera mise directement à disposition du public et pourra servir de canal d'aquisition client.
-
-### Séquençage:  
-1. recueil d'information sur l'offre de CADIF et celle de 25 compétiteurs  
-Les compétiteurs envisagés sont les suivants: Allianz Banque, AXA Banque, Banque Palatine, Banque Populaire Rives de Paris, Banque Privée Européenne, Barclays, BforBank, BNP Paribas, Boursorama Banque, Caisse d'Epargne Ile-de-France , CIC, Crédit Agricole Ile-de-France, Crédit Coopératif, Crédit Mutuel Île-de-France, e.LCL, Fortuneo, Groupama Banque, Hello Bank, HSBC, ING Direct, La Banque Postale, LCL, Macif, Monabanq, Société Générale, Soon.  
-
-2. conception de la grille de comparaison, normalisation des offres et classification au sein de la grille  
-__Livraison d'un tableau excel présentant le comparatif de l'ensemble des offres concurrentes.__  
-
-3. revue de la segmentation du marché et identification de la cible client  
-Le Crédit Agricole fournira une segmentation marché sous la forme de profiles de clients types, de tailles de segments, ainsi que des statistiques de consommation (moyenne et variabilité de consommation) sur chaque composante de l'offre.  
-
-4. définition du parcours utilisateur au sein du questionnaire robot  
-Sur la base de la segmentation client, 100M établira 'l'arbre de décision' correspondant au questionnaire robot dans l'application qui permet de placer l'utilisateur dans un segment de marché, et au sein de ce segment.
-Livraison de l'arbre de questions à poser.  
-
-5. design de l'application  
-__Livraison de l'UI/UX.__
-
-6. développement de l'application   
-Itérations agiles sur le développement.  
-
-7. tests et mise en ligne  
-__Livraison de l'application__
-
 ### L'application livrée
-Le livrable sera une application en ligne, type 'single-screen' et interactive. L'application 100M sera personnalisée et accordée avec la charte graphique du Crédit Agricole.
+Le livrable sera une application en ligne, personnalisée et accordée avec la charte graphique du Crédit Agricole.
 
 L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivante).
 
-### 100M aura à charge de
-* recueillir l'information sur les offres des compétiteurs de CADIF,  
-* établir une comparaison rigoureuse de ces offres,  
-* établir un questionnaire client qui permette d'effectuer une comparaison ciblée,  
-* proposer une interface client qui permette de comparer les offres,  
-* de mettre à disposition en ligne, et protégée par mot de passe l'application prototype.  
+Le livrable sera constitué de:
+* une application Client qui conduira l'interview robot.  
+L'application invitera le client à comparer les offres des différents compétiteurs en fonction de ses __besoins propres__. La comparaison entre les différentes offres se mettra à jour __en temps réel__au fur et à mesure que le client donne de l'information sur son profil d'utilisation.  
+L'update en temps réel de l'écran sert d'incitation à remplir le profil.  
+
+* une interface Administrateur pour paramétrer l'interview robot.  
+L'interface permettra à l'administrateur d'éditer les questions posée par le robot lors de l'interview et de paramétrer leur enchainement.
+
+* une interface Administrateur pour paramétrer le moteur de Conseil.
+L'interface permettra à l'administrateur d'éditer les règles de gestion des recommendations.
+
+* une base de données de contrats d'assurance habitation, normalisée.
+
+L'application Client sera mise directement à disposition du public et pourra servir de canal d'aquisition client.
+
+### Séquençage:  
+1. recueil d'information sur l'offre de CADIF et celle de 15 compétiteurs.
+Les compétiteurs envisagés sont les suivants: 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+2. conception de la grille de comparaison, normalisation des offres et classification au sein de la grille.
+__Livraison d'un tableau excel présentant le comparatif de l'ensemble des offres concurrentes.__  
+
+3. revue de la segmentation du marché, des recommendations conseils cibles et définition du parcours utilisateur au sein du questionnaire-robot.
+Le Crédit Agricole fournira une segmentation marché sous la forme de profiles de clients types parmi lesquels l'interview devra discriminer.  
+
+4. design de l'application Client.
+__Livraison de l'UI/UX application Client.__
+
+5. design de l'interface administrateur interview-robot.
+__Livraison de l'UI/UX interface administrateur moteur interview.__
+
+6. design de l'interface administrateur moteur de conseil.
+__Livraison de l'UI/UX interface administrateur moteur conseil
+
+7. développement du back-end.
+
+8. tests et mise en ligne.
+__Livraison de l'application__
+
 
 ### Le Crédit Agricole aura à charge de
-* fournir la segmentation marché,  
+* établir la liste de questions à poser au Client ou à défaut de fournir une segmentation Client.
+* fournir la liste des situations que le moteur de conseil doit examiner.
 * donner feedbacks et commentaires sur les rendus.  
+
+
+### 100M aura à charge de
+* recueillir l'information sur les offres des compétiteurs de CADIF,  
+* établir une comparaison normative de ces offres,  
+* établir les différents parcours de l'interview Client et/ou la liste des questions,
+* proposer une interface client, 
+* mettre à disposition une interface administrateur pour paramétrer l'interview,
+* définir les règles de gestion du moteur de conseil,
+* mettre à disposition une interface administrateur pour paramétrer le moteur de conseil,
+* mettre à disposition en ligne, et protégée par mot de passe l'application prototype.  
+
 
 ### Planning de livraison
 L'application sera livrée dans un delai de 8 semaines à compter de la date de l'accord client.  
 
 ---
-## Phase 2: Comparateur 'Expert' à destination des conseillers
 
-L'objectif est de fournir au conseiller un support à la vente sous la forme d'un outil de comparaison détaillé.
-
-100M produira une application experte dans la continuité de la précédente.
-
-Il s'agit là d'etoffer l'étude réalisée lors de la proof-of-concept:
-* en élargissant le périmètre concurrentiel
-* en élargissant les cibles clients
-* en packageant l'application au sein d'un outil déployable auprès des conseillers.
-
----
 # Le Budget
 ## Les développements spécifiques
-100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projets pour conseiller le Credit Agricole et pour effectuer les développements spécifiques nécessaires.
+100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projets pour conseiller le Crédit Agricole et pour effectuer les développements spécifiques nécessaires.
 
 Les développements spécifiques comprennent, à titre d'exemple:
 * la customisation du progiciel,
@@ -167,7 +210,7 @@ La license inclut également la maintenance corrective et évolutive, en particu
 
 Afin de permettre une large diffusion de nos applications et de faciliter la collaboration, la license est chiffrée uniquement "à l'application" et non pas à l'utilisateur.
 
-La license pour l'application 'proof-of-concept' est de 600 Euros / mois, hébergement inclus.
+La license pour l'application 'proof-of-concept' est de 800 Euros / mois, hébergement inclus.
 
 Les prix sont valables pour un engagement de 6 mois renouvelables.
 
@@ -177,6 +220,7 @@ Le paiement se fait en deux fois pour la partie intégration : 50% à la command
 Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la license.  
 
 ---
+
 # L'équipe dirigeante
 
 ### Clément Miglietti - Directeur Général
