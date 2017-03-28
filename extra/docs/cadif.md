@@ -20,7 +20,7 @@ L'objectif de ce projet est de développer un comparateur d'assurance qui puisse
 
 ---
 
-# Ce que nous avons compris de vos Objectifs
+# Ce Que Nous Avons Compris De Vos Objectifs
 L'initiative conjointe du Crédit Agricole d'Ile de France et de 100M s'articule autours de 3 objectifs: améliorer l'expérience Client, apporter un conseil de qualité et créer de nouveaux vecteurs d'acquisition de parts de marché.
 
 ## Améliorer l'Expérience Client 
@@ -46,7 +46,7 @@ La seconde composante du projet est la construction d'un moteur d'interview para
 
 ## Le Moteur de Conseil
 Le moteur de conseil est constitué d'un ensemble de règles de gestion qui doit permettre de générer des recommendations.
-Les recommendations sont générées sur la base des informations transmises par le moteur de questions. Le moteur de conseil doit comporter une interface Administrateur qui permettre l'ajout ou la suppression de règles de gestion.
+Les recommendations sont générées sur la base des informations transmises par le moteur de questions. Le moteur de conseil doit comporter une interface Administrateur qui permette l'ajout ou la suppression de règles de gestion.
 
 ---
 

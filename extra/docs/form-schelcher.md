@@ -53,45 +53,49 @@ Les données ayant un impact plus faible (traductions, notifications, commentair
 
 Toutes interactions avec des développeurs prestataires est revue, testé et validé avant déploiement. Les intervenants externes n'ont pas d'accès aux serveurs d'extraction de données actuellement.
 
+En sus, nous exigeons de nos prestataires un certain niveau de confidentialité en leur soumettant un 'Non-Disclosure-Agreement' (clause de confidentialité). Nos contrats sont également revus par un avocat qui s'assure du bon contrôle de la propriété intellectuelle.
+
 ### QU-11
 **Réalisez-vous des analyses de  risques liés aux transfert d'informations ou de logiciels avec un tiers afin de formaliser contractuellement les procédures, responsabilités et obligations de chacune des parties ?**
 
-Nous n'avons pas actuellement d'audit effectué par un tiers certifié.
+La question n'est pas applicable: nous ne partageons aucune données avec des tiers. Les seules informations partagée sont le code source (sur GitHub, traité en Q-10).
 
 ### QU-12
 **Pouvez-vous présenter l'ensemble des clauses SSI standards qui sont adossées à tout accord signé avec un tiers impliquant un accès au système d'information ou aux locaux contenant de l'information ?**
 
 Partiellement, nous réduisons les accès aux données en écriture et au serveur d'extraction de donnée aux employés de 100M seulement. Les prestataires n'ont accès qu'au code applicatif actuellement.
 
+On fournira sur demande les N.D.A. signés avec des Tiers.
+
 ### QU-13
 **Si oui, tout accès d'un tiers au système d'information ou aux locaux contenant des données du groupe Crédit Mutuel Arkéa n'est-il autorisé qu'après la signature d'un accord formel reprenant ces clauses ?**
 
-Non
+Non applicable. Personne n'a un droit d'accès à notre système d'information.
 
 ### QU-14
 **Pouvez-vous présenter les éléments SSI (chapitres ou annexes) décrivant les procédures mises en place dans le cadre de la gestion des incidents de SSI ?**
 
-Oui
+**ACOMPLETER: TRAITEMENT DES EXCEPTIONS PAR SUPPORT**
 
 ### QU-15
 **Si oui, pouvez-vous présenter l'organisation mise en place afin de gérer ces incidents SSI ?**
 
-Oui
+**ACOMPLETER: TRAITEMENT DES EXCEPTIONS PAR SUPPORT**
 
 ### QU-16
 **Si oui, pouve-vous présenter les moyens permettant de vous assurer que toute atteinte à l'intégrité des informations fait l'objet d'alertes et d'actions formalisées ?**
 
-Oui
+**ACOMPLETER: TRAITEMENT DES EXCEPTIONS PAR SUPPORT**
 
 ### QU-17
 **Si oui, pouvez-vous présenter les moyens permettant de vous assurer que toute atteinte à la confidentialité des données hébergées fait l'objet d'alertes et d'actions formalisées ?**
 
-Oui
+** ?**
 
 ### QU-18
 **Si oui, pouvez-vous présenter les procédures d'alertes et d'escalades permettant de réagir aux incidents de sécurité détectés ?**
 
-Oui
+** Partie gestion des incidents ** 
 
 ### QU-19
 **Existe-t-il un plan de gestion de crise SSI incluant, en fonction de divers symptômes, les noms et coordonnées des personnes à prévenir pour qu'elles puissent effectuer un premier diagnostic et, en fonction de ce diagnostic, les responsables de la cellule de crise à rassembler et les actions urgentes à mener ?**
@@ -101,12 +105,12 @@ Oui, la procédure est la même que pour les incidents.
 ### QU-20
 **Si oui, existe-t-il au moins une procédure d'alerte, diffusée à l'ensemble du personnel, qui permette, directement ou indirectement (par le personnel de surveillance), de joindre les personnes ad hoc aptes à déclencher le plan de crise ?**
 
-Oui
+** A REFORMULER: Cas hors-temps de travail: les responsables sécurité de l'entreprise ont tous les numéros de téléphone portable les uns des autres.**
 
 ### QU-21
 **Pouvez-vous présenter les éléments SSI (Chapitres ou annexes) décrivant les conditions de mise en œuvre de la sécurité physique des locaux informatiques (informatique, réseau, téléccom…) ?**
 
-Non
+Nos locaux sont sécurisé par un accès badge pour le personnel et par un accueil pour les invités. Le soir et le week-end une alarme est activée.
 
 ### QU-22
 **Avez-vous établi une politique de gestion des droits d'accès aux salles et locaux informatiques s'appuyant sur une analyse préalable des exigences de sécurité, basées sur les enjeux de l'activité ?**
@@ -131,12 +135,12 @@ Non
 ### QU-34
 **Pouvez-vous présenter les éléments SSI (Chapitres ou annexes) décrivant les conditions de gestion de votre réseau étendu ?**
 
-Non
+Le réseau étendu est sécurisé par les clefs Amazon qui permettent d'accéder au VPC.
 
 ### QU-43
 **Des solutions de liens permanents et d'échanges de données chiffrées peuvent-elles être mises en place ?**
 
-Oui
+Oui.
 
 ### QU-44
 **Si oui, pouvez-vous décrire ces solutions?**
@@ -152,33 +156,36 @@ Oui, 2 fois par ans, l'architecture est revue et mise à jour dans son intégral
 ### QU-69
 **Pouvez-vous présenter un document ou une procédure opérationnelle décrivant la politique de gestion des droits d'accès aux systèmes ?**
 
-Oui
+Notre procédure est la suivante: les droits utilisateurs sont administrés par le C.T.O. Valentin Brajon, et en cas d'absence, son back-up est Clément Miglietti.
 
 ### QU-74
 **Pouvez-vous présenter un document ou une procédure opérationnelle spécifique à l'usage du personnel d'exploitation des systèmes d'information ?**
 Cette politique devrait traiter de la protection de l'information, mais aussi de la protection des biens et procédés et des comportements interdits.
 
-Non
+La procédure opérationnelle est la même que pour les développeurs, car il s'agit du même personnel.
 
 ### QU-80
 **Les décisions de changements majeurs des équipements et systèmes font-elles l'objet de procédures de contrôle (enregistrement, planification, approbation formelle, communication à l'ensemble des personnes concernées, etc.) ?**
 
 Partiellement, les modèles d'ordinateurs portables fournis sont limités aux modèles de DELL XPS, Macbook Pro récent. Nous avons un script d'installation initiale et de configuration de Windows et Mac.
 
+Nous nous basons indirectement sur le modèle de sécurité d'Amazon pour le reste. Les procédures de contrôle sont donc gérées par Amazon.
+
 ### QU-83
 **Conservez-vous une trace de toute opération de maintenance ?**
 
-Non, nous ne faisons pas de maintenance, uniquement des remises à 0.
+Pour le back-end, notre architecture repose sur les Lambda d'Amazon qui garde une trace de tous les déploiements effectués et avons la possibilité de 'roll-back' un déploiement.
+**Pour le front-end, .... XXXXXXXXXXXXXXXX **
 
 ### QU-84
 **Avez-vous définis un processus pour les opérations de maintenance comprenant  un contrôle systématique des paramètres de sécurité (tels que définis lors de la mise en production), un contrôle systématique des paramètres d'enregistrement des événements de sécurité (événements à enregistrer, contextes des événements à enregistrer, durée de rétention, etc.) ?**
 
-Non, voir ci-dessus
+** XXXXXX **
 
 ### QU-87
 **Existe-t-il un document ou une procédure opérationnelle spécifiant l'ensemble des paramètres de sécurité des systèmes ?**
 
-Non, il existe un script, uniquement en interne pour le moment.
+Oui, il existe un script, uniquement en interne pour le moment. Les paramètres de sécurité système sont délégués à Amazon.
 
 ### QU-94
 **Existe-t-il un document ou une procédure opérationnelle décrivant l'ensemble des paramètres de sécurité des applications ?**
@@ -186,25 +193,29 @@ Ces paramètres de sécurité doivent dépendre de l'architecture mise en place.
 
 Non, chaque API utilise uniquement une fonction pour décoder le token et déterminer le rôle de l'utilisateur. Les paramètres de sécurité sont centralisés dans notre service d'authentification (Auth0 actuellement).
 
+Quand nous développons nous suivons les bonnes pratiques définies par Amazon et Auth0 pour la partie authentification. 
+**Nous appliquons un standart de sécurité en Python XXXXXX. PEP8 ??? GUIDE DE BONNES PRATIQUES **
+
 ### QU-98
 **Procèdez-vous à des audits réguliers des paramètres de sécurité spécifiés ?**
 
-Oui, en interne, nous n'avons pas d'audits externes pour le moment.
+La procédure participe de l'amélioration continue de la plateforme.
 
 ### QU-99
 **Procèdez-vous à une revue régulière des procédures d'exception et d'escalade en cas de difficulté ?**
 
-Non, la procédure est fixe actuellement
+La procédure participe de l'amélioration continue de la plateforme, elle est revue en cas de changement d'outils et dans le cadre de revues d'incidents.
 
 ### QU-100
 **La production informatique gère-t-elle une version de référence pour chaque produit mis en exploitation (source et exécutable) ?**
 
 Oui, le code source du Frontend ou Backend est disponible sur Git
+** ?? ** 
 
 ### QU-102
 **Avez-vous définis et mis en place un processus qui assure la gestion des supports ?**
 
-Non
+Non applicable, nous n'utilisons pas de support physique.
 
 ### QU-103
 **Si vos supports sont externalisés utilisez vous une société spécialisée dans le stockage des supports d'archives ou de sauvegardes externalisées offrant des garanties contractuelles de sécurité ?**
@@ -225,7 +236,7 @@ Oui, les backups sont journaliers par défaut
 ### QU-105
 **Testez-vous régulièrement que les sauvegardes des programmes (sources et/ou exécutables) permettent effectivement de reconstituer à tout moment l'environnement de production  ?**
 
-Oui, le code du frontend est très souvent déployé puis remis à la version précédente.
+Notre modèle DevOps repose sur du deploiement continu: le code du frontend est très souvent déployé puis remis à la version précédente.
 Le code du backend est moins souvent modifier et le changement de version se fait via l'interface Amazon pour cette raison (simple et suffisant).
 La procédure pour la base de données est plus longue mais permet de revenir à un snapshot personnalisé sur la semaine précédente + un snapshot par semaine.
 
@@ -237,12 +248,16 @@ Oui, 2 fois par an l'architecture est mise à jour dans sa globalité.
 ### QU-107
 **Avez-vous défini les actions à mener par le personnel informatique, pour prévenir, détecter et corriger les attaques par des codes malveillants (virus, spyware, autres) ?**
 
-Non
+Pour la partie code, nos dépendances sont des solutions open-source dont la source est approuvée.
+Pour la partie mail, nous nous reposons sur les outils Google.
+Pour la partie système et postes de travail, les postes de travail sont équipés des dernières mise-à-jours OS.
+Pour la partie serveur, le sujet est délégué à Amazon. 
 
 ### QU-112
 **Avez-vous pris en compte et analysé les conséquences de la disparition d'un fournisseur (en cas de panne, de bogue ou de nécessité d'évolution) pour en déduire une liste de systèmes critiques ?**
 
-Non, les fournisseurs sur lesquels l'architecture se base guarantissent 99% de disponibilité et sont tous remplaçable.
+Les fournisseurs sur lesquels l'architecture se base guarantissent 99% de disponibilité et sont tous remplaçable.
+La réversibilité est possible chez d'autres fournisseurs Cloud et On-Premise.
 
 ### QU-114
 **Les règles concernant les audits menés sur les systèmes opérationnels, les procédures et responsabilités associées, sont-elles définies et documentées ?**
@@ -253,9 +268,12 @@ Les audits sont réalisés en interne et via des tests end-to-end. Le code des s
 ### QU-117
 **La procédure et les mécanismes de conservation, de distribution, et plus généralement de gestion des clés,  offrent-ils des garanties de solidité dignes de confiance et ont-ils été approuvés par votre responsable sécurité ?**
 
-Les tokens utilisateurs sont révocable à tous moment.
-Les mots de passes utilisateurs sont changeables à tous moment.
-Les clés SSH de chaque développeur sont sécurisé via une passphrase et sont révocable.
+** QUELLE GARANTIE QUE CA FONCTIONNE BIEN??
+METTRE UN POINTEUR VERS LA POLITIQUE DE SECURITE DE AUTH0
+**
+Les tokens utilisateurs sont révocables à tout moment.
+Les mots de passes utilisateurs sont changeables à toust moment.
+Les clés SSH de chaque développeur sont sécurisées via une passphrase et sont révocables.
 
 ### QU-119
 **Avez-vous défini une procédure et des mécanismes de conservation, de distribution et d'échange de clés, et plus généralement de gestion des clés ?**
@@ -295,7 +313,8 @@ Actuellement 3 comptes admin 100m sont créer par projets.
 ### QU-132
 **Les applications sensibles disposent-elles d'une fonction automatique de surveillance en temps réel en cas d'accumulation d'événements anormaux (par exemple tentatives infructueuses de connexion sur des stations voisines ou tentatives infructueuses de transactions sensibles) ?**
 
-Oui, les logs ainsi que des fonctionnalités d'inspection et de notifications sont disponible sur le Dashboard du service d'authentification (Auth0)
+Oui, les logs ainsi que des fonctionnalités d'inspection et de notifications sont disponible sur le Dashboard du service d'authentification (Auth0).
+En cas de comportements malicieux, il existe un mécanisme de blocage.
 
 ### QU-139
 **Vous assurez vous régulièrement que les services de sécurité mis en œuvre par des prestataires ou fournisseurs de services de gestion ou d'administration du parc de postes utilisateurs sont effectivement assurés par lesdits prestataires ou fournisseurs ?**
@@ -312,16 +331,21 @@ L'accès au code et aux serveurs est possible uniquement pour les développeurs 
 **Avez-vous établi une politique de sécurité et des recommandations relatives au télétravail (avec connexion au réseau de l'entreprise) ?**
 
 Oui, voir ci-dessus.
+De plus, nos postes de travail se verrouillent à partir de 10 minutes d'inactivité.
 
 ### QU-145
 **En avez-vous déduit une politique de sécurité relative à l'utilisation d'équipements personnels tels que ordinateurs portables, assistants numériques personnels (ANP ou PDA), disques externes, supports optiques, clés USB, etc. dans le cadre du travail ?**
 
-Non, les développeurs doivent sécuriser l'accès à leur machine, leur clé ssh et leur compte google. Les données (code, data ou clés) sont transmises via Github, AWS, Firebase et ne doivent pas être transmises via des périphériques portables.
+Les développeurs doivent sécuriser l'accès à leur machine, leur clé ssh et leur compte google. Les données (code, data ou clés) sont transmises via Github, AWS, Firebase et ne doivent pas être transmises via des périphériques portables.
+
+Le matériel personnel est autorisé au bureau, mais il n'est pas autorisé de travailler avec.
+
+** PAS INSTALLER N'IMPORTE QUOI ?? ** 
 
 ### QU-152
 **Avez-vous défini une politique afin de lutter contre les risques d'attaque par des codes malveillants (virus, chevaux de Troie, vers, etc.) : interdiction d'utiliser des logiciels non préalablement autorisés, mesures de protection lors de la récupération de fichiers via des réseaux externes, revues de logiciels installés ?**
 
-Non, en cas de doute sur un système d'exploitation, nous avons une procédure de remise à zéro et de configuration initiale. Il faut aussi recréer une clé SSH et renouveler le mot de passe Google en cas de doute sur leurs intégrités.
+En cas de doute sur un système d'exploitation, nous avons une procédure de remise à zéro et de configuration initiale. Il faut aussi recréer une clé SSH et renouveler le mot de passe Google en cas de doute sur leurs intégrités.
 
 ### QU-155
 **Avez-vous défini une politique et des mesures de protection pour lutter contre des codes exécutables (applets, contrôles activeX, etc.) non autorisés (blocage ou contrôle de l'environnement dans lequel ces codes s'exécutent, contrôle des ressources accessibles par les codes mobiles, authentification de l'émetteur, etc.) ?**
@@ -332,14 +356,15 @@ Le code de toutes les versions est facilement inspectable et aucun autre code ne
 ### QU-160
 **Avez-vous défini et mis en place une politique de contrôles périodiques et de veille SSI ?**
 
-Oui, la recherche et la veille sont effectué de manières régulières par chacun des membres de l'équipe 100m. L'ensemble de l'architecture est revu et mis à jour dans son intégralité 2 fois par ans et les résultats de la veille appui les nouveaux choix technologiques.
+La recherche et la veille sont effectué de manières régulières par chacun des membres de l'équipe 100m. L'ensemble de l'architecture est revu et mis à jour dans son intégralité 2 fois par ans et les résultats de la veille appuient les nouveaux choix technologiques.
+La veille sécurité est effectué par le biais d'abonnement à des newsletter Python, et ce que nous pousse nos fournisseurs de services (Amazon, Auth0 etc.)
 
 ### QU-163
 **Avez-vous défini et mis en place une politique plan d'audit et des contrôles annuel ?**
 
-Non, nous n'avons pas d'audit externe pour le moment.
+Nous n'avons pas d'audit externe pour le moment, en interne cf. ci-dessus.
 
 ### QU-164
 **Avez-vous défini et mis en place une politique de mise en conformité technique ?**
-
+Les plateformes que nous utilisons somt mise-en-conformité continuellement. **PAS SUR**
 Non cependant si nous sommes au courant d'une non-conformité, la tâche est affectée en priorité pour l'équipe de développement.
