@@ -224,7 +224,7 @@ Le paiement se fait par trimestre, en début de trimestre à émission de la fac
 ### Clément Miglietti - Directeur Général
 Avant de créer 100M, Clément a passé 10 ans dans la Finance à New York, Londres et Paris en tant que Directeur de la Recherche Quantitative (Crédit) chez BNP Paribas, puis Gérant chez Blue Mountain Capital.
 
-Clément est diplômé de l'Ecole Polytechnique, et membre du Corps des Ponts et Chaussées (X-Ponts).
+Clément est diplômé de l’École Polytechnique, et membre du Corps des Ponts et Chaussées (X-Ponts).
 
 ### Valentin Brajon - Directeur Technique.
 Avant de créer 100M, Valentin a développé des solutions Web pendant 9 ans.
