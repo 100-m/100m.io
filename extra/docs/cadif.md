@@ -24,7 +24,7 @@ Le Crédit Agricole Ile de France souhaite développer un comparateur d'assuranc
 L'initiative conjointe du Crédit Agricole d'Ile de France et de 100M s'articule autours de 3 objectifs: améliorer l'expérience client, apporter un conseil de qualité et créer de nouveaux vecteurs d'acquisition de parts de marché.
 
 ## Améliorer l'Expérience Client 
-Le Crédit Agricole souhaite allier l'__instantanéité__ du conseil d'un robo-advisor à la __rassurance__ du dialogue avec un conseiller. L'application doit donc proposer un expérience fluide et faire remonter informations et recommendations auprès du conseiller qui pourra ensuite rentrer en relation avec son client.
+Le Crédit Agricole souhaite allier l'__instantanéité__ du conseil d'un robo-advisor à la __réassurance__ du dialogue avec un conseiller. L'application doit donc proposer un expérience fluide et faire remonter informations et recommandations auprès du conseiller qui pourra ensuite rentrer en relation avec son client.
 
 ## Renforcer La Dimension Conseil
 L'objectif est de __vendre mieux__, en identifiant les manques dans la couverture du client, et en lui proposant des produits qui correspondent à son profil de risque et à ses besoins.
@@ -45,15 +45,15 @@ L'enjeu est ici de constituer, ou d'acquérir une base de données de contrats d
 La seconde composante du projet est la construction d'un moteur d'interview paramétrable. Le moteur doit être capable d'adapter les questions en fonction des réponses précédemment fournies. En plus de l'interface Client, il doit comporter une interface Administrateur qui permette de changer la séquence de questions et les liens logiques entre les questions.
 
 ## Le Moteur de Conseil
-Le moteur de conseil est constitué d'un ensemble de règles de gestion qui doit permettre de générer des recommendations.
-Les recommendations sont générées sur la base des informations transmises par le moteur de questions. Le moteur de conseil doit comporter une interface Administrateur qui permette l'ajout ou la suppression de règles de gestion.
+Le moteur de conseil est constitué d'un ensemble de règles de gestion qui doit permettre de générer des recommandations.
+Les recommandations sont générées sur la base des informations transmises par le moteur de questions. Le moteur de conseil doit comporter une interface Administrateur qui permette l'ajout ou la suppression de règles de gestion.
 
 ---
 
 # Notre Approche
 
-## 1. Eprouver la solution
-Nous vous proposons de créer une application P.O.C. et de se concenter sur un périmétre restreint, à savoir:
+## 1. Éprouver la solution
+Nous vous proposons de créer une application P.O.C. et de se concentrer sur un périmètre restreint, à savoir:
 * l'assurance habitation,
 * avec une base constituée des 12 contrats les plus courants,
 * une interview robot de 10 questions conclue par un bilan,
@@ -63,22 +63,22 @@ Nous vous proposons de créer une application P.O.C. et de se concenter sur un p
 A cette occasion: 
 * on enrichira la base de donnée de contrats 
 * on étoffera l'interview robot 
-* on complexifiera le moteur de recommendations
+* on complexifiera le moteur de recommandations
 
-## 3. Elargir à d'autres produits
+## 3. Élargir à d'autres produits
 Dans un troisième temps, on pourra étendre l'approche à d'autres produits d'assurance.
 
 ---
 
 # La Solution 100M
-100M a developpé une plateforme de dashboarding et de marketing en-ligne dédiée à l'industrie financière. Notre plateforme permet la __déclinaison d'applications customisables__ pour nos clients.
+100M a développé une plate-forme de dashboarding et de marketing en-ligne dédiée à l'industrie financière. Notre plate forme permet la __déclinaison d'applications customisables__ pour nos clients.
 
 Nous sommes des spécialistes du chiffre et de la vulgarisation de concepts financiers. Nos applications ont le plus souvent vocation à supporter une relation commerciale.
 
 ## L'expertise 100M
 ### Expérience Utilisateur
 Nos applications facilitent une __lecture graphique, rapide et synthétique__ de l'information.  
-100M a developpé une bibliothèque de répresentations graphiques qui savent mettre en confiance, favoriser la transparence du chiffre et communiquer une information aussi technique soit-elle.
+100M a développé une bibliothèque de représentations graphiques qui savent mettre en confiance, favoriser la transparence du chiffre et communiquer une information aussi technique soit-elle.
 
 ### Collaboration
 Nos solutions sont directement __connectées__ aux données tierces via une intégration simplifiée au maximum.   
@@ -92,10 +92,10 @@ Notre plateforme est également multi-format: nos applications permettent l'expo
 
 ## La Technologie 100M
 ### Le Front-End
-100M a developpé le front-end software propriétaire en Javascript permettant la réactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
+100M a développé le front-end software propriétaire en Javascript permettant la réactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
 
 ### Les moteurs de calculs en Back-End
-100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des differents indicateurs.
+100M a développé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des différents indicateurs.
 
 ### Hébergement de l'application
 L'hébergement du front-end de l'application se fait sur des serveurs AWS dont le taux de disponibilité est garanti à 99.99%.
@@ -126,7 +126,7 @@ L'application invitera le client à comparer les offres des différents compéti
 L'interface permettra à l'administrateur d'éditer les questions posées par le robot lors de l'interview et de paramétrer leur enchainement.
 
 * une interface Administrateur pour paramétrer le moteur de Conseil.
-L'interface permettra à l'administrateur d'éditer les règles de gestion des recommendations.
+L'interface permettra à l'administrateur d'éditer les règles de gestion des recommandations.
 
 * une base de données de contrats d'assurance habitation, normalisée.
 
@@ -140,7 +140,7 @@ Axa, Maaf, Macif, Matmut, GMF, Allianz, Mma, Groupama, Maif, Credit Mutuel, Gene
 2. conception de la grille de comparaison, normalisation des offres et classification au sein de la grille.  
 __Livraison d'un tableau excel présentant le comparatif de l'ensemble des offres concurrentes.__  
 
-3. revue de la segmentation du marché, des recommendations conseils cibles et définition du parcours utilisateur au sein du questionnaire-robot.
+3. revue de la segmentation du marché, des recommandations conseils cibles et définition du parcours utilisateur au sein du questionnaire-robot.
 Le Crédit Agricole fournira une segmentation marché sous la forme de profiles de clients types parmi lesquels l'interview devra discriminer.  
 
 4. design de l'application Client.  
@@ -176,7 +176,7 @@ __Livraison de l'application__
 
 
 ### Planning de livraison
-L'application sera livrée dans un delai de 8 semaines à compter de la date de l'accord client.  
+L'application sera livrée dans un délai de 8 semaines à compter de la date de l'accord client.  
 
 ---
 
@@ -201,21 +201,21 @@ Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 ## Chiffrage de la Proof-Of-Concept
 ![](/extra/cadif-assurance-poc.png)
 
-## La license
-La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour le Crédit Agricole Ile de France, 24h/24 et 7j/7.
+## La licence
+La licence couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour le Crédit Agricole Ile de France, 24h/24 et 7j/7.
 
-La license inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration du progiciel et le support téléphonique.
+La licence inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration du progiciel et le support téléphonique.
 
-Afin de permettre une large diffusion de nos applications et de faciliter la collaboration, la license est chiffrée uniquement "à l'application" et non pas à l'utilisateur.
+Afin de permettre une large diffusion de nos applications et de faciliter la collaboration, la licence est chiffrée uniquement "à l'application" et non pas à l'utilisateur.
 
-La license pour l'application 'proof-of-concept' est de 800 Euros / mois, hébergement inclus.
+La licence pour l'application 'proof-of-concept' est de 800 Euros / mois, hébergement inclus.
 
 Les prix sont valables pour un engagement de 6 mois renouvelables.
 
 ## Conditions De Paiement
 Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
 
-Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la license.  
+Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la licence.  
 
 ---
 
@@ -227,8 +227,8 @@ Avant de créer 100M, Clément a passé 10 ans dans la Finance à New York, Lond
 Clément est diplômé de l'Ecole Polytechnique, et membre du Corps des Ponts et Chaussées (X-Ponts).
 
 ### Valentin Brajon - Directeur Technique.
-Avant de créer 100M, Valentin a developpé des solutions Web pendant 9 ans.
-Il a été l'Architecte et le Développeur Web de nombreuses plateformes financières et notamment de celle de Parvest.
+Avant de créer 100M, Valentin a développé des solutions Web pendant 9 ans.
+Il a été l'Architecte et le Développeur Web de nombreuses plate-formes financières et notamment de celle de Parvest.
 
 Valentin est ingénieur informatique diplômé de Sciences U.
 
