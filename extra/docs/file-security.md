@@ -8,9 +8,9 @@ It also includes some information about internal security: **Company structure**
 
 ### Authentication
 
-All users logs in to Auth0 through a Login Page. They request a JWT Token that will be used for every backend + a Firebase Token.  
-All users receive a role post authentication, by default **USER**.  
-User roles are created per application and are dynamic (as many roles per application and as many read/write rules per role).
+User and Roles Creation are only handled by 100m developers.  
+Users logs in to Auth0 through a Login Page and receives a Token (JWT + Firebase) used for every backend requests.  
+Tokens, once decoded, contain roles and backend will only output data specific to each specific role, by default **USER**. Read-Write rules can be defined for each role.  
 
 ### Database
 Data stored in Firebase are dynamic or application related and non-business critical. (Text, Translation, Screenshare...). Firebase uses it's own token & authentication system.
@@ -49,12 +49,20 @@ Private services are only accessible by 100m developers with a Two-Factor Authen
 - **Github** - 1 user account + 1 ssh keys (with passphrase) per developer
 
 ### Incidents
-- Frontend and Backend code exceptions **are monitored** and will automatically notify **support@100m.io**.
-- DDOS attempts **are catched** by Cloudflare and will automatically notify **support@100m.io**.
-- Suspect Backend connections or attempts can be monitored at a proxy level or a software level via solutions like Sqreen but **are not monitored** at this moment.
-- APIs and Batches **are monitored** and expose searchable logs + will automatically notify **support@100m.io** on uncommon log pattern.
-- The procedure for any reports (issues, incidents, crisis) is to contact **support@100m.io** with the corresponding report type.
-- Every Team Members are notified by **support@100m.io** emails and will analyse the issues, respond with an ETA and coordinate internally the issue.
+- Frontend and Backend code exceptions **are monitored**.
+- API calls and Batch runs **are monitored**.
+- DDOS attempts **are catched** by Cloudflare.
+- Suspect Backend connections or attempts **are not monitored**, proxy rules can be created if needed or a software level via solutions like Sqreen can be installed if needed.
+- The procedure for any reports (bug, issue, incident, crisis) is to contact **support@100m.io** with the corresponding report type.
+
+Monitored system expose searchable logs and notify **support@100m.io** on uncommon behavior.
+
+Every 100m Team Members are notified by **support@100m.io** emails. The first member to read the incident email will coordinate it and:
+  - reply internally with a report status (bug, issue, incident, crisis).
+  - reply to the client with an Estimated Time of Resolution or an Acknowledgement and a responsible contact.
+  - call the responsible if the report status escalate to a high risk incident or crisis.
+  - treat the issue or call the responsible.
+  - mark the issue notification as resolved.
 
 
 <footer>

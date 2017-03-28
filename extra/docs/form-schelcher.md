@@ -58,44 +58,44 @@ En sus, nous exigeons de nos prestataires un certain niveau de confidentialité 
 ### QU-11
 **Réalisez-vous des analyses de  risques liés aux transfert d'informations ou de logiciels avec un tiers afin de formaliser contractuellement les procédures, responsabilités et obligations de chacune des parties ?**
 
-La question n'est pas applicable: nous ne partageons aucune données avec des tiers. Les seules informations partagée sont le code source (sur GitHub, traité en Q-10).
+Non applicable: nous ne partageons aucune données avec des tiers. Les seules informations partagées sont le code source (sur GitHub, traité en Q-10).
 
 ### QU-12
 **Pouvez-vous présenter l'ensemble des clauses SSI standards qui sont adossées à tout accord signé avec un tiers impliquant un accès au système d'information ou aux locaux contenant de l'information ?**
 
 Partiellement, nous réduisons les accès aux données en écriture et au serveur d'extraction de donnée aux employés de 100M seulement. Les prestataires n'ont accès qu'au code applicatif actuellement.
 
-On fournira sur demande les N.D.A. signés avec des Tiers.
+Nous fournirons sur demande les N.D.A. signés avec des Tiers.
 
 ### QU-13
 **Si oui, tout accès d'un tiers au système d'information ou aux locaux contenant des données du groupe Crédit Mutuel Arkéa n'est-il autorisé qu'après la signature d'un accord formel reprenant ces clauses ?**
 
-Non applicable. Personne n'a un droit d'accès à notre système d'information.
+Non applicable: Personne n'a un droit d'accès à notre système d'information.
 
 ### QU-14
 **Pouvez-vous présenter les éléments SSI (chapitres ou annexes) décrivant les procédures mises en place dans le cadre de la gestion des incidents de SSI ?**
 
-**ACOMPLETER: TRAITEMENT DES EXCEPTIONS PAR SUPPORT**
+Oui, http://100m.io/md.html?file-security.md#incidents
 
 ### QU-15
 **Si oui, pouvez-vous présenter l'organisation mise en place afin de gérer ces incidents SSI ?**
 
-**ACOMPLETER: TRAITEMENT DES EXCEPTIONS PAR SUPPORT**
+Oui, http://100m.io/md.html?file-security.md#incidents
 
 ### QU-16
 **Si oui, pouve-vous présenter les moyens permettant de vous assurer que toute atteinte à l'intégrité des informations fait l'objet d'alertes et d'actions formalisées ?**
 
-**ACOMPLETER: TRAITEMENT DES EXCEPTIONS PAR SUPPORT**
+Oui, http://100m.io/md.html?file-security.md#incidents
 
 ### QU-17
 **Si oui, pouvez-vous présenter les moyens permettant de vous assurer que toute atteinte à la confidentialité des données hébergées fait l'objet d'alertes et d'actions formalisées ?**
 
-** ?**
+Oui, http://100m.io/md.html?file-security.md#incidents
 
 ### QU-18
 **Si oui, pouvez-vous présenter les procédures d'alertes et d'escalades permettant de réagir aux incidents de sécurité détectés ?**
 
-** Partie gestion des incidents ** 
+Oui, http://100m.io/md.html?file-security.md#incidents
 
 ### QU-19
 **Existe-t-il un plan de gestion de crise SSI incluant, en fonction de divers symptômes, les noms et coordonnées des personnes à prévenir pour qu'elles puissent effectuer un premier diagnostic et, en fonction de ce diagnostic, les responsables de la cellule de crise à rassembler et les actions urgentes à mener ?**
@@ -105,12 +105,12 @@ Oui, la procédure est la même que pour les incidents.
 ### QU-20
 **Si oui, existe-t-il au moins une procédure d'alerte, diffusée à l'ensemble du personnel, qui permette, directement ou indirectement (par le personnel de surveillance), de joindre les personnes ad hoc aptes à déclencher le plan de crise ?**
 
-** A REFORMULER: Cas hors-temps de travail: les responsables sécurité de l'entreprise ont tous les numéros de téléphone portable les uns des autres.**
+Oui, les responsables sécurité de l'entreprise ont tous les numéros de téléphone portable les uns des autres.
 
 ### QU-21
 **Pouvez-vous présenter les éléments SSI (Chapitres ou annexes) décrivant les conditions de mise en œuvre de la sécurité physique des locaux informatiques (informatique, réseau, téléccom…) ?**
 
-Nos locaux sont sécurisé par un accès badge pour le personnel et par un accueil pour les invités. Le soir et le week-end une alarme est activée.
+Nos locaux sont sécurisés par un accès badge pour le personnel et par un accueil pour les invités. Le soir et le week-end une alarme est activée.
 
 ### QU-22
 **Avez-vous établi une politique de gestion des droits d'accès aux salles et locaux informatiques s'appuyant sur une analyse préalable des exigences de sécurité, basées sur les enjeux de l'activité ?**
@@ -135,12 +135,12 @@ Non
 ### QU-34
 **Pouvez-vous présenter les éléments SSI (Chapitres ou annexes) décrivant les conditions de gestion de votre réseau étendu ?**
 
-Le réseau étendu est sécurisé par les clefs Amazon qui permettent d'accéder au VPC.
+Le réseau étendu est sécurisé par les clés Github et Amazon qui permettent d'accéder au VPC.
 
 ### QU-43
 **Des solutions de liens permanents et d'échanges de données chiffrées peuvent-elles être mises en place ?**
 
-Oui.
+Oui
 
 ### QU-44
 **Si oui, pouvez-vous décrire ces solutions?**
@@ -156,7 +156,7 @@ Oui, 2 fois par ans, l'architecture est revue et mise à jour dans son intégral
 ### QU-69
 **Pouvez-vous présenter un document ou une procédure opérationnelle décrivant la politique de gestion des droits d'accès aux systèmes ?**
 
-Notre procédure est la suivante: les droits utilisateurs sont administrés par le C.T.O. Valentin Brajon, et en cas d'absence, son back-up est Clément Miglietti.
+Notre procédure est la suivante: les droits utilisateurs sont administrés par le CTO Valentin Brajon, et en cas d'absence, son back-up est Clément Miglietti. Voir https://100m.io/md.html?file-security.md#authentication
 
 ### QU-74
 **Pouvez-vous présenter un document ou une procédure opérationnelle spécifique à l'usage du personnel d'exploitation des systèmes d'information ?**
@@ -167,50 +167,51 @@ La procédure opérationnelle est la même que pour les développeurs, car il s'
 ### QU-80
 **Les décisions de changements majeurs des équipements et systèmes font-elles l'objet de procédures de contrôle (enregistrement, planification, approbation formelle, communication à l'ensemble des personnes concernées, etc.) ?**
 
-Partiellement, les modèles d'ordinateurs portables fournis sont limités aux modèles de DELL XPS, Macbook Pro récent. Nous avons un script d'installation initiale et de configuration de Windows et Mac.
+Pour le matériel de travail: les modèles d'ordinateurs portables fournis sont limités aux modèles de DELL XPS, Macbook Pro récent. Nous avons un script d'installation initiale et de configuration de Windows et Mac. Les systèmes antivirus sont fournis par Windows et Mac, chaque installation logiciel est préalablement analysée. La politique recommande de ne pas installer de logiciel non compris dans le script d'installation initiale.
 
-Nous nous basons indirectement sur le modèle de sécurité d'Amazon pour le reste. Les procédures de contrôle sont donc gérées par Amazon.
+Pour les serveurs: Nous nous basons indirectement sur le modèle de sécurité d'Amazon. Les procédures de contrôle sont donc gérées par Amazon. Les distributions système (linux) sont automatiquement créer et lancer par Amazon Lambda.
 
 ### QU-83
 **Conservez-vous une trace de toute opération de maintenance ?**
 
-Pour le back-end, notre architecture repose sur les Lambda d'Amazon qui garde une trace de tous les déploiements effectués et avons la possibilité de 'roll-back' un déploiement.
-**Pour le front-end, .... XXXXXXXXXXXXXXXX **
+Pour le back-end, notre architecture repose sur les Lambda d'Amazon qui garde une trace de tous les déploiements effectués et nous avons la possibilité de 'roll-back' un déploiement.
+Pour le front-end, l'application est compilé et déployé et nous avons la possibilité de 'roll-back' un déploiement.
 
 ### QU-84
 **Avez-vous définis un processus pour les opérations de maintenance comprenant  un contrôle systématique des paramètres de sécurité (tels que définis lors de la mise en production), un contrôle systématique des paramètres d'enregistrement des événements de sécurité (événements à enregistrer, contextes des événements à enregistrer, durée de rétention, etc.) ?**
 
-** XXXXXX **
+Nous avons un script de déploiement pour le back-end et un pour le front-end. Chaque version est taggé et les logs amazon sont disponibles pour les informations de déploiement et d'utilisation.
 
 ### QU-87
 **Existe-t-il un document ou une procédure opérationnelle spécifiant l'ensemble des paramètres de sécurité des systèmes ?**
 
-Oui, il existe un script, uniquement en interne pour le moment. Les paramètres de sécurité système sont délégués à Amazon.
+Les paramètres de sécurité système sont délégués à AWS Lambda.
 
 ### QU-94
 **Existe-t-il un document ou une procédure opérationnelle décrivant l'ensemble des paramètres de sécurité des applications ?**
 Ces paramètres de sécurité doivent dépendre de l'architecture mise en place.
 
-Non, chaque API utilise uniquement une fonction pour décoder le token et déterminer le rôle de l'utilisateur. Les paramètres de sécurité sont centralisés dans notre service d'authentification (Auth0 actuellement).
+Oui, voir https://100m.io/md.html?file-security.md#authentication.
 
-Quand nous développons nous suivons les bonnes pratiques définies par Amazon et Auth0 pour la partie authentification. 
-**Nous appliquons un standart de sécurité en Python XXXXXX. PEP8 ??? GUIDE DE BONNES PRATIQUES **
+Lors du développement nous appliquons les bonnes pratiques définies par Amazon et Auth0 pour la partie authentification et par Python pour les standards de code et de sécurité.
+
+Les failles de sécurité standards (comme https://www.owasp.org/index.php/Top_10_2013-Top_10) ne sont pas applicable sur l'architecture actuelle (authentification > requête avec droits > filtrage) et seront interceptable avec Sqreen.
 
 ### QU-98
 **Procèdez-vous à des audits réguliers des paramètres de sécurité spécifiés ?**
 
-La procédure participe de l'amélioration continue de la plateforme.
+Oui, en interne, la plateforme est revue dans sa globalité et cette procédure participe à l'amélioration continue de la plateforme.
 
 ### QU-99
 **Procèdez-vous à une revue régulière des procédures d'exception et d'escalade en cas de difficulté ?**
 
-La procédure participe de l'amélioration continue de la plateforme, elle est revue en cas de changement d'outils et dans le cadre de revues d'incidents.
+Oui, au même titre que la plateforme, les outils internes sont revue de manière continue. En cas d'incidents et après sa résolution, les outils peuvent être mis à jour.
 
 ### QU-100
 **La production informatique gère-t-elle une version de référence pour chaque produit mis en exploitation (source et exécutable) ?**
 
-Oui, le code source du Frontend ou Backend est disponible sur Git
-** ?? ** 
+Oui, le code source du Frontend ou Backend est disponible sur Git.
+Le code déployé (éxécutable) est disponible sur git et AWS Lambda (.zip).
 
 ### QU-102
 **Avez-vous définis et mis en place un processus qui assure la gestion des supports ?**
@@ -243,7 +244,7 @@ La procédure pour la base de données est plus longue mais permet de revenir à
 ### QU-106
 **L'ensemble des procédures et plans de sauvegarde des logiciels fait-il l'objet d'un audit régulier ?**
 
-Oui, 2 fois par an l'architecture est mise à jour dans sa globalité.
+Oui, 2 fois par an l'architecture est revue dans sa globalité.
 
 ### QU-107
 **Avez-vous défini les actions à mener par le personnel informatique, pour prévenir, détecter et corriger les attaques par des codes malveillants (virus, spyware, autres) ?**
@@ -251,13 +252,14 @@ Oui, 2 fois par an l'architecture est mise à jour dans sa globalité.
 Pour la partie code, nos dépendances sont des solutions open-source dont la source est approuvée.
 Pour la partie mail, nous nous reposons sur les outils Google.
 Pour la partie système et postes de travail, les postes de travail sont équipés des dernières mise-à-jours OS.
-Pour la partie serveur, le sujet est délégué à Amazon. 
+Pour la partie serveur, le sujet est délégué à Amazon.
 
 ### QU-112
 **Avez-vous pris en compte et analysé les conséquences de la disparition d'un fournisseur (en cas de panne, de bogue ou de nécessité d'évolution) pour en déduire une liste de systèmes critiques ?**
 
 Les fournisseurs sur lesquels l'architecture se base guarantissent 99% de disponibilité et sont tous remplaçable.
-La réversibilité est possible chez d'autres fournisseurs Cloud et On-Premise.
+
+La réversibilité est possible vers d'autres fournisseurs Cloud ou On-Premise.
 
 ### QU-114
 **Les règles concernant les audits menés sur les systèmes opérationnels, les procédures et responsabilités associées, sont-elles définies et documentées ?**
@@ -268,12 +270,9 @@ Les audits sont réalisés en interne et via des tests end-to-end. Le code des s
 ### QU-117
 **La procédure et les mécanismes de conservation, de distribution, et plus généralement de gestion des clés,  offrent-ils des garanties de solidité dignes de confiance et ont-ils été approuvés par votre responsable sécurité ?**
 
-** QUELLE GARANTIE QUE CA FONCTIONNE BIEN??
-METTRE UN POINTEUR VERS LA POLITIQUE DE SECURITE DE AUTH0
-**
-Les tokens utilisateurs sont révocables à tout moment.
-Les mots de passes utilisateurs sont changeables à toust moment.
-Les clés SSH de chaque développeur sont sécurisées via une passphrase et sont révocables.
+Les connections à des serveurs distants (Code source, Donnée ou Serveur) se font uniquement pas "clé autorisée" (jamais mot de passe). Chaque développeur doit sécurisées sa propre clé via une passphrase et les clés sont révocables.
+
+Les échanges de token entre l'applicatif et les serveurs se font via un serveur d'authentification gérer par Auth0 (voir https://auth0.com/security). Les tokens sont révocables à tout moment, les mots de passes et droits utilisateurs sont modifiable à tout moment.
 
 ### QU-119
 **Avez-vous défini une procédure et des mécanismes de conservation, de distribution et d'échange de clés, et plus généralement de gestion des clés ?**
@@ -292,6 +291,8 @@ Les clés SSH sont sécurisé par chaque développeur et les passphrases connues
 **Les processus de définition et de gestion des droits attribués aux profils utilisateurs sont-ils sous contrôle ?**
 
 Les rôles et les droits utilisateurs sont gérés de manière centrale sur le service d'authentification (Auth0).
+Les comptes utilisateurs et les roles sont créer et attribué par 100M.
+Les logs sont disponible pour toutes actions auprès du service d'authentification.
 
 ### QU-126
 **Les processus qui assurent l'authentification sont-ils sous contrôle ?**
@@ -305,10 +306,9 @@ Oui, voir ci-dessus
 
 ### QU-130
 **Les paramètres d'administration applicatifs sont-ils sous contrôle ?**
-Ce contrôle requiert que la liste des personnes habilitées à changer les paramètres de contrôle soit très limitée, qu'il existe un contrôle d'accès renforcé pour pouvoir les modifier, et que les modifications soient journalisées et auditées."
+Ce contrôle requiert que la liste des personnes habilitées à changer les paramètres de contrôle soit très limitée, qu'il existe un contrôle d'accès renforcé pour pouvoir les modifier, et que les modifications soient journalisées et auditées.
 
-Oui, voir ci-dessus
-Actuellement 3 comptes admin 100m sont créer par projets.
+Oui, voir ci-dessus. Uniquement 3 développeurs 100M peuvent modifier les droits actuellement.
 
 ### QU-132
 **Les applications sensibles disposent-elles d'une fonction automatique de surveillance en temps réel en cas d'accumulation d'événements anormaux (par exemple tentatives infructueuses de connexion sur des stations voisines ou tentatives infructueuses de transactions sensibles) ?**
@@ -317,7 +317,7 @@ Oui, les logs ainsi que des fonctionnalités d'inspection et de notifications so
 En cas de comportements malicieux, il existe un mécanisme de blocage.
 
 ### QU-139
-**Vous assurez vous régulièrement que les services de sécurité mis en œuvre par des prestataires ou fournisseurs de services de gestion ou d'administration du parc de postes utilisateurs sont effectivement assurés par lesdits prestataires ou fournisseurs ?**
+**Vous assurez vous régulièrement que les services de sécurité mis en œuvre par des prestataires ou fournisseurs de services de gestion ou d'administration du parc de postes utilisateurs sont effectivement assurés par les dits prestataires ou fournisseurs ?**
 
 Les services de sécurités sont effectués automatiquement par les providers que nous avons choisi (AWS Lambda, AWS Aurora, Firebase, Auth0). Nous n'avons pas d'autres fournisseurs.
 
@@ -331,7 +331,7 @@ L'accès au code et aux serveurs est possible uniquement pour les développeurs 
 **Avez-vous établi une politique de sécurité et des recommandations relatives au télétravail (avec connexion au réseau de l'entreprise) ?**
 
 Oui, voir ci-dessus.
-De plus, nos postes de travail se verrouillent à partir de 10 minutes d'inactivité.
+De plus, nos postes de travail se verrouillent à partir de 5 minutes d'inactivité.
 
 ### QU-145
 **En avez-vous déduit une politique de sécurité relative à l'utilisation d'équipements personnels tels que ordinateurs portables, assistants numériques personnels (ANP ou PDA), disques externes, supports optiques, clés USB, etc. dans le cadre du travail ?**
@@ -340,31 +340,29 @@ Les développeurs doivent sécuriser l'accès à leur machine, leur clé ssh et 
 
 Le matériel personnel est autorisé au bureau, mais il n'est pas autorisé de travailler avec.
 
-** PAS INSTALLER N'IMPORTE QUOI ?? ** 
-
 ### QU-152
 **Avez-vous défini une politique afin de lutter contre les risques d'attaque par des codes malveillants (virus, chevaux de Troie, vers, etc.) : interdiction d'utiliser des logiciels non préalablement autorisés, mesures de protection lors de la récupération de fichiers via des réseaux externes, revues de logiciels installés ?**
 
-En cas de doute sur un système d'exploitation, nous avons une procédure de remise à zéro et de configuration initiale. Il faut aussi recréer une clé SSH et renouveler le mot de passe Google en cas de doute sur leurs intégrités.
+En cas de doute sur un système d'exploitation, nous avons une procédure de remise à zéro et de configuration initiale. Il faut aussi révoquer la clé SSH et le mot de passe Google en cas de doute sur leurs intégrités.
 
 ### QU-155
 **Avez-vous défini une politique et des mesures de protection pour lutter contre des codes exécutables (applets, contrôles activeX, etc.) non autorisés (blocage ou contrôle de l'environnement dans lequel ces codes s'exécutent, contrôle des ressources accessibles par les codes mobiles, authentification de l'émetteur, etc.) ?**
 
-Oui, les codes sont exécutés dans des environnements très isolés (AXS Lambda).
+Oui, les codes sont exécutés dans des environnements très isolés (AWS Lambda).
 Le code de toutes les versions est facilement inspectable et aucun autre code ne tourne sur les serveurs.
 
 ### QU-160
 **Avez-vous défini et mis en place une politique de contrôles périodiques et de veille SSI ?**
 
-La recherche et la veille sont effectué de manières régulières par chacun des membres de l'équipe 100m. L'ensemble de l'architecture est revu et mis à jour dans son intégralité 2 fois par ans et les résultats de la veille appuient les nouveaux choix technologiques.
+La recherche et la veille sont effectué de manières régulières par chacun des membres de l'équipe 100m. L'ensemble de l'architecture est revu et mis à jour dans son intégralité 2 fois par an et les résultats de la veille appuient les nouveaux choix technologiques.
+
 La veille sécurité est effectué par le biais d'abonnement à des newsletter Python, et ce que nous pousse nos fournisseurs de services (Amazon, Auth0 etc.)
 
 ### QU-163
 **Avez-vous défini et mis en place une politique plan d'audit et des contrôles annuel ?**
 
-Nous n'avons pas d'audit externe pour le moment, en interne cf. ci-dessus.
+Nous n'avons pas d'audit externe pour le moment, en interne cf. Q-98 et 114.
 
 ### QU-164
 **Avez-vous défini et mis en place une politique de mise en conformité technique ?**
-Les plateformes que nous utilisons somt mise-en-conformité continuellement. **PAS SUR**
-Non cependant si nous sommes au courant d'une non-conformité, la tâche est affectée en priorité pour l'équipe de développement.
+Les plateformes que nous utilisons sont en conformité continuellement selon les standards de sécurité AWS.
