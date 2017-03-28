@@ -10,28 +10,28 @@
 ---
 
 # Introduction
-Dans le cadre de son projet de digitalisation et d'aquisition de nouveaux clients, le Crédit Agricole lance une initiative pour s'équiper d'outils commerciaux innovants.
+Dans le cadre de son projet de digitalisation et d'acquisition de nouveaux clients, le Crédit Agricole lance une initiative pour s'équiper d'outils commerciaux innovants.
 
 Le Crédit Agricole Ile de France souhaite développer un comparateur d'assurance pour identifier les manques dans la couverture de ses clients, et leur proposer des solutions adaptées. Il est à la recherche d'une solution sur-mesure dont le périmètre puisse évoluer dans le temps.
 
 100M est la solution de choix pour communiquer efficacement sous un format engageant. 100M apporte la base logiciel, le savoir-faire technique et la connaissance des métiers de la banque et de la finance; éléments primordiaux à la bonne et rapide exécution du projet. 
 
-L'objectif de ce projet est de développer un comparateur d'assurance qui puisse être mis à disposition du public et des conseillers, et servir de canal d'acquisition client.
+**L'objectif de ce projet est de développer un comparateur d'assurance qui puisse être mis à disposition du public et des conseillers, et servir de canal d'acquisition client.**
 
 ---
 
-# Ce Que Nous Avons Compris De Vos Objectifs
-L'initiative conjointe du Crédit Agricole d'Ile de France et de 100M s'articule autours de 3 objectifs: améliorer l'expérience Client, apporter un conseil de qualité et créer de nouveaux vecteurs d'acquisition de parts de marché.
+# Vos Objectifs
+L'initiative conjointe du Crédit Agricole d'Ile de France et de 100M s'articule autours de 3 objectifs: améliorer l'expérience client, apporter un conseil de qualité et créer de nouveaux vecteurs d'acquisition de parts de marché.
 
 ## Améliorer l'Expérience Client 
-Le Crédit Agricole souhaite allier l'__instantanéité__ du conseil d'un robo-advisor à la __rassurance__ du dialogue avec un conseiller. L'application doit donc proposer un expérience fluide et faire remonter informations et recommendations auprès du conseiller qui pourra ensuite rentrer en relation avec son Client.
+Le Crédit Agricole souhaite allier l'__instantanéité__ du conseil d'un robo-advisor à la __rassurance__ du dialogue avec un conseiller. L'application doit donc proposer un expérience fluide et faire remonter informations et recommendations auprès du conseiller qui pourra ensuite rentrer en relation avec son client.
 
 ## Renforcer La Dimension Conseil
-L'objectif est de __vendre mieux__, en identifiant les manques dans la couverture du Client, et en lui proposant des produits qui correspondent à son profil de risque et à ses besoins.
+L'objectif est de __vendre mieux__, en identifiant les manques dans la couverture du client, et en lui proposant des produits qui correspondent à son profil de risque et à ses besoins.
 
 ## Augmenter l'Acquisition Client
-Les outils développés dans le cadre du présent projet ont pour but d'être un vecteur d'aquisition Client: à la fois dans une perspective de __conversion de prospects__, mais également dans la perspective d'__équiper la base clients existante__ avec d'autres solutions du Crédit Agricole.
-L'application développée devra permettre de suivre le 'funnel' d'acquisition Client.  
+Les outils développés dans le cadre du présent projet ont pour but d'être un vecteur d'acquisition client: à la fois dans une perspective de __conversion de prospects__, mais également dans la perspective d'__équiper la base clients existante__ avec d'autres solutions du Crédit Agricole.
+L'application développée devra permettre de suivre le 'funnel' d'acquisition client.  
 
 ---
 
@@ -59,13 +59,13 @@ Nous vous proposons de créer une application P.O.C. et de se concenter sur un p
 * une interview robot de 10 questions conclue par un bilan,
 * un ensemble de règles de gestions d'une trentaine de règles.
 
-## 2. Industrialisation
+## 2. Industrialiser la solution
 A cette occasion: 
 * on enrichira la base de donnée de contrats 
 * on étoffera l'interview robot 
 * on complexifiera le moteur de recommendations
 
-## 3. Elargissement
+## 3. Elargir à d'autres produits
 Dans un troisième temps, on pourra étendre l'approche à d'autres produits d'assurance.
 
 ---
@@ -116,7 +116,7 @@ L'objectif de cette première phase est double: présenter une première version
 ### L'application livrée
 Le livrable sera une application en ligne, personnalisée et accordée avec la charte graphique du Crédit Agricole.
 
-L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivante).
+L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivantes).
 
 Le livrable sera constitué de:
 * une application Client qui conduira l'interview robot.  
@@ -130,7 +130,7 @@ L'interface permettra à l'administrateur d'éditer les règles de gestion des r
 
 * une base de données de contrats d'assurance habitation, normalisée.
 
-L'application Client pourra être mise à disposition du public et servir de canal d'aquisition client.
+L'application Client pourra être mise à disposition du public et servir de canal d'acquisition client.
 
 ### Séquençage:  
 1. recueil d'information sur l'offre de CADIF et celle de 12 compétiteurs.
