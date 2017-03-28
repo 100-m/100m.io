@@ -36,7 +36,7 @@ L'application développée devra permettre de suivre le 'funnel' d'acquisition C
 ---
 
 # Notre Perception Des Enjeux
-En terme de réalisation, le projet se décompose en 3 grandes composantes: la données, le moteur d'interview, et le moteur de conseil.
+En terme de réalisation, le projet se décompose en 3 grandes composantes: la donnée, le moteur d'interview, et le moteur de conseil.
 
 ## La Donnée
 L'enjeu est ici de constituer, ou d'acquérir une base de données de contrats d'assurance, et de la maintenir à jour.
@@ -52,16 +52,15 @@ Les recommendations sont générées sur la base des informations transmises par
 
 # Notre Approche
 
-## 1. Eprouver la solution sur un P.O.C.
-Nous vous proposons d'éprouver le design de la solution en faisant un P.O.C. sur un périmétre restreint en termes: de produit, de base de données de contrats, de nombre de questions posées au Client, et de règles de gestion.
-Spécifiquement, nous vous suggérons de se concenter sur:
+## 1. Eprouver la solution
+Nous vous proposons de créer une application P.O.C. et de se concenter sur un périmétre restreint, à savoir:
 * l'assurance habitation,
 * avec une base constituée des 12 contrats les plus courants,
 * une interview robot de 10 questions conclue par un bilan,
 * un ensemble de règles de gestions d'une trentaine de règles.
 
 ## 2. Industrialisation
-Suite au P.O.C., on pourra industrialiser le comparateur et à cette occasion: 
+A cette occasion: 
 * on enrichira la base de donnée de contrats 
 * on étoffera l'interview robot 
 * on complexifiera le moteur de recommendations
@@ -203,7 +202,7 @@ Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 ![](/extra/cadif-assurance-poc.png)
 
 ## La license
-La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour la Crédit Agricole Ile de France, 24h/24 et 7j/7
+La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour le Crédit Agricole Ile de France, 24h/24 et 7j/7.
 
 La license inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration du progiciel et le support téléphonique.
 
