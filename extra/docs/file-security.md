@@ -8,26 +8,39 @@ It also includes some information about internal security: **Company structure**
 
 ### Authentication
 
-User and Roles Creation are only handled by 100m developers.  
-Users logs in to Auth0 through a Login Page and receives a Token (JWT + Firebase) used for every backend requests.  
-Tokens, once decoded, contain roles and backend will only output data specific to each specific role, by default **USER**. Read-Write rules can be defined for each role.  
+**Objective**: The authentication service goal is to limit the amount of data accessible by the application.
+
+#### User Management
+User and Roles Creation is only handled by the Project Key Contact.  
+Each User Roles represents specific Read-Write rules that are defined by the Project Key Contact according to the client needs during a development cycle.
+
+#### Login Process
+Users logs in to Auth0 through a Login Page and receives a Token used for every backend requests.  
+Tokens contains roles and backends will apply rules to output allowed data.
 
 ### Database
+
+**Objectives**: The Database allows to structure Data and guarantees availability, backups and logs.
+
+#### Dynamic Data
 Data stored in Firebase are dynamic or application related and non-business critical. (Text, Translation, Screenshare...). Firebase uses it's own token & authentication system.
 
+Firebase is backuped weekly automatically.
+
+#### Financial Data
 Data stored in AWS Aurora are financial and business critical. The database cluster is composed of 2 databases, one master with read/write access and one replicated with 1s latency and only read access. Requests are done through a small request layer using Auth0 Token and 100m authorization layer.
 
 AWS Aurora is backuped weekly automatically (one snapshot) and can be rollbacked any time for the last week. The rollback procedure lasts several hours.
 
-Firebase is backuped weekly automatically.
-
 ### Hosting
+
+**Objective**: Server hosting expose the frontend application and computation functions.
+
 All code is hosted in AWS Lambda for logs/backup/security.  
 Current Modules: ETL, Request, Compute, Message, PDF.  
 Frontend code as well as backend services are accessed through HTTPS only.
 
 Each deployed version are backuped on AWS Lambda. Frontend source code is available on Github and Frontend deployed files are available on another branch on Github Pages.
-
 
 ---
 
@@ -62,7 +75,6 @@ Monitored system expose searchable logs and notify **support@100m.io** on uncomm
 #### Project Key Contact
 A dedicated team member aka a 'project key contact' is assigned on each project to coordinate informations.
 The "project key contact list" is maintained up-to-date by Clement Miglietti, on a monthly basis. In case of Clement's absence, Valentin Brajon shall maintain the list and ensure it is up to date.
-
 
 #### Email Dispatching
 **Dispatcher**: The person responsible for support dispatching is Vincent Despeisse. In case of Vincent's absence, Valentin should take responsability to dispatch the support emails.
