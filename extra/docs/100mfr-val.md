@@ -7,7 +7,7 @@ Notre métier:
 3. Collaborer dans la création de vos rapport et la structuration de vos donnée via un système de gestion de notification, de publication et de process.
 4. Diffuser vos informations via l'application ou via des rapports généré automatiquement.
 
-Nos Public:
+Nos Applications:
 
 - Pour analyser / Pour les analystes
 - Pour décider / Pour les décideurs

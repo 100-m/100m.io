@@ -22,7 +22,7 @@ QAPE souhaite développer un comparateur d'assurance pour mettre en valeur le po
 L'initiative conjointe de QAPE et de 100M s'articule autours de 3 objectifs: positionner les produits QAPE, apporter un conseil de qualité et créer un vecteur d'acquisition de parts de marché.
 
 ## Positionner les produits QAPE 
-Le comparateur doit permettre de positionner clairement l'offre de QAPE par rapport aux offres existantes. La comparaison requiert la constitution d'une base de données de contrats d'assurance.
+Le comparateur doit permettre de positionner clairement l'offre de QAPE par rapport aux offres existantes. La comparaison requiert la constitution d'une base de données de contrat d'assurance.
 
 ## Renforcer La Dimension Conseil
 QAPE souhaite allier l'__instantanéité__ du conseil d'un robo-advisor à la __réassurance__ du dialogue avec un conseiller. L'application doit donc proposer une expérience fluide et faire remonter les informations auprès d'un conseiller qui pourra ensuite rentrer en relation avec son client.
@@ -46,9 +46,9 @@ La seconde composante du projet est la construction d'un moteur d'interview para
 
 ## Le Moteur de Comparaison
 Le moteur de comparaison est constitué d'un ensemble de règles de gestion qui doit permettre de générer des scores et des classements.
-Les scores sont générés sur la base des informations transmises par le moteur de questions.  
-**Long Terme:** Le moteur de comparaison comportera une interface Administrateur qui permettra sa paramétrisation.
-**Pour Commencer:** Nous vous proposons de paramétrer la logique de comparaison directement dans le code de l'application.
+Les scores sont générées sur la base des informations transmises par le moteur de questions.  
+**Long Terme:** Le moteur de conseil comportera une interface Administrateur qui permettra la paramétrisation du modèle de comparaison.  
+**Pour Commencer:** Nous vous proposons de paramétrer la logique de Conseil directement dans le code de l'application.
 
 ---
 
@@ -88,13 +88,13 @@ La solution 100M comporte des modules de collaboration innovants afin d'élimine
 
 ### Cross-Platform
 Les applications 100M sont conçues pour une __utilisation complètement mobile__ et sont compatibles desktop, tablette et smart phone.  
-Notre plateforme est également multi-format: nos applications permettent l'export de rapports PDF ou d'emails de synthèse en conclusion d'une discussion client.
+Notre plateforme est également multi-format: nos applications permettent l'export de rapports PDF ou d'email de synthèse en conclusion d'une discussion client.
 
 ---
 
 ## La Technologie 100M
 ### Le Front-End
-100M a développé le front-end propriétaire en Javascript permettant la réactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
+100M a développé le front-end software propriétaire en Javascript permettant la réactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
 
 ### Les moteurs de calculs en Back-End
 100M a développé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des différents indicateurs.
@@ -118,7 +118,7 @@ L'objectif de cette première phase est double: présenter une première version
 ## L'application livrée
 Le livrable sera une application en ligne, personnalisée et accordée avec la charte graphique de QAPE.
 
-L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (versions 40 et suivantes) et Internet Explorer (versions 11 et suivantes).
+L'application sera compatible Tablette, Desktop et Mobile et fonctionnera sous Chrome (versions 33 et suivantes), Safari (versions 8 et suivantes), FireFox (version 40 et suivantes) et Internet Explorer (11 et suivantes).
 
 Le livrable sera constitué de:
 * une application Client qui conduira l'interview robot.  
@@ -186,12 +186,12 @@ Afin de permettre une large diffusion de nos applications et de faciliter la col
 
 La licence pour l'application 'proof-of-concept' est de 600 Euros / mois, hébergement inclus.
 
-Les prix sont valables pour un engagement de 3 mois renouvelables.
+Les prix sont valables pour un engagement de 6 mois renouvelables.
 
 ## Conditions De Paiement
-Le paiement des développements spécifiques se fait en deux fois: 50% à la commande, 50% à la livraison.
+Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
 
-Le paiement de la licence se fait par trimestre, en début de trimestre à émission de la facture par 100M.  
+Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la licence.  
 
 ---
 

@@ -57,12 +57,15 @@ Private services are only accessible by 100m developers with a Two-Factor Authen
 
 Monitored system expose searchable logs and notify **support@100m.io** on uncommon behavior.
 
-Every 100m Team Members are notified by **support@100m.io** emails. The first member to read the incident email will coordinate it and:
-  - reply internally with a report status (bug, issue, incident, crisis).
-  - reply to the client with an Estimated Time of Resolution or an Acknowledgement and a responsible contact.
-  - call the responsible if the report status escalate to a high risk incident or crisis.
-  - treat the issue or call the responsible.
-  - mark the issue notification as resolved.
+### Incident Resolution
+
+A dedicated team member is assigned on each project to coordinate informations.
+
+Once notified on **support@100m.io**, the person in charge will coordinate by:
+  - replying internally with a report status (bug, issue, incident, crisis) and project name.
+  - replying to the client with an Estimated Time of Resolution or an Acknowledgement.
+  - treat the issue or coordinate the resolution with other team members.
+  - send a status update notification and confirm resolution with the client.
 
 
 <footer>
