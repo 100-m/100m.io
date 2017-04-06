@@ -65,7 +65,7 @@ The "project key contact list" is maintained up-to-date by Clement Miglietti, on
 
 
 #### Email Dispatching
-**Dipatcher**: The person responsible for support dispatching is Vincent Despeisse. In case of Vincent's absence, Valentin should take responsability to dispatch the support emails.
+**Dispatcher**: The person responsible for support dispatching is Vincent Despeisse. In case of Vincent's absence, Valentin should take responsability to dispatch the support emails.
 
 #### Resolution
 Once notified on **support@100m.io**, the dispatcher should coordinate with the project key contact to:
@@ -73,6 +73,9 @@ Once notified on **support@100m.io**, the dispatcher should coordinate with the 
   - reply to the client with an Estimated Time of Resolution or an Acknowledgement.
   - treat the issue or coordinate the resolution with other team members.
   - send a status update notification and confirm resolution with the client.
+
+#### Service Continuity
+Management will ensure that key roles (eg. Dispatching) are filled and adapt vacation schedule in consequences.
 
 <footer>
   <grid>
