@@ -18,7 +18,7 @@ http://100m.io/md.html?file-security.md#company-structure
 
 Oui, la sécurité et l'architecture de la plateforme sont des points clés sur lesquels une grande partie des ressources est investi.
 
-Voir le document PSSI joint.
+Voir le document "POLGEN-EXTSSI-100M.pdf" joint.
 
 ### QU-3
 **Existe-t-il un document décrivant la politique de sécurité des systèmes d'information et, en particulier, les principes d'organisation, de gestion et de pilotage de la sécurité (rôles et responsabilités) ainsi que les principes fondamentaux structurant le management de la sécurité de l'information ?**
