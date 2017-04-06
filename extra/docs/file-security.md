@@ -59,14 +59,20 @@ Monitored system expose searchable logs and notify **support@100m.io** on uncomm
 
 ### Incident Resolution
 
-A dedicated team member is assigned on each project to coordinate informations.
+#### Project Key Contact
+A dedicated team member aka a 'project key contact' is assigned on each project to coordinate informations.
+The "project key contact list" is maintained up-to-date by Clement Miglietti, on a monthly basis. In case of Clement's absence, Valentin Brajon shall maintain the list and ensure it is up to date.
 
-Once notified on **support@100m.io**, the person in charge will coordinate by:
-  - replying internally with a report status (bug, issue, incident, crisis) and project name.
-  - replying to the client with an Estimated Time of Resolution or an Acknowledgement.
+
+#### Email Dispatching
+**Dipatcher**: The person responsible for support dispatching is Vincent Despeisse. In case of Vincent's absence, Valentin should take responsability to dispatch the support emails.
+
+#### Resolution
+Once notified on **support@100m.io**, the dispatcher should coordinate with the project key contact to:
+  - reply internally with a report status (bug, issue, incident, crisis) and project name.
+  - reply to the client with an Estimated Time of Resolution or an Acknowledgement.
   - treat the issue or coordinate the resolution with other team members.
   - send a status update notification and confirm resolution with the client.
-
 
 <footer>
   <grid>
