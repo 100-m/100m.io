@@ -167,12 +167,12 @@ Les développements se font en cycles *Agiles* en partenariat avec le client.
 
 Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 
-- Développeur junior: 550 Euros / Jour.
-- Développeur senior: 800 Euros / Jour.
-- Data Scientist: 850 Euros / Jour.
-- Analyste Quantitatif Senior: 990 Euros / Jour.
+- Développeur junior: 450 Euros / Jour.
+- Développeur senior: 700 Euros / Jour.
+- Data Scientist: 800 Euros / Jour.
+- Analyste Quantitatif Senior: 800 Euros / Jour.
 - Chef de Projet: 800 Euros / Jour.
-- Graphiste: 600 Euros / Jour.
+- Graphiste: 500 Euros / Jour.
 
 ---
 
@@ -199,7 +199,6 @@ L'application est interactive et compatible au format tablette / mobile / deskto
 - _L'hébergement des serveurs de calcul_
 - _L'hébergement de la base de données_
 - _La fonctionalité d'édition de rapport PDF_
-- _Les Web Widgets crées à partir des rapports existants_
 
 
 ### Les conditions
@@ -209,12 +208,34 @@ La license inclue également la maintenance corrective et évolutive, en particu
 
 Afin de permettre une large diffusion et de faciliter la collaboration, la license est chiffrée uniquement sur la base du nombre de documents créés et comprend un accès pour un nombre illimités d'utilisateurs.
 
-Les prix sont dégressifs avec le nombre de fonds portés au sein de la solution:
-- Les 5 premiers fonds: 700 Euros / mois / fonds.
-- Entre le 6ème et 10ème fonds: 400 Euros / mois / fonds.
-- Au-delà du 11ème fonds, prix dégressifs jusqu'à 90 Euros / mois / fonds\*
+Les prix sont fixés en fonction du nombre de fonds\* portés au sein de la solution suivant le barème dégressif\*\* ci-dessous:
 
-\* sous réserve d'un examen préalable de la complexité de la donnée des portefeuilles.
+Fonds | Prix Unitaire
+- | - 
+1 | 700 Euros
+2 | 700 Euros
+3 | 680 Euros
+4 | 650 Euros
+5 | 620 Euros
+6 | 600 Euros
+7 | 560 Euros
+8 | 530 Euros
+9 | 510 Euros
+10 | 500 Euros
+11 | 460 Euros
+12 | 430 Euros
+13 | 400 Euros
+14 | 380 Euros
+15 | 360 Euros
+16 | 340 Euros
+17 | 330 Euros
+18 | 310 Euros
+19 | 300 Euros
+20+ | 295 Euros
+
+
+\* i.e. par ISIN unique.
+\*\* sous réserve d'un examen préalable de la complexité de la donnée des portefeuilles.
 
 Les prix sont valables pour un engagement de 12 mois.
 
