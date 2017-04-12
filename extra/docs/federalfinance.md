@@ -11,7 +11,7 @@
 # Introduction
 Dans le cadre de l'évolution de son site web, Fédéral Finance souhaite faire évoluer ses fiches fonds en ajoutant des graphiques dynamique de comparaison du fonds avec son index.
 
-100M propose une solution de reporting et de communication au format engageant spécialisé dans le domaine de l'investissement. La solution 100M inclut des composants pouvant être embarqué individuellement et simplement sur un site internet ou intranet.
+100M propose une solution de reporting et de communication au format engageant spécialisé dans le domaine de l'investissement. La solution 100M inclut des composants pouvant être embarqués individuellement et simplement sur un site internet ou intranet.
 
 L'objectif est d'améliorer l'engagement clients en exposant les données de performance du fonds de manière simple et à jour.
 
@@ -25,7 +25,7 @@ Le composant de comparaison de performance doit être adapter pour correspondren
 - Fonds d'assurance - FAF
 - Titres de créances - EMTN
 
-Les titres de créances comportent le moins de fonctionnalités spécifiques et seront donc traiter dans cette première phase ayant pour objectif de :
+Les titres de créances comportent le moins de fonctionnalités spécifiques et seront donc traités dans cette première phase ayant pour objectif de :
 - réaliser une intégration de bout-en-bout pour minimiser les risques d'industrialisation.
 - faire le choix de la méthode d'intégration
 - optimiser le rendu du composant (mobile + tablette + performances + affichage)
@@ -48,20 +48,18 @@ Le composant sera livrée fin Avril.
 Reproduire pour 75 fiches fonds
 
 ---
-
 Phase 1:
 Connecteur Webservice FF - 1j
 Install sur federal-finance.fr - 1j
-Composants Embed - 3j
+Composants Embed - 5j
 PDF Composant ou Page Embarqué - 2j
 Mobile + Tablette - 2j
 MAJ Line Chart: Dates + Tooltip + Légende + Watermark - 1j
-
 Total: 10j
 
 Phase 2:
 Connecteur Webservice FF - 2j
 Install sur federal-finance.fr - 2j
 Générisation Line Chart - 2j
-
 Total: 6j
+----
