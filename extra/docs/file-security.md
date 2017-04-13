@@ -1,58 +1,55 @@
 # Security
 
 This document explains code security at 100m.io for the asset manager and wealth manager cloud based platforms.  
-This document is divided into 3 main parts: **Authentication**, **Data** and **Hosting**.  
+This document is divided into 3 parts: **Authentication**, **Data** and **Hosting**.  
 It also includes some information about internal security: **Company structure**, **Access Administration**
 
 ---
 
 ### Authentication
 
-**Objective**: The authentication service goal is to limit the amount of data accessible by the application.
+**Objective**: The authentication service goal is to limit the data accessible by the application.
 
 #### User Management
-User and Roles Creation is only handled by the Project Key Contact.  
-Each User Roles represents specific Read-Write rules that are defined by the Project Key Contact according to the client needs during a development cycle.
-
-#### Login Process
-Users logs in to Auth0 through a Login Page and receives a Token used for every backend requests.  
-Tokens contains roles and backends will apply rules to output allowed data.
+User and Roles Creation is only handled by the **Project Key Contact**.  
+Each User Role represents specific Read-Write rules that are defined by the Project Key Contact according to the client needs during a development cycle.  
+Users log in to Auth0 through a Login Page and receive a Token used for every backend request.  
 
 ### Database
 
-**Objectives**: The Database allows to structure Data and guarantees availability, backups and logs.
+**Objectives**: The Database allows to structure the Data and guarantees availability, backups and logs.
 
 #### Dynamic Data
-Data stored in Firebase are dynamic or application related and non-business critical. (Text, Translation, Screenshare...). Firebase uses it's own token & authentication system.
+Data stored in Firebase is dynamic or application related and non-business critical. (Text, Translation, Screenshare...). Firebase uses it's own token & authentication system.
 
-Firebase is backuped weekly automatically.
+Firebase is backed up weekly automatically.
 
 #### Financial Data
-Data stored in AWS Aurora are financial and business critical. The database cluster is composed of 2 databases, one master with read/write access and one replicated with 1s latency and only read access. Requests are done through a small request layer using Auth0 Token and 100m authorization layer.
+Data stored in AWS Aurora is financial and business critical. The database cluster is composed of 2 databases, one master with read/write access and one replicated with 1s latency and only read access. Requests are done through a small request layer using Auth0 Token and a 100m authorization layer.
 
-AWS Aurora is backuped weekly automatically (one snapshot) and can be rollbacked any time for the last week. The rollback procedure lasts several hours.
+AWS Aurora is backed up weekly automatically (one snapshot) and can be rolled back to any time in the last week. The rollback procedure lasts several hours.
 
 ### Hosting
 
-**Objective**: Server hosting expose the frontend application and computation functions.
+**Objective**: Server hosting exposes the frontend application and computation functions.
 
 All code is hosted in AWS Lambda for logs/backup/security.  
 Current Modules: ETL, Request, Compute, Message, PDF.  
 Frontend code as well as backend services are accessed through HTTPS only.
 
-Each deployed version are backuped on AWS Lambda. Frontend source code is available on Github and Frontend deployed files are available on another branch on Github Pages.
+Each deployed version are backed up on AWS Lambda. Frontend source code is available on Github and Frontend deployed files are available on another branch on Github Pages.
 
 ---
 
 ### Company structure
-Subject | In charge
-- | -
-Cloud, Hosting Security | Valentin Brajon
-Data Structure | Valentin Brajon
-Data access | Clément Miglietti
-Code Access - Data Model Algorithm | Clément Miglietti
-Code Access - Proprietary 100m Code | Valentin Brajon
-Physical Access | Clément Miglietti
+| Subject                             | In charge         |
+|:------------------------------------|:------------------|
+| Cloud, Hosting Security             | Valentin Brajon   |
+| Data Structure                      | Valentin Brajon   |
+| Data access                         | Clément Miglietti |
+| Code Access - Data Model Algorithm  | Clément Miglietti |
+| Code Access - Proprietary 100m Code | Valentin Brajon   |
+| Physical Access                     | Clément Miglietti |
 
 ### Access Administration
 Private services are only accessible by 100m developers with a Two-Factor Authentication:
@@ -64,16 +61,16 @@ Private services are only accessible by 100m developers with a Two-Factor Authen
 ### Incidents
 - Frontend and Backend code exceptions **are monitored**.
 - API calls and Batch runs **are monitored**.
-- DDOS attempts **are catched** by Cloudflare.
+- DDOS attempts **are caught** by Cloudflare.
 - Suspect Backend connections or attempts **are not monitored**, proxy rules can be created if needed or a software level via solutions like Sqreen can be installed if needed.
 - The procedure for any reports (bug, issue, incident, crisis) is to contact **support@100m.io** with the corresponding report type.
 
-Monitored system expose searchable logs and notify **support@100m.io** on uncommon behavior.
+Monitored systems expose searchable logs and notify **support@100m.io** about uncommon behavior.
 
 ### Incident Resolution
 
 #### Project Key Contact
-A dedicated team member aka a 'project key contact' is assigned on each project to coordinate informations.
+A dedicated 100m team member aka a **'project key contact'** is assigned on each project to coordinate information.
 The "project key contact list" is maintained up-to-date by Clement Miglietti, on a monthly basis. In case of Clement's absence, Valentin Brajon shall maintain the list and ensure it is up to date.
 
 #### Email Dispatching
