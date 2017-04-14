@@ -1,7 +1,7 @@
 <div style="margin-bottom: 140px;">
   <img src="/extra/background.png"/>
   <img src="/extra/logo.png" style="position: absolute;top: 50%;left: 50px;width: 100px;" />
-  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Reporting OnDemand</h1>
+  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Composants Graphiques</h1>
 </div>
 
 # Arkea Investment Solutions
@@ -27,7 +27,7 @@ Les composants graphiques doivent être parfaitement lisibles et doivent inviter
 L'enjeu est ici de garantir un affichage cohérent en toutes circonstances. Les composants doivent être robustes à un changement d'échantillonage des time-series, aux valeurs manquantes etc. 
 
 ## Intégration Facile
-Les composants doivent pouvoir être intégré en inserrant une simple ligne de code, avec une paramétrisation réduite au minimum.
+Les composants doivent pouvoir être intégrés en inserrant une simple ligne de code, avec une paramétrisation réduite au minimum.
 
 ---
 
@@ -94,6 +94,7 @@ L'objectif de cette phase est de:
 * de gérer les tables de correspondance entre ISIN, type de graphique attendu, et type de donnée à aller chercher.
 * de créer un connecteur à l'API de Fédéral Finance.
 * de fiabiliser la donnée et de gérer les potentiels problèmes au niveau de l'API.
+* de créer un export PDF.
 * de mettre à disposition les composants graphiques via une commande d'intégration simple.
 * d'héberger les composants graphiques et de les maintenir.
 
@@ -104,13 +105,14 @@ L'objectif de cette phase est de:
 ### Planning de livraison
 Le composant sera livrée 2 semaines à compter de l'accord client.
 
-## Phase 2: Développement et déploiement des composants graphiques fonds à formule / hors formule.
+## Phase 2: Composants graphiques fonds à formule et hors formule.
 
 ### 100M aura à charge
 * de configurer les composants graphiques de sa solutions.
 * de développer les composantes graphiques spécifiques aux fonds.
 * de se connecter aux API Fededral Finance.
 * de calculer les indicateurs de rendement et de volatilité.
+* de créer un export PDF.
 * de mettre à disposition les composants graphiques via une commande d'intégration simple.
 * d'héberger les composants graphiques et de les maintenir.
 
@@ -219,23 +221,3 @@ Valentin est ingénieur informatique diplômé de Sciences U.
 
 ## Votre Contact:
 # clement@100m.io
-
--------------------
-
-Phase 1: 
-Connecteur Webservice FF - 1j 
-Install sur federal-finance.fr - 1j 
-Infra structure Composants Embed - 2j
-Graphique:
-	* line chart 
-	* charte graphique
-PDF Composant ou Page Embarqué - 2j
-Mobile + Tablette + Crossbrowser - 2j 
-Total: 8j
-
-Phase 2: 
-Connecteur Webservice FF - 2j 
-MAJ Line Chart: Dates + Tooltip + Légende + Watermark - 1j 
-Install sur federal-finance.fr - 2j 
-Générisation Line Chart - 5j 
-Total: 6j
