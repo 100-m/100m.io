@@ -9,11 +9,11 @@
 ---
 
 # Introduction
-A l'occasion de la refonte de ses sites web, Federal Finance Gestion et Arkea Investment Services souhaite inclure sur chaque page fonds ou titres, un graphique présentant les performances de leurs fonds et de leurs benchmark.
+A l'occasion de la refonte de ses sites web, Federal Finance Gestion et Arkea Investment Services souhaitent inclure sur chaque page fonds ou titres, un graphique présentant les performances de leurs fonds et de leurs benchmark.
 
 100M propose une solution de reporting flexible et au format engageant. 100M est spécialisé dans le domaine de l'investissement. La solution 100M inclut des composants pouvant être embarqués individuellement et simplement sur un site internet ou intranet.
 
-L'objectif est d'améliorer l'engagement clients en exposant les données de performance du fonds de manière simple et à jour.
+L'objectif est d'améliorer l'engagement clients en exposant les données à jour de performance du fonds, et ceci de manière simple et intuitive.
 
 ---
 
@@ -21,7 +21,7 @@ L'objectif est d'améliorer l'engagement clients en exposant les données de per
 L'initiative conjointe de Arkea IS et de 100M fait apparaitre 3 enjeux: le design des composants graphiques, la fiabilité de la donnée, et la facilité de l'intégration.
 
 ## Format Engageant
-Les composants graphiques doivent être parfaitement lisibles et doivent inviter l'utilisateur à intéragir. Ils doivent être compatibles sur les supports mobiles et entre les différents navigateurs web.
+Les composants graphiques doivent être parfaitement lisibles et doivent inviter l'utilisateur à interagir. Ils doivent être compatibles sur les supports mobiles et entre les différents navigateurs web.
 
 ## Donnée Fiabilisée
 L'enjeu est ici de garantir un affichage cohérent en toutes circonstances. Les composants doivent être robustes à un changement d'échantillonage des time-series, aux valeurs manquantes etc. 
@@ -32,7 +32,7 @@ Les composants doivent pouvoir être intégrés en inserrant une simple ligne de
 ---
 
 # L'Application
-100M a developpé une plateforme en-ligne sécurisée de reporting sur-mesure et de marketing dédiée aux Asset Managers.
+100M a developpé une plateforme de marketing et reporting en-ligne dédiée aux Asset Managers. La plateforme 100M permet le developpement d'applications ou composants web sur-mesure.
 
 ## La Solution
 ### Visualisation & Exploration
@@ -46,13 +46,13 @@ La solution permet une réduction des coûts associés au reporting de l'ordre d
 
 ### Multi-format & Cross-Platform
 Les applications 100M sont conçues pour une utilisation complètement mobile et sont compatibles desktop, tablette et smart phone.
-Elle sont également multi-format et permettent l'export de rapports PDF. Le format des rapports sont définis par le biais de templates customisables.
+Elles sont également multi-format et permettent l'export de rapports PDF. Les formats des rapports sont définis par le biais de templates customisables.
 
 ---
 
 ## La Technologie
 ### Le Front-End
-100M a developpé le front-end software propriétaire en Javascript permettant la reactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de donnée, et avec les écrans d'autres utilisateurs.
+100M a developpé le front-end software propriétaire en Javascript permettant la reactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
 
 ### Les moteurs de calculs en Back-End
 100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des differents indicateurs.
@@ -76,7 +76,7 @@ Le projet consiste à développer 3 composants distincts:
 2. Un composant graphique pour les fonds à formule
 3. Un composant graphique pour les titres de créance
 
-Les titres de créances comportent le moins de fonctionnalités spécifiques et seront donc traités dans une première phase. 
+Les titres de créance comportent le moins de fonctionnalités spécifiques et seront donc traités dans une première phase. 
 
 ## Phase 1: Développement et déploiement des composants graphiques titres de créance.
 
@@ -103,13 +103,13 @@ L'objectif de cette phase est de:
 * d'intégrer le composant sur une page du site www.fédéral-finance.fr
 
 ### Planning de livraison
-Le composant sera livrée 2 semaines à compter de l'accord client.
+Le composant sera livré en 2 semaines, à compter de l'accord client.
 
 ## Phase 2: Composants graphiques fonds à formule et hors formule.
 
 ### 100M aura à charge
-* de configurer les composants graphiques de sa solutions.
-* de développer les composantes graphiques spécifiques aux fonds.
+* de configurer les composants graphiques de sa solution.
+* de développer les composants graphiques spécifiques aux fonds.
 * de se connecter aux API Fededral Finance.
 * de calculer les indicateurs de rendement et de volatilité.
 * de créer un export PDF.
@@ -121,7 +121,7 @@ Le composant sera livrée 2 semaines à compter de l'accord client.
 * d'intégrer le composant sur une page du site www.fédéral-finance.fr
 
 ### Planning de livraison
-Le composant sera livrée 2 semaines à compter de la conclusion de la phase 1.
+Le composant sera livré en 2 semaines, à compter de la conclusion de la phase 1.
 
 ---
 
@@ -154,7 +154,7 @@ Les développements sont facturés sur une base Jour Homme aux tarifs négociés
 ### Description de le Solution 100M
 L'application de reporting connecté 100M sert de support au suivi et à la commercialisation des produits d'investissement.
 
-Elle permet aux équipes de gestion, de risques et des relations investisseurs de collaborer au sein d'une même plateforme.
+Elle permet aux équipes de gestion, de risques et des relations investisseurs, et aux client de collaborer au sein d'une même plateforme.
 
 Nativement, l'application 100M permet de:
 - Visualiser risques, performances et autres indicateurs.
