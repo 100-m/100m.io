@@ -1,14 +1,63 @@
-# Security
+# 100M Security Policy and Implementation
 
-This document explains code security at 100m.io for the asset manager and wealth manager cloud based platforms.  
-This document is divided into 3 parts: **Authentication**, **Data** and **Hosting**.  
-It also includes some information about internal security: **Company structure**, **Access Administration**
+This document details 100M general security policies.  
+
+This document is divided into 2 parts: a generic section that addresses our **incident resolution** procedure and a sensitive topics section that details policy and technical choices for topics deemed 'security sensitive' such as **Authentication**, **Data** and **Hosting**.  
 
 ---
+## Generic Incident Resolution
+The section details how the 100M organization is organized to efficiently address incidents and in a reliable way.
 
+
+
+### Notification and Alert Dispatching
+**Dispatcher**: the Dispatcher's responsability is to route requests for support, alerts, and other notifications to the Project Key Contact. 
+
+The person responsible for dispatching is Vincent Despeisse. In case of Vincent's absence, Valentin should take responsability for dispatching.
+
+### Project Key Contact
+A dedicated 100m team member aka a **'project key contact'** is assigned on each project to coordinate information.
+
+Each subject or topic is assigned a 'key person' in charge.  
+The 'default person in charge' is Clement Miglietti, with Valentin Brajon as a back-up.
+
+The "project key contact list" is maintained up-to-date by Clement Miglietti, on a monthly basis. In case of Clement's absence, Valentin Brajon shall maintain the list and ensure it is up to date.
+
+**project key contact list**
+
+| Subject                             | In charge         |
+|:------------------------------------|:------------------|
+| Cloud, Hosting Security             | Valentin Brajon   |
+| Data Structure                      | Valentin Brajon   |
+| Data access                         | Clément Miglietti |
+| Code Access - Data Model Algorithm  | Clément Miglietti |
+| Code Access - Proprietary 100m Code | Valentin Brajon   |
+| Physical Access                     | Clément Miglietti |
+| Other                               | Clément Miglietti |
+
+### Resolution
+Once notified on **support@100m.io**, the dispatcher should coordinate with the project key contact who will:
+  - reply internally with a report status (bug, issue, incident, crisis) and project name.
+  - reply to the client with an Estimated Time of Resolution or an Acknowledgement.
+  - treat the issue or coordinate the resolution with other team members.
+  - send a status update notification and confirm resolution with the client.  
+
+Once notified, it is the 'project key contact' to ensure correct handling and resolution of a request, alert or incident.
+
+### Service Continuity
+Management will ensure that key roles (eg. Dispatching) are filled and adapt vacation schedule in consequences.
+
+
+## Security Sensitive Topics And Infrastructure Monitoring
 ### Authentication
 
 **Objective**: The authentication service goal is to limit the data accessible by the application.
+####  Access Administration
+Private services are only accessible by 100m developers with a Two-Factor Authentication:
+- **Google** Suite (Firebase, GTM, GA, GMail) - 1 user account per 100m member
+- **Amazon Web Services** - 1 admin account + 1 subaccount per projects
+- **Cloudflare** - 1 admin account + 1 API Token
+- **Github** - 1 user account + 1 ssh keys (with passphrase) per developer
 
 #### User Management
 User and Roles Creation is only handled by the **Project Key Contact**.  
@@ -39,26 +88,7 @@ Frontend code as well as backend services are accessed through HTTPS only.
 
 Each deployed version are backed up on AWS Lambda. Frontend source code is available on Github and Frontend deployed files are available on another branch on Github Pages.
 
----
-
-### Company structure
-| Subject                             | In charge         |
-|:------------------------------------|:------------------|
-| Cloud, Hosting Security             | Valentin Brajon   |
-| Data Structure                      | Valentin Brajon   |
-| Data access                         | Clément Miglietti |
-| Code Access - Data Model Algorithm  | Clément Miglietti |
-| Code Access - Proprietary 100m Code | Valentin Brajon   |
-| Physical Access                     | Clément Miglietti |
-
-### Access Administration
-Private services are only accessible by 100m developers with a Two-Factor Authentication:
-- **Google** Suite (Firebase, GTM, GA, GMail) - 1 user account per 100m member
-- **Amazon Web Services** - 1 admin account + 1 subaccount per projects
-- **Cloudflare** - 1 admin account + 1 API Token
-- **Github** - 1 user account + 1 ssh keys (with passphrase) per developer
-
-### Incidents
+### Current Monitoring System
 - Frontend and Backend code exceptions **are monitored**.
 - API calls and Batch runs **are monitored**.
 - DDOS attempts **are caught** by Cloudflare.
@@ -67,24 +97,7 @@ Private services are only accessible by 100m developers with a Two-Factor Authen
 
 Monitored systems expose searchable logs and notify **support@100m.io** about uncommon behavior.
 
-### Incident Resolution
-
-#### Project Key Contact
-A dedicated 100m team member aka a **'project key contact'** is assigned on each project to coordinate information.
-The "project key contact list" is maintained up-to-date by Clement Miglietti, on a monthly basis. In case of Clement's absence, Valentin Brajon shall maintain the list and ensure it is up to date.
-
-#### Email Dispatching
-**Dispatcher**: The person responsible for support dispatching is Vincent Despeisse. In case of Vincent's absence, Valentin should take responsability to dispatch the support emails.
-
-#### Resolution
-Once notified on **support@100m.io**, the dispatcher should coordinate with the project key contact to:
-  - reply internally with a report status (bug, issue, incident, crisis) and project name.
-  - reply to the client with an Estimated Time of Resolution or an Acknowledgement.
-  - treat the issue or coordinate the resolution with other team members.
-  - send a status update notification and confirm resolution with the client.
-
-#### Service Continuity
-Management will ensure that key roles (eg. Dispatching) are filled and adapt vacation schedule in consequences.
+---
 
 <footer>
   <grid>
