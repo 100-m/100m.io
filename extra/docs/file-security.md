@@ -49,9 +49,12 @@ Management will ensure that key roles (eg. Dispatching) are filled and adapt vac
 
 
 ## Security Sensitive Topics And Infrastructure Monitoring
+
+Topics deemed sensitive have specific policies and rules, as described below.
+
 ### Authentication
 
-**Objective**: The authentication service goal is to limit the data accessible by the application.
+**Objective**: The authentication service goal is to control information access and grant access only to authorized content for each user role.
 ####  Access Administration
 Private services are only accessible by 100m developers with a Two-Factor Authentication:
 - **Google** Suite (Firebase, GTM, GA, GMail) - 1 user account per 100m member
@@ -60,13 +63,13 @@ Private services are only accessible by 100m developers with a Two-Factor Authen
 - **Github** - 1 user account + 1 ssh keys (with passphrase) per developer
 
 #### User Management
-User and Roles Creation is only handled by the **Project Key Contact**.  
+User and Roles Creation is handled exclusively by the **Project Key Contact**.  
 Each User Role represents specific Read-Write rules that are defined by the Project Key Contact according to the client needs during a development cycle.  
 Users log in to Auth0 through a Login Page and receive a Token used for every backend request.  
 
 ### Database
 
-**Objectives**: The Database allows to structure the Data and guarantees availability, backups and logs.
+**Objectives**: The Database allows to structure the Data and guarantees availability, backups and transaction and activity logs.
 
 #### Dynamic Data
 Data stored in Firebase is dynamic or application related and non-business critical. (Text, Translation, Screenshare...). Firebase uses it's own token & authentication system.
