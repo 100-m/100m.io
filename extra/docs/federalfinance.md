@@ -32,16 +32,16 @@ Les composants doivent pouvoir être intégrés en inserrant une simple ligne de
 ---
 
 # L'Application
-100M a developpé une plateforme de marketing et reporting en-ligne dédiée aux Asset Managers. La plateforme 100M permet le developpement d'applications ou composants web sur-mesure.
+100M a developpé une plateforme de marketing et reporting en-ligne dédiée aux Asset Managers. La plateforme 100M permet le développement d'applications ou composants web sur-mesure.
 
 ## La Solution
 ### Visualisation & Exploration
 Les composants développés par 100M facilitent une lecture visuelle rapide et synthétique de l'information.
 Ils sont complètement flexibles et customisables selon les besoins des Clients.
-Les application 100M permettent d'intéragir avec les données avec facilité et fluidité.
+Les applications 100M permettent d'intéragir avec les données avec facilité et fluidité.
 
 ### Connexion & Collaboration
-En plus d'être directement connectée aux données, les applications 100M peuvent intégrer des fonctionalités de collaboration innovantes. Le partage de contenu permet par exemple de gagner en productivité et en agilité.
+En plus d'être directement connectées aux données, les applications 100M peuvent intégrer des fonctionalités de collaboration innovantes. Le partage de contenu permet par exemple de gagner en productivité et en agilité.
 La solution permet une réduction des coûts associés au reporting de l'ordre de 75%, tout en augmentant la qualité du contenu.
 
 ### Multi-format & Cross-Platform
@@ -52,7 +52,7 @@ Elles sont également multi-format et permettent l'export de rapports PDF. Les f
 
 ## La Technologie
 ### Le Front-End
-100M a developpé le front-end software propriétaire en Javascript permettant la reactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
+100M a développé le front-end software propriétaire en Javascript permettant la réactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
 
 ### Les moteurs de calculs en Back-End
 100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des differents indicateurs.
@@ -89,7 +89,7 @@ L'objectif de cette phase est de:
 
 **100M livrera un composant iFrame qui sera paramétré par une seule variable: l'ISIN d'un fonds.**
 Le composant implémentera le rendu des graphiques et de l'ensemble des controleurs (boutons, calendrier etc.).
-Le composant sera standardisé et permettra l'ajout ou la suppression d'un fonds du même type via une simple paramétrisation.
+Le composant sera standardisé de sorte que l'ajout ou la suppression d'un fonds du même type se fasse via une simple paramétrisation.
 
 ### 100M aura à charge
 * de configurer les composants graphiques de sa solution.
@@ -137,7 +137,7 @@ Les développements spécifiques comprennent, à titre d'exemple:
 * l'intégration au système Client,
 * le travail spécifique des données,
 * la création d'un nouveau template PDF pour l'application 100M,
-* la création d'un nouveau type de Web Widgets intégrables par le Client.
+* la création d'un nouveau type de Web Widget intégrable par le Client.
 
 Les développements se font en cycles *Agiles* en partenariat avec le client.  
 
@@ -167,8 +167,8 @@ Nativement, l'application 100M permet de:
 L'application est interactive et compatible au format tablette / mobile / desktop et fonctionne avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (11 et suivantes).
 
 *Sont inclus* dans le pricing de la solution:
-- _Un nombre d'utilisateurs illimités_
-- _Un nombre de fonds illimités_
+- _Un nombre d'utilisateurs illimité_
+- _Un nombre de fonds illimité_
 - _La fonctionalité d'édition de rapport PDF_
 - _L'hébergement des serveurs web_
 
@@ -177,7 +177,7 @@ La license couvre le droit d’utilisation du progiciel et de ses développement
 
 La license inclue également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration d'Arkea et le support téléphonique.
 
-La license pour l'ensemble des composants est de 900 Euros / mois dans la version hébergées; elle inclue le suivi de la disponibilité du service.
+La license pour l'ensemble des composants est de 900 Euros / mois dans la version hébergées; elle inclue le suivi de la disponibilité du service.  
 La license pour l'ensemble des composants est de 450 Euros / mois dans la version 'on premise'.
 
 Les prix sont valables pour un engagement de 12 mois.
