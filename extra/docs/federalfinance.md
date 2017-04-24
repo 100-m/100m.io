@@ -9,11 +9,11 @@
 ---
 
 # Introduction
-A l'occasion de la refonte de ses sites web, Federal Finance Gestion et Arkea Investment Services souhaitent inclure sur chaque page fonds ou titres, un graphique présentant les performances de leurs fonds et de leurs benchmark.
+A l'occasion de la refonte de ses sites web, Federal Finance Gestion et Arkea Investment Services souhaitent inclure sur chaque page fonds ou titres, un graphique présentant les performances de leurs fonds et de leurs benchmarks.
 
 100M propose une solution de reporting flexible et au format engageant. 100M est spécialisé dans le domaine de l'investissement. La solution 100M inclut des composants pouvant être embarqués individuellement et simplement sur un site internet ou intranet.
 
-L'objectif est d'améliorer l'engagement clients en exposant les données à jour de performance du fonds, et ceci de manière simple et intuitive.
+L'objectif est d'améliorer l'engagement client en exposant les données à jour de performance des fonds, et ceci de manière simple et intuitive.
 
 ---
 
@@ -54,8 +54,8 @@ Elles sont également multi-format et permettent l'export de rapports PDF. Les f
 ### Le Front-End
 100M a développé le front-end software propriétaire en Javascript permettant la réactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
 
-### Les moteurs de calculs en Back-End
-100M a developpé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des differents indicateurs.
+### Les moteurs de calcul en Back-End
+100M a développé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des differents indicateurs.
 
 ### Hébergement de l'application
 L'hébergement du front-end de l'application se fait sur des serveurs AWS dont le taux de disponibilité est garanti à 99.99%.
@@ -87,7 +87,7 @@ L'objectif de cette phase est de:
 - faire le choix de la méthode d'intégration
 - réaliser une intégration de bout-en-bout pour minimiser les risques lors de l'industrialisation.
 
-**100M livrera un composant iFrame qui sera paramétré par une seule variable: l'ISIN d'un fonds.**
+**100M livrera un composant iFrame qui sera paramétré par une clef unique (eg. l'ISIN du fonds).**
 Le composant implémentera le rendu des graphiques et de l'ensemble des controleurs (boutons, calendrier etc.).
 Le composant sera standardisé de sorte que l'ajout ou la suppression d'un fonds du même type se fasse via une simple paramétrisation.
 
@@ -152,7 +152,7 @@ Les développements sont facturés sur une base Jour Homme aux tarifs négociés
 
 ---
 
-## La license
+## La licence
 ### Description de le Solution 100M
 L'application de reporting connecté 100M sert de support au suivi et à la commercialisation des produits d'investissement.
 
@@ -164,7 +164,7 @@ Nativement, l'application 100M permet de:
 - Synchroniser la donnée des rapports avec des sources externes.
 - Fiabiliser la donnée par des mécanismes de vérification et de caching adaptés.
 
-L'application est interactive et compatible au format tablette / mobile / desktop et fonctionne avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (11 et suivantes).
+L'application est interactive et compatible au format tablette / mobile / desktop et fonctionne avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (version 11 et suivantes).
 
 *Sont inclus* dans le pricing de la solution:
 - _Un nombre d'utilisateurs illimité_
@@ -173,19 +173,19 @@ L'application est interactive et compatible au format tablette / mobile / deskto
 - _L'hébergement des serveurs web_
 
 ### Les conditions
-La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour Arkea, 24h/24 et 7j/7
+La licence couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour Arkea, 24h/24 et 7j/7
 
-La license inclue également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration d'Arkea et le support téléphonique.
+La licence inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration d'Arkea et le support téléphonique.
 
-La license pour l'ensemble des composants est de 900 Euros / mois dans la version hébergées; elle inclue le suivi de la disponibilité du service.  
-La license pour l'ensemble des composants est de 450 Euros / mois dans la version 'on premise'.
+La licence pour l'ensemble des composants est de 900 Euros / mois dans la version hébergée; elle inclut le suivi de la disponibilité du service.  
+La licence pour l'ensemble des composants est de 450 Euros / mois dans la version 'on premise'.
 
 Les prix sont valables pour un engagement de 12 mois.
 
 ## Conditions De Paiement
 Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
 
-Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la license.  
+Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la licence.  
 
 Les termes de cette proposition restent valables jusqu’au 30 Avril 2017.
 
