@@ -88,10 +88,12 @@ L'objectif de cette phase est de:
 - réaliser une intégration de bout-en-bout pour minimiser les risques lors de l'industrialisation.
 
 **100M livrera un composant iFrame qui sera paramétré par une seule variable: l'ISIN d'un fonds.**
+Le composant implémentera le rendu des graphiques et de l'ensemble des controleurs (boutons, calendrier etc.).
+Le composant sera standardisé et permettra l'ajout ou la suppression d'un fonds du même type via une simple paramétrisation.
 
 ### 100M aura à charge
 * de configurer les composants graphiques de sa solution.
-* de gérer les tables de correspondance entre ISIN, type de graphique attendu, et type de donnée à aller chercher.
+* de gérer les tables de correspondance entre ISIN, type de graphique attendu, et type de données à aller chercher.
 * de créer un connecteur à l'API de Fédéral Finance.
 * de fiabiliser la donnée et de gérer les potentiels problèmes au niveau de l'API.
 * de créer un export PDF.
@@ -132,10 +134,10 @@ Le composant sera livré en 2 semaines, à compter de la conclusion de la phase 
 
 Les développements spécifiques comprennent, à titre d'exemple:
 * la customisation du progiciel,
-* l'intégration au système Client et le travail spécifique des données,
-* le calcul de l'attribution de performance,
+* l'intégration au système Client,
+* le travail spécifique des données,
 * la création d'un nouveau template PDF pour l'application 100M,
-* la création de Web Widgets intégrables par le Client.
+* la création d'un nouveau type de Web Widgets intégrables par le Client.
 
 Les développements se font en cycles *Agiles* en partenariat avec le client.  
 
@@ -157,7 +159,7 @@ L'application de reporting connecté 100M sert de support au suivi et à la comm
 Elle permet aux équipes de gestion, de risques et des relations investisseurs, et aux client de collaborer au sein d'une même plateforme.
 
 Nativement, l'application 100M permet de:
-- Visualiser risques, performances et autres indicateurs.
+- Visualiser les indicateurs.
 - Interagir avec les graphiques.
 - Synchroniser la donnée des rapports avec des sources externes.
 - Fiabiliser la donnée par des mécanismes de vérification et de caching adaptés.
@@ -166,18 +168,17 @@ L'application est interactive et compatible au format tablette / mobile / deskto
 
 *Sont inclus* dans le pricing de la solution:
 - _Un nombre d'utilisateurs illimités_
-- _La gestion des droits d'accès et profils utilisateurs, si requis_
-- _L'hébergement des serveurs de calcul, si requis_
-- _L'hébergement de la base de données, si requis_
+- _Un nombre de fonds illimités_
 - _La fonctionalité d'édition de rapport PDF_
-
+- _L'hébergement des serveurs web_
 
 ### Les conditions
 La license couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour Arkea, 24h/24 et 7j/7
 
 La license inclue également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration d'Arkea et le support téléphonique.
 
-La license pour les composants est de 900 Euros / mois.
+La license pour l'ensemble des composants est de 900 Euros / mois dans la version hébergées; elle inclue le suivi de la disponibilité du service.
+La license pour l'ensemble des composants est de 450 Euros / mois dans la version 'on premise'.
 
 Les prix sont valables pour un engagement de 12 mois.
 
