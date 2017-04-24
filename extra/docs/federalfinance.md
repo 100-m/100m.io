@@ -27,12 +27,12 @@ Les composants graphiques doivent être parfaitement lisibles et doivent inviter
 L'enjeu est ici de garantir un affichage cohérent en toutes circonstances. Les composants doivent être robustes à un changement d'échantillonage des time-series, aux valeurs manquantes etc. 
 
 ## Intégration Facile
-Les composants doivent pouvoir être intégrés en inserrant une simple ligne de code, avec une paramétrisation réduite au minimum.
+Les composants doivent pouvoir être intégrés en insérant une simple ligne de code, avec une paramétrisation réduite au minimum.
 
 ---
 
 # L'Application
-100M a developpé une plateforme de marketing et reporting en-ligne dédiée aux Asset Managers. La plateforme 100M permet le développement d'applications ou composants web sur-mesure.
+100M a développé une plateforme de marketing et reporting en-ligne dédiée aux Asset Managers. La plateforme 100M permet le développement d'applications ou composants web sur-mesures.
 
 ## La Solution
 ### Visualisation & Exploration
@@ -88,7 +88,7 @@ L'objectif de cette phase est de:
 - réaliser une intégration de bout-en-bout pour minimiser les risques lors de l'industrialisation.
 
 **100M livrera un composant iFrame qui sera paramétré par une clef unique (eg. l'ISIN du fonds).**
-Le composant implémentera le rendu des graphiques et de l'ensemble des controleurs (boutons, calendrier etc.).
+Le composant implémentera le rendu des graphiques et de l'ensemble des contrôleurs (boutons, calendrier etc.).
 Le composant sera standardisé de sorte que l'ajout ou la suppression d'un fonds du même type se fasse via une simple paramétrisation.
 
 ### 100M aura à charge
@@ -130,7 +130,7 @@ Le composant sera livré en 2 semaines, à compter de la conclusion de la phase 
 # Le Budget
 
 ##  Les développements spécifiques
-100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projets pour conseiller Arkea et pour effectuer les développements spécifiques nécessaires.
+100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projet pour conseiller Arkea et pour effectuer les développements spécifiques nécessaires.
 
 Les développements spécifiques comprennent, à titre d'exemple:
 * la customisation du progiciel,
@@ -156,7 +156,7 @@ Les développements sont facturés sur une base Jour Homme aux tarifs négociés
 ### Description de le Solution 100M
 L'application de reporting connecté 100M sert de support au suivi et à la commercialisation des produits d'investissement.
 
-Elle permet aux équipes de gestion, de risques et des relations investisseurs, et aux client de collaborer au sein d'une même plateforme.
+Elle permet aux équipes de gestion, de risques, des relations investisseurs, et aux clients de collaborer au sein d'une même plateforme.
 
 Nativement, l'application 100M permet de:
 - Visualiser les indicateurs.
@@ -211,7 +211,7 @@ Clément est diplômé de l'Ecole Polytechnique, et membre du Corps des Ponts et
 [Profil LinkedIn](https://fr.linkedin.com/in/clement-miglietti-05a3203)
 
 ### Valentin Brajon - Directeur Technique.
-Avant de créer 100M, Valentin a developpé des solutions Web pendant 9 ans.
+Avant de créer 100M, Valentin a développé des solutions Web pendant 9 ans.
 Il a été l'Architecte et le Développeur Web de nombreuses plateformes financières et notamment de celle de Parvest.
 
 Valentin est ingénieur informatique diplômé de Sciences U.
