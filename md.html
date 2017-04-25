@@ -81,8 +81,8 @@ footer::before {width: 100vw;}
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <section></section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+<script src="/js/axios.js"></script>
+<script src="/js/marked.js"></script>
 <script>
 var url = location.search.replace('?', '/extra/docs/')
 var selector = document.querySelector('section')
@@ -93,7 +93,7 @@ axios
 .then(html => selector.innerHTML = html)
 if (location.hash) setTimeout(() => document.querySelector(location.hash).scrollIntoView(), 500)
 </script>
-<script src="https://cdn.rawgit.com/lrsjng/pagemap/master/dist/pagemap.min.js"></script>
+<script src="/js/pagemap.min.js"></script>
 <style>
 #map {
   position: fixed;
