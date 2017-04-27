@@ -1,7 +1,7 @@
 <div style="margin-bottom: 140px;">
   <img src="/extra/background.png"/>
   <img src="/extra/logo.png" style="position: absolute;top: 50%;left: 50px;width: 100px;" />
-  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Intranet</h1>
+  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Extranet</h1>
 </div>
 
 # Tikehau Capital
@@ -9,41 +9,42 @@
 ---
 
 # Introduction
-Tikehau Capital souhaite créer un intranet qu'il va ouvrir à ses clients. Le but est de pouvoir mettre à disposition de ces derniers les informations et documents essentiels relatifs à leurs investissements avec la société.
+Tikehau Capital souhaite créer un extranet qu'il va ouvrir à ses clients. Le but est de pouvoir mettre à disposition de ces derniers les informations et documents essentiels relatifs à leurs investissements avec la société.
 
 LES ENJEUX
 
 100M
-100M propose une solution de reporting flexible et au format engageant. 100M est spécialisé dans le domaine de l'investissement. La solution 100M inclut des composants pouvant être embarqués individuellement et simplement sur un site internet ou intranet.
+100M propose une solution de reporting flexible et au format engageant. 100M est spécialisé dans le domaine de l'investissement. La solution 100M inclut des composants pouvant être embarqués individuellement et simplement sur un site internet ou extranet.
 
 LE PROJET.
 
 ---
 
 # Les Enjeux
-L'initiative conjointe de Tikehau Capital et de 100M fait apparaître 4 enjeux: **l'expérience client**, **la mise à jour des données**, **la facilité de l'intégration** et **la sécurité**.  
+L'initiative conjointe de Tikehau Capital et de 100M fait apparaître 4 enjeux: l'**expérience client**, la **facilité de l'intégration**, la **flexibilité** de la solution et la **sécurité**. 
 
 
 ## Expérience Client  
 L'expérience client doit être fluide: l'information doit être facilement lisible, les composants graphiques doivent inviter l'utilisateur à interagir, et les documents doivent être facilement accessibles et téléchargeables.  
 Les interfaces doivent être pensées pour la mobilité et compatibles sur les supports desktop, téléphone, tablettes et ainsi qu'entre les différents navigateurs web.  
 
-
-## Mise à jour des données  
+## Facilité de l'intégration avec Tikehau
+L'enjeu est ici de simplifier l'intégration au maximum: Tikehau utilise Sophis et Efront pour gérer ses positions. Il s'agit de pouvoir s'interfacer simplement avec ces logiciels, ou avec les bases de données existantes chez Tikehau.  
 Les données doivent pouvoir être mise à jour aussi bien 'par batch', qu'individuellement. La mise à jour doit pouvoir être faites par le 'Client Services' ou par les équipes I.T.
 
-
-## Facilité de l'intégration  
-L'enjeu est ici de simplifier l'intégration au maximum: Tikehau utilise Sophis et Efront pour gérer ses positions. Il s'agit de pouvoir s'interfacer simplement avec ces logiciels, ou avec les bases de données existantes chez Tikehau.
-
+## Flexibilité
+L'extranet est destiné à évoluer et à être enrichi dans le temps.
+Tikehau envisage également une refonte de sa charte graphique.
+L'application livrée doit pouvoir offrir la souplesse nécessaire pour s'adapter à ces changements et évolutions à moindre coût.
 
 ## Sécurité  
-L'information publiée au sein de l'intranet est confidentielle et doit être sécurisée par une double authentification. Les protocoles d'échanges d'information et de transfert de données doivent respecter les derniers standards de sécurité. 
+L'information publiée au sein de l'extranet est confidentielle et doit être sécurisée par une double authentification.  
+Les protocoles d'échanges d'information et de transfert de données doivent respecter les derniers standards de sécurité. 
 
 ---
 
 # La Solution 100M
-100M a développé une plateforme de marketing et reporting en-ligne dédiée aux Asset Managers. La plateforme 100M permet le développement d'applications sur-mesures.
+100M a développé une solution de marketing et reporting en-ligne dédiée aux Asset Managers. La solution 100M permet le développement d'applications sur-mesures.
 
 
 ## Nos applications
@@ -83,60 +84,81 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 
 # Le Projet
 
-et la sécurité des données client.
+Le projet consiste à développer un extranet dont la finalité principale est de permettre aux clients d'avoir une vision consolidée de leurs investissements chez Tikehau, et d'accéder aux documents afférents.  
 
+La structure de l'application doit rester simple, flexible et évolutive.
 
-Le projet consiste à développer 3 composants distincts:
-1. Un composant graphique hors fonds à formule
-2. Un composant graphique pour les fonds à formule
-3. Un composant graphique pour les titres de créance
+Nous allons procéder en mode *agile* et nous vous proposons d'articuler le projet en 2 étapes: une phase de **pré-production** et une phase de mise en **production**.
 
-Les titres de créance comportent le moins de fonctionnalités spécifiques et seront donc traités dans une première phase. 
+Le but de la phase de pré-production est de:
+- finaliser le design de l'application, 
+- finaliser les fonctionalités métiers,
+- spécifier un format d'échange des données et fichiers entre l'application et les systèmes Tikehau,
+- tester l'application sur une dizaine d'utilisateurs représentatifs,
+- mettre en place un processus mensuel de mise à jour des données,
+- mettre en place un processus de mise à jour 'on demand' des données.
 
-## Phase 1: Développement et déploiement des composants graphiques titres de créance.
+Le but de la phase de production sera de:
+- déployer l'application sur l'ensemble des utilisateurs,
+- automatiser une mise à jour quotidienne des données.
 
-L'objectif de cette phase est de:
-- optimiser le rendu et la responsivité du composant (pour mobile,  tablette)
-- optimiser les performances
-- assurer la compatibilité cross-navigateur
-- faire le choix de la méthode d'intégration
-- réaliser une intégration de bout-en-bout pour minimiser les risques lors de l'industrialisation.
+## Livrable
+100M livrera une application extranet sécurisée, compatible au format tablette / mobile / desktop et fonctionnant avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (version 11 et suivantes).
 
-**100M livrera un composant iFrame qui sera paramétré par une clef unique (eg. l'ISIN du fonds).**
-Le composant implémentera le rendu des graphiques et de l'ensemble des contrôleurs (boutons, calendrier etc.).
-Le composant sera standardisé de sorte que l'ajout ou la suppression d'un fonds du même type se fasse via une simple paramétrisation.
+L'application comprendra pour chaque client, 
+- une page de synthèse des investissements,
+- un espace où retrouver les documents relatifs aux investissements.
 
-### 100M aura à charge
-* de configurer les composants graphiques de sa solution.
-* de gérer les tables de correspondance entre ISIN, type de graphique attendu, et type de données à aller chercher.
-* de créer un connecteur à l'API de Fédéral Finance.
-* de fiabiliser la donnée et de gérer les potentiels problèmes au niveau de l'API.
-* de créer un export PDF.
-* de mettre à disposition les composants graphiques via une commande d'intégration simple.
-* d'héberger les composants graphiques et de les maintenir.
+L'application comprendra pour chaque commercial, 
+- un page listant ses clients et permettant d'accéder à leur espace.
 
-### Tikehau aura à charge
-* de fournir les données via un webservice (API)
-* d'intégrer le composant sur une page du site www.fédéral-finance.fr
+Un prototype est en ligne [ici](https://tikehau.100m.io).
 
+## 100M aura à charge
+- concevoir les différentes pages en collaboration avec les équipes Tikehau,
+- adapter les écrans à un usage mobile (tablette et téléphone),
+- développer les connecteurs aux données Tikehau,
+- mettre en-ligne l'extranet sécurisé.
 
+## Tikehau aura à charge
+- valider les écrans proposés par l'équipe de 100M,
+- extraire les données clients des systemes Tikehau (Sophis, Efront etc.) sous forme de fichiers plats dans un format établi.
 
-### Planning de livraison
-Le composant sera livré en 2 semaines, à compter de la conclusion de la phase 1.
+## Planning de livraison
+L'extranet sera livré dans un délai de 6 semaines, à compter de la date d'accord de Tikehau.
 
 ---
 
 # Le Budget
 
+## La licence
+### Description de la Solution 100M
+Les applications de reporting connecté 100M sert de support au suivi et à la commercialisation des produits d'investissement.
+
+Elles permettent aux différentes équipes des sociétés de gestion et aux clients de collaborer au sein d'une même plateforme.
+
+Nativement, les applications 100M permettent de:
+- Visualiser des indicateurs et des données quantitatives.
+- Interagir avec les graphiques.
+- Synchroniser la donnée des rapports avec des sources externes.
+- Fiabiliser la donnée par des mécanismes de vérification et de caching adaptés.
+
+*Sont inclus* dans le pricing de la solution:
+- _Un nombre d'utilisateurs illimité_
+- _L'hébergement des serveurs web_
+
+La licence pour l'extranet Tikehau est de 850 Euros / mois.  
+Les prix sont valables pour un engagement de 12 mois.
+
+---
+
 ##  Les développements spécifiques
 100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projet pour conseiller Tikehau et pour effectuer les développements spécifiques nécessaires.
 
 Les développements spécifiques comprennent, à titre d'exemple:
-* la customisation du progiciel,
-* l'intégration au système Client,
-* le travail spécifique des données,
-* la création d'un nouveau template PDF pour l'application 100M,
-* la création d'un nouveau type de Web Widget intégrable par le Client.
+* la customisation de la solution,
+* l'intégration aux systèmes Client,
+* le travail spécifique sur les données.
 
 Les développements se font en cycles *Agiles* en partenariat avec le client.  
 
@@ -149,51 +171,24 @@ Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 - Chef de Projet: 800 Euros / Jour.
 - Graphiste: 500 Euros / Jour.
 
+### Chiffrage détaillé de la phase Pre-Production
+![](/extra/tikehau-preprod.png)
+
 ---
 
-## La licence
-### Description de le Solution 100M
-L'application de reporting connecté 100M sert de support au suivi et à la commercialisation des produits d'investissement.
+## Les Conditions
+### Utilisation
+La licence couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour Tikehau, 24h/24 et 7j/7
 
-Elle permet aux équipes de gestion, de risques, des relations investisseurs, et aux clients de collaborer au sein d'une même plateforme.
+La licence inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration Tikehau et le support téléphonique.
 
-Nativement, l'application 100M permet de:
-- Visualiser les indicateurs.
-- Interagir avec les graphiques.
-- Synchroniser la donnée des rapports avec des sources externes.
-- Fiabiliser la donnée par des mécanismes de vérification et de caching adaptés.
 
-L'application est interactive et compatible au format tablette / mobile / desktop et fonctionne avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (version 11 et suivantes).
-
-*Sont inclus* dans le pricing de la solution:
-- _Un nombre d'utilisateurs illimité_
-- _Un nombre de fonds illimité_
-- _La fonctionalité d'édition de rapport PDF_
-- _L'hébergement des serveurs web_
-
-### Les conditions
-La licence couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour XXXXXXXXXXXXXXXXX, 24h/24 et 7j/7
-
-La licence inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration d'XXXXXXXXXXXXXXXXX et le support téléphonique.
-
-La licence pour l'ensemble des composants est de 900 Euros / mois dans la version hébergée; elle inclut le suivi de la disponibilité du service.  
-La licence pour l'ensemble des composants est de 450 Euros / mois dans la version 'on premise'.
-
-Les prix sont valables pour un engagement de 12 mois.
-
-## Conditions De Paiement
+### Paiement
 Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
 
 Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la licence.  
 
-Les termes de cette proposition restent valables jusqu’au 30 Avril 2017.
-
----
-
-## Chiffrage
-
-### Pre-Production
-![](/extra/ff-table1.png)
+Les termes de cette proposition restent valables jusqu’au 22 Mai 2017.
 
 ---
 
