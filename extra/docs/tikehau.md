@@ -26,11 +26,11 @@ L'initiative conjointe de Tikehau Capital et de 100M fait apparaître 4 enjeux: 
 
 ## Expérience Client  
 L'expérience client doit être fluide: l'information doit être facilement lisible, les composants graphiques doivent inviter l'utilisateur à interagir, et les documents doivent être facilement accessibles et téléchargeables.  
-Les interfaces doivent être pensées pour la mobilité et compatibles sur les supports desktop, téléphone, tablettes et ainsi qu'entre les différents navigateurs web.  
+Les interfaces doivent être pensées pour la mobilité et compatibles sur les supports desktop, téléphone, tablette et ainsi qu'entre les différents navigateurs web.  
 
 ## Facilité de l'intégration avec Tikehau
 L'enjeu est ici de simplifier l'intégration au maximum: Tikehau utilise Sophis et Efront pour gérer ses positions. Il s'agit de pouvoir s'interfacer simplement avec ces logiciels, ou avec les bases de données existantes chez Tikehau.  
-Les données doivent pouvoir être mise à jour aussi bien 'par batch', qu'individuellement. La mise à jour doit pouvoir être faites par le 'Client Services' ou par les équipes I.T.
+Les données doivent pouvoir être mise-à-jour aussi bien 'par batch', qu'individuellement. La mise à jour doit pouvoir être faites par le 'Client Services' ou par les équipes I.T.
 
 ## Flexibilité
 L'extranet est destiné à évoluer et à être enrichi dans le temps.
@@ -39,25 +39,26 @@ L'application livrée doit pouvoir offrir la souplesse nécessaire pour s'adapte
 
 ## Sécurité  
 L'information publiée au sein de l'extranet est confidentielle et doit être sécurisée par une double authentification.  
-Les protocoles d'échanges d'information et de transfert de données doivent respecter les derniers standards de sécurité. 
+Les protocoles d'échange d'information et de transfert de données doivent respecter les derniers standards de sécurité. 
 
 ---
 
 # La Solution 100M
-100M a développé une solution de marketing et reporting en-ligne dédiée aux Asset Managers. La solution 100M permet le développement d'applications sur-mesures.
+100M a développé une solution de marketing et reporting en-ligne dédiée aux Asset Managers. 
+La solution 100M permet le développement d'applications sur-mesure.
 
 
 ## Nos applications
-### Visualisation & Exploration
-Les applications développées par 100M facilitent une lecture visuelle rapide et synthétique de l'information.
-Ils sont complètement flexibles et customisables selon les besoins des Clients.
-Les applications 100M permettent d'intéragir avec les données avec facilité et fluidité.
+### Exploration Visuelle
+Les applications développées par 100M facilitent une lecture visuelle rapide et synthétique de l'information.   
+Elles comportent des visualisations interactives qui permettent d'analyser la donnée avec facilité et fluidité.  
+Elles sont complètement flexibles et customisables selon les besoins clients.
 
-### Connexion & Collaboration
-En plus d'être directement connectées aux données, les applications 100M peuvent intégrer des fonctionalités de collaboration innovantes. Le partage de contenu permet par exemple de gagner en productivité et en agilité.
-La solution permet une réduction des coûts associés au reporting de l'ordre de 75%, tout en augmentant la qualité du contenu.
+### Collaboration
+En plus d'être directement connectées aux données, les applications 100M peuvent intégrer des fonctionalités de collaboration innovantes. Le partage de contenu, le partage d'écran permettent de gagner en productivité et en agilité.  
+La solution permet une réduction des coûts associés au reporting de l'ordre de 75%, tout en augmentant la qualité du service.
 
-### Multi-format & Cross-Platform
+### Cross-Platform
 Les applications 100M sont conçues pour une utilisation complètement mobile et sont compatibles desktop, tablette et smart phone.
 Elles sont également multi-format et permettent l'export de rapports PDF. Les formats des rapports sont définis par le biais de templates customisables.
 
@@ -68,7 +69,7 @@ Elles sont également multi-format et permettent l'export de rapports PDF. Les f
 100M a développé le front-end software propriétaire en Javascript permettant la réactivité de l'application et des graphiques, la synchronisation en temps réel avec une base de données, et avec les écrans d'autres utilisateurs.
 
 ### Les moteurs de calcul en Back-End
-100M a développé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des differents indicateurs.
+100M a développé un back-end en Python permettant d'effectuer le traitement de la donnée et le calcul des différents indicateurs.
 
 ### Hébergement de l'application
 L'hébergement du front-end de l'application se fait sur des serveurs AWS dont le taux de disponibilité est garanti à 99.99%.
@@ -92,8 +93,8 @@ Nous allons procéder en mode *agile* et nous vous proposons d'articuler le proj
 
 Le but de la phase de pré-production est de:
 - finaliser le design de l'application, 
-- finaliser les fonctionalités métiers,
-- spécifier un format d'échange des données et fichiers entre l'application et les systèmes Tikehau,
+- finaliser les fonctionnalités métier,
+- spécifier un mode et format d'échange des données et des fichiers entre l'application et les systèmes Tikehau,
 - tester l'application sur une dizaine d'utilisateurs représentatifs,
 - mettre en place un processus mensuel de mise à jour des données,
 - mettre en place un processus de mise à jour 'on demand' des données.
@@ -112,20 +113,20 @@ L'application comprendra pour chaque client,
 L'application comprendra pour chaque commercial, 
 - un page listant ses clients et permettant d'accéder à leur espace.
 
-Un prototype est en ligne [ici](https://tikehau.100m.io).
+**Un prototype est en ligne [ici](https://tikehau.100m.io).**
 
 ## 100M aura à charge
-- concevoir les différentes pages en collaboration avec les équipes Tikehau,
-- adapter les écrans à un usage mobile (tablette et téléphone),
-- développer les connecteurs aux données Tikehau,
-- mettre en-ligne l'extranet sécurisé.
+- de concevoir les différentes pages en collaboration avec les équipes Tikehau,
+- d'adapter les écrans à un usage mobile (tablette et téléphone),
+- de développer les connecteurs aux données Tikehau,
+- de mettre en-ligne l'extranet sécurisé.
 
 ## Tikehau aura à charge
-- valider les écrans proposés par l'équipe de 100M,
-- extraire les données clients des systemes Tikehau (Sophis, Efront etc.) sous forme de fichiers plats dans un format établi.
+- de valider les écrans proposés par l'équipe de 100M,
+- d'extraire les données clients des systemes Tikehau (Sophis, Efront etc.) sous forme de fichiers plats dans un format pré-établi.
 
 ## Planning de livraison
-L'extranet sera livré dans un délai de 6 semaines, à compter de la date d'accord de Tikehau.
+**L'extranet sera livré dans un délai de 6 semaines, à compter de la date d'accord de Tikehau.**
 
 ---
 
@@ -133,7 +134,7 @@ L'extranet sera livré dans un délai de 6 semaines, à compter de la date d'acc
 
 ## La licence
 ### Description de la Solution 100M
-Les applications de reporting connecté 100M sert de support au suivi et à la commercialisation des produits d'investissement.
+Les applications de reporting connecté 100M servent de support au suivi et à la commercialisation des produits d'investissement.
 
 Elles permettent aux différentes équipes des sociétés de gestion et aux clients de collaborer au sein d'une même plateforme.
 
@@ -147,7 +148,7 @@ Nativement, les applications 100M permettent de:
 - _Un nombre d'utilisateurs illimité_
 - _L'hébergement des serveurs web_
 
-La licence pour l'extranet Tikehau est de 850 Euros / mois.  
+**La licence pour l'extranet Tikehau est de 850 Euros / mois.**  
 Les prix sont valables pour un engagement de 12 mois.
 
 ---
@@ -159,17 +160,17 @@ Les développements spécifiques comprennent, à titre d'exemple:
 * la customisation de la solution,
 * l'intégration aux systèmes Client,
 * le travail spécifique sur les données.
-
-Les développements se font en cycles *Agiles* en partenariat avec le client.  
+Les développements se feront en cycles *Agiles* en partenariat avec Tikehau.  
 
 Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
-
 - Développeur junior: 450 Euros / Jour.
 - Développeur senior: 700 Euros / Jour.
 - Data Scientist: 800 Euros / Jour.
 - Analyste Quantitatif Senior: 800 Euros / Jour.
 - Chef de Projet: 800 Euros / Jour.
 - Graphiste: 500 Euros / Jour.
+
+Le coût des **développements spécifiques** pour adapter la solution aux besoins de Tikehau et l'intégrer aux systèmes de la société sont estimés à **23,900 Euros.**
 
 ### Chiffrage détaillé de la phase Pre-Production
 ![](/extra/tikehau-preprod.png)
@@ -184,9 +185,9 @@ La licence inclut également la maintenance corrective et évolutive, en particu
 
 
 ### Paiement
-Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
+Le paiement des développements spécifiques se fait en deux fois: 50% à la commande, 50% à la livraison.
 
-Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la licence.  
+Le paiement de la license se fait par trimestre, en début de trimestre à émission de la facture par 100M.  
 
 Les termes de cette proposition restent valables jusqu’au 22 Mai 2017.
 
