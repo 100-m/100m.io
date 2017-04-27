@@ -9,14 +9,11 @@
 ---
 
 # Introduction
-Tikehau Capital souhaite créer un extranet qu'il va ouvrir à ses clients. Le but est de pouvoir mettre à disposition de ces derniers les informations et documents essentiels relatifs à leurs investissements avec la société.
+Tikehau Capital souhaite créer un extranet qu'il va ouvrir à ses clients. Le but est de pouvoir mettre à disposition de ces derniers les informations et documents relatifs à leurs investissements avec la société.
 
-LES ENJEUX
+Notre compréhension est que vos enjeux sont l'expérience client, la facilité de l'intégration avec les systèmes internes, la flexibilité de la solution, et enfin, la sécurité.
 
-100M
-100M propose une solution de reporting flexible et au format engageant. 100M est spécialisé dans le domaine de l'investissement. La solution 100M inclut des composants pouvant être embarqués individuellement et simplement sur un site internet ou extranet.
-
-LE PROJET.
+Les applications de reporting connecté 100M sont dédiées au suivi et à la commercialisation des produits d'investissement. L'équipe de 100M possède une base technologique de pointe et une forte connaissance du métier de la finance qui garantit la bonne exécution de ses projets.
 
 ---
 
@@ -112,6 +109,8 @@ L'application comprendra pour chaque client,
 
 L'application comprendra pour chaque commercial, 
 - un page listant ses clients et permettant d'accéder à leur espace.
+
+L'application comprendra une interface administrateur pour gérer la création des utilisateurs et les mots de passe.
 
 **Un prototype est en ligne [ici](https://tikehau.100m.io).**
 
