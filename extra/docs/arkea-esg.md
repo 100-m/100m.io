@@ -1,7 +1,7 @@
 <div style="margin-bottom: 140px;">
   <img src="/extra/background.png"/>
   <img src="/extra/logo.png" style="position: absolute;top: 50%;left: 50px;width: 100px;" />
-  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Reporting ESG ISR</h1>
+  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Reporting ESG / ISR</h1>
 </div>
 
 # Arkea Investment Solutions
@@ -9,41 +9,35 @@
 ---
 
 # Introduction
-Tikehau Capital souhaite créer un extranet qu'il va ouvrir à ses clients. Le but est de pouvoir mettre à disposition de ces derniers les informations et documents relatifs à leurs investissements avec la société.
+Le reporting des métriques extra-financière représente un enjeu qui ira croissant, notamment avec la future entrée en vigueur de la loi sur la transition energétique. Aujourd'hui, Arkéa IS dispose d'une infrastructure de reporting sur les sujets ESG/ISR, des sources de données afférentes, ainsi que de son propre moteur de calcul. 
 
-Notre compréhension est que vos enjeux sont l'expérience client, la facilité de l'intégration avec les systèmes internes, la flexibilité de la solution, et enfin, la sécurité.
+Nous avons compris que vous souhaitez développer plus-avant la capacité à communiquer efficacement et largement sur les aspects extra-financiers pour donner au client final une meilleure vision de ces métriques. En particulier, vous souhaitez permettre au client d'aller d'une vision globale à une vision granulaire au sein d'un portefeuille.
 
-Les applications de reporting connecté 100M sont dédiées au suivi et à la commercialisation des produits d'investissement. L'équipe de 100M possède une base technologique de pointe et une forte connaissance du métier de la finance qui garantit la bonne exécution de ses projets.
+100M est une solution de reporting et de datavisualisation analytique. 100M livre des applications sur-mesure et clef-en-main pour communiquer efficacement sous un format engageant. L'équipe de 100M combine un savoir-faire technique et une connaissance profonde des métiers de l'investissement.
+
+Ensemble nous vous proposons dans un premier temps de digitaliser le rapport de gestion mensuel des fonds ESG/ISR, en dédiant une attention toute particulière à la composante extra-financière.  
+Dans un deuxième temps, nous pourrons travailler sur les rapports ESG/ISR semestriels. 
 
 ---
 
 # Les Enjeux
-L'initiative conjointe de Tikehau Capital et de 100M fait apparaître 4 enjeux: l'**expérience client**, la **facilité de l'intégration**, la **flexibilité** de la solution et la **sécurité**. 
+L'initiative conjointe d'Arkéa IS et de 100M fait apparaître 3 grands enjeux: l'**expérience client**, la **granularité de l'analyse**, la capacité à **intégrer et automatiser facilement** la création du reporting.
 
+## Expérience client
+Arkéa IS souhaite expliquer le positionnement de sa gestion, en mettre en avant la qualité, mais également inviter le client à s'intéresser aux données extra-financières.  
+Pour maximiser l'engagement, Arkéa IS souhaite déployer un reporting connecté fluide, lisible, avec des composants graphiques invitant à l'intéraction. Les interfaces doivent être pensées pour la mobilité et compatibles sur les supports desktop, téléphone, tablette et ainsi qu'entre les différents navigateurs web.  
 
-## Expérience Client  
-L'expérience client doit être fluide: l'information doit être facilement lisible, les composants graphiques doivent inviter l'utilisateur à interagir, et les documents doivent être facilement accessibles et téléchargeables.  
-Les interfaces doivent être pensées pour la mobilité et compatibles sur les supports desktop, téléphone, tablette et ainsi qu'entre les différents navigateurs web.  
+## Granularité de l'analyse
+Le but est de permettre au client de s'approprier la donnée en adoptant une démarche exploratoire. La visualisation des rapports doit lui permettre d'avoir une vision 'haut niveau' mais également d'analyser plus en profondeur le portefeuille via des animations de type 'drill-down'.
 
-## Facilité de l'intégration avec Tikehau
-L'enjeu est ici de simplifier l'intégration au maximum: Tikehau utilise Sophis et Efront pour gérer ses positions. Il s'agit de pouvoir s'interfacer simplement avec ces logiciels, ou avec les bases de données existantes chez Tikehau.  
-Les données doivent pouvoir être mises à jour aussi bien 'par batch', qu'individuellement. La mise à jour doit pouvoir être faites par le 'Client Services' ou par les équipes I.T.
-
-## Flexibilité
-L'extranet est destiné à évoluer et à être enrichi dans le temps.
-Tikehau envisage également une refonte de sa charte graphique.
-L'application livrée doit pouvoir offrir la souplesse nécessaire pour s'adapter à ces changements et évolutions à moindre coût.
-
-## Sécurité  
-L'information publiée au sein de l'extranet est confidentielle et doit être sécurisée par une double authentification.  
-Les protocoles d'échange d'information et de transfert de données doivent respecter les derniers standards de sécurité. 
+## Intégration et Automatisation
+L'enjeu est ici de simplifier l'intégration au maximum et de gagner en productivité en automatisant la génération des rapports. La solution 100M doit pouvoir se connecter facilement aux sources de données Arkea IS. Les données doivent pouvoir être mises à jour aussi bien 'par batch', qu'individuellement. 
 
 ---
 
 # La Solution 100M
 100M a développé une solution de marketing et reporting en-ligne dédiée aux Asset Managers. 
 La solution 100M permet le développement d'applications sur-mesure.
-
 
 ## Nos applications
 ### Exploration Visuelle
@@ -80,50 +74,45 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 
 # Le Projet
 
-Le projet consiste à développer un extranet dont la finalité principale est de permettre aux clients d'avoir une vision consolidée de leurs investissements chez Tikehau, et d'accéder aux documents afférents.  
+Nous vous proposons de digitaliser les rapports de gestion sur les fonds ISR et ESG, en tirant parti du modèle Schelcher Prince et en l'augmentant d'une section dédiée aux aspects extra-financiers.
 
-La structure de l'application doit rester simple, flexible et évolutive.
+Nous allons procéder en mode *agile* et nous vous proposons d'articuler le projet en 2 étapes: une phase de **pré-production** où nous allons adapter le template et ajouter les éléments manquants et une phase de mise en **production** où nous connecterons l'application aux systèmes Arkéa IS.
 
-Nous allons procéder en mode *agile* et nous vous proposons d'articuler le projet en 2 étapes: une phase de **pré-production** et une phase de mise en **production**.
+En détails, le but de la phase de pré-production est de:
+- finaliser le **design** de l'application, 
+- finaliser les **fonctionnalités** métier,
+- spécifier un mode et **format d'échange des données** et des fichiers entre l'application et les systèmes Arkéa,
+- **tester l'application** sur un fonds représentatif,
+- mettre en place un processus de mise à jour des données sur la base d'un fichier 'plat'.
 
-Le but de la phase de pré-production est de:
-- finaliser le design de l'application, 
-- finaliser les fonctionnalités métier,
-- spécifier un mode et format d'échange des données et des fichiers entre l'application et les systèmes Tikehau,
-- tester l'application sur une dizaine d'utilisateurs représentatifs,
-- mettre en place un processus mensuel de mise à jour des données,
-- mettre en place un processus de mise à jour 'on demand' des données.
-
-Le but de la phase de production sera de:
-- déployer l'application sur l'ensemble des utilisateurs,
-- automatiser une mise à jour quotidienne des données.
+En détails, le but de la phase de production sera de:
+- **automatiser la mise-à-jour** des données,
+- **déployer** l'application sur une gamme plus large de fonds.
 
 ## Livrable
-100M livrera une application extranet sécurisée, compatible au format tablette / mobile / desktop et fonctionnant avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (version 11 et suivantes).
+100M livrera une application  sécurisée, compatible au format tablette / mobile / desktop et fonctionnant avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (version 11 et suivantes).
 
-L'application comprendra pour chaque client, 
-- une page de synthèse des investissements,
-- un espace où retrouver les documents relatifs aux investissements.
+**L'application sera mise en accord avec la charte graphique d'Arkéa IS.**
 
-L'application comprendra pour chaque commercial, 
-- un page listant ses clients et permettant d'accéder à leur espace.
+L'application comprendra pour chaque fonds, 
+- un écran de synthèse,
+- un écran incluant le commentaire de gestion et les principaux mouvements du portefeuille,
+- un écran d'analyse de la performance,
+- un écran présentant le positionnement du portefeuille,
+- **un écran présentant les charactéristiques ESG / ISR du portefeuille.**
 
-L'application comprendra une interface administrateur pour gérer la création des utilisateurs et les mots de passe.
-
-**Un prototype est en ligne [ici](https://tikehau.100m.io).**
+L'écran ESG / ISR reprendra les informations présentées par le reporting existant ou incluera les informations mentionnées en annexe.
 
 ## 100M aura à charge
-- de concevoir les différentes pages en collaboration avec les équipes Tikehau,
-- d'adapter les écrans à un usage mobile (tablette et téléphone),
-- de développer les connecteurs aux données Tikehau,
-- de mettre en-ligne l'extranet sécurisé.
+- de concevoir les différentes écran en collaboration avec les équipes Arkéa,
+- d'adapter les écrans à un usage mobile (tablette),
 
-## Tikehau aura à charge
+## Arkéa aura à charge
 - de valider les écrans proposés par l'équipe de 100M,
-- d'extraire les données clients des systemes Tikehau (Sophis, Efront etc.) sous forme de fichiers plats dans un format pré-établi.
+- de fournir les données brutes requises pour la conception du rapport.
 
 ## Planning de livraison
-**L'extranet sera livré dans un délai de 6 semaines, à compter de la date d'accord de Tikehau.**
+**L'application sera livrée dans un délai de 8 semaines, à compter de la date d'accord d'Arkéa.**
 
 ---
 
@@ -131,9 +120,7 @@ L'application comprendra une interface administrateur pour gérer la création d
 
 ## La licence
 ### Description de la Solution 100M
-Les applications de reporting connecté 100M servent de support au suivi et à la commercialisation des produits d'investissement.
-
-Elles permettent aux différentes équipes des sociétés de gestion et aux clients de collaborer au sein d'une même plateforme.
+Les applications de reporting connecté 100M servent de support au suivi et à la commercialisation des produits d'investissement. Elles permettent également aux différentes équipes des sociétés de gestion et aux clients de collaborer au sein d'une même plateforme.
 
 Nativement, les applications 100M permettent de:
 - Visualiser des indicateurs et des données quantitatives.
@@ -147,7 +134,6 @@ Nativement, les applications 100M permettent de:
 
 **La licence pour l'extranet Tikehau est de 850 Euros / mois.**  
 Les prix sont valables pour un engagement de 12 mois.
-
 
 ##  Les développements spécifiques
 100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projet pour conseiller Tikehau et pour effectuer les développements spécifiques nécessaires.
@@ -166,17 +152,16 @@ Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 - Chef de Projet: 800 Euros / Jour.
 - Graphiste: 500 Euros / Jour.
 
-Le coût des **développements spécifiques** pour adapter la solution aux besoins de Tikehau et l'intégrer aux systèmes de la société sont estimés à **23,900 Euros.**
+Le coût des **développements spécifiques** pour adapter la solution aux besoins de Tikehau et l'intégrer aux systèmes de la société sont estimés à **XXXXXXXX Euros.**
 
 ### Chiffrage détaillé de la phase Pre-Production
 ![](/extra/tikehau-preprod.png)
 
-
 ## Les Conditions
 ### Utilisation
-La licence couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour Tikehau, 24h/24 et 7j/7
+La licence couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour Arkea IS, 24h/24 et 7j/7
 
-La licence inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration Tikehau et le support téléphonique.
+La licence inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration Arkea et le support téléphonique.
 
 
 ### Paiement
@@ -184,7 +169,7 @@ Le paiement des développements spécifiques se fait en deux fois: 50% à la com
 
 Le paiement de la license se fait par trimestre, en début de trimestre à émission de la facture par 100M.  
 
-Les termes de cette proposition restent valables jusqu’au 22 Mai 2017.
+Les termes de cette proposition restent valables jusqu’au 15 Juin 2017.
 
 ---
 
@@ -212,53 +197,94 @@ Valentin est ingénieur informatique diplômé de Sciences U.
 
 ---
 
-Orientation de gestion
-Valorisation 
-Performance et Indicateurs 
-Allocation: principaux titres, repartition sectorielle, classe d'actif.
-Principale operations, commentaire 
+# Annexe : Reporting de performance ESG
 
-Positionnement ISR: 
-Notes des principales positions.
+Détermination des indicateurs à calculer pour chacun des fonds
+A ce jour 9 ensembles d’indicateurs existent, en fonction de la typologie du fonds.
 
-Note moyenne du portefeuille par critere extra-financier.
-Selectivite
+## Ensemble 1 : Fonds majoritairement investi dans des sociétés françaises
+-	Indicateur 1 : Emissions de CO2 (corpo)
+-	Indicateur 2 : Engagement à la préservation des ressources
+-	Indicateur 3 : Croissance des effectifs
+-	Indicateur 4 : Signataires du Pacte Mondial
+-	Indicateur 5 : Part des effectifs en CDI
+-	Indicateur 6 : Taux d’indépendance du conseil
+-	Indicateur 7 : Taux de féminisation du conseil
 
-Commentaire ISR: Focus Valeur.
-
-Les indicateurs:
-* Environnement: Emissions de Gaz a effet de serre (tonne de CO2 / Mio investi, tonne de CO2 / Mio CA).
-* Environnement: Engagement des entreprises à la préservations des ressources.
-* Gourvernance: Composition du conseil: taux d'independance du conseil, 
-* Gouvernance: taux de feminisation du conseil.
-* Signataire du Pacte Mondial
-* Capital Humain: croissance des effectifs, 
-* Capital Humain: part de CDI.
-
-PAYS:
+## Ensemble 2 : Fonds majoritairement investi dans des sociétés Monde et France
+-	Indicateur 1 : Emissions de CO2 (corpo)
+-	Indicateur 2 : Engagement à la préservation des ressources
+-	Indicateur 3 : Croissance des effectifs
+-	Indicateur 4 : Signataires du Pacte Mondial
+-	Indicateur 6 : Taux d’indépendance du conseil
+-	Indicateur 7 : Taux de féminisation du conseil
+	
+## Ensemble 3 : Fonds majoritairement investis dans les Etats et significativement dans les entreprises monde
 -	Indicateur 1 : Emissions de CO2 (Etats)
 -	Indicateur 2 : part des énergies vertes dans le Mix énergétique national
 -	Indicateur 3 : produits et services ayant un effet positif sur l’environnement
 -	Indicateur 4 : Taux de chômage
 -	Indicateur 5 : Indice de bien-être
--	Indicateur 6 : Croissance des effectifs 
+-	Indicateur 6 : croissance des effectifs 
 -	Indicateur 7 : Indice de gouvernance
 -	Indicateur 8 : Taux d’indépendance du conseil
 
+## Ensemble 4 : Fonds majoritairement investi dans les entreprises Monde et significativement dans les  Etats
+-	Indicateur 1 : Emissions de CO2 (corpo)
+-	Indicateur 2 : part des énergies vertes dans le Mix énergétique national
+-	Indicateur 3 : produits et services ayant un effet positif sur l’environnement
+-	Indicateur 4 : Taux de chômage
+-	Indicateur 5 : Pacte Mondial
+-	Indicateur 6 : croissance des effectifs 
+-	Indicateur 7 : Indice de gouvernance
+-	Indicateur 8 : Taux d’indépendance du conseil
+
+## Ensemble 5 : Fonds majoritairement investi dans les Etats et significativement dans les entreprises françaises
+-	Indicateur 1 : Emissions de CO2 (Etats)
+-	Indicateur 2 : part des énergies vertes dans le Mix énergétique national
+-	Indicateur 3 : Engagement à la préservation des ressources
+-	Indicateur 4 : Taux de chômage
+-	Indicateur 5 : Indice de bien-être des populations
+-	Indicateur 6 : croissance des effectifs 
+-	Indicateur 7 : Indice de gouvernance
+-	Indicateur 8 : Taux d’indépendance du conseil
+
+## Ensemble 6 : Fonds majoritairement investi dans les entreprises françaises et significativement dans les Etats
+-	Indicateur 1 : Emissions de CO2 (Corpo)
+-	Indicateur 2 : part des énergies vertes dans le Mix énergétique national
+-	Indicateur 3 : Engagement à la préservation des ressources
+-	Indicateur 4 : Taux de chômage
+-	Indicateur 5 : part des effectifs en CDI
+-	Indicateur 6 : croissance des effectifs 
+-	Indicateur 7 : Indice de gouvernance
+-	Indicateur 8 : Taux d’indépendance du conseil 
+
+## Ensemble 7 : Fonds majoritairement investi dans les Etats et significativement dans les entreprises françaises + monde
+-	Indicateur 1 : Emissions de CO2 (Etats)
+-	Indicateur 2 : part des énergies vertes dans le Mix énergétique national
+-	Indicateur 3 : Engagement à la préservation des ressources
+-	Indicateur 4 : Taux de chômage
+-	Indicateur 5 : Indice de bien-être des populations
+-	Indicateur 6 : croissance des effectifs (WW + FR)
+-	Indicateur 7 : Indice de gouvernance
+-	Indicateur 8 : Taux d’indépendance du conseil (WW + FR)
+
+## Ensemble 8 : Fonds majoritairement investi dans les entreprises françaises + monde et significativement dans les Etats
+-	Indicateur 1 : Emissions de CO2 (Corpo)
+-	Indicateur 2 : part des énergies vertes dans le Mix énergétique national
+-	Indicateur 3 : Engagement à la préservation des ressources
+-	Indicateur 4 : Taux de chômage
+-	Indicateur 5 : Indice de bien-être des populations
+-	Indicateur 6 : croissance des effectifs 
+-	Indicateur 7 : Indice de gouvernance
+-	Indicateur 8 : Taux d’indépendance du conseil 
+
+## Ensemble 9 : Fonds investis dans les Etats
+-	Indicateur 1 : Emissions de CO2 (Etats)
+-	Indicateur 2 : part des énergies vertes dans le Mix énergétique national
 -	Indicateur 3 : part des zones protégées
+-	Indicateur 4 : Taux de chômage
+-	Indicateur 5 : Indice de bien-être des populations
 -	Indicateur 6 : Indice PISA 
+-	Indicateur 7 : Indice de gouvernance
 -	Indicateur 8 : Part des femmes au parlement
-
-QUESTIONS: 
-* a qui parle-t-on ?
-* est ce que vos investisseurs ont eux-memes des obligations de reporting, que l'on peut simplifier ?
-* a quelle frequence voulez-vous rafraichir les données ESG ?
-
-TO DO:
-* CLASSER LES INDICATEURS.
-
-MAIL:
-* la liste des criteres ESG est top.
----
-
-'augmentation de capitale liée à l'arrivée d'un nouvel associé ?'
