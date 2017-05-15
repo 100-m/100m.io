@@ -1,10 +1,10 @@
 <div style="margin-bottom: 140px;">
   <img src="/extra/background.png"/>
   <img src="/extra/logo.png" style="position: absolute;top: 50%;left: 50px;width: 100px;" />
-  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Extranet</h1>
+  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Reporting ESG ISR</h1>
 </div>
 
-# Tikehau Capital
+# Arkea Investment Solutions
 
 ---
 
@@ -58,8 +58,6 @@ La solution permet une réduction des coûts associés au reporting de l'ordre d
 ### Cross-Platform
 Les applications 100M sont conçues pour une utilisation complètement mobile et sont compatibles desktop, tablette et smart phone.
 Elles sont également multi-format et permettent l'export de rapports PDF. Les formats des rapports sont définis par le biais de templates customisables.
-
----
 
 ## La Technologie
 ### Le Front-End
@@ -150,7 +148,6 @@ Nativement, les applications 100M permettent de:
 **La licence pour l'extranet Tikehau est de 850 Euros / mois.**  
 Les prix sont valables pour un engagement de 12 mois.
 
----
 
 ##  Les développements spécifiques
 100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projet pour conseiller Tikehau et pour effectuer les développements spécifiques nécessaires.
@@ -174,7 +171,6 @@ Le coût des **développements spécifiques** pour adapter la solution aux besoi
 ### Chiffrage détaillé de la phase Pre-Production
 ![](/extra/tikehau-preprod.png)
 
----
 
 ## Les Conditions
 ### Utilisation
@@ -213,3 +209,56 @@ Valentin est ingénieur informatique diplômé de Sciences U.
 
 ## Votre Contact:
 # clement@100m.io
+
+---
+
+Orientation de gestion
+Valorisation 
+Performance et Indicateurs 
+Allocation: principaux titres, repartition sectorielle, classe d'actif.
+Principale operations, commentaire 
+
+Positionnement ISR: 
+Notes des principales positions.
+
+Note moyenne du portefeuille par critere extra-financier.
+Selectivite
+
+Commentaire ISR: Focus Valeur.
+
+Les indicateurs:
+* Environnement: Emissions de Gaz a effet de serre (tonne de CO2 / Mio investi, tonne de CO2 / Mio CA).
+* Environnement: Engagement des entreprises à la préservations des ressources.
+* Gourvernance: Composition du conseil: taux d'independance du conseil, 
+* Gouvernance: taux de feminisation du conseil.
+* Signataire du Pacte Mondial
+* Capital Humain: croissance des effectifs, 
+* Capital Humain: part de CDI.
+
+PAYS:
+-	Indicateur 1 : Emissions de CO2 (Etats)
+-	Indicateur 2 : part des énergies vertes dans le Mix énergétique national
+-	Indicateur 3 : produits et services ayant un effet positif sur l’environnement
+-	Indicateur 4 : Taux de chômage
+-	Indicateur 5 : Indice de bien-être
+-	Indicateur 6 : Croissance des effectifs 
+-	Indicateur 7 : Indice de gouvernance
+-	Indicateur 8 : Taux d’indépendance du conseil
+
+-	Indicateur 3 : part des zones protégées
+-	Indicateur 6 : Indice PISA 
+-	Indicateur 8 : Part des femmes au parlement
+
+QUESTIONS: 
+* a qui parle-t-on ?
+* est ce que vos investisseurs ont eux-memes des obligations de reporting, que l'on peut simplifier ?
+* a quelle frequence voulez-vous rafraichir les données ESG ?
+
+TO DO:
+* CLASSER LES INDICATEURS.
+
+MAIL:
+* la liste des criteres ESG est top.
+---
+
+'augmentation de capitale liée à l'arrivée d'un nouvel associé ?'
