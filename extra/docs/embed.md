@@ -38,6 +38,8 @@ Voici la procédure d'intégration de l'application:
 2. Vérifie que l'API est bien accessible. (exemple: https://embed.100m.io/dist/api.json)
 3. Intégrer la balise iframe à l'endroit où le graph doit être affiché:
 
+`<iframe style="width:100%;height:300px;" frameBorder="0" src="https://embed.100m.io?api=https://embed.100m.io/dist/api.json&uid=FR0000284093"></iframe>`
+
 <iframe style="width:100%;height:300px;" frameBorder="0" src="https://embed.100m.io?api=https://embed.100m.io/dist/api.json&uid=FR0000284093"></iframe>
 
 Si l'application et l'API ne sont pas sur le même domaine, 2 choix se présentent:
