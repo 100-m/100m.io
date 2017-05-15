@@ -106,6 +106,8 @@ L'écran ESG / ISR reprendra les informations présentées par le reporting exis
 ## 100M aura à charge
 - de concevoir les différentes écran en collaboration avec les équipes Arkéa,
 - d'adapter les écrans à un usage mobile (tablette),
+- de concevoir le data model,
+- de concevoir un mécanisme de mise-à-jour de la donnée.
 
 ## Arkéa aura à charge
 - de valider les écrans proposés par l'équipe de 100M,
@@ -122,40 +124,27 @@ L'écran ESG / ISR reprendra les informations présentées par le reporting exis
 ### Description de la Solution 100M
 Les applications de reporting connecté 100M servent de support au suivi et à la commercialisation des produits d'investissement. Elles permettent également aux différentes équipes des sociétés de gestion et aux clients de collaborer au sein d'une même plateforme.
 
-Nativement, les applications 100M permettent de:
-- Visualiser des indicateurs et des données quantitatives.
-- Interagir avec les graphiques.
-- Synchroniser la donnée des rapports avec des sources externes.
-- Fiabiliser la donnée par des mécanismes de vérification et de caching adaptés.
-
 *Sont inclus* dans le pricing de la solution:
 - _Un nombre d'utilisateurs illimité_
 - _L'hébergement des serveurs web_
 
-**La licence pour l'extranet Tikehau est de 850 Euros / mois.**  
-Les prix sont valables pour un engagement de 12 mois.
+Les prix de la licence sont ceux fixés par notre accord cadre disponible [ici](/md.html?schelcher.md).
 
 ##  Les développements spécifiques
-100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projet pour conseiller Tikehau et pour effectuer les développements spécifiques nécessaires.
+100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projet pour conseiller Arkéa et pour effectuer les développements spécifiques nécessaires.
 
 Les développements spécifiques comprennent, à titre d'exemple:
 * la customisation de la solution,
 * l'intégration aux systèmes Client,
 * le travail spécifique sur les données.
-Les développements se feront en cycles *Agiles* en partenariat avec Tikehau.  
+Les développements se feront en cycles *Agiles* en partenariat avec Arkéa.  
 
-Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
-- Développeur junior: 450 Euros / Jour.
-- Développeur senior: 700 Euros / Jour.
-- Data Scientist: 800 Euros / Jour.
-- Analyste Quantitatif Senior: 800 Euros / Jour.
-- Chef de Projet: 800 Euros / Jour.
-- Graphiste: 500 Euros / Jour.
+Les développements sont facturés sur une base Jour Homme aux tarifs prévus dans notre accord cadre.
 
-Le coût des **développements spécifiques** pour adapter la solution aux besoins de Tikehau et l'intégrer aux systèmes de la société sont estimés à **XXXXXXXX Euros.**
+Le coût des **développements spécifiques** pour adapter la solution aux besoins d'Arkéa et l'intégrer aux systèmes de la société sont estimés à **15,400 Euros.**
 
 ### Chiffrage détaillé de la phase Pre-Production
-![](/extra/tikehau-preprod.png)
+![](/extra/arkea-esg.png)
 
 ## Les Conditions
 ### Utilisation
