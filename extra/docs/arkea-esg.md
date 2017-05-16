@@ -9,13 +9,13 @@
 ---
 
 # Introduction
-Le reporting des métriques extra-financière représente un enjeu qui ira croissant, notamment avec la future entrée en vigueur de la loi sur la transition energétique. Aujourd'hui, Arkéa IS dispose d'une infrastructure de reporting sur les sujets ESG/ISR, des sources de données afférentes, ainsi que de son propre moteur de calcul. 
+**Le reporting des métriques extra-financière représente un enjeu qui ira croissant**, notamment avec la future entrée en vigueur de la loi sur la transition energétique. Aujourd'hui, Arkéa IS dispose d'une infrastructure de reporting sur les sujets ESG/ISR, des sources de données afférentes, ainsi que de son propre moteur de calcul. 
 
-Nous avons compris que vous souhaitez développer plus-avant la capacité à communiquer efficacement et largement sur les aspects extra-financiers pour donner au client final une meilleure vision de ces métriques. En particulier, vous souhaitez permettre au client d'aller d'une vision globale à une vision granulaire au sein d'un portefeuille.
+Nous avons compris que vous souhaitez développer plus-avant la capacité à communiquer efficacement et largement sur les aspects extra-financiers pour **donner au client final une meilleure vision de ces métriques**. En particulier, vous souhaitez **lui permettre d'aller d'une vision globale à une vision granulaire au sein d'un portefeuille.**
 
 100M est une solution de reporting et de datavisualisation analytique. 100M livre des applications sur-mesure et clef-en-main pour communiquer efficacement sous un format engageant. L'équipe de 100M combine un savoir-faire technique et une connaissance profonde des métiers de l'investissement.
 
-Ensemble nous vous proposons dans un premier temps de digitaliser le rapport de gestion mensuel des fonds ESG/ISR, en dédiant une attention toute particulière à la composante extra-financière.  
+Ensemble **nous vous proposons dans un premier temps de digitaliser le rapport de gestion mensuel des fonds ESG/ISR, en dédiant une attention toute particulière à la composante extra-financière.**  
 Dans un deuxième temps, nous pourrons travailler sur les rapports ESG/ISR semestriels. 
 
 ---
@@ -74,7 +74,7 @@ Les databases sont hébergées sur un serveur dédié et optimisé (4CPU, 30GB o
 
 # Le Projet
 
-Nous vous proposons de digitaliser les rapports de gestion sur les fonds ISR et ESG, en tirant parti du modèle Schelcher Prince et en l'augmentant d'une section dédiée aux aspects extra-financiers.
+Nous vous proposons de digitaliser les rapports de gestion sur les fonds ISR et ESG, **en tirant parti du modèle Schelcher Prince** et **en l'augmentant d'une section dédiée aux aspects extra-financiers.**
 
 Nous allons procéder en mode *agile* et nous vous proposons d'articuler le projet en 2 étapes: une phase de **pré-production** où nous allons adapter le template et ajouter les éléments manquants et une phase de mise en **production** où nous connecterons l'application aux systèmes Arkéa IS.
 
@@ -114,7 +114,7 @@ L'écran ESG / ISR reprendra les informations présentées par le reporting exis
 - de fournir les données brutes requises pour la conception du rapport.
 
 ## Planning de livraison
-**L'application sera livrée dans un délai de 8 semaines, à compter de la date d'accord d'Arkéa.**
+**L'application sera livrée dans un délai de 6 semaines, à compter de la date d'accord d'Arkéa.**
 
 ---
 
@@ -133,15 +133,9 @@ Les prix de la licence sont ceux fixés par notre accord cadre disponible [ici](
 ##  Les développements spécifiques
 100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projet pour conseiller Arkéa et pour effectuer les développements spécifiques nécessaires.
 
-Les développements spécifiques comprennent, à titre d'exemple:
-* la customisation de la solution,
-* l'intégration aux systèmes Client,
-* le travail spécifique sur les données.
-Les développements se feront en cycles *Agiles* en partenariat avec Arkéa.  
-
 Les développements sont facturés sur une base Jour Homme aux tarifs prévus dans notre accord cadre.
 
-Le coût des **développements spécifiques** pour adapter la solution aux besoins d'Arkéa et l'intégrer aux systèmes de la société sont estimés à **15,400 Euros.**
+Le coût des **développements spécifiques** pour adapter la solution aux besoins des fonds ISG / ESR d'Arkéa est estimé à **15,100 Euros.**
 
 ### Chiffrage détaillé de la phase Pre-Production
 ![](/extra/arkea-esg.png)
