@@ -104,7 +104,7 @@ L'application comprendra pour chaque fonds,
 L'écran ESG / ISR reprendra les informations présentées par le reporting existant ou incluera les informations mentionnées en annexe.
 
 ## 100M aura à charge
-- de concevoir les différentes écran en collaboration avec les équipes Arkéa,
+- de concevoir les différents écrans en collaboration avec les équipes Arkéa,
 - d'adapter les écrans à un usage mobile (tablette),
 - de concevoir le data model,
 - de concevoir un mécanisme de mise-à-jour de la donnée.
