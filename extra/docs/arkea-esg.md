@@ -92,7 +92,7 @@ En détails, le but de la phase de production sera de:
 ## Livrable
 100M livrera une application  sécurisée, compatible au format tablette / mobile / desktop et fonctionnant avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (version 11 et suivantes).
 
-**L'application sera mise en accord avec la charte graphique d'Arkéa IS.**
+**L'application sera mise en accord avec la charte graphique Fédéral Finance.**
 
 L'application comprendra pour chaque fonds, 
 - un écran de synthèse,
