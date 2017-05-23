@@ -8,17 +8,17 @@
 
 ---
 
-Les composants embarqués 100M s'intègre via une balise `<iframe>` configuré avec une API et des paramètres de rendu.
+Les composants embarqués 100M s'intègrent via une balise `<iframe>` configurée avec une API et des paramètres de rendu.
 
-**Démo**: https://playground.100m.io/embed.html
+**La démo est accessible ici**: https://playground.100m.io/embed.html
 
 ---
 
-# API:
+# API
 
-Pour configurer le composant 100m, la données doit être accessible via une API HTTP qui retourne une réponse JSON avec les champs suivants :
+Pour configurer le composant 100m, la donnée doit être accessible via une API HTTP qui retourne une réponse JSON avec les champs suivants:
 
-- Date au **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
+- Date au **Format ISO (IMPORTANT!)** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
 - Valeur liquidative du fonds
 - Valeur liquidative de l'indice
 
@@ -49,26 +49,33 @@ Pour configurer le composant 100m, la données doit être accessible via une API
 
 # IFRAME
 
-Pour intégrer le composant 100m, la balise suivante doit être intégrer dans une page HTML existante :
+Pour intégrer le composant 100m, la balise suivante doit être intégrée dans une page HTML existante :
 
 <style>code{text-align:left}</style>
 `<iframe style="width:100%;height:300px;" frameBorder="0" src="https://embed.100m.io?api=https://embed.100m.io/dist/api.json&uid=FR0013120854&type=EMTN"></iframe>`
 
-Dans l'exemple ci-dessus, les services accessible sont :
-- Application packagée de graphique >  https://embed.100m.io
-- API de données du fonds > https://embed.100m.io/dist/api.json
-- Configuration du graph > **uid=FR0013120854&type=EMTN**
-- Fonds: ALCANTERRA MAI 2016
+Dans l'exemple ci-dessus, les services suivants doivent être accessibles:
+- Application packagée de graphique (ici https://embed.100m.io)
+- API de données du fonds (ici https://embed.100m.io/dist/api.json)
 
-Résultat:
+La configuration utilisée est la suivante: **uid=FR0013120854&type=EMTN**
+Elle correspond au fonds: ALCANTERRA MAI 2016.
 
+*Notez que les données qui ont été employées pour l'exemple sont factices*
+
+Le rendu est le suivant:
 <iframe style="width:100%;height:300px;" frameBorder="0" src="https://embed.100m.io?api=https://embed.100m.io/dist/api.json&uid=FR0000284093"></iframe>
 
 ---
 
-### Information Supplémentaire
+# Information Supplémentaire
 
 Si l'application et l'API ne sont pas sur le même domaine, 2 choix se présentent:
 
 1. Ajouter un header "cross-domain-origin: *" dans l'API
 2. Utiliser un proxy cross-domain: exemple crossorigin.me (https://github.com/technoboy10/crossorigin.me ou https://github.com/bmpvieira/simple-corsproxy)
+
+---
+
+#Contact
+##valentin@100m.io

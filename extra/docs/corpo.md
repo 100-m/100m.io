@@ -1,4 +1,4 @@
-# Nous digitalisons le suivi de portfeuille: du gérant au client.
+# Digitalisez le suivi de votre portfeuille, du gérant au client.
 
 Illustration: 
 Persona: 
@@ -38,81 +38,108 @@ Apres:
 
 ---
 
-# Offre de service
+# Nous digitalisons le suivi de portfeuille, du gérant au client.
 
-## Pour la gestion
-* 
+## Gérants
+* Suivez votre performance au quotidien.
+* Mettez votre alpha en évidence.
 
 ## Commerciaux
 * Différenciez votre offre.
-* Répondez au mieux aux questions clients.
+* Améliorez votre connaissance client.
 
 ## Service Client
-* Transformez l'expérience client.
+* Transformez l'expérience client grâce à notre UX design.
 * Diminuez vos coûts de reporting.
 
-## Risque et Regulation
-* Créez des alertes de dépassement de limites.
-* Garantissez la traçabilité des données, et des modifications.
+## Risque et Régulation
+* Améliorez le suivi opérationnel des limites.
+* Garantissez la traçabilité des données, et des modifications.\
 
----
-# ET LA DATA ?
-Quick integration: Easily connect to your company PMS.
-
----
-# TECHNO
-
+## Clients 
 
 ---
 
-Risks Vizualization: Graphically drilldown a portfolio and compare to a benchmark for any risk measures.
-Performance Attribution: Instantly visualize your attribution for any time period.
-Built-in communication tool : Collaboratively create comments, annotate data and synchronize screens for remote presentation.
+# Votre problème, c'est la data ? 
 
+* intégration direct sur les données du dépositaire / valorisateur
+* intégration sur votre PMS, et vos systèmes de risques.
+* connexion sur les data providers externes.
+* connexion à des models providers.
 
-# REPONSE, PLUS VALUE
-#customization.
+## illustration: un cloud au centre de:
+- une icône dépositaire
+- une icône PMS 
+- une icône database
+- une icône rouage.
 
+Au sein du 'cloud': 
+- des rouages 
+- des briques de données
 
-# Nous
-## Fintech
-## Clément
-## Valentin
+Le cloud output: des bars chart qui bougent.
 
-# REFERENCES
-# Arkea
-# JPM Highbridge
+---
+La différence 100m.
 
----------------------------
-PRODUIT:
-----------------------------
-"Nous sommes une FinTech, nous fournissons une solution de digitalisation le suivi de portefeuille et le service client."
-------------------
-Oubliez le front-to-back => Gérant au Client.
-------
-Problématique : 
+## Solution flexible: Carre rencontre un rond et devient rond-carre.
+## Livraison clef-en-main: clef dans la main.
+## Intégration facile: plug and play.
 
-Digitaliser la communication client et orienter la relation vers une transition Client to User (i.e. UX)
-En somme, on améliore les process, on structure via Workflow et on donne les outils digitaux aux commerciaux, à la gestion et à la direction pour piloter la relation Client et l’information.
+---
 
-On résout la:
-* problématique Budget
+# L'équipe
+* Clément
+10 ans dans la Finance en tant que Quant’, puis Gerant chez BNP Parisbas et chez Blue Mountain Capital.
+* Valentin
+Architecte et Développeur Web avec 7 ans d’expérience. Architecte sur la refonte du site de Parvest.
+
+---
+
+# Références
+* Arkea.
+* JPM Highbridge.
+* Fintexkap.
+* Ecole Polytechnique.
+* QAPE Assurance.
+
+---
+
+* transition Client to User (i.e. UX)
+* on améliore les process, on structure via Workflow et 
+* on donne les outils digitaux aux commerciaux, à la gestion et à la direction pour piloter la relation Client et l’information.
+* problématique Budget: compression des marges mif2 et prips.
 * problématique opérationnelle
 * problématique digitale
+* créer de la valeur ajoutée: #investissez dans l'experience client
+# connaissance client
+* client => user : Vendez des solutions, plus que des produits.
+* outil au service des clients: #outil au service des clients.
+* #Ux design
+* architecture ouverte: partenariat
+* Risks Vizualization 
+* Graphically drilldown a portfolio and compare to a benchmark for any risk measures.
+* Performance Attribution Instantly visualize your attribution for any time period.
+* Built-in communication tool Collaboratively create comments, annotate data and synchronize screens for remote presentation.
 
-----------------------
+---
 
-Muriel Faure - 
-#le digital.
-#compression des marges mif2 et prips.
-#investissez dans l'experience client
-#connaissance client
-Vendez des solutions, plus que des produits.
-#outil au service des clients.
-#dans un environnement réglementaire complexe. 
-#transversal.
-Il faut investir.
-#connaissance client
-#Ux design
-#blockchain pour le passif.
-#partenariat. 
+Enchanté de faire ta connaissance.
+J'ai crée l'an dernier la société 100m. Nous éditons une solution de marketing et de relation client pour les fonds d'investissements. Et on commence à avoir pas mal de traction.
+J'ai candidaté à Station F pour venir rejoindre votre écosystème (qui s'annonce canon!). Je n'ai pas eu de nouvelles de votre part encore ... mais j'adorerais venir vous pitcher.
+
+Clément
+
+-----
+
+On cherche un designer pour faire notre identité, ainsi que de l'iconographie.
+On aime beaucoup tes créas. Le côté minimaliste.
+Est-ce que tu as des dispos, et si oui, quel serait le meilleur créneau pour échanger avec toi par Skype rapidement ?
+Pourrais-tu nous commnuniqer ton tarif Jour à titre indicatif ?
+
+Merci,
+Clément
+
+-----
+
+
