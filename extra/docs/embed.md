@@ -1,7 +1,7 @@
 <div style="margin-bottom: 140px;">
   <img src="/extra/background.png"/>
   <img src="/extra/logo.png" style="position: absolute;top: 50%;left: 50px;width: 100px;" />
-  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Composants Graphique</h1>
+  <h1 style="-webkit-print-color-adjust: exact;position: absolute;top: 40%;left: 50px;color: rgba(255, 255, 255, 1);">Composants Graphiques</h1>
 </div>
 
 # Documentation d'intégration
@@ -58,7 +58,7 @@ Dans l'exemple ci-dessus, les services suivants doivent être accessibles:
 - Application packagée de graphique (ici https://embed.100m.io)
 - API de données du fonds (ici https://embed.100m.io/dist/api.json)
 
-La configuration utilisée est la suivante: **uid=FR0013120854&type=EMTN**
+La configuration utilisée est la suivante: **uid=FR0013120854&type=EMTN**  
 Elle correspond au fonds: ALCANTERRA MAI 2016.
 
 *Notez que les données qui ont été employées pour l'exemple sont factices*
