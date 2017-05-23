@@ -77,5 +77,5 @@ Si l'application et l'API ne sont pas sur le même domaine, 2 choix se présente
 
 ---
 
-#Contact
-##valentin@100m.io
+# Contact
+## valentin@100m.io
