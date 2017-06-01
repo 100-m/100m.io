@@ -11,7 +11,7 @@ The section details how the 100M organization is organized to efficiently addres
 
 
 ### Notification and Alert Dispatching
-**Dispatcher**: the Dispatcher's responsability is to route requests for support, alerts, and other notifications to the Project Key Contact. 
+**Dispatcher**: the Dispatcher's responsability is to route requests for support, alerts, and other notifications to the Project Key Contact.
 
 The person responsible for dispatching is Vincent Despeisse. In case of Vincent's absence, Valentin should take responsability for dispatching.
 
@@ -108,7 +108,7 @@ Monitored systems expose searchable logs and notify **support@100m.io** about un
       Created by <strong>Valentin Brajon</strong> from <strong><a att href="https://100m.io" target="_blank">100M S.A.S.</a></strong>
     </div>
     <div col="1/2" txt="r">
-      Last Update <strong>Q1 2017</strong> - <a att href="https://github.com/100-m/100m.io/commits/master/extra/docs/file-security.md" target="_blank">Versions</a> - <a att href="https://100m.io/extra/markdown.html?docs/file-security.md" target="_blank">Link</a>
+      Last Update <strong>Q2 2017</strong> - <a att href="https://github.com/100-m/100m.io/commits/master/extra/docs/file-security.md" target="_blank">Versions</a> - <a att href="https://100m.io/extra/markdown.html?docs/file-security.md" target="_blank">Link</a>
     </div>
   </grid>
 </footer>
