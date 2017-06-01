@@ -24,14 +24,16 @@ Pour configurer le composant 100m, la donnée doit être accessible via une API 
 - **"fund"**: nom du fonds
 - **"benchmark"**: nom de l'indice
 - **"type"**: Type de Fonds, la valeur attendue est une chaine de caractère, parmi "FFG" / "FAF" / "EMTN".
-- **(optionnel) "segment"**: Seuils, coupon et légende (dans le cas d'un FAF)
+- **(optionnel) "segment"**: tableau de valeurs seuils dans le cas d'un FAF.
+- **(optionnel) "legend"**: tableau des decriptions des seuils dans le cas d'un FAF.
+- **(optionnel) "coupon"**: tableau des dates de versement de coupon.
+- **"data"**: qui est un tableau avec les valeurs suivantes:
+    - **"date"**: date aux **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
+    - **"fund"**: valeur liquidative du fonds à la date en question.
+    - **"benchmark"**: valeur liquidative de l'indice à la date en question.
 
-Ainsi qu'un tableau avec les valeurs suivante:
-- Date au **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
-- Valeur liquidative du fonds
-- Valeur liquidative de l'indice
-
-**Exemple de FAF**: https://embed.100m.iohttps://embed.100m.io/api/FR0010869602
+**Exemple de FAF**:  
+https://embed.100m.iohttps://embed.100m.io/api/FR0010869602
 
 ```
 {
@@ -41,7 +43,7 @@ Ainsi qu'un tableau avec les valeurs suivante:
     "benchmark": "Euro Stoxx 50",
     "type": "FAF",
     "threshold": [480],
-    "tooltip": ["Seuil de remboursement anticipé"],
+    "legend": ["Seuil de remboursement anticipé"],
     "coupon": ["2016-01-01", "2016-06-04"]
   },
   "data": [
@@ -69,7 +71,7 @@ Dans tous les exemples qui suivent dans ce documents, nous ferons des appels l'A
 
 ---
 
-# IFRAME
+# Intégration de l'iFrame
 
 Pour intégrer le composant 100m, la balise suivante doit être intégrée dans une page HTML existante :
 
