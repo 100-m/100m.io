@@ -11,27 +11,27 @@
 Les composants embarqués 100M s'intègrent via une balise `<iframe>` configurée avec une API et des paramètres de rendu.
 
 La documentation est constitué de deux parties:
-- API avec le modèle de données attendu
-- IFRAME avec les paramètres attendus et une démo
+- description de l'API et du modèle de données attendu
+- exemples d'IFRAME avec les paramètres attendus, pour les différents types de fonds.
 
 ---
 
-# API
+# Description de l'API
 
 Pour configurer le composant 100m, la donnée doit être accessible via une API HTTP qui retourne une réponse JSON avec les champs suivants:
 
-- UID
-- Nom du fonds
-- Nom de l'indice
-- Type de Fonds (parmis FFG / FAF / EMTN)
-- Seuils, coupon et légende (dans le cas d'un FAF)
+- **"uid"**: UID
+- **"fund"**: nom du fonds
+- **"benchmark"**: nom de l'indice
+- **"type"**: Type de Fonds, la valeur attendue est une chaine de caractère, parmi "FFG" / "FAF" / "EMTN".
+- **(optionnel) "segment"**: Seuils, coupon et légende (dans le cas d'un FAF)
 
 Ainsi qu'un tableau avec les valeurs suivante:
-- Date au **Format ISO (IMPORTANT!)** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
+- Date au **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
 - Valeur liquidative du fonds
 - Valeur liquidative de l'indice
 
-**Exemple de FAF**: https://embed.100m.io/dist/FR0010869602.json
+**Exemple de FAF**: https://embed.100m.iohttps://embed.100m.io/api/FR0010869602
 
 ```
 {
@@ -42,7 +42,7 @@ Ainsi qu'un tableau avec les valeurs suivante:
     "type": "FAF",
     "threshold": [480],
     "tooltip": ["Seuil de remboursement anticipé"],
-    "coupon": ["2016-01-01", "2016-06-04"],
+    "coupon": ["2016-01-01", "2016-06-04"]
   },
   "data": [
     {
@@ -65,6 +65,8 @@ Ainsi qu'un tableau avec les valeurs suivante:
 }
 ```
 
+Dans tous les exemples qui suivent dans ce documents, nous ferons des appels l'API temporaire suivante: https://embed.100m.io/api/FR0000987703
+
 ---
 
 # IFRAME
@@ -72,18 +74,31 @@ Ainsi qu'un tableau avec les valeurs suivante:
 Pour intégrer le composant 100m, la balise suivante doit être intégrée dans une page HTML existante :
 
 <style>code{text-align:left}</style>
-`<iframe style="width:100%;height:300px;" frameBorder="0" src="https://embed.100m.io?api=https://embed.100m.io/dist/FR0013120854.json"></iframe>`
+`<iframe style="width:100%;height:300px;" frameBorder="0" src="https://embed.100m.io?api=https://embed.100m.io/api/FR0013120854"></iframe>`
 
-##### Voici le rendu pour un titre EMTN (FR0013120854):
+## Fonds ouvert FFG - Hors Fonds à Formule
+Voici le rendu pour un fonds FFG (FR0000987703):
+<iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0000987703"></iframe>
+
+## Fonds ouvert FFG - Fonds à Formule
+Voici le rendu pour un fonds FAF (FR0010869602):
+<iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0010869602"></iframe>
+
+### Exemple Groupe 1
+*à paramétrer*
+### Exemple Groupe 2
+*à paramétrer*
+### Exemple Groupe 3
+*à paramétrer*
+### Exemple Groupe 4
+*à paramétrer*
+### Exemple Groupe 5
+*à paramétrer*
+
+## Titres de créance (EMTN)
+Voici le rendu pour un titre EMTN (FR0013120854):
 *Notez que les données qui ont été employées pour l'exemple sont factices et qu'une bordure a été ajouté*
-<iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=/dist/FR0013120854.json"></iframe>
-
-##### Voici le rendu pour un fonds FFG (FR0000987703):
-<iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=/dist/FR0000987703.json"></iframe>
-
-##### Voici le rendu pour un fonds FAF (FR0010869602):
-<iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=/dist/FR0010869602.json"></iframe>
-
+<iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0013120854"></iframe>
 ---
 
 # Démo
@@ -91,11 +106,11 @@ Pour intégrer le composant 100m, la balise suivante doit être intégrée dans 
 Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurables via le champ texte qui suit:
 
 <textarea oninput="document.querySelector('#iframe-example').innerHTML = event.target.value">
-<iframe style="width:300px;height:200px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;" frameBorder="0" src="https://embed.100m.io/?api=/dist/FR0010869602.json"></iframe>
+<iframe style="width:500px;height:250px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0010869602"></iframe>
 </textarea>
 
 <div id="iframe-example">
-  <iframe style="min-width:300px;min-height:200px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;" frameBorder="0" src="https://embed.100m.io/?api=/dist/FR0010869602.json"></iframe>
+  <iframe style="min-width:500px;min-height:250px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0010869602"></iframe>
 </div>
 
 ---
