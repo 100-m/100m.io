@@ -40,7 +40,9 @@ Ainsi qu'un tableau avec les valeurs suivante:
     "fund": "Formul'action 2017 FP",
     "benchmark": "Euro Stoxx 50",
     "type": "FAF",
-    "segment": [3550]
+    "threshold": [480],
+    "tooltip": ["Seuil de remboursement anticipé"],
+    "coupon": ["2016-01-01", "2016-06-04"],
   },
   "data": [
     {
@@ -89,7 +91,7 @@ Pour intégrer le composant 100m, la balise suivante doit être intégrée dans 
 Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurables via le champ texte qui suit:
 
 <textarea oninput="document.querySelector('#iframe-example').innerHTML = event.target.value">
-<iframe style="min-width:300px;min-height:200px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;" frameBorder="0" src="https://embed.100m.io/?api=/dist/FR0010869602.json"></iframe>
+<iframe style="width:300px;height:200px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;" frameBorder="0" src="https://embed.100m.io/?api=/dist/FR0010869602.json"></iframe>
 </textarea>
 
 <div id="iframe-example">
