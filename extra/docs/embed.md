@@ -32,8 +32,8 @@ Pour configurer le composant 100m, la donnée doit être accessible via une API 
     - **"fund"**: valeur liquidative du fonds à la date en question.
     - **"benchmark"**: valeur liquidative de l'indice à la date en question.
 
-**Exemple de FAF**:  
-https://embed.100m.iohttps://embed.100m.io/api/FR0010869602
+**Exemple de retour API pour un FAF dont l'uid est FR0010869602**:  
+https://embed.100m.io/api/FR0010869602
 
 ```
 {
