@@ -1,5 +1,6 @@
 # Digitalisez le suivi de votre portfeuille, du gérant au client.
 
+
 Illustration: 
 Persona: 
 ## gérant:
@@ -27,7 +28,6 @@ Persona:
 ## risk officer 
 	-> homme habillé, smart casual, normal.
 	-> lit les rapports du gerant. 
-
 Systeme: Caseis, PMS, Excel/VBA, Bloomberg, Database.
 Output: PDF, Excel Sheet
 
@@ -123,23 +123,3 @@ Architecte et Développeur Web avec 7 ans d’expérience. Architecte sur la ref
 * Built-in communication tool Collaboratively create comments, annotate data and synchronize screens for remote presentation.
 
 ---
-
-Enchanté de faire ta connaissance.
-J'ai crée l'an dernier la société 100m. Nous éditons une solution de marketing et de relation client pour les fonds d'investissements. Et on commence à avoir pas mal de traction.
-J'ai candidaté à Station F pour venir rejoindre votre écosystème (qui s'annonce canon!). Je n'ai pas eu de nouvelles de votre part encore ... mais j'adorerais venir vous pitcher.
-
-Clément
-
------
-
-On cherche un designer pour faire notre identité, ainsi que de l'iconographie.
-On aime beaucoup tes créas. Le côté minimaliste.
-Est-ce que tu as des dispos, et si oui, quel serait le meilleur créneau pour échanger avec toi par Skype rapidement ?
-Pourrais-tu nous commnuniqer ton tarif Jour à titre indicatif ?
-
-Merci,
-Clément
-
------
-
-
