@@ -175,7 +175,7 @@ Les développements sont facturés sur une base Jour Homme aux tarifs suivants:
 - Graphiste: 600 Euros / Jour.
 
 ## Chiffrage de la Proof-Of-Concept
-![](/extra/QAPE.png)
+![](/extra/qape.png)
 
 ## La licence
 La licence couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour QAPE, 24h/24 et 7j/7.
