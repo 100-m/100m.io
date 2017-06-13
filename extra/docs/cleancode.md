@@ -11,21 +11,21 @@
 * L'objectif de tout codeur est de produir du code **lisible** et **maintenable**.
 
 ## Le naming
-* fonction: Le nom d'une fonction doit dire ce qu'elle fait.
-* fonction: si tu n'arrives pas à nommer une fonction, c'est probablement qu'elle est trop complexe et qu'il faut la scinder en plusieurs fonctions. 
-* variable: éviter les noms de variables génériques (type "i")
-* variable: pour éviter de nommer une variable temporaire, utiliser le chainage de fonction.
+* **fonction**: Le nom d'une fonction doit dire ce qu'elle fait.
+* **fonction**: si tu n'arrives pas à nommer une fonction, c'est probablement qu'elle est trop complexe et qu'il faut la scinder en plusieurs fonctions. 
+* **variable**: éviter les noms de variables génériques (type "i")
+* **variable**: pour éviter de nommer une variable temporaire, utiliser le chainage de fonction.
 
 ## code structure
-* fonction: pour des questions de lisibilité, les fonctions ne doivent prendre idéalement qu'un argument.
-* fonction: en tout état de cause, jamais de plus 3 arguments.
-* fonction: à l'exception des fonctions "mathematiques" i.e. analytics qui peuvent prendre beaucoup plus d'arguments.
-* fichiers: fichiers ne doivent pas faire plus de 200 lignes.
-* pas plus de 7 fichiers par dossier.
+* **fonction**: pour des questions de lisibilité, les fonctions ne doivent prendre idéalement qu'un argument.
+* **fonction**: en tout état de cause, jamais de plus 3 arguments.
+* **fonction**: à l'exception des fonctions "mathematiques" i.e. analytics qui peuvent prendre beaucoup plus d'arguments.
+* **fichiers**: fichiers ne doivent pas faire plus de 200 lignes.
+* **dossiers**: pas plus de 7 fichiers par dossier.
 
 ## bonnes pratiques
-* "no side effect": éviter les side effects dans une fonction.
-* "design first": écrire d'abord le code 'haut niveau' puis implémenter les fonctions plus 'bas niveau'.
-* mettre en place des tests.
-* refactoring: le refactoring consiste à enlever les duplicates dans le code et à le rendre plus lisible.
+* **"no side effect"**: éviter les side effects dans une fonction.
+* **"design first"**: écrire d'abord le code 'haut niveau' puis implémenter les fonctions plus 'bas niveau'.
+* mettre en place des **tests**.
+* **refactoring**: le refactoring consiste à enlever les duplicates dans le code et à le rendre plus lisible.
 
