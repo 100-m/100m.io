@@ -42,9 +42,20 @@ https://embed.100m.io/api/FR0010869602
     "fund": "Formul'action 2017 FP",
     "benchmark": "Euro Stoxx 50",
     "type": "FAF",
-    "threshold": [480],
-    "legend": ["Seuil de remboursement anticipé"],
-    "coupon": ["2016-01-01", "2016-06-04"]
+    "threshold": [{
+      "description": "Seuil minimal de distribution de coupon",
+      "value": 70.0
+    }, {
+      "description": "Seuil de perte en capital à l'échéance",
+      "value": 60.0
+    }],
+    "coupon": [{
+      "date": "2013-07-03",
+      "value": 0.07
+    }, {
+      "date": "2014-07-03",
+      "value": 0.07
+    }]
   },
   "data": [
     {
@@ -105,15 +116,36 @@ Voici le rendu pour un titre EMTN (FR0013120854):
 
 # Démo
 
-Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurables via le champ texte qui suit:
+Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurables via le champ texte qui suit (avec des boutons d'exemples):
 
-<textarea oninput="document.querySelector('#iframe-example').innerHTML = event.target.value">
-<iframe style="width:500px;height:250px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0010869602"></iframe>
-</textarea>
-
-<div id="iframe-example">
-  <iframe style="min-width:500px;min-height:250px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0010869602"></iframe>
+<div>
+<label>Size - Ratio 16:10</label>
+<button tt="384x240" onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:384px;height:240px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013120854&quot;></iframe>'">EMTN Min</button>
+<button tt="480x300" onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:480px;height:300px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013120854&quot;></iframe>'">EMTN Medium</button>
+<button tt="600x375" onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:600px;height:375px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013120854&quot;></iframe>'">EMTN Large</button>
+<button tt="800x500" onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:800px;height:500px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;margin-left:-100px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013120854&quot;></iframe>'">EMTN XLarge</button>
+</div><div>
+<label>Type - FFG/FAF/EMTN</label>
+<button tt="FR0000987703" onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:480px;height:300px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0000987703&quot;></iframe>'">FFG</button>
+<button tt="FR0010869602" onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:480px;height:300px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0010869602&quot;></iframe>'">FAF</button>
+<button tt="FR0013120854" onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:480px;height:300px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013120854&quot;></iframe>'">EMTN</button>
 </div>
+<div>
+<label>Selection Date - FFG/FAF uniquement</label>
+<button onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:480px;height:300px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0000987703&date=2017-01-01|2017-12-31&quot;></iframe>'">YTD</button>
+<button onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:480px;height:300px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0000987703&date=2016-01-01|2016-12-31&quot;></iframe>'">2016</button>
+<button onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:480px;height:300px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0000987703&date=2016-02-01|2016-03-01&quot;></iframe>'">Custom</button>
+</div>
+<div>
+<label>Specific - Edge Cases</label>
+<button onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:480px;height:300px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/no-benchmark&quot;></iframe>'">No benchmark</button>
+<button onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:480px;height:300px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/empty&quot;></iframe>'">Empty optional values</button>
+<button onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:384px;height:240px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;http://127.0.0.1:1100/?api=/dist/FR0010869602.json&date=2017-01-01|2017-12-31&quot;></iframe>'">Debug</button>
+</div>
+
+<textarea oninput="document.querySelector('#iframe-example').innerHTML = event.target.value"></textarea>
+
+<div id="iframe-example"></div>
 
 ---
 
