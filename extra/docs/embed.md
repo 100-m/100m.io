@@ -94,19 +94,20 @@ Voici le rendu pour un fonds FFG (FR0000987703):
 <iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0000987703"></iframe>
 
 ## Fonds ouvert FFG - Fonds à Formule
-Voici le rendu pour un fonds FAF (FR0010869602):
+### Exemple Groupe 1 - Autofocus Rendement:
+<iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0012847002"></iframe>
+
+### Exemple Groupe 2 - Garantie à l'échéance:
 <iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0010869602"></iframe>
 
-### Exemple Groupe 1
-*à paramétrer*
-### Exemple Groupe 2
-*à paramétrer*
-### Exemple Groupe 3
-*à paramétrer*
-### Exemple Groupe 4
-*à paramétrer*
-### Exemple Groupe 5
-*à paramétrer*
+### Exemple Groupe 3 - Autofocus Croissance:
+<iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0012517274"></iframe>
+
+### Exemple Groupe 4 - Autres:
+<iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352"></iframe>
+
+### Exemple Groupe 5 - Participation
+<iframe style="width:100%;height:300px;outline: 3px solid rgba(0,0,0,.14)" frameBorder="0" src="https://embed.100m.io/?api=https://embed.100m.io/api/FR0013143799"></iframe>
 
 ## Titres de créance (EMTN)
 Voici le rendu pour un titre EMTN (FR0013120854):
