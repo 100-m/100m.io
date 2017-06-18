@@ -1,7 +1,7 @@
-<div>
+<div class="header">
   <link rel="stylesheet" href="/css/100m.css">
-  <img style="position: relative;z-index: -1;top: -100px;" src="/extra/prez/01.jpg" />
-  <h1 style="margin-top: -250px;">Documentation d'intégration<br><em>des composants 100M</em></h1>
+  <img style="position: relative;z-index: -1;" src="/extra/prez/01.jpg" />
+  <h1>Documentation d'intégration<br><em>des composants 100M</em></h1>
 </div>
 
 Les composants embarqués 100M s'intègrent via une balise `<iframe>` configurée avec une API et des paramètres de rendu.
@@ -139,5 +139,5 @@ Si l'application et l'API ne sont pas sur le même domaine, 2 choix se présente
 
 1. Ajouter un header "cross-domain-origin: *" dans l'API
 2. Utiliser un proxy cross-domain, exemple:
-  - https://github.com/technoboy10/crossorigin.me
-  - https://github.com/bmpvieira/simple-corsproxy
+  - [crossorigin.me](https://github.com/technoboy10/crossorigin.me)
+  - [simple-corsproxy](https://github.com/bmpvieira/simple-corsproxy)
