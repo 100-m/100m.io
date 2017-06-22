@@ -128,8 +128,7 @@ Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurable
 </div>
 <div>
   <label>Autres:</label>
-  <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/no-benchmark&quot;></iframe>'">No benchmark</span>
-  <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/empty&quot;></iframe>'">No optional values</span>
+  <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352-no-benchmark&quot;></iframe>'">No benchmark</span>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;http://127.0.0.1:1100/?api=https://embed.100m.io/api/FR0011228352&date=2017-01-01|2017-12-31&quot;></iframe>'">Debug</span>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;http://127.0.0.1:1100/?api=/dist/FR0011228352.json&date=2017-01-01|2017-12-31&quot;></iframe>'">Local API</span>
 </div>
