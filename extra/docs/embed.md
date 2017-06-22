@@ -21,16 +21,16 @@ La documentation est constitué de deux parties:
 Pour configurer le composant 100m, la donnée doit être accessible via une API HTTP qui retourne une réponse JSON avec les champs suivants:
 
 - **"uid"**: UID
-- **"fund"**: nom du fonds
-- **"benchmark"**: nom de l'indice
+- **"fund"**: nom du fonds, tel qu'affiché par le graphique.
+- **(optionnel) "benchmark"**: nom de l'indice, tel qu'affiché par le graphique.
 - **"type"**: Type de Fonds, la valeur attendue est une chaine de caractère, parmi "FFG" / "FAF" / "EMTN".
 - **(optionnel) "segment"**: tableau de valeurs seuils dans le cas d'un FAF.
 - **(optionnel) "legend"**: tableau des decriptions des seuils dans le cas d'un FAF.
 - **(optionnel) "coupon"**: tableau des dates de versement de coupon.
 - **"data"**: qui est un tableau avec les valeurs suivantes:
-    - **"date"**: date aux **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
+    - **"date"**: dates au **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
     - **"fund"**: valeur liquidative du fonds à la date en question.
-    - **"benchmark"**: valeur liquidative de l'indice à la date en question.
+    - **(optionnel) "benchmark"**: valeur liquidative de l'indice à la date en question.
 
 **Exemple de retour API pour un FAF dont l'uid est FR0010869602**:  
 https://embed.100m.io/api/FR0010869602

@@ -17,16 +17,16 @@ La documentation est constitué de deux parties:
 Pour configurer le composant 100m, la donnée doit être accessible via une API HTTP qui retourne une réponse JSON avec les champs suivants:
 
 - **"uid"**: UID
-- **"fund"**: nom du fonds
-- **"benchmark"**: nom de l'indice
+- **"fund"**: nom du fonds, tel qu'affiché par le graphique.
+- **(optionnel) "benchmark"**: nom de l'indice, tel qu'affiché par le graphique.
 - **"type"**: Type de Fonds, la valeur attendue est une chaine de caractère, parmi "FFG" / "FAF" / "EMTN".
 - **(optionnel) "segment"**: tableau de valeurs seuils dans le cas d'un FAF.
 - **(optionnel) "legend"**: tableau des decriptions des seuils dans le cas d'un FAF.
 - **(optionnel) "coupon"**: tableau des dates de versement de coupon.
 - **"data"**: qui est un tableau avec les valeurs suivantes:
-    - **"date"**: date aux **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
+    - **"date"**: date au **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
     - **"fund"**: valeur liquidative du fonds à la date en question.
-    - **"benchmark"**: valeur liquidative de l'indice à la date en question.
+    - **(optionnel) "benchmark"**: valeur liquidative de l'indice à la date en question.
 
 **Exemple de retour API pour un FAF dont l'uid est FR0010869602**:
 https://embed.100m.io/api/FR0010869602
@@ -105,21 +105,22 @@ Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurable
   <iframe style="width:100%;height:420px;" frameBorder="0" src="https://embed.100m.io?api=https://embed.100m.io/api/FR0013120854"></iframe>
 </div>
 
+## Exemples de customisation des graphiques
 <div>
-  <label>Style:</label>
+  <label>Style via injection de CSS dans une balise 'onload':</label>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px;border: 1px dashed #23bcf8&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&date=2016-02-01|2016-03-01&quot;></iframe>'">Border</span>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe onload=&quot;this.contentWindow.postMessage(\'.m100-kpi>div:first-child{color:rgba(82, 121, 199, .8)}.m100-kpi>div:nth-child(n+2){color:rgba(255, 121, 57, .8)}.plot-line .fund{stroke:rgba(82, 121, 199, .8)}.plot-line .benchmark{stroke:rgba(255, 121, 57, .8)}.plot-legend .fund .color{background:rgba(82, 121, 199, .8)}.plot-legend .benchmark .color{background:rgba(255, 121, 57, .8)}\', \'*\')&quot; style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&date=2016-02-01|2016-03-01&quot;></iframe>'">Blue & Orange</span>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe onload=&quot;this.contentWindow.postMessage(\'.icon-link{display:none;}\', \'*\')&quot; style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&date=2016-02-01|2016-03-01&quot;></iframe>'">No Export</span>
 </div>
 <div>
-  <label>Taille:</label>
+  <label>Taille via la balise 'style':</label>
   <span tag tt="512x320" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:512px;height:320px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">Medium</span>
   <span tag tt="640x400" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:640px;height:400px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">Large</span>
   <span tag tt="800x500" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:800px;height:500px;margin-left:-70px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">XLarge</span>
   <span tag tt="300x200-resizable" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:300px;height:200px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">Resize</span>
 </div>
 <div>
-  <label>Date:</label>
+  <label>Période de sélection:</label>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&date=2017-01-01|2017-12-31&quot;></iframe>'">YTD</span>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&date=2016-01-01|2016-12-31&quot;></iframe>'">2016</span>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&date=2016-02-01|2016-03-01&quot;></iframe>'">Custom</span>
