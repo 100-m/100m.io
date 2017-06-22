@@ -122,7 +122,7 @@ Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurable
 </div>
 
 <label>Style</label>
-<button onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe onload=&quot;this.contentWindow.postMessage(\'.m100-kpi>div:first-child{color:rgba(82, 121, 199, .8)}.m100-kpi>div:nth-child(n+2){color:rgba(255, 121, 57, .8)}.plot-line .fund{stroke:rgba(82, 121, 199, .8)}.plot-line .benchmark{stroke:rgba(255, 121, 57, .8)}.plot-legend .fund .color{background:rgba(82, 121, 199, .8)}.plot-legend .benchmark .color{background:rgba(255, 121, 57, .8)}\', \'*\')&quot; style=&quot;width:484px;height:340px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;http://127.0.0.1:1100/?api=/dist/FR0010869602.json&date=2017-01-01|2017-12-31&quot;></iframe>'">Color Blue/Orange</button>
+<button onclick="document.querySelector('textarea').value = document.querySelector('#iframe-example').innerHTML = '<iframe onload=&quot;this.contentWindow.postMessage(\'.m100-kpi>div:first-child{color:rgba(82, 121, 199, .8)}.m100-kpi>div:nth-child(n+2){color:rgba(255, 121, 57, .8)}.plot-line .fund{stroke:rgba(82, 121, 199, .8)}.plot-line .benchmark{stroke:rgba(255, 121, 57, .8)}.plot-legend .fund .color{background:rgba(82, 121, 199, .8)}.plot-legend .benchmark .color{background:rgba(255, 121, 57, .8)}\', \'*\')&quot; style=&quot;width:484px;height:340px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&date=2016-02-01|2016-03-01&quot;></iframe>'">Color Blue/Orange</button>
 </div>
 
 <div>
