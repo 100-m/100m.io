@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,900');
+html { font-family: Lato; }
+body { font-size: 1.6rem; }
+h1 { font-size: 2.6rem;letter-spacing: 1.1px;line-height: 1.4; }
+em { font-style: normal;color: var(--primary); }
+/*strong { font-style: normal;color: #fd4; }*/
+hr { border-top: 1px dashed var(--primary); }
+@media (min-width: 600px) {
+  body { font-size: 1.8rem; }
+  h1 { font-size: 4rem; }
+}
+
+
+/* Doc specific */
+h1, h2 {
+  text-align: center;
+}
+section {
+  width: 70rem;
+  min-height: 100vh;
+  padding: 20px;
+  border-bottom: 1px dashed var(--primary);
+}
+code.lang-html {
+  white-space: pre-line;
+}
+code.demo {
+  border: 3px dashed #fd4;
+}
+[tag] {
+  cursor: pointer;
+  pointer-events: all;
+  font-size: 80%;
+}
+
+.header img { top: -20px; }
+.header h1 { margin-top: -75px; }
+@media (min-width: 600px) {
+  .header img { top: -50px; }
+  .header h1 { margin-top: -175px; }
+}

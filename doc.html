@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doc 100M</title>
+<link rel="stylesheet" href="https://rawcss.com/raw.css">
+<link rel="stylesheet" href="/css/100m.css">
+</head>
+<body>
+<main></main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+<script>
+var url = location.search.replace('?', '/extra/docs/')
+if(!url || url === '/extra/docs/') url = '/extra/docs/embed-v2.md'
+if(!/.md$/.test(url)) url += '.md'
+axios
+.get(url)
+.then(res => res.data)
+.then(md => marked(md))
+.then(html => document.querySelector('main').innerHTML = '<section>' + html.replace(/<hr>/g, '</section><section>') + '</section>')
+</script>
+<script src="https://cdn.rawgit.com/lrsjng/pagemap/master/dist/pagemap.min.js"></script>
+<style>
+#map {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 100;
+}
+@media (max-width: 1000px) {
+  #map {
+    visibility: hidden;
+  }
+}
+</style>
+<script>
+var canvas = document.createElement('canvas')
+canvas.id = 'map'
+document.body.appendChild(canvas)
+pagemap(canvas, { styles: { '*': 'rgba(0,0,0,.03)' }})
+</script>
+</body>
+</html>
