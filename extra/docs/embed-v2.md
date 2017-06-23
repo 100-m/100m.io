@@ -6,7 +6,7 @@
 
 Les composants embarqués 100M s'intègrent via une balise `<iframe>` configurée avec une API et des paramètres de rendu.
 
-La documentation est constitué de deux parties:
+La documentation est constituée de deux parties:
 - description de l'*API* et du modèle de données attendu
 - exemples d'*IFRAME* avec les paramètres attendus, pour les différents types de fonds.
 
@@ -89,12 +89,12 @@ Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurable
 <div>
   <label>Fonds:</label>
   <span tag tt="FR0000987703" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0000987703&quot;></iframe>'">Federal Croissance P</span>
-  <span tag tt="FR0013120854" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013120854&quot;></iframe>'">Alcanterra Mai 2016</span>
+  <span tag tt="FR0013120854" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013120854&quot;></iframe>'">Alcanterra</span>
   <span tag tt="FR0012847002" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0012847002&quot;></iframe>'">Autofocus Rendement</span>
-  <span tag tt="FR0010869602" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0010869602&quot;></iframe>'">Garantie à l'échéance</span>
+  <span tag tt="FR0010869602" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0010869602&quot;></iframe>'">Formul'action</span>
   <span tag tt="FR0012517274" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0012517274&quot;></iframe>'">Autofocus Croissance</span>
-  <span tag tt="FR0011228352" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">Autres</span>
-  <span tag tt="FR0013143799" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013143799&quot;></iframe>'">Participation</span>
+  <span tag tt="FR0011228352" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">BPE Rendement</span>
+  <span tag tt="FR0013143799" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013143799&quot;></iframe>'">Diapazen Climat</span>
 </div>
 
 <pre><code class="demo lang-html" contentEditable oninput="document.querySelector('#iframe-example').innerHTML = event.target.textContent">&lt;iframe style="width:100%;height:420px" frameBorder="0"
@@ -111,6 +111,7 @@ Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurable
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px;border: 1px dashed #23bcf8&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&date=2016-02-01|2016-03-01&quot;></iframe>'">Border</span>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe onload=&quot;this.contentWindow.postMessage(\'.m100-kpi>div:first-child{color:rgba(82, 121, 199, .8)}.m100-kpi>div:nth-child(n+2){color:rgba(255, 121, 57, .8)}.plot-line .fund{stroke:rgba(82, 121, 199, .8)}.plot-line .benchmark{stroke:rgba(255, 121, 57, .8)}.plot-legend .fund .color{background:rgba(82, 121, 199, .8)}.plot-legend .benchmark .color{background:rgba(255, 121, 57, .8)}\', \'*\')&quot; style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&date=2016-02-01|2016-03-01&quot;></iframe>'">Blue & Orange</span>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe onload=&quot;this.contentWindow.postMessage(\'.icon-link{display:none;}\', \'*\')&quot; style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&date=2016-02-01|2016-03-01&quot;></iframe>'">No Export</span>
+  <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe onload=&quot;this.contentWindow.postMessage(\'.FAF .kpis{display:inherit!important;}\', \'*\')&quot; style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&date=2016-02-01|2016-03-01&quot;></iframe>'">Vol/Perf sur un FAF</span>
 </div>
 <div>
   <label>Taille via la balise 'style':</label>
@@ -127,8 +128,7 @@ Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurable
 </div>
 <div>
   <label>Autres:</label>
-  <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/no-benchmark&quot;></iframe>'">No benchmark</span>
-  <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/empty&quot;></iframe>'">No optional values</span>
+  <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352-no-benchmark&quot;></iframe>'">No benchmark</span>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;http://127.0.0.1:1100/?api=https://embed.100m.io/api/FR0011228352&date=2017-01-01|2017-12-31&quot;></iframe>'">Debug</span>
   <span tag onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;http://127.0.0.1:1100/?api=/dist/FR0011228352.json&date=2017-01-01|2017-12-31&quot;></iframe>'">Local API</span>
 </div>
