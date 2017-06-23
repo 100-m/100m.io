@@ -129,7 +129,7 @@ Le composant sera livré en 2 semaines, à compter de la conclusion de la phase 
 
 # Le Budget
 
-##  Les développements spécifiques
+##  Les développements
 100M met à disposition son équipe de développeurs front-end, ses quant's et ses chefs de projet pour conseiller Arkea et pour effectuer les développements spécifiques nécessaires.
 
 Les développements spécifiques comprennent, à titre d'exemple:
@@ -166,26 +166,18 @@ Nativement, l'application 100M permet de:
 
 L'application est interactive et compatible au format tablette / mobile / desktop et fonctionne avec Chrome (version 33 et suivantes), Safari (version 8 et suivantes), Mozilla (version 40 et suivantes) et Internet Explorer (version 11 et suivantes).
 
-*Sont inclus* dans le pricing de la solution:
-- _Un nombre d'utilisateurs illimité_
-- _Un nombre de fonds illimité_
-- _La fonctionalité d'édition de rapport PDF_
-- _L'hébergement des serveurs web_
-
 ### Les conditions
-La licence couvre le droit d’utilisation du progiciel et de ses développements spécifiques pour Arkea, 24h/24 et 7j/7
+Le logiciel est livré avec le code source et une licence non-exclusive qui couvre le droit d’utilisation et de modification du logiciel pour le groupe Arkea et l'ensemble de ses filiales pour une période non limitée dans le temps, indépendamment de la souscription au service de Maintenance et Support.
 
-La licence inclut également la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration d'Arkea et le support téléphonique.
+### Maintenance et Support
+Le service de maintenance et support inclut la maintenance corrective et évolutive, en particulier pour garantir la continuité du service lors des mises à jour des plateformes tierces (OS) ou navigateurs utilisés, la mise à jour effective de ces changements pour la configuration d'Arkea et le support téléphonique.
 
-La licence pour l'ensemble des composants est de 900 Euros / mois dans la version hébergée; elle inclut le suivi de la disponibilité du service.  
-La licence pour l'ensemble des composants est de 450 Euros / mois dans la version 'on premise'.
-
-Les prix sont valables pour un engagement de 12 mois.
+Le service de maintenance et de support pour l'ensemble des composants est de 900 Euros / mois; il inclut le suivi de la disponibilité du service d'une version hébergée à des fin de test.  
 
 ## Conditions De Paiement
-Le paiement se fait en deux fois pour la partie intégration : 50% à la commande, 50% à la livraison.
+Le paiement se fait en deux fois pour le développement : 50% à la commande, 50% à la livraison.
 
-Le paiement se fait par trimestre, en début de trimestre à émission de la facture par 100M pour la licence.  
+Le paiement du service de Maintenance et Support s'effectue tous les 6 mois, terme à échoir.
 
 Les termes de cette proposition restent valables jusqu’au 30 Avril 2017.
 
