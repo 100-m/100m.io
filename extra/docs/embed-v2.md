@@ -20,8 +20,7 @@ Pour configurer le composant 100m, la donnée doit être accessible via une API 
 - **"fund"**: nom du fonds, tel qu'affiché par le graphique.
 - **(optionnel) "benchmark"**: nom de l'indice, tel qu'affiché par le graphique.
 - **"type"**: Type de Fonds, la valeur attendue est une chaine de caractère, parmi "FFG" / "FAF" / "EMTN".
-- **(optionnel) "segment"**: tableau de valeurs seuils dans le cas d'un FAF.
-- **(optionnel) "legend"**: tableau des decriptions des seuils dans le cas d'un FAF.
+- **(optionnel) "threshold"**: tableau des seuils dans le cas d'un FAF.
 - **(optionnel) "coupon"**: tableau des dates de versement de coupon.
 - **"data"**: qui est un tableau avec les valeurs suivantes:
     - **"date"**: date au **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
@@ -115,9 +114,9 @@ Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurable
 </div>
 <div>
   <label>Taille via la balise 'style':</label>
-  <span tag tt="512x320" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:512px;height:320px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">Medium</span>
-  <span tag tt="640x400" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:640px;height:400px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">Large</span>
-  <span tag tt="800x500" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:800px;height:500px;margin-left:-70px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">XLarge</span>
+  <span tag tt="512x320" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = document.querySelector('#iframe-example').innerHTML.replace(/^\s*/, '').replace(/width:(-|\s|\d|%|px|;)*height:(-|\s|\d|%|px|;)*(margin-left:)?(-|\s|\d|%|px|;)*/,'width:512px;height:320px;')">Medium</span>
+  <span tag tt="640x400" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = document.querySelector('#iframe-example').innerHTML.replace(/^\s*/, '').replace(/width:(-|\s|\d|%|px|;)*height:(-|\s|\d|%|px|;)*(margin-left:)?(-|\s|\d|%|px|;)*/,'width:640px;height:400px;')">Large</span>
+  <span tag tt="800x500" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = document.querySelector('#iframe-example').innerHTML.replace(/^\s*/, '').replace(/width:(-|\s|\d|%|px|;)*height:(-|\s|\d|%|px|;)*(margin-left:)?(-|\s|\d|%|px|;)*/,'width:800px;height:500px;margin-left:-70px;')">XLarge</span>
   <span tag tt="300x200-resizable" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:300px;height:200px;outline: 3px solid rgba(0,0,0,.14);resize:both;overflow:auto;&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">Resize</span>
 </div>
 <div>
