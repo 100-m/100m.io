@@ -86,15 +86,22 @@ Pour intégrer le composant 100m, la balise suivante doit être intégrée dans 
 Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurables via le champ texte qui suit (avec des boutons d'exemples):
 
 <div>
-  <label>Fonds:</label>
+  <label>Fonds Ouvert:</label>
   <span tag tt="FR0000447658" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0000447658&quot;></iframe>'">Federal Monétaire C</span>
-  <span tag tt="FR0013120854" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013120854&quot;></iframe>'">Alcanterra</span>
+
+</div>
+<div>
+  <label>Fonds A Formule:</label>
   <span tag tt="FR0012847002" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0012847002&quot;></iframe>'">Autofocus Rendement</span>
   <span tag tt="FR0010869602" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0010869602&quot;></iframe>'">Formul'action</span>
   <span tag tt="FR0012517274" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0012517274&quot;></iframe>'">Autofocus Croissance</span>
   <span tag tt="FR0011228352" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">BPE Rendement</span>
   <span tag tt="FR0013143799" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013143799&quot;></iframe>'">Diapazen Climat</span>
 </div>
+<div>
+  <label>Titres de Créance:</label>
+    <span tag tt="FR0013120854" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0013120854&quot;></iframe>'">Alcanterra</span>
+ </div>
 
 <pre><code class="demo lang-html" contentEditable oninput="document.querySelector('#iframe-example').innerHTML = event.target.textContent">&lt;iframe style="width:100%;height:420px" frameBorder="0"
  src="https://embed.100m.io?api=https://embed.100m.io/api/FR0013120854"&gt;&lt;/iframe&gt;
