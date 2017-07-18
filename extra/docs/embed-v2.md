@@ -20,7 +20,9 @@ Pour configurer le composant 100m, la donnée doit être accessible via une API 
 - **"fund"**: nom du fonds, tel qu'affiché par le graphique.
 - **(optionnel) "benchmark"**: nom de l'indice, tel qu'affiché par le graphique.
 - **"type"**: Type de Fonds, la valeur attendue est une chaine de caractère, parmi "FFG" / "FAF" / "EMTN".
-- **(optionnel) "threshold"**: tableau des seuils dans le cas d'un FAF.
+- **(optionnel) "threshold"**: tableau des seuils dans le cas d'un FAF:
+    - **"description"**: description du seuil, telle qu'affichée sur le graphique.
+    - **"value"**: niveau absolu du seuil. Si le benchmark commence à 100, et que le seuil est de -30% par rapport au benchmark, le niveau à mettre sera 70.0 .
 - **(optionnel) "coupon"**: tableau des dates de versement de coupon.
 - **"data"**: qui est un tableau avec les valeurs suivantes:
     - **"date"**: date au **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
