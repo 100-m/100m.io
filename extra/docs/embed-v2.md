@@ -22,8 +22,10 @@ Pour configurer le composant 100m, la donnée doit être accessible via une API 
 - **"type"**: Type de Fonds, la valeur attendue est une chaine de caractère, parmi "FFG" / "FAF" / "EMTN".
 - **(optionnel) "threshold"**: tableau des seuils dans le cas d'un FAF:
     - **"description"**: description du seuil, telle qu'affichée sur le graphique.
-    - **"value"**: niveau absolu du seuil. Par exemple, si le seuil est de -30%, relatif à une valeur initiale de 100, le niveau à mettre sera 70.0 .
+    - **"value"**: niveau absolu du seuil, en **unité naturelle**. Par exemple, si le seuil est de -30%, relatif à une valeur initiale de 100, le niveau à mettre sera *70*.
 - **(optionnel) "coupon"**: tableau des dates de versement de coupon.
+    - "date": date au **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
+    - "value": montant du coupon **en unité naturelle**, eg. 0.07 pour 7%.
 - **"data"**: qui est un tableau avec les valeurs suivantes:
     - **"date"**: date au **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
     - **"fund"**: valeur liquidative du fonds à la date en question.
