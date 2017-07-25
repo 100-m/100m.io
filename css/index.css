@@ -191,6 +191,16 @@ footer .subtext {
   right:5%;
   top:10px;
 }
+.nav .lang {
+  position:absolute;
+  right:3%;
+  top:15px;
+}
+.lang svg {
+  width:24px;
+  height:16px;
+  cursor:pointer;
+}
 .nav-right a {
   margin-right: 35px;
   cursor: pointer;
