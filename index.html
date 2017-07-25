@@ -21,173 +21,176 @@
   <link rel="stylesheet" href="/css/raw-flex.css">
   <link rel="stylesheet" href="/css/raw-utils.css">
   <link rel="stylesheet" href="/css/index.css">
-  <script defer src="/js/default-70bb9a14949117cf716ae5fc9a2ce709.js"></script>
-  <script defer src="/js/index-3b14bcc1878a90815c2d55a7c3c536ee.js"></script>
-  <script src="/js/animations-ff4684c1557f9724536be35d9b105802.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
-
 </head>
 
 <body>
-<style>
 
-
-</style>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WT46FZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<div id="main" v-cloak>
+
+<main id="main" v-cloak>
   <section class="home">
-  <div row class="nav">
-    <div class="logo">
-      <span class="helper"></span>
-    <img class="logo-img" src="img/100M-logo.png"></img>
-  </div>
-    <div class="nav-right">
-      <a>{{t.product}}</a>
-      <a>{{t.team}}</a>
-      <a>{{t.join_us}}</a>
-      <a href="#" class="button">{{t.contact}}</a>
+    <div row class="nav">
+      <div class="logo">
+        <span class="helper"></span>
+        <img class="logo-img" src="img/100M-logo.png" />
+      </div>
+      <div class="nav-right">
+        <a onclick="drift.api.openChat()">{{t.product}}</a>
+        <a onclick="drift.api.openChat()">{{t.team}}</a>
+        <a onclick="drift.api.openChat()">{{t.join_us}}</a>
+        <a href="#" class="button">{{t.contact}}</a>
+      </div>
+      <div class="lang">
+        <svg id="flag-icon-fr" viewBox="0 0 640 480" v-if="lang==='fr'" @click="lang='en'">
+          <g fill-rule="evenodd" stroke-width="1pt">
+            <path fill="#fff" d="M0 0h640v480H0z" />
+            <path fill="#00267f" d="M0 0h213.337v480H0z" />
+            <path fill="#f31830" d="M426.662 0H640v480H426.662z" />
+          </g>
+        </svg>
+        <svg id="flag-icon-en" viewBox="0 0 640 480" v-if="lang==='en'" @click="lang='fr'">
+          <defs>
+            <clipPath id="a">
+              <path fill-opacity=".67" d="M-85.333 0h682.67v512h-682.67z" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+            <g stroke-width="1pt">
+              <path fill="#006" d="M-256 0H768.02v512.01H-256z" />
+              <path d="M-256 0v57.244l909.535 454.768H768.02V454.77L-141.515 0H-256zM768.02 0v57.243L-141.515 512.01H-256v-57.243L653.535 0H768.02z" fill="#fff" />
+              <path d="M170.675 0v512.01h170.67V0h-170.67zM-256 170.67v170.67H768.02V170.67H-256z" fill="#fff" />
+              <path d="M-256 204.804v102.402H768.02V204.804H-256zM204.81 0v512.01h102.4V0h-102.4zM-256 512.01L85.34 341.34h76.324l-341.34 170.67H-256zM-256 0L85.34 170.67H9.016L-256 38.164V0zm606.356 170.67L691.696 0h76.324L426.68 170.67h-76.324zM768.02 512.01L426.68 341.34h76.324L768.02 473.848v38.162z"
+                fill="#c00" />
+            </g>
+          </g>
+        </svg>
+      </div>
     </div>
-    <div class="lang">
-      <svg id="flag-icon-fr" viewBox="0 0 640 480" v-if="lang==='fr'" @click="lang='en'">
-        <g fill-rule="evenodd" stroke-width="1pt">
-          <path fill="#fff" d="M0 0h640v480H0z"/>
-          <path fill="#00267f" d="M0 0h213.337v480H0z"/>
-          <path fill="#f31830" d="M426.662 0H640v480H426.662z"/>
-        </g>
-      </svg>
-      <svg id="flag-icon-en" viewBox="0 0 640 480" v-if="lang==='en'" @click="lang='fr'">
-      <defs>
-        <clipPath id="a">
-          <path fill-opacity=".67" d="M-85.333 0h682.67v512h-682.67z"/>
-        </clipPath>
-      </defs>
-      <g clip-path="url(#a)" transform="translate(80) scale(.94)">
-        <g stroke-width="1pt">
-          <path fill="#006" d="M-256 0H768.02v512.01H-256z"/>
-          <path d="M-256 0v57.244l909.535 454.768H768.02V454.77L-141.515 0H-256zM768.02 0v57.243L-141.515 512.01H-256v-57.243L653.535 0H768.02z" fill="#fff"/>
-          <path d="M170.675 0v512.01h170.67V0h-170.67zM-256 170.67v170.67H768.02V170.67H-256z" fill="#fff"/>
-          <path d="M-256 204.804v102.402H768.02V204.804H-256zM204.81 0v512.01h102.4V0h-102.4zM-256 512.01L85.34 341.34h76.324l-341.34 170.67H-256zM-256 0L85.34 170.67H9.016L-256 38.164V0zm606.356 170.67L691.696 0h76.324L426.68 170.67h-76.324zM768.02 512.01L426.68 341.34h76.324L768.02 473.848v38.162z" fill="#c00"/>
-        </g>
-      </g>
-    </svg>
-  </div>
-  </div>
-  <!-- <div class="content"> -->
-  <div class="title">
-    <h1>{{t.your_investments}}.<br>
-    {{t.explained_1}}<span class="color">{{t.explained_2}}</span>.</h1>
-    <div class="sub-title">
-      {{t.home_subtitle}}
+    <!-- <div class="content"> -->
+    <div class="title">
+      <h1>{{t.your_investments}}.
+        <br> {{t.explained_1}}
+        <span class="color">{{t.explained_2}}</span>.</h1>
+      <div class="sub-title">
+        {{t.home_subtitle}}
+      </div>
     </div>
-  </div>
-<!-- </div> -->
-  <div class="background-img">
-    <img src="img/home.svg"></img>
-  </div>
-</section>
-<section class="step step1">
-  <h2>{{t.m100_revolution}}</h2>
-  <div grid class="content">
-    <div>
-      <h3>{{t.before_100m}}</h3>
-      <div class="text">It is also used to test typewriters and computer.<br>
-        all of the letters in the English alphabet.</div>
-        <div style="border-right: solid 1.5px #dbf0fb;">
-          <img src="img/step1_img1.png"></img>
+    <!-- </div> -->
+    <div class="background-img">
+      <img src="img/home.svg" />
+    </div>
+  </section>
+  <section class="step step1">
+    <h2>{{t.m100_revolution}}</h2>
+    <div grid class="content">
+      <div class="before-100m">
+        <h3>{{t.before_100m}}</h3>
+        <div class="text">It is also used to test typewriters and computer.
+          <br> all of the letters in the English alphabet.</div>
+        <div>
+          <img src="img/step1_img1.png" />
         </div>
       </div>
-    <div>
-      <h3>{{t.after_100m}}</h3>
-      <div class="text">It is also used to test typewriters and computer.<br>
-        all of the letters in the English alphabet.</div>
-      <img src="img/step1_img2.png"></img></div>
-  </div>
-</section>
-<section class="step step2">
-  <h2>{{t.our_expertise}}</h2>
-  <div class="sub-title">{{t.expertise_subtitle1}}<br>{{t.expertise_subtitle2}}</div>
-  <div grid class="content">
-    <div class="content-element">
-      <img src="img/step2_icon1.png"></img>
-      <h4>{{t.data_process}}</h4>
-      <div class="subtext">{{t.data_process_subtext}}</div>
-    </div>
-    <div class="content-element">
-      <img src="img/step2_icon2.png"></img>
-      <h4>{{t.risk_performance}}</h4>
-      <div class="subtext">{{t.risk_performance_subtext}}</div>
-    </div>
-    <div class="content-element">
-      <img src="img/step2_icon3.png"></img>
-      <h4>{{t.user_experience}}</h4>
-      <div class="subtext">{{t.user_experience_subtext}}</div>
-    </div>
-    <div class="bottom-img">
-      <img src="img/desktop-mobile-no-bg.png"></img>
-    </div>
-</section>
-<section class="step step3">
-  <h2>{{t.create_user_experience}}</h2>
-  <div column class="content">
-    <div grid class="row">
-      <div class="block">
-        <div class="inside">
-        <img src="img/icon-gestion.png" class="icon"></img>
-        <h3 class="color">{{t.portfolio_management}}</h3>
-        <div>{{t.portfolio_management_subtext1}}<br>{{t.portfolio_management_subtext2}}</div>
-      </div>
-      </div>
-      <div class="block">
-        <div class="inside">
-        <img src="img/icon-risque.png" class="icon"></img>
-        <h3 class="color">{{t.risks}}</h3>
-        <div>{{t.risks_subtext1}}<br>{{t.risks_subtext2}}</div>
-      </div>
+      <div class="after-100m">
+        <h3>{{t.after_100m}}</h3>
+        <div class="text">It is also used to test typewriters and computer.
+          <br> all of the letters in the English alphabet.</div>
+        <img src="img/step1_img2.png" />
       </div>
     </div>
-    <div grid class="row">
-      <div class="block">
-        <div class="inside">
-        <img src="img/icon-commercial.png" class="icon"></img>
-        <h3 class="color">{{t.sales}}</h3>
-        <div>{{t.sales_subtext1}}<br>{{t.sales_subtext2}}</div>
+  </section>
+  <section class="step step2">
+    <h2>{{t.our_expertise}}</h2>
+    <div class="sub-title">{{t.expertise_subtitle1}}
+      <br>{{t.expertise_subtitle2}}</div>
+    <div grid class="content">
+      <div class="content-element">
+        <img src="img/step2_icon1.png" />
+        <h4>{{t.data_process}}</h4>
+        <div class="subtext">{{t.data_process_subtext}}</div>
       </div>
+      <div class="content-element">
+        <img src="img/step2_icon2.png" />
+        <h4>{{t.risk_performance}}</h4>
+        <div class="subtext">{{t.risk_performance_subtext}}</div>
       </div>
-      <div class="block">
-        <div class="inside">
-        <img src="img/icon-service-client.png" class="icon"></img>
-        <h3 class="color">{{t.investor_relationship}}</h3>
-        <div>{{t.investor_relationship_subtext1}}<br>{{t.investor_relationship_subtext2}}</div>
+      <div class="content-element">
+        <img src="img/step2_icon3.png" />
+        <h4>{{t.user_experience}}</h4>
+        <div class="subtext">{{t.user_experience_subtext}}</div>
       </div>
+      <div class="bottom-img">
+        <img src="img/desktop-mobile-no-bg.png" />
       </div>
     </div>
-  </div>
-</section>
-<section class="step step4">
-  <h2>{{t.know_more}}</h2>
-  <a class="button alt">{{t.ask_demo.toUpperCase()}}</a>
-</section>
-<footer class="step">
-  <h4>Follow</h4>
-  <div row class="social-media">
-    <img src="img/icon-twitter.png" class="icon"></img>
-    <img src="img/icon-facebook.png" class="icon"></img>
-    <img src="img/icon-linkedin.png" class="icon"></img>
-  </div>
-  <div class="copyright">
-    {{t.copyright_comment}}<br>
-    &copy;{{t.copyright}}
-  </div>
-  <div class="footer subtext">
-    {{t.footer_subtext}}<br>contact@100m.io
-  </div>
-</footer>
+  </section>
+  <section class="step step3">
+    <h2>{{t.create_user_experience}}</h2>
+    <div column class="content">
+      <div grid class="row">
+        <div class="block">
+          <div class="inside">
+            <img src="img/icon-gestion.png" class="icon" />
+            <h3 class="color">{{t.portfolio_management}}</h3>
+            <div>{{t.portfolio_management_subtext1}}
+              <br>{{t.portfolio_management_subtext2}}</div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="inside">
+            <img src="img/icon-risque.png" class="icon" />
+            <h3 class="color">{{t.risks}}</h3>
+            <div>{{t.risks_subtext1}}
+              <br>{{t.risks_subtext2}}</div>
+          </div>
+        </div>
+      </div>
+      <div grid class="row">
+        <div class="block">
+          <div class="inside">
+            <img src="img/icon-commercial.png" class="icon" />
+            <h3 class="color">{{t.sales}}</h3>
+            <div>{{t.sales_subtext1}}
+              <br>{{t.sales_subtext2}}</div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="inside">
+            <img src="img/icon-service-client.png" class="icon" />
+            <h3 class="color">{{t.investor_relationship}}</h3>
+            <div>{{t.investor_relationship_subtext1}}
+              <br>{{t.investor_relationship_subtext2}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="step step4">
+    <h2>{{t.know_more}}</h2>
+    <a class="button alt" onclick="drift.api.openChat()">{{t.ask_demo.toUpperCase()}}</a>
+  </section>
+  <footer class="step">
+    <h4>Follow</h4>
+    <div row class="social-media">
+      <a target="_blank" href=""><img src="img/icon-twitter.png" class="icon" /></a>
+      <a target="_blank" href=""><img src="img/icon-facebook.png" class="icon" /></a>
+      <a target="_blank" href="https://www.linkedin.com/company-beta/11049391/"><img src="img/icon-linkedin.png" class="icon" /></a>
+    </div>
+    <div class="copyright">
+      {{t.copyright_comment}}
+      <br> &copy;{{t.copyright}}
+    </div>
+    <div class="footer subtext">
+      {{t.footer_subtext}}
+      <br>contact@100m.io
+    </div>
+  </footer>
+</main>
 
-</div>
-</body>
 <script>
 window.vm = new Vue({
   el: '#main',
@@ -288,4 +291,5 @@ window.vm = new Vue({
   }
 })
 </script>
+</body>
 </html>
