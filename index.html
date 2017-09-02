@@ -42,7 +42,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a onclick="drift.api.openChat()">{{t.product}}</a>
         <a onclick="drift.api.openChat()">{{t.team}}</a>
         <a onclick="drift.api.openChat()">{{t.join_us}}</a>
-        <a href="#" class="button">{{t.contact}}</a>
+        <a onclick="drift.api.openChat()" class="button">{{t.contact}}</a>
       </div>
       <div class="lang">
         <svg id="flag-icon-fr" viewBox="0 0 640 480" v-if="lang==='fr'" @click="lang='en'">
