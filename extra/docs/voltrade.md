@@ -22,6 +22,13 @@ kbd {
   box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
   white-space: nowrap;
 }
+table, ul {
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+table thead {
+  display: none;
+}
 </style>
 
 <div class="header">
@@ -31,8 +38,8 @@ kbd {
 </div>
 
 This documentation is divided into:
-- *Setup* script
-- *Tools* api/usages/examples
+- ***Setup*** script
+- ***Tools*** api/usages/examples
 
 ---
 
@@ -42,31 +49,63 @@ The windows installation script is available <a tt href="https://github.com/100-
 Scripting tool chosen was powershell/bash.  
 An Ansible script will be provided if multiple machines needs to be setup.
 
-Install Procédure:
+***Install*** Procédure:
 - download (or copy/paste) the file `install-windows.ps1` on the machine to set up
 - double-clic on the file (or run it from cmdline)
 - accept admin prompt / enter password
 
-Update Procédure:
+***Update*** Procédure:
 - re-run the script `install-windows.ps1`
 - answer the prompt with <kbd>u</kbd> for *Update*
 
-Software Installed & Configured:
+***Software*** Installed & Configured:
 - googlechrome / atom / nodejs / git / putty / python2 / python3 / office365proplus / adobereader / winrar / 7zip / pyxll / sshfs / z / vim
 
 ---
 
 # *Software* tips/usages
 
-Atom Shortcuts:<small style="float: right;">Replace <kbd>Ctrl</kbd> by <kbd>Cmd</kbd> on Mac</small>
-- <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>: Search & Run Command
-- <kbd>Ctrl</kbd>+<kbd>T</kbd>: Search & Open File
-- <kbd>Ctrl</kbd>+<kbd>D</kbd>: Select Next / Multicursor
-- <kbd>Ctrl</kbd>+<kbd>B</kbd>: Autoformat Code
+Chrome ***Extentions***:
+- [AdBlock Plus](https://chrome.google.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb)
+- [Disconnect](https://chrome.google.com/webstore/detail/jeoacafpbcihiomhlakheieifhpjdfeo)
+- [HTTPS Everywhere](https://chrome.google.com/webstore/detail/gcbommkclmclpchllfjekcdonpmejbdp)
+- [Vue.js devtools](https://chrome.google.com/webstore/detail/nhdogjmejiglipccpnnnanhbledajbpd)
+- [Wappalyzer](https://chrome.google.com/webstore/detail/gppongmhjkpfnbhagpmjfkannfbllamg)
 
-CommandLine Utilities: <small style="float: right;">Dotfiles available <a tt href="https://github.com/vbrajon/dotfiles">here</a></small>
-- Available in *git-bash* and not in *powershell* or *cmd* for most utils
+Atom ***Shortcuts***:<small style="float: right;">Replace <kbd>Ctrl</kbd> by <kbd>Cmd</kbd> on Mac</small>
+
+Key | Action
+--- | ---
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> | Search & Run Command
+<kbd>Ctrl</kbd>+<kbd>T</kbd> | Search & Open File
+<kbd>Ctrl</kbd>+<kbd>D</kbd> | Select Next / Multicursor
+<kbd>Ctrl</kbd>+<kbd>B</kbd> | Autoformat Code
+
+Vim ***Shortcuts***
+
+PYXLL ***Usage***
+
+SSHFS ***Usage***
+
+***CLI*** = CommandLine Utilities: <small style="float: right;">Dotfiles available <a tt href="https://github.com/vbrajon/dotfiles">here</a></small>
+
+Command ([] < arguments) | Behavior
+--- | ---
+`z` `search` | Jump to folder matching `search` pattern
+`a` `search` | Jump to folder matching `search` pattern + Open in Atom
+`o` `search` | Jump to folder matching `search` pattern + Open in File Explorer
+`s` `search` | Jump to folder matching `search` pattern + Serve Folder
+`h` | `no` arguments: return the last 100 `history`
+`h` `search` | `search` argument: return `history` matching `search` pattern
+`h` `num` | `num` argument: return last `num` most popular `history` commands
+`open` | Open current folder with file explorer
+`server` | Serve/Watch current folder + Sync Browser
+`ip` | Display local and remote ip
+`extract` | Extract archive [rar/zip/tar/gz/+]
+
+***CLI*** Additional Info:
+- CLI Utils are available in *git-bash* and not in *powershell* or *cmd*
 - Automatically prompt for passphrase in `~/.ssh/` folder
--
+- Automatically launch `tmux` if installed
 
 ---
