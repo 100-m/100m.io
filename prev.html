@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WT46FZ');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>100m.io | Investment Choices. Explained.</title>
+  <meta name="description" content="100m is a platform for Asset Managers to market their products and Wealth Managers to advise their clients.">
+  <link rel="shortcut icon" href="https://100m.io/favicon.ico">
+
+  <link rel="stylesheet" href="/css/raw.css">
+  <link rel="stylesheet" href="/css/raw-flex.css">
+  <link rel="stylesheet" href="/css/raw-utils.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WT46FZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<main id="main" v-cloak>
+  <section class="home">
+    <div row class="nav">
+      <div class="logo">
+        <span class="helper"></span>
+        <img class="logo-img" src="img/100M-logo.png" />
+      </div>
+      <div class="nav-right">
+        <a onclick="drift.api.openChat()">{{t.product}}</a>
+        <a onclick="drift.api.openChat()">{{t.team}}</a>
+        <a onclick="drift.api.openChat()">{{t.join_us}}</a>
+        <a onclick="drift.api.openChat()" class="button">{{t.contact}}</a>
+      </div>
+      <div class="lang">
+        <svg id="flag-icon-fr" viewBox="0 0 640 480" v-if="lang==='fr'" @click="lang='en'">
+          <g fill-rule="evenodd" stroke-width="1pt">
+            <path fill="#fff" d="M0 0h640v480H0z" />
+            <path fill="#00267f" d="M0 0h213.337v480H0z" />
+            <path fill="#f31830" d="M426.662 0H640v480H426.662z" />
+          </g>
+        </svg>
+        <svg id="flag-icon-en" viewBox="0 0 640 480" v-if="lang==='en'" @click="lang='fr'">
+          <defs>
+            <clipPath id="a">
+              <path fill-opacity=".67" d="M-85.333 0h682.67v512h-682.67z" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+            <g stroke-width="1pt">
+              <path fill="#006" d="M-256 0H768.02v512.01H-256z" />
+              <path d="M-256 0v57.244l909.535 454.768H768.02V454.77L-141.515 0H-256zM768.02 0v57.243L-141.515 512.01H-256v-57.243L653.535 0H768.02z" fill="#fff" />
+              <path d="M170.675 0v512.01h170.67V0h-170.67zM-256 170.67v170.67H768.02V170.67H-256z" fill="#fff" />
+              <path d="M-256 204.804v102.402H768.02V204.804H-256zM204.81 0v512.01h102.4V0h-102.4zM-256 512.01L85.34 341.34h76.324l-341.34 170.67H-256zM-256 0L85.34 170.67H9.016L-256 38.164V0zm606.356 170.67L691.696 0h76.324L426.68 170.67h-76.324zM768.02 512.01L426.68 341.34h76.324L768.02 473.848v38.162z"
+                fill="#c00" />
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <!-- <div class="content"> -->
+    <div class="title">
+      <h1>{{t.your_investments}}.
+        <br> {{t.explained_1}}
+        <span class="color">{{t.explained_2}}</span>.</h1>
+      <div class="sub-title">
+        {{t.home_subtitle}}
+      </div>
+    </div>
+    <!-- </div> -->
+    <div class="background-img">
+      <img src="img/home.svg" />
+    </div>
+  </section>
+  <section class="step step1">
+    <h2>{{t.m100_revolution}}</h2>
+    <div grid class="content">
+      <div class="before-100m">
+        <h3>{{t.before_100m}}</h3>
+        <div class="text">{{t.before_100m_subtext}}</div>
+        <div>
+          <img src="img/step1_img1.png" />
+        </div>
+      </div>
+      <!-- <div class="separator"></div> -->
+      <div class="after-100m">
+        <h3>{{t.after_100m}}</h3>
+        <div class="text">{{t.after_100m_subtext}}</div>
+        <img src="img/step1_img2.png" />
+      </div>
+    </div>
+  </section>
+  <section class="step step2">
+    <h2>{{t.our_expertise}}</h2>
+    <div class="sub-title">{{t.expertise_subtitle1}}
+      <br>{{t.expertise_subtitle2}}</div>
+    <div grid class="content">
+      <div class="content-element">
+        <img src="img/step2_icon1.png" />
+        <h4>{{t.data_process}}</h4>
+        <div class="subtext">{{t.data_process_subtext}}</div>
+      </div>
+      <div class="content-element">
+        <img src="img/step2_icon2.png" />
+        <h4>{{t.risk_performance}}</h4>
+        <div class="subtext">{{t.risk_performance_subtext}}</div>
+      </div>
+      <div class="content-element">
+        <img src="img/step2_icon3.png" />
+        <h4>{{t.user_experience}}</h4>
+        <div class="subtext">{{t.user_experience_subtext}}</div>
+      </div>
+      <div class="bottom-img">
+        <img src="img/desktop-mobile-no-bg.png" />
+      </div>
+    </div>
+  </section>
+  <section class="step step3">
+    <h2>{{t.create_user_experience}}</h2>
+    <div column class="content">
+      <div grid class="row">
+        <div class="block">
+          <div class="inside">
+            <img src="img/icon-gestion.png" class="icon" />
+            <h3 class="color">{{t.portfolio_management}}</h3>
+            <div>{{t.portfolio_management_subtext1}}
+              <br>{{t.portfolio_management_subtext2}}</div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="inside">
+            <img src="img/icon-risque.png" class="icon" />
+            <h3 class="color">{{t.risks}}</h3>
+            <div>{{t.risks_subtext1}}
+              <br>{{t.risks_subtext2}}</div>
+          </div>
+        </div>
+      </div>
+      <div grid class="row">
+        <div class="block">
+          <div class="inside">
+            <img src="img/icon-commercial.png" class="icon" />
+            <h3 class="color">{{t.sales}}</h3>
+            <div>{{t.sales_subtext1}}
+              <br>{{t.sales_subtext2}}</div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="inside">
+            <img src="img/icon-service-client.png" class="icon" />
+            <h3 class="color">{{t.investor_relationship}}</h3>
+            <div>{{t.investor_relationship_subtext1}}
+              <br>{{t.investor_relationship_subtext2}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="step step4">
+    <h2>{{t.know_more}}</h2>
+    <a class="button alt" onclick="drift.api.openChat()">{{t.ask_demo.toUpperCase()}}</a>
+  </section>
+  <footer class="step">
+    <h4>Follow</h4>
+    <div row class="social-media">
+      <a target="_blank" href=""><img src="img/icon-twitter.png" class="icon" /></a>
+      <a target="_blank" href=""><img src="img/icon-facebook.png" class="icon" /></a>
+      <a target="_blank" href="https://www.linkedin.com/company-beta/11049391/"><img src="img/icon-linkedin.png" class="icon" /></a>
+    </div>
+    <div class="copyright">
+      {{t.copyright_comment}}
+      <br> &copy;{{t.copyright}}
+    </div>
+    <div class="footer subtext">
+      {{t.footer_subtext}}
+      <br>contact@100m.io
+    </div>
+  </footer>
+</main>
+
+<script>
+window.vm = new Vue({
+  el: '#main',
+  data() {
+    return {
+      lang:'fr',
+      translation: {
+        "fr": {
+          "product": "Produit",
+          "team": "Equipe",
+          "join_us": "Rejoignez-Nous",
+          "contact":"contact",
+          "your_investments":"Digitalisez le suivi de portefeuille",
+          "explained_1":"Transformez ",
+          "explained_2": "l'expérience client",
+          "home_subtitle": "Offrez à votre client un outil de reporting entièrement digitalisé.",
+          "m100_revolution":"La Révolution 100M",
+          "before_100m":"AVANT 100M",
+          "after_100m":"APRES 100M",
+          "our_expertise": "Notre Expertise",
+          "expertise_subtitle1":"100M vous permet de suivre à tout moment votre positionnement et votre",
+          "expertise_subtitle2":"performance, et de les communiquer auprès de vos clients de manière intéractive.",
+          "data_process":"Traitement de la Donnée",
+          "data_process_subtext":"100M se connecte directement sur les flux de données du dépositaire et d'autres fournisseurs, et génère une donnée entièrement fiabilisée.",
+          "risk_performance":"Risques et Attribution de Performance",
+          "risk_performance_subtext": "100M traite la donnée pour générer une anaylyse dynamique, granulaire et limpide du risque et de la performance.",
+          "user_experience":"Expérience Utilisateur",
+          "user_experience_subtext":"Le client accéde à l'interface sur desktop ou tablette, peut générer ses PDF ou encore communiquer avec vous à distance via l'option d'écran partagé.",
+          "create_user_experience":"Une Expérience Utilisateur Différenciante",
+          "portfolio_management":"Gestion",
+          "portfolio_management_subtext1":"Suivez votre performance au quotidien.",
+          "portfolio_management_subtext2":"Disposez d'un outil d'analyse entièrement paramétrable.",
+          "risks":"Risks",
+          "risks_subtext1":"Guarantee data quality.",
+          "risks_subtext2":"Improve operational limit monitoring.",
+          "risks":"Risques",
+          "risks_subtext1":"Garantissez la qualité des données.",
+          "risks_subtext2":"Améliorez le suivi opérationnel des limites.",
+          "sales":"Commercial",
+          "sales_subtext1":"Différenciez votre offre.",
+          "sales_subtext2":"Mettez en évidence vos choix stratégiques.",
+          "investor_relationship":"Opérationnel",
+          "investor_relationship_subtext1":"Diminuez le temps et le coût accordés au reporting.",
+          "investor_relationship_subtext2":"Générez un reporting en continu.",
+          "know_more":"Vous souhaitez en savoir davantage?",
+          "ask_demo":"Demandez une demo",
+          "copyright_comment":"100M, 62 rue Jean-Jacques Rousseau, Paris, France.",
+          "copyright":"2017, tous droits réservés.",
+          "footer_subtext":"",
+          "before_100m_subtext":"",
+          "after_100m_subtext":""
+        },
+        "en": {
+          "product": "Product",
+          "team": "Team",
+          "join_us": "Join us",
+          "contact":"Contact",
+          "your_investments":"Investment Choices",
+          "explained_1": "",
+          "explained_2": "Explained",
+          "home_subtitle":"Bring your portfolio monitoring online and rethink your client experience.",
+          "m100_revolution": "The 100M revolution",
+          "before_100m":"BEFORE 100M",
+          "after_100m":"AFTER 100M",
+          "our_expertise": "Our expertise",
+          "expertise_subtitle1":"100M allows live monitoring of your positions, your performance and",
+          "expertise_subtitle2":"to communicate to your client around them.",
+          "data_process":"Data process",
+          "data_process_subtext":"100M connects directly to your custodian data.",
+          "risk_performance":"Risk and performance attribution",
+          "risk_performance_subtext":"100M connects to your inhouse risk system and computes a performance attribution",
+          "user_experience":"User Experience",
+          "user_experience_subtext":"100M automatically generates a custom report, available on tablet, mobile, desktop and exportable in .pdf.",
+          "create_user_experience":"Create a differentiating user experience",
+          "portfolio_management":"Gestion",
+          "portfolio_management_subtext1":"Follow your performance live.",
+          "portfolio_management_subtext2":"Evidence your strategic choices and your alpha.",
+          "risks":"Risks",
+          "risks_subtext1":"Guarantee data quality.",
+          "risks_subtext2":"Improve operational limit monitoring.",
+          "sales":"Sales",
+          "sales_subtext1":"Differentiate your offer.",
+          "sales_subtext2":"Improve your client knowledge.",
+          "investor_relationship":"Investor Relationship",
+          "investor_relationship_subtext1":"Create custom reports.",
+          "investor_relationship_subtext2":"Decrease reporting costs.",
+          "know_more":"Would you like to know more?",
+          "ask_demo":"Ask for a demo",
+          "copyright":"2017, all rights reserved.",
+          "copyright_comment":"Made with passion at 62 rue Jean-Jacques Rousseau, Paris, France.",
+          "footer_subtext":"Special thanks to our family, our advisors, partners and early clients, especially to Hubert Lemoine, Maryelle Ouvrard, David Laup, Charles Miglietti, Sophie Despeisse, Nicolas Dusart, Guillaume Cendrier etc.",
+          "before_100m_subtext":"",
+          "after_100m_subtext":""
+        }
+      }
+    }
+  },
+  computed: {
+    t() {
+      return this.translation[this.lang] || {}
+    },
+  }
+})
+</script>
+</body>
+</html>
