@@ -51,13 +51,13 @@ Scripting tool chosen was powershell/bash.
 An Ansible script will be provided if multiple machines needs to be setup.
 
 ***Install*** Procédure:
-- download (or copy/paste) the file `install-windows.ps1` on the machine to set up
-- double-clic on the file (or run it from cmdline)
-- accept admin prompt / enter password
+- Open a powershell terminal **as Admin**
+- Retrieve a Github Token from 100m or from your account with read access to https://github.com/100-m/back-voltrade
+- Run the command: `iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/100-m/back-voltrade/master/setup/install-windows.ps1?token=[[TOKEN]]'))`, replace `[[TOKEN]]` with your gh token
 
 ***Update*** Procédure:
-- re-run the script `install-windows.ps1`
-- answer the prompt with <kbd>u</kbd> for *Update*
+- Re-run the script `install-windows.ps1` (Follow the Install Procédure)
+- Answer the prompt with <kbd>u</kbd> for **Update**
 
 ***Software*** Installed & Configured:
 - googlechrome / atom / nodejs / git / putty / python2 / python3 / office365proplus / adobereader / winrar / 7zip / pyxll / sshfs / z / vim
