@@ -39,11 +39,12 @@ table thead {
 
 This documentation is divided into:
 - ***Setup*** script
-- ***Tools*** api/usages/examples
+- ***Software*** usages/commands/api
+- ***Code*** snippets
 
 ---
 
-# *Setup* script
+# ***Setup*** script
 
 The windows installation script is available <a tt href="https://github.com/100-m/back-voltrade/blob/master/setup/install-windows.ps1">here</a>.  
 Scripting tool chosen was powershell/bash.  
@@ -63,7 +64,7 @@ An Ansible script will be provided if multiple machines needs to be setup.
 
 ---
 
-# *Software* tips/usages
+# ***Software*** usages/commands/api
 
 Chrome ***Extentions***:
 - [AdBlock Plus](https://chrome.google.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb)
@@ -81,15 +82,21 @@ Key | Action
 <kbd>Ctrl</kbd>+<kbd>D</kbd> | Select Next / Multicursor
 <kbd>Ctrl</kbd>+<kbd>B</kbd> | Autoformat Code
 
-Vim ***Shortcuts***
+Git ***Shortcuts***
 
-PYXLL ***Usage***
-
-SSHFS ***Usage***
+Command | Behavior
+--- | ---
+`git c` `message` | commit -m `message`
+`git co` `branch` | checkout `branch`
+`git st` | status --short --branch
+`git lg` | log --graph --oneline --shortstat
+`git br` | branch
+`git cp` `hash` | cherry-pick `hash`
+`git pur` | pull --rebase
 
 ***CLI*** = CommandLine Utilities: <small style="float: right;">Dotfiles available <a tt href="https://github.com/vbrajon/dotfiles">here</a></small>
 
-Command ([] < arguments) | Behavior
+Command | Behavior
 --- | ---
 `z` `search` | Jump to folder matching `search` pattern
 `a` `search` | Jump to folder matching `search` pattern + Open in Atom
@@ -99,7 +106,7 @@ Command ([] < arguments) | Behavior
 `h` `search` | `search` argument: return `history` matching `search` pattern
 `h` `num` | `num` argument: return last `num` most popular `history` commands
 `open` | Open current folder with file explorer
-`server` | Serve/Watch current folder + Sync Browser
+`server` | Serve/Watch current folder + Sync Browser > [browsersync.io](https://www.browsersync.io/)
 `ip` | Display local and remote ip
 `extract` | Extract archive [rar/zip/tar/gz/+]
 
@@ -108,4 +115,20 @@ Command ([] < arguments) | Behavior
 - Automatically prompt for passphrase in `~/.ssh/` folder
 - Automatically launch `tmux` if installed
 
+PYXLL ***Usage***
+
+SSHFS ***Usage***
+
 ---
+
+# ***Code*** snippets
+
+***CSV*** connector
+
+***JSON*** connector
+
+***SQL*** connector
+
+***Firebase*** connector
+
+***Bloomberg*** connector

@@ -21,6 +21,10 @@ axios
 .then(function(res) { return res.data })
 .then(function(md) { return marked(md) })
 .then(function(html) { return document.querySelector('main').innerHTML = '<section>' + html.replace(/<hr>/g, '</section><section>') + '</section>' })
+window.addEventListener('click', function(e) {
+  if (!/^http/.test(e.target.href)) return
+  e.target.target = '_blank'
+})
 </script>
 <script src="https://cdn.rawgit.com/lrsjng/pagemap/master/dist/pagemap.min.js"></script>
 <style>
