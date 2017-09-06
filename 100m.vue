@@ -182,7 +182,7 @@ export default {
           data_process: "Traitement de la Donnée",
           data_process_subtext: "100M se connecte directement sur les flux de données du dépositaire et d'autres fournisseurs, et génère une donnée entièrement fiabilisée.",
           risk_performance: "Risques et Attribution de Performance",
-          risk_performance_subtext: "100M traite la donnée pour générer une anaylyse dynamique, granulaire et limpide du risque et de la performance.",
+          risk_performance_subtext: "100M traite la donnée pour générer une analyse dynamique, granulaire et limpide du risque et de la performance.",
           user_experience: "Expérience Utilisateur",
           user_experience_subtext: "Le client accéde à l'interface sur desktop ou tablette, peut générer ses PDF ou encore communiquer avec vous à distance via l'option d'écran partagé.",
           create_user_experience: "Une Expérience Utilisateur Différenciante",
