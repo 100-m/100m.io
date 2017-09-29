@@ -149,7 +149,7 @@ header ul li:nth-child(-n+4) { display: none; }
   <footer column center>
     <h2 v-text="t.follow"></h2>
     <ul row class="social-media">
-      <li><a target="_blank" href=""><img src="/img/icon-twitter.png" /></a></li>
+      <li><a target="_blank" href="https://twitter.com/100mTech"><img src="/img/icon-twitter.png" /></a></li>
       <li><a target="_blank" href=""><img src="/img/icon-facebook.png" /></a></li>
       <li><a target="_blank" href="https://www.linkedin.com/company-beta/11049391/"><img src="/img/icon-linkedin.png" /></a></li>
     </ul>
