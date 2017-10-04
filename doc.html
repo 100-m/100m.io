@@ -36,6 +36,7 @@ axios
 .then(function(res) { return res.data })
 .then(function(md) { return marked(md) })
 .then(function(html) { return document.querySelector('main').innerHTML = '<section>' + html.replace(/<hr>/g, '</section><section>') + '</section>' })
+.then(function() { return document.querySelectorAll('a').forEach(el => el.setAttribute('tt', '')) })
 </script>
 <script src="https://cdn.rawgit.com/lrsjng/pagemap/master/dist/pagemap.min.js"></script>
 <style>
