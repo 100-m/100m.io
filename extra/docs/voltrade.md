@@ -1,50 +1,10 @@
-<style>
-kbd {
-  display: inline-block;
-  padding: 0 .5rem;
-  border: var(--border);
-  border-radius: 2px;
-  background: var(--background-2);
-  color: var(--dark-text-1);
-  text-transform: none;
-  font-weight: 300;
-  font-size: 1.2rem;
-  font-family: monospace;
-  line-height: 1.8;
-}
-kbd {
-  padding: .1em .6em;
-  margin: 0 .1em;
-  color: #333;
-  text-shadow: 0 1px 0 #fff;
-  background-color: #f7f7f7;
-  border: 1px solid #ccc;
-  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
-  white-space: nowrap;
-}
-table, ul {
-  margin-top: -20px;
-  margin-bottom: 30px;
-}
-table thead {
-  display: none;
-}
-code {
-  word-break: break-word;
-}
-</style>
-
-<div class="header">
-  <link rel="stylesheet" href="/css/100m.css">
-  <img style="position: relative;z-index: -1;" src="/extra/prez/01.jpg" />
-  <h1>Voltrade Documentation</em></h1>
-</div>
+# *Voltrade* Documentation
 
 This documentation is divided into:
-- ***Setup*** script
-- ***Software*** usages/commands/api
-- ***Code*** architecture
-- ***Code*** snippets
+- <a href="#-setup-script" target="_self">***Setup*** script</a>
+- <a href="#-software-usages-commands-api" target="_self">***Software*** usages/commands/api</a>
+- <a href="#-code-architecture" target="_self">***Code*** architecture</a>
+- <a href="#-code-snippets" target="_self">***Code*** snippets</a>
 
 ---
 
