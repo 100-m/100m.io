@@ -200,7 +200,7 @@ export default {
           ask_demo: "Demandez une demo",
           follow: "Suivez-nous",
           copyright: "100M, 62 rue Jean-Jacques Rousseau, Paris, France.<br>&copy;2017, tous droits réservés.",
-          footer: "Remerciement spéciale à nos familles, nos conseillers, partenaires et premiers clients, remerciement particulier à <br>Hubert Lemoine, Maryelle Ouvrard, David Laup, Charles Miglietti, Sophie Despeisse, Nicolas Dusart, Guillaume Cendrier.",
+          footer: "Remerciement spéciale à nos familles, nos conseillers, partenaires et premiers clients."
         },
         en: {
           product: "Product",
@@ -235,7 +235,7 @@ export default {
           ask_demo: "Ask for a demo",
           follow: "Follow us",
           copyright: "Made with passion at 62 rue Jean-Jacques Rousseau, Paris, France.<br>&copy;2017, all rights reserved.",
-          footer: "Special thanks to our family, our advisors, partners and early clients, especially to Hubert Lemoine, Maryelle Ouvrard, David Laup, Charles Miglietti, Sophie Despeisse, Nicolas Dusart, Guillaume Cendrier etc.",
+          footer: "Special thanks to our family, our advisors, partners and early clients.",
         }
       }
     }
