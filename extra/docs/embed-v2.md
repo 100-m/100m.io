@@ -30,6 +30,7 @@ Pour configurer le composant 100m, la donnée doit être accessible via une API 
     - **"date"**: date au **Format ISO** (YYYY-MM-DD ou YYYY-MM-DDTHH:mm:ss.msTZ)
     - **"fund"**: valeur liquidative du fonds à la date en question.
     - **(optionnel) "benchmark"**: valeur liquidative de l'indice à la date en question.
+    - **(optionnel) "ost"**: valeur du coefficient d'ajustement.
 
 **Exemple de retour API pour un FAF dont l'uid est FR0010869602**:
 https://embed.100m.io/api/FR0010869602
@@ -60,18 +61,21 @@ https://embed.100m.io/api/FR0010869602
     {
       "date": "2015-06-04T22:00:00.000Z",
       "fund": 474.84,
-      "benchmark": 3535.58
+      "benchmark": 3535.58,
+      "ost": 1
     },
     {
       "date": "2015-06-05T22:00:00.000Z",
       "fund": 474.84,
-      "benchmark": 3535.58
+      "benchmark": 3535.58,
+      "ost": 1.049830576
     },
     ...
     {
       "date": "2017-04-30T21:59:59.999Z",
       "fund": 475.2,
-      "benchmark": 3667.48
+      "benchmark": 3667.48,
+      "ost": 1.104962945
     }
   ]
 }
@@ -97,6 +101,7 @@ Voici un exemple ou l'url de l'API et les paramètres de l'API sont configurable
 <div>
   <label>Fonds A Formule:</label>
   <span tag tt="FR0012847002" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0012847002&quot;></iframe>'">Autofocus Rendement</span>
+  <span tag tt="FR0011845486" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011845486&quot;></iframe>'">Autofocus Rendement Juin 2014 (OST)</span>
   <span tag tt="FR0010869602" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0010869602&quot;></iframe>'">Formul'action</span>
   <span tag tt="FR0012517274" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0012517274&quot;></iframe>'">Autofocus Croissance</span>
   <span tag tt="FR0011228352" onclick="document.querySelector('.demo').textContent = document.querySelector('#iframe-example').innerHTML = '<iframe style=&quot;width:100%;height:420px&quot; frameBorder=&quot;0&quot; src=&quot;https://embed.100m.io/?api=https://embed.100m.io/api/FR0011228352&quot;></iframe>'">BPE Rendement</span>

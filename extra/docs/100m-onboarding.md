@@ -17,6 +17,15 @@
 - Setup Mac/Windows > https://github.com/vbrajon/dotfiles
 - Additionnal Apps > Excel + Sketch/Photoshop(\*)
 
+## Nos Services (in LastPass)
+- GTagManager/GAnalytics
+- Drift (to be replaced by Intercom?)
+- Sentry
+- Sendgrid
+- Cloudflare
+- AWS
+- DigitalOcean (to be replaced by AWS :'()
+
 ## Lib
 - css > [rawcss](https://github.com/vbrajon/rawcss)
 - js > axios
@@ -24,6 +33,8 @@
 - js > xfilter (internal replacing crossfilter)
 - js > vue/vue-router
 - js > d3/plottable
+- js > auth0
+- js > firebase
 - python > requests
 - python > pandas
 
@@ -47,9 +58,14 @@
 - [X] Offline
 - [X] Mobile/Tablet
 - [ ] Screenshare
-- [ ] Screen/PDF Builder (+ Doc/Design System/Playground/Tests)
+- [ ] Builder PDF/Screen
+- [ ] Factsheet PDF/Web
+- [ ] Scheduler PDF
+- [ ] Data Exporter
+- [ ] Styleguide/Design System
+- [ ] Doc/Component Playground
 - [ ] Automatic Backup / Restore to any point in time
-
+- [ ] Error Handler
 
 ## Clients
 Asset Management:
@@ -78,3 +94,4 @@ PIPE:
 - Mandarine
 - Cedrus
 - CNP
+- Acer Finance
