@@ -89,6 +89,8 @@ SSHFS ***Usage***
 
 The code is available at [https://github.com/100-m/back-voltrade](https://github.com/100-m/back-voltrade).
 
+#### Folder structure
+
 The *voltrade* folder is the entry-point and centralises:
 - specific configuration (connection informations, ticker list, schema)
 - initialisation of generic modules (*connector* / *cron*)
@@ -98,18 +100,24 @@ The *voltrade* folder is the entry-point and centralises:
 
 It is the entry point/glue code and should not contain business logic / generic code / analytics / cron tasks / api.
 
+#### Data
+
 The data comes from *Bloomberg SFTP* (Data Licence) and is stored in a *MSSQL* (Microsoft Sql Server) Database into a *static* and an *historical* table. A *computed* table will be added to store models/analytics informations. (see <a tt href="https://github.com/100-m/back-voltrade/master/voltrade/schema.sql">schema.sql</a>)
 
 Every data request should be done over the *SQL* Database.  
 The Bloomberg connector should only be used for initial and incremental automatic tasks (= cron).  
 
-To add a *ticker*, edit `voltrade/tickers.csv` file and run cron/update_ticker.py.  
-To add a *field*, edit static_fields or historical_fields list in `voltrade/__init__.py` file and run cron/update_ticker.py.  
-To add a *cron*, edit `cron/crontab.py` file and add the command into the crontab.  
-The cron update_ticker.py runs daily (workdays only) at 9:30AM.  
+To add a *ticker*, edit `voltrade/tickers.csv` file and run command update_ticker.  
+To add a *field*, edit static_fields or historical_fields list in `voltrade/__init__.py` file and run  command update_ticker.  
 
-More information about [python-crontab](https://github.com/peak6/python-crontab) and cron time format [here](https://crontab.guru).  
-The cron process is started manually atm, we may use another cron mechanism and use a process manager (pm2, gunicorn) later on.
+#### Scheduling
+
+Scheduled commands are run via [**commandr**](https://github.com/vbrajon/commandr).  
+The commandr interface is the following: http://127.0.0.1:1111  
+The process to schedule a command is the following:
+- Add a command: `ipython 'S:\CODE\back-voltrade\cron\update_ticker.py'`
+- Click on newly added command name to edit advanced settings
+- Edit schedule input: `R/2017-01-01T02:00/PT24H` (see [ISO8601](https://en.wikipedia.org/wiki/ISO_8601#Repeating_intervals) format)
 
 ---
 
@@ -134,8 +142,7 @@ from voltrade import sql_admin
 df.to_sql(name='static', con=sql_admin._con, if_exists='replace', index=False)
 ```
 
-
-***Bloomberg*** connector
+***Bloomberg SFTP*** connector
 ```python
 # NOTE: bbg_connector should only be used for daily/initial tasks to populate sql
 # NOTE: bbg_connector as the same API as sql_connector
@@ -145,8 +152,14 @@ df = bbg_connector.request(securities=['ES1 Index'])
 df = bbg_connector.request(securities=tickers, fields=static_fields + historical_fields, daterange=['2010-01-01', '2017-10-01'])
 ```
 
-***CSV*** connector
+***Email*** connector
+```python
+from voltrade import email
+email.send(['valentin@100m.io'], 'Subject', '<h1>Text or HTML<br>content here</h1>')
+```
 
-***JSON*** connector
-
-***Firebase*** connector
+***Commandr*** connector
+```python
+from voltrade import commandr
+commandr.run('#3')
+```
