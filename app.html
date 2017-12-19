@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html {{ HTML_ATTRS }}>
   <head>
+    {{ HEAD }}
     <!-- Google Tag Manager -->
     <script>
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -15,13 +16,12 @@
     <title>100m.io | Investment Choices. Explained.</title>
     <meta name="description" content="100m is a platform for Asset Managers to market their products and Wealth Managers to advise their clients.">
     <link rel="shortcut icon" href="https://100m.io/favicon.ico">
-    <link href="client.<<<HASH>>>.css" rel="stylesheet"></head>
-  <body>
+  </head>
+  <body {{ BODY_ATTRS }}>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WT46FZ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="app"></div>
-    <script type="text/javascript" src="client.<<<HASH>>>.js"></script>
+    {{ APP }}
   </body>
 </html>
