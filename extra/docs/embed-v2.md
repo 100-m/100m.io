@@ -1,8 +1,4 @@
-<div class="header">
-  <link rel="stylesheet" href="/css/100m.css">
-  <img style="position: relative;z-index: -1;" src="/extra/prez/01.jpg" />
-  <h1>Documentation d'intégration<br><em>des composants 100M</em></h1>
-</div>
+# Documentation d'intégration<br>des *composants 100M*
 
 Les composants embarqués 100M s'intègrent via une balise `<iframe>` configurée avec une API et des paramètres de rendu.
 
