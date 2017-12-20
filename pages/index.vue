@@ -152,7 +152,7 @@ header ul li:nth-child(-n+4) { display: none; }
       <li><a target="_blank" href="https://www.linkedin.com/company-beta/11049391/"><img src="/img/icon-linkedin.png" /></a></li>
     </ul>
     <div class="copyright" v-html="t.copyright"></div>
-    <div class="footer" v-html="t.footer"></div>
+    <!-- <div class="footer" v-html="t.footer"></div> -->
   </footer>
 </main>
 </template>
@@ -172,9 +172,9 @@ export default {
           subtitle: "Offrez à votre client un outil de reporting entièrement digitalisé.",
           revolution_100m: "La Révolution 100M",
           before_100m: "Avant 100M",
-          before_100m_subtext: "",
-          after_100m: "Après 100M",
-          after_100m_subtext: "",
+          before_100m_subtext: "Vos collaborateurs perdent un temps précieux à compiler chiffres et analyses",
+          after_100m: "Avec 100M",
+          after_100m_subtext: "Toute l'information portefeuille est visuelle et immédiate",
           expertise_100m: "Notre Expertise",
           expertise_100m_subtext: "100M vous permet de suivre à tout moment votre positionnement et votre<br>performance, et de les communiquer auprès de vos clients de manière intéractive.",
           data_process: "Traitement de la Donnée",
@@ -209,9 +209,9 @@ export default {
           subtitle: "Bring your portfolio monitoring online and rethink your client experience.",
           revolution_100m: "The 100M revolution",
           before_100m: "Before 100M",
-          before_100m_subtext: "",
-          after_100m: "After 100M",
-          after_100m_subtext: "",
+          before_100m_subtext: "Your team is losing time gathering numbers and compiling analysis",
+          after_100m: "With 100M",
+          after_100m_subtext: "Portfolio information is immediately available in a visual format",
           expertise_100m: "Our Expertise",
           expertise_100m_subtext: "100M allows live monitoring of your positions, your performance and<br>to communicate around them.",
           data_process: "Data Process",
