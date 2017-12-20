@@ -161,5 +161,8 @@ email.send(['valentin@100m.io'], 'Subject', '<h1>Text or HTML<br>content here</h
 ***Commandr*** connector
 ```python
 from voltrade import commandr
+commadr.add(command="ipython ~/update_ticker.py", schedule="R/2017-01-01T02:00/PT24H", runhook="#1", onsuccess="echo log >> /log.txt", onsuccess="echo error >> /error.txt")
+commandr.delete('#2')
 commandr.run('#3')
+commandr.kill('#3')
 ```

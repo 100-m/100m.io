@@ -39,33 +39,34 @@
 - python > pandas
 
 ## Repositories
-- 100m-platform > application principale
+- 100m-platform > Application Principale
 - 100m-fireauth > API sécurisé pour: servir des fichiers et créer un token firebase
-- 100m.io > site web
+- 100m.io > Site
+- commandr > Command Scheduler
 - back-schelcher
 - back-fintex
+- back-tikehau
 - back-voltrade
-- commandr
 
 ## Features / Roadmap Produit
-- [X] Structure > Nav/Pages (Userflow/Screens)
-- [X] Blocks > Plots/Components
-- [X] CrossFiltering
-- [X] Contextualisation
-- [X] Content Edition
-- [X] Multi-Lang
-- [X] Auth/Security
-- [X] Offline
-- [X] Mobile/Tablet
-- [ ] Screenshare
-- [ ] Builder PDF/Screen
-- [ ] Factsheet PDF/Web
-- [ ] Scheduler PDF
-- [ ] Data Exporter
-- [ ] Styleguide/Design System
-- [ ] Doc/Component Playground
-- [ ] Automatic Backup / Restore to any point in time
-- [ ] Error Handler
+- ✓ Structure > Nav/Pages (Userflow/Screens)
+- ✓ Blocks > Plots/Components
+- ✓ CrossFiltering
+- ✓ Contextualisation
+- ✓ Content Edition
+- ✓ Multi-Lang
+- ✓ Auth/Security
+- ✓ Offline
+- ✓ Mobile/Tablet
+- ✗ Screenshare
+- ✗ Builder PDF/Screen
+- ✗ Factsheet PDF/Web
+- ✗ Scheduler PDF
+- ✗ Data Exporter
+- ✗ Styleguide/Design System
+- ✗ Doc/Component Playground
+- ✗ Automatic Backup / Restore to any point in time
+- ✗ Error Handler
 
 ## Clients
 Asset Management:
