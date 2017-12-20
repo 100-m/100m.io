@@ -1,6 +1,4 @@
 <style>
-@import 'https://rawcss.com/raw.css';
-
 [grid] { flex-direction: row;flex-wrap: wrap;margin: -5px; }
 [grid]>* { flex: 1 0 calc(100% - 10px);margin: 5px; }
 @media (min-width: 600px) {
