@@ -21,7 +21,6 @@ section:nth-child(even)::before {
   background: #F5FCFF;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,900');
 html { font-family: Lato; }
 body { font-size: 1.4rem; }
 h1 { font-size: 2em;line-height: 1.33;margin: 30px 0; }
