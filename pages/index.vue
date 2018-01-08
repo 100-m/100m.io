@@ -11,21 +11,10 @@ header, .home { color: white;font-weight: 700; }
   body { font-size: 1.8rem; }
   h1 { font-size: 3em; }
 }
-.ellipse {
-  position: relative;
-  border-radius: 1000px;
-  width: 100px;
-  height: 100px;
-  background-color: #ffffff;
-  box-shadow: 0 24px 49px 0 rgba(34, 49, 79, 0.23);
-  margin-bottom: 30px;
-}
 
 .icon {
   width: 40px;
-  position: absolute;
-  top: 26px;
-  left: 30px;
+  background-color: #fff;
 }
 
 </style>
@@ -60,15 +49,37 @@ header, .home { color: white;font-weight: 700; }
     <h2 v-html="t.product" txt=c></h2>
     <div row>
       <div f1 center>
-        <img src="/img/product.png"/>
+        <img src="/img/product1.png"/>
       </div>
       <div f1>
-        <div class="ellipse">
-          <img src="/img/smart-icon.png" class="icon"/>
-        </div>
+        <img src="/img/smart-icon1.png" class="icon"/>
         <h3 v-html="t.reporting_title"></h3>
         <div v-html="t.reporting_subtitle"></div>
         <div v-html="t.reporting_text"></div>
+      </div>
+    </div>
+
+    <div row>
+      <div f1>
+        <img src="/img/smart-icon2.png" class="icon"/>
+        <h3 v-html="t.analytics_title"></h3>
+        <div v-html="t.analytics_subtitle"></div>
+        <div v-html="t.analytics_text"></div>
+      </div>
+      <div f1 center>
+        <img src="/img/product2.png"/>
+      </div>
+    </div>
+
+    <div row>
+      <div f1 center>
+        <img src="/img/product3.png"/>
+      </div>
+      <div f1>
+        <img src="/img/smart-icon3.png" class="icon"/>
+        <h3 v-html="t.digital_title"></h3>
+        <div v-html="t.digital_subtitle"></div>
+        <div v-html="t.digital_text"></div>
       </div>
     </div>
   </section>
@@ -104,9 +115,15 @@ export default {
           our_difference: "XXX",
           client: "XXX",
           team: "XXX",
-          reporting_title: "100M reporting",
+          reporting_title: "100M Reporting",
           reporting_subtitle: "Un outil de production flexible",
           reporting_text: "Gérez simplement le reporting des fonds de tout type, avec un support multilingue et multi juridiction. Créez facilement des reportings sur-mesure et soyez réactifs face aux requêtes spécifiques de clients",
+          analytics_title: "100M Analytics",
+          analytics_subtitle: "Un moteur de calcul intégré",
+          analytics_text: "100M dispose également d’un module de calcul de contribution et attribution de performance. Générez dynamiquement des rapports de date à date",
+          digital_title: "100M Digital",
+          digital_subtitle: "Une application intuitive pour suivre vos portefeuille",
+          digital_text: "Vos clients, vos commerciaux et collaborateurs vous demandent une information simple et claire? Renforcez votre discours en mettant à leur disposition des interfaces conçues pour eux.",
         },
         en: {},
       },
