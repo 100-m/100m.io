@@ -11,6 +11,18 @@ header, .home { color: white;font-weight: 700; }
   body { font-size: 1.8rem; }
   h1 { font-size: 3em; }
 }
+.ellipse {
+  border-radius: 1000px;
+  width: 99.5px;
+  height: 99.5px;
+  background-color: #ffffff;
+  box-shadow: 0 24px 49px 0 rgba(34, 49, 79, 0.23);
+  background-image: url("/img/smart-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  margin-bottom: 30px;
+}
 </style>
 
 <template>
@@ -39,7 +51,19 @@ header, .home { color: white;font-weight: 700; }
     </div>
   </section>
 
-  <section class="product">
+  <section class="product" column>
+    <h2 v-html="t.product" txt=c></h2>
+    <div row>
+      <div f1 center>
+        <img src="/img/product.png"/>
+      </div>
+      <div f1>
+        <div class="ellipse"></div>
+        <h3 v-html="t.reporting_title"></h3>
+        <div v-html="t.reporting_subtitle"></div>
+        <div v-html="t.reporting_text"></div>
+      </div>
+    </div>
   </section>
 
   <section class="use_case">
@@ -68,11 +92,14 @@ export default {
           title: "Une solution digitale<br>pour expliquer<br><em>votre performance.</em>",
           subtitle: "100M simplifie la production du reporting traditionnel,<br> digitalise le suivi de portefeuille et vous aide à mieux<br>communiquer.",
           home: "XXX",
-          product: "XXX",
+          product: "<em>Produits</em>",
           use_case: "XXX",
           our_difference: "XXX",
           client: "XXX",
           team: "XXX",
+          reporting_title: "100M reporting",
+          reporting_subtitle: "Un outil de production flexible",
+          reporting_text: "Gérez simplement le reporting des fonds de tout type, avec un support multilingue et multi juridiction. Créez facilement des reportings sur-mesure et soyez réactifs face aux requêtes spécifiques de clients",
         },
         en: {},
       },
