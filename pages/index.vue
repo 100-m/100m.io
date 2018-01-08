@@ -4,6 +4,7 @@ body { font-size: 1.6rem; }
 h1 { font-size: 2em;line-height: 1.33;margin: 30px 0; }
 em { font-style: normal;border-bottom: 3px solid #fd4; }
 section { position: relative; }
+section { margin: auto;padding: 4rem 2rem;max-width: 100%;width: 1200px; }
 header, .home { color: white;font-weight: 700; }
 .multi-device { display: none; }
 .bg { position: absolute; }
@@ -12,13 +13,25 @@ header, .home { color: white;font-weight: 700; }
   h1 { font-size: 3em; }
 }
 
+@media (max-width: 600px){
+  [row] { flex-direction: column }
+  [row][reverse] { flex-direction: column-reverse }
+}
+
 .icon {
   width: 40px;
   background-color: #fff;
 }
 
-.cards {
+.card {
+ margin: 15px;
+ box-shadow: 0 24px 49px 0 rgba(34, 49, 79, 0.14);
+ border-radius: 10px;
+}
 
+.card_body {
+  padding: 10px;
+  padding-bottom: 60px;
 }
 </style>
 
@@ -94,29 +107,24 @@ header, .home { color: white;font-weight: 700; }
     <div class="cards" row>
       <div f1 class="card">
         <img src="img/card1.png"/>
-        <h3 v-html="t.use_case_card_1_title"></h3>
-        <ul>
-          <li v-html="t.use_case_card_1_bullet_1"></li>
-          <li v-html="t.use_case_card_1_bullet_2"></li>
-          <li v-html="t.use_case_card_1_bullet_3"></li>
-        </ul>
+        <div class="card_body">
+          <h3 v-html="t.use_case_card_1_title"></h3>
+          <div v-html="t.use_case_card_1_bullet"></div>
+        </div>
       </div>
       <div f1 class="card">
         <img src="img/card2.png"/>
-        <h3 v-html="t.use_case_card_2_title"></h3>
-        <ul>
-          <li v-html="t.use_case_card_2_bullet_1"></li>
-          <li v-html="t.use_case_card_2_bullet_2"></li>
-        </ul>
+        <div class="card_body">
+          <h3 v-html="t.use_case_card_2_title"></h3>
+          <div v-html="t.use_case_card_2_bullet"></div>
+        </div>
       </div>
       <div f1 class="card">
         <img src="img/card3.png"/>
-        <h3 v-html="t.use_case_card_3_title"></h3>
-        <ul>
-          <li v-html="t.use_case_card_3_bullet_1"></li>
-          <li v-html="t.use_case_card_3_bullet_2"></li>
-          <li v-html="t.use_case_card_3_bullet_3"></li>
-        </ul>
+        <div class="card_body">
+          <h3 v-html="t.use_case_card_3_title"></h3>
+          <div v-html="t.use_case_card_3_bullet"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -188,16 +196,11 @@ export default {
           use_case_title: "Use cases",
           use_case_subtitle: "Une application qui vous accompagne de la gestion à la relation client.",
           use_case_card_1_title: "Performance, Reporting, and Client Service Manager",
-          use_case_card_1_bullet_1: "Automatisez la génération de vos reportings quels que soient la classe d’actifs, la langue ou le disclaimer",
-          use_case_card_1_bullet_2: "Générez en un clic des reporting sur-mesure pour vos clients institutionnels",
-          use_case_card_2_bullet_3: "Offrez à vos équipes et clients une valorisation actualisée quotidiennement (si le sous-jacent le permet)",
+          use_case_card_1_bullet: "<ul><li>Automatisez la génération de vos reportings quels que soient la classe d’actifs, la langue ou le disclaimer</li><li>Générez en un clic des reporting sur-mesure pour vos clients institutionnels</li><li>Offrez à vos équipes et clients une valorisation actualisée quotidiennement (si le sous-jacent le permet)</li></ul>",
           use_case_card_2_title: "Portfolio Management",
-          use_case_card_2_bullet_1: "Revenez sur vos performances passées via un outil analytique et visuel",
-          use_case_card_2_bullet_2: "Améliorez la collaboration interne via un outil de suivi de portefeuille commun à tous",
+          use_case_card_2_bullet: "<ul><li>Revenez sur vos performances passées via un outil analytique et visuel</li><li>Améliorez la collaboration interne via un outil de suivi de portefeuille commun à tous</li>",
           use_case_card_3_title: "Sales",
-          use_case_card_3_bullet_1: "Simplifiez vos interactions au quotidien avec les clients existants et augmentez votre taux de rétention",
-          use_case_card_3_bullet_2: "Soyez réactifs face à des demandes d’informations spécifiques de clients",
-          use_case_card_3_bullet_3: "Différenciez votre offre et convertissez davantage de prospects",
+          use_case_card_3_bullet: "<li>Simplifiez vos interactions au quotidien avec les clients existants et augmentez votre taux de rétention</li><li>Soyez réactifs face à des demandes d’informations spécifiques de clients</li><li>Différenciez votre offre et convertissez davantage de prospects</li></ul>",
           why_us_title: "Why us",
           why_us_subtitle: "Vos données centralisées pour une information cohérente",
           why_us_text: "Nous centralisons et historisons l’ensemble de vos données (positions, mouvements, risques et référentiels). Cette même donnée peut ensuite alimenter application digitale, reporting traditionnel et votre site web.",
