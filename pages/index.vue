@@ -31,7 +31,7 @@ header, .home { color: white;font-weight: 700; }
     <div v-html="t.home"></div>
     <div v-html="t.product"></div>
     <div v-html="t.use_case"></div>
-    <div v-html="t.our_difference"></div>
+    <div v-html="t.why_us"></div>
     <div v-html="t.client"></div>
     <!-- <div v-html="t.team"></div> -->
     <router-link :to="{ query: { lang: 'fr' }}">FR</router-link>
@@ -48,7 +48,7 @@ header, .home { color: white;font-weight: 700; }
     </div>
   </section>
 
-  <section class="product" column>
+  <section class="product">
     <h2 v-html="t.product" txt=c></h2>
     <div row>
       <div f1 center>
@@ -121,18 +121,30 @@ header, .home { color: white;font-weight: 700; }
     </div>
   </section>
 
-  <section class="our_difference">
-
-
+  <section class="why_us">
+    <div row>
+      <div f1 center>
+        <h2 v-html="t.why_us_title"></h2>
+        <h3 v-html="t.why_us_subtitle"></h3>
+        <div v-html="t.why_us_text"></div>
+      </div>
+      <div f1>
+        <img src="/img/why-us.png"/>
+      </div>
+    </div>
   </section>
 
   <section class="client">
+    <h2 v-html="t.client_title"></h2>
+    <img src="/img/clients.png"/>
   </section>
 
   <section class="contact">
+    <h2 v-html="t.contact_title"></h2>
   </section>
 
   <footer>
+    <div v-html="t.footer_text"></div>
   </footer>
 </main>
 </template>
@@ -147,7 +159,6 @@ export default {
           subtitle: "100M simplifie la production du reporting traditionnel,<br> digitalise le suivi de portefeuille et vous aide à mieux<br>communiquer.",
           home: "XXX",
           product: "Produits",
-          our_difference: "XXX",
           client: "XXX",
           team: "XXX",
           reporting_title: "100M Reporting",
@@ -172,6 +183,12 @@ export default {
           use_case_card_3_bullet_1: "Simplifiez vos interactions au quotidien avec les clients existants et augmentez votre taux de rétention",
           use_case_card_3_bullet_2: "Soyez réactifs face à des demandes d’informations spécifiques de clients",
           use_case_card_3_bullet_3: "Différenciez votre offre et convertissez davantage de prospects",
+          why_us_title: "Why us",
+          why_us_subtitle: "Vos données centralisées pour une information cohérente",
+          why_us_text: "Nous centralisons et historisons l’ensemble de vos données (positions, mouvements, risques et référentiels). Cette même donnée peut ensuite alimenter application digitale, reporting traditionnel et votre site web.",
+          client_title: "Our clients",
+          contact_title: "Contact",
+          footer_text: "© Copyright 100M. All Rights Reserved.",
         },
         en: {},
       },
