@@ -3,8 +3,7 @@ html { font-family: Lato; }
 body { font-size: 1.6rem; }
 h1 { font-size: 2em;line-height: 1.33;margin: 30px 0; }
 em { font-style: normal;border-bottom: 3px solid #fd4; }
-section { position: relative; }
-section { margin: auto;padding: 4rem 2rem;max-width: 100%;width: 1200px; }
+section { position: relative; width:1200px;}
 header, .home { color: white;font-weight: 700; }
 .multi-device { display: none; }
 .bg { position: absolute; }
@@ -30,9 +29,43 @@ header, .home { color: white;font-weight: 700; }
 }
 
 .card_body {
-  padding: 10px;
+  padding: 15px;
   padding-bottom: 60px;
 }
+
+.product_subtitle {
+  color: #707c8b;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+.product_text {
+  padding: 10px;
+  margin-bottom: 4em;
+}
+
+ul {
+  padding: 1em;
+}
+
+ul li {
+  color: #3c3c3c;
+  list-style: none;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+ ul li::before {
+  color: #02b3e0;
+  content: "\2022";
+  padding-right: 0.7em;
+}
+
+.card_body h3 {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
 </style>
 
 <template>
@@ -62,24 +95,24 @@ header, .home { color: white;font-weight: 700; }
   </section>
 
   <section class="product">
-    <h2 v-html="t.product" txt=c></h2>
+    <h2 txt=c><em  v-html="t.product"></em></h2>
     <div row>
       <div f1 center>
         <img src="/img/product1.png"/>
       </div>
-      <div f1>
+      <div f1 class="product_text">
         <img src="/img/smart-icon1.png" class="icon"/>
         <h3 v-html="t.reporting_title"></h3>
-        <div v-html="t.reporting_subtitle"></div>
+        <div class="product_subtitle" v-html="t.reporting_subtitle"></div>
         <div v-html="t.reporting_text"></div>
       </div>
     </div>
 
     <div row>
-      <div f1>
+      <div f1 class="product_text">
         <img src="/img/smart-icon2.png" class="icon"/>
         <h3 v-html="t.analytics_title"></h3>
-        <div v-html="t.analytics_subtitle"></div>
+        <div class="product_subtitle" v-html="t.analytics_subtitle"></div>
         <div v-html="t.analytics_text"></div>
       </div>
       <div f1 center>
@@ -91,10 +124,10 @@ header, .home { color: white;font-weight: 700; }
       <div f1 center>
         <img src="/img/product3.png"/>
       </div>
-      <div f1>
+      <div f1 class="product_text">
         <img src="/img/smart-icon3.png" class="icon"/>
         <h3 v-html="t.digital_title"></h3>
-        <div v-html="t.digital_subtitle"></div>
+        <div class="product_subtitle" v-html="t.digital_subtitle"></div>
         <div v-html="t.digital_text"></div>
       </div>
     </div>
@@ -102,7 +135,7 @@ header, .home { color: white;font-weight: 700; }
 
   <section class="use_case">
     <img src="/img/bg2.png" />
-    <h2 v-html="t.use_case_title"></h2>
+    <h2><em v-html="t.use_case_title"></em></h2>
     <div v-html="t.use_case_subtitle"></div>
     <div class="cards" row>
       <div f1 class="card">
@@ -132,7 +165,7 @@ header, .home { color: white;font-weight: 700; }
   <section class="why_us">
     <div row>
       <div f1>
-        <h2 v-html="t.why_us_title"></h2>
+        <h2><em v-html="t.why_us_title"></em></h2>
         <h3 v-html="t.why_us_subtitle"></h3>
         <div v-html="t.why_us_text"></div>
       </div>
@@ -143,12 +176,12 @@ header, .home { color: white;font-weight: 700; }
   </section>
 
   <section class="client">
-    <h2 v-html="t.client_title"></h2>
+    <h2 txt=c><em v-html="t.client_title"></em></h2>
     <img src="/img/clients.png"/>
   </section>
 
   <section class="contact">
-    <h2 v-html="t.contact_title"></h2>
+    <h2><em v-html="t.contact_title"></em></h2>
     <img src="/img/map.png" />
     <div row>
       <div f1>
@@ -200,7 +233,7 @@ export default {
           use_case_card_2_title: "Portfolio Management",
           use_case_card_2_bullet: "<ul><li>Revenez sur vos performances passées via un outil analytique et visuel</li><li>Améliorez la collaboration interne via un outil de suivi de portefeuille commun à tous</li>",
           use_case_card_3_title: "Sales",
-          use_case_card_3_bullet: "<li>Simplifiez vos interactions au quotidien avec les clients existants et augmentez votre taux de rétention</li><li>Soyez réactifs face à des demandes d’informations spécifiques de clients</li><li>Différenciez votre offre et convertissez davantage de prospects</li></ul>",
+          use_case_card_3_bullet: "<ul><li>Simplifiez vos interactions au quotidien avec les clients existants et augmentez votre taux de rétention</li><li>Soyez réactifs face à des demandes d’informations spécifiques de clients</li><li>Différenciez votre offre et convertissez davantage de prospects</li></ul>",
           why_us_title: "Why us",
           why_us_subtitle: "Vos données centralisées pour une information cohérente",
           why_us_text: "Nous centralisons et historisons l’ensemble de vos données (positions, mouvements, risques et référentiels). Cette même donnée peut ensuite alimenter application digitale, reporting traditionnel et votre site web.",
