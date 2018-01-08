@@ -12,17 +12,22 @@ header, .home { color: white;font-weight: 700; }
   h1 { font-size: 3em; }
 }
 .ellipse {
+  position: relative;
   border-radius: 1000px;
-  width: 99.5px;
-  height: 99.5px;
+  width: 100px;
+  height: 100px;
   background-color: #ffffff;
   box-shadow: 0 24px 49px 0 rgba(34, 49, 79, 0.23);
-  background-image: url("/img/smart-icon.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40%;
   margin-bottom: 30px;
 }
+
+.icon {
+  width: 40px;
+  position: absolute;
+  top: 26px;
+  left: 30px;
+}
+
 </style>
 
 <template>
@@ -58,7 +63,9 @@ header, .home { color: white;font-weight: 700; }
         <img src="/img/product.png"/>
       </div>
       <div f1>
-        <div class="ellipse"></div>
+        <div class="ellipse">
+          <img src="/img/smart-icon.png" class="icon"/>
+        </div>
         <h3 v-html="t.reporting_title"></h3>
         <div v-html="t.reporting_subtitle"></div>
         <div v-html="t.reporting_text"></div>
@@ -92,7 +99,7 @@ export default {
           title: "Une solution digitale<br>pour expliquer<br><em>votre performance.</em>",
           subtitle: "100M simplifie la production du reporting traditionnel,<br> digitalise le suivi de portefeuille et vous aide à mieux<br>communiquer.",
           home: "XXX",
-          product: "<em>Produits</em>",
+          product: "Produits",
           use_case: "XXX",
           our_difference: "XXX",
           client: "XXX",
