@@ -17,6 +17,9 @@ header, .home { color: white;font-weight: 700; }
   background-color: #fff;
 }
 
+.cards {
+
+}
 </style>
 
 <template>
@@ -85,9 +88,42 @@ header, .home { color: white;font-weight: 700; }
   </section>
 
   <section class="use_case">
+    <img src="/img/bg2.png" />
+    <h2 v-html="t.use_case_title"></h2>
+    <div v-html="t.use_case_subtitle"></div>
+    <div class="cards" row>
+      <div f1 class="card">
+        <img src="img/card1.png"/>
+        <h3 v-html="t.use_case_card_1_title"></h3>
+        <ul>
+          <li v-html="t.use_case_card_1_bullet_1"></li>
+          <li v-html="t.use_case_card_1_bullet_2"></li>
+          <li v-html="t.use_case_card_1_bullet_3"></li>
+        </ul>
+      </div>
+      <div f1 class="card">
+        <img src="img/card2.png"/>
+        <h3 v-html="t.use_case_card_2_title"></h3>
+        <ul>
+          <li v-html="t.use_case_card_2_bullet_1"></li>
+          <li v-html="t.use_case_card_2_bullet_2"></li>
+        </ul>
+      </div>
+      <div f1 class="card">
+        <img src="img/card3.png"/>
+        <h3 v-html="t.use_case_card_3_title"></h3>
+        <ul>
+          <li v-html="t.use_case_card_3_bullet_1"></li>
+          <li v-html="t.use_case_card_3_bullet_2"></li>
+          <li v-html="t.use_case_card_3_bullet_3"></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section class="our_difference">
+
+
   </section>
 
   <section class="client">
@@ -111,7 +147,6 @@ export default {
           subtitle: "100M simplifie la production du reporting traditionnel,<br> digitalise le suivi de portefeuille et vous aide à mieux<br>communiquer.",
           home: "XXX",
           product: "Produits",
-          use_case: "XXX",
           our_difference: "XXX",
           client: "XXX",
           team: "XXX",
@@ -124,6 +159,19 @@ export default {
           digital_title: "100M Digital",
           digital_subtitle: "Une application intuitive pour suivre vos portefeuille",
           digital_text: "Vos clients, vos commerciaux et collaborateurs vous demandent une information simple et claire? Renforcez votre discours en mettant à leur disposition des interfaces conçues pour eux.",
+          use_case_title: "Use cases",
+          use_case_subtitle: "Une application qui vous accompagne de la gestion à la relation client.",
+          use_case_card_1_title: "Performance, Reporting, and Client Service Manager",
+          use_case_card_1_bullet_1: "Automatisez la génération de vos reportings quels que soient la classe d’actifs, la langue ou le disclaimer",
+          use_case_card_1_bullet_2: "Générez en un clic des reporting sur-mesure pour vos clients institutionnels",
+          use_case_card_2_bullet_3: "Offrez à vos équipes et clients une valorisation actualisée quotidiennement (si le sous-jacent le permet)",
+          use_case_card_2_title: "Portfolio Management",
+          use_case_card_2_bullet_1: "Revenez sur vos performances passées via un outil analytique et visuel",
+          use_case_card_2_bullet_2: "Améliorez la collaboration interne via un outil de suivi de portefeuille commun à tous",
+          use_case_card_3_title: "Sales",
+          use_case_card_3_bullet_1: "Simplifiez vos interactions au quotidien avec les clients existants et augmentez votre taux de rétention",
+          use_case_card_3_bullet_2: "Soyez réactifs face à des demandes d’informations spécifiques de clients",
+          use_case_card_3_bullet_3: "Différenciez votre offre et convertissez davantage de prospects",
         },
         en: {},
       },
