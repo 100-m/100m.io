@@ -123,7 +123,7 @@ header, .home { color: white;font-weight: 700; }
 
   <section class="why_us">
     <div row>
-      <div f1 center>
+      <div f1>
         <h2 v-html="t.why_us_title"></h2>
         <h3 v-html="t.why_us_subtitle"></h3>
         <div v-html="t.why_us_text"></div>
@@ -141,6 +141,21 @@ header, .home { color: white;font-weight: 700; }
 
   <section class="contact">
     <h2 v-html="t.contact_title"></h2>
+    <img src="/img/map.png" />
+    <div row>
+      <div f1>
+        <h3 v-html="t.email_title"></h3>
+        <div v-html="t.email"></div>
+      </div>
+      <div f1>
+        <h3 v-html="t.phone_title"></h3>
+        <div v-html="t.phone"></div>
+      </div>
+      <div f1>
+        <h3 v-html="t.mail_title"></h3>
+        <div v-html="t.mail"></div>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -189,6 +204,12 @@ export default {
           client_title: "Our clients",
           contact_title: "Contact",
           footer_text: "© Copyright 100M. All Rights Reserved.",
+          email: "contact@100m.io",
+          email_title: "Email",
+          mail: "Station F – 5 parvis Alan Turing 75013 Paris, France",
+          mail_title: "Mail",
+          phone: "+33 (0)6 77 73 68 74",
+          phone_title: "Phone",
         },
         en: {},
       },
