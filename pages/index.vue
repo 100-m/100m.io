@@ -14,12 +14,15 @@ header, .home { color: white;font-weight: 700; }
 
 @media (max-width: 600px){
   [row] { flex-direction: column }
-  [row][reverse] { flex-direction: column-reverse }
+  [row][reverse] { flex-direction: column }
 }
 
 .icon {
   width: 40px;
   background-color: #fff;
+  top: 25px;
+  left: 30px;
+  position: absolute;
 }
 
 .card {
@@ -66,6 +69,19 @@ ul li {
   padding-right: 0.8em;
 }
 
+h2 {
+  margin-bottom: 1.5em;
+}
+
+.circle_icon {
+  width: 100px;
+	height: 100px;
+	background-color: #ffffff;
+	box-shadow: 0 24px 49px 0 rgba(34, 49, 79, 0.23);
+  position: relative;
+  border-radius: 100px;
+  margin-bottom: 60px;
+}
 </style>
 
 <template>
@@ -101,22 +117,26 @@ ul li {
         <img src="/img/product1.png"/>
       </div>
       <div f1 class="product_text">
-        <img src="/img/smart-icon1.png" class="icon"/>
+        <div class="circle_icon">
+          <img src="/img/smart-icon1.png" class="icon"/>
+        </div>
         <h3 v-html="t.reporting_title"></h3>
         <div class="product_subtitle" v-html="t.reporting_subtitle"></div>
         <div v-html="t.reporting_text"></div>
       </div>
     </div>
 
-    <div row>
+    <div row reverse>
+      <div f1 center>
+        <img src="/img/product2.png"/>
+      </div>
       <div f1 class="product_text">
-        <img src="/img/smart-icon2.png" class="icon"/>
+        <div class="circle_icon">
+          <img src="/img/smart-icon2.png" class="icon"/>
+        </div>
         <h3 v-html="t.analytics_title"></h3>
         <div class="product_subtitle" v-html="t.analytics_subtitle"></div>
         <div v-html="t.analytics_text"></div>
-      </div>
-      <div f1 center>
-        <img src="/img/product2.png"/>
       </div>
     </div>
 
@@ -125,7 +145,9 @@ ul li {
         <img src="/img/product3.png"/>
       </div>
       <div f1 class="product_text">
-        <img src="/img/smart-icon3.png" class="icon"/>
+        <div class="circle_icon">
+          <img src="/img/smart-icon3.png" class="icon"/>
+        </div>
         <h3 v-html="t.digital_title"></h3>
         <div class="product_subtitle" v-html="t.digital_subtitle"></div>
         <div v-html="t.digital_text"></div>
@@ -181,7 +203,7 @@ ul li {
   </section>
 
   <section class="contact">
-    <h2><em v-html="t.contact_title"></em></h2>
+    <h2 txt=c><em v-html="t.contact_title"></em></h2>
     <img src="/img/map.png" />
     <div row>
       <div f1>
