@@ -5,22 +5,21 @@ h1 { font-size: 2em;line-height: 1.33;margin: 30px 0; }
 em { font-style: normal;border-bottom: 3px solid #fd4; }
 section { position: relative; width:1200px;}
 header, .home { color: white;font-weight: 700; }
+header {margin-top: -800px}
 .multi-device { display: none; }
-.bg { position: absolute; }
 @media (min-width: 1000px){
   body { font-size: 1.8rem; }
   h1 { font-size: 3em; }
 }
 
-@media (max-width: 600px){
-  [row] { flex-direction: column }
-  [row][reverse] { flex-direction: column }
+.bg {
+  height: 800px;
 }
 
 .icon {
   width: 40px;
   background-color: #fff;
-  top: 25px;
+  top: 30px;
   left: 30px;
   position: absolute;
 }
@@ -29,6 +28,7 @@ header, .home { color: white;font-weight: 700; }
  margin: 15px;
  box-shadow: 0 24px 49px 0 rgba(34, 49, 79, 0.14);
  border-radius: 10px;
+ background-color: #fff;
 }
 
 .card_body {
@@ -36,6 +36,9 @@ header, .home { color: white;font-weight: 700; }
   padding-bottom: 60px;
 }
 
+.product {
+    margin-top: 200px;
+}
 .product_subtitle {
   color: #707c8b;
   font-weight: bold;
@@ -43,8 +46,18 @@ header, .home { color: white;font-weight: 700; }
 }
 
 .product_text {
-  padding: 10px;
   margin-bottom: 4em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.product_image {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+[reverse] .circle_icon {
+  margin-left: calc(100%-100px);
 }
 
 ul {
@@ -67,6 +80,7 @@ ul li {
 .card_body h3 {
   padding-left: 0.8em;
   padding-right: 0.8em;
+  color: #000;
 }
 
 h2 {
@@ -76,25 +90,50 @@ h2 {
 .circle_icon {
   width: 100px;
 	height: 100px;
-	background-color: #ffffff;
 	box-shadow: 0 24px 49px 0 rgba(34, 49, 79, 0.23);
   position: relative;
   border-radius: 100px;
   margin-bottom: 60px;
 }
+
+[white] {
+  color: #fff;
+}
+
+.use_case_section {
+  margin-top: -407px;
+}
+
+.use_case_subtitle {
+  margin-bottom: 50px;
+}
+
+.background_img_overlap {
+  min-width: 100vw;
+  height: 400px;
+}
+
+@media (max-width: 600px){
+  [row] { flex-direction: column }
+  [row][reverse] { flex-direction: column }
+  [reverse] .circle_icon {margin-left: 0}
+  [txt=r] {text-align: left}
+  .product_image {margin: 0}
+}
+
 </style>
 
 <template>
 <main>
-  <img class="bg" src="/img/bg.png" />
+  <img class="bg" src="/img/bg.png"/>
 
   <header row center between>
     <a row href="/" class="logo"><img alt="100M" src="/img/logo.svg" /></a>
     <div v-html="t.home"></div>
     <div v-html="t.product"></div>
-    <div v-html="t.use_case"></div>
-    <div v-html="t.why_us"></div>
-    <div v-html="t.client"></div>
+    <div v-html="t.use_case_title"></div>
+    <div v-html="t.why_us_title"></div>
+    <div v-html="t.client_title"></div>
     <!-- <div v-html="t.team"></div> -->
     <router-link :to="{ query: { lang: 'fr' }}">FR</router-link>
     <router-link :to="{ query: { lang: 'en' }}">EN</router-link>
@@ -113,12 +152,12 @@ h2 {
   <section class="product">
     <h2 txt=c><em  v-html="t.product"></em></h2>
     <div row>
-      <div f1 center>
+      <div f1 center class="product_image">
         <img src="/img/product1.png"/>
       </div>
       <div f1 class="product_text">
         <div class="circle_icon">
-          <img src="/img/smart-icon1.png" class="icon"/>
+          <img src="/img/smart-icon1.png" class="icon" style="top: 25px"/>
         </div>
         <h3 v-html="t.reporting_title"></h3>
         <div class="product_subtitle" v-html="t.reporting_subtitle"></div>
@@ -126,8 +165,8 @@ h2 {
       </div>
     </div>
 
-    <div row reverse>
-      <div f1 center>
+    <div row reverse txt=r>
+      <div f1 center class="product_image">
         <img src="/img/product2.png"/>
       </div>
       <div f1 class="product_text">
@@ -141,7 +180,7 @@ h2 {
     </div>
 
     <div row>
-      <div f1 center>
+      <div f1 center class="product_image">
         <img src="/img/product3.png"/>
       </div>
       <div f1 class="product_text">
@@ -155,34 +194,36 @@ h2 {
     </div>
   </section>
 
-  <section class="use_case">
-    <img src="/img/bg2.png" />
-    <h2><em v-html="t.use_case_title"></em></h2>
-    <div v-html="t.use_case_subtitle"></div>
-    <div class="cards" row>
-      <div f1 class="card">
-        <img src="img/card1.png"/>
-        <div class="card_body">
-          <h3 v-html="t.use_case_card_1_title"></h3>
-          <div v-html="t.use_case_card_1_bullet"></div>
+  <div class="use_case">
+    <img src="/img/bg2.png" class="background_img_overlap"/>
+    <section class="use_case_section" white>
+      <h2><em v-html="t.use_case_title"></em></h2>
+      <div v-html="t.use_case_subtitle" class="use_case_subtitle"></div>
+      <div class="cards" row>
+        <div f1 class="card">
+          <img src="img/card1.png"/>
+          <div class="card_body">
+            <h3 v-html="t.use_case_card_1_title"></h3>
+            <div v-html="t.use_case_card_1_bullet"></div>
+          </div>
+        </div>
+        <div f1 class="card">
+          <img src="img/card2.png"/>
+          <div class="card_body">
+            <h3 v-html="t.use_case_card_2_title"></h3>
+            <div v-html="t.use_case_card_2_bullet"></div>
+          </div>
+        </div>
+        <div f1 class="card">
+          <img src="img/card3.png"/>
+          <div class="card_body">
+            <h3 v-html="t.use_case_card_3_title"></h3>
+            <div v-html="t.use_case_card_3_bullet"></div>
+          </div>
         </div>
       </div>
-      <div f1 class="card">
-        <img src="img/card2.png"/>
-        <div class="card_body">
-          <h3 v-html="t.use_case_card_2_title"></h3>
-          <div v-html="t.use_case_card_2_bullet"></div>
-        </div>
-      </div>
-      <div f1 class="card">
-        <img src="img/card3.png"/>
-        <div class="card_body">
-          <h3 v-html="t.use_case_card_3_title"></h3>
-          <div v-html="t.use_case_card_3_bullet"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <section class="why_us">
     <div row>
@@ -235,10 +276,9 @@ export default {
         fr: {
           title: "Une solution digitale<br>pour expliquer<br><em>votre performance.</em>",
           subtitle: "100M simplifie la production du reporting traditionnel,<br> digitalise le suivi de portefeuille et vous aide à mieux<br>communiquer.",
-          home: "XXX",
+          home: "Accueil",
           product: "Produits",
-          client: "XXX",
-          team: "XXX",
+          team: "L'équipe",
           reporting_title: "100M Reporting",
           reporting_subtitle: "Un outil de production flexible",
           reporting_text: "Gérez simplement le reporting des fonds de tout type, avec un support multilingue et multi juridiction. Créez facilement des reportings sur-mesure et soyez réactifs face aux requêtes spécifiques de clients",
