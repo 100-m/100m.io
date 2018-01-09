@@ -5,10 +5,44 @@ h1 { font-size: 2em;line-height: 1.33;margin: 30px 0; }
 em { font-style: normal;border-bottom: 3px solid #fd4; }
 section { position: relative; width:1200px;}
 header, .home { color: white;font-weight: 700; }
-header {margin-top: -800px}
+header {margin-top: -800px; padding: 1em; text-align: right;}
 @media (min-width: 1000px){
   body { font-size: 1.8rem; }
   h1 { font-size: 3em; }
+}
+footer {padding: 3em; border-top: 1px solid rgb(238,239,241); color: #61676e;}
+
+a:before {
+  width: 0;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.menu {
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 5px;
+  text-align: right;
+  margin-left: auto;
+}
+
+.menu ul {
+  display: inline;
+  list-style: none;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.lang li {
+  font-weight: 600;
+  padding: 0px 5px;
 }
 
 .bg {
@@ -24,19 +58,18 @@ header {margin-top: -800px}
   margin: 10%;
   width: 80%;
   position: absolute;
+  bottom: 0;
 }
 
 .ipad {
   position: absolute;
   right: 0;
   bottom: 0;
-  margin: 8%;
   width: 60%;
   z-index: 3;
 }
 
 .mobile {
-  margin: 8%;
   width: 20%;
   z-index: 4;
   position: absolute;
@@ -52,6 +85,16 @@ header {margin-top: -800px}
   position: absolute;
 }
 
+.home_body {
+  padding-left: 10px;
+}
+
+.home h2 {
+   color: #90cfff;
+   font-weight: 400;
+   font-size: 21px;
+}
+
 .card {
  margin: 15px;
  box-shadow: 0 24px 49px 0 rgba(34, 49, 79, 0.14);
@@ -65,7 +108,7 @@ header {margin-top: -800px}
 }
 
 .product {
-    margin-top: 200px;
+    margin-top: 150px;
     background-image: url('/img/bg-product.png');
     background-size: 100%;
 }
@@ -91,18 +134,18 @@ header {margin-top: -800px}
   margin-left: calc(100%-100px);
 }
 
-ul {
+.use_case ul {
   padding: 1em;
 }
 
-ul li {
+.use_case ul li {
   color: #3c3c3c;
   list-style: none;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
 }
 
- ul li::before {
+ .use_case ul li:before {
   color: #02b3e0;
   content: "\2022";
   padding-right: 0.7em;
@@ -154,16 +197,28 @@ h2 {
   background-color: rgb(239,242,247);
 }
 
+.contact {
+  padding-top: 4em;
+}
+
+.contact_body {
+  margin-top: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
 @media (max-width: 600px){
   [row] { flex-direction: column }
   [row][reverse] { flex-direction: column }
   [reverse] .circle_icon {margin-left: 0}
   [txt=r] {text-align: left}
   .product_image {margin: 0}
-  .desktop { display: none}
-  .ipad, .mobile {position: relative; width: 100%; margin: 0; top: 0px; left: 0}
-  .mobile {width: 30%; top: -50vw}
+  .product {background: none;}
+  .multi-device {min-height: 300px}
   .product {margin-top: 10px}
+  .card {margin-left: 0; margin-right: 0;}
+  .menu {display: none}
+  header {text-align: center}
 }
 
 </style>
@@ -172,22 +227,28 @@ h2 {
 <main>
   <img class="bg" src="/img/bg.png"/>
 
-  <header row center between>
-    <a row href="/" class="logo"><img alt="100M" src="/img/logo.svg" /></a>
-    <div v-html="t.home"></div>
-    <div v-html="t.product"></div>
-    <div v-html="t.use_case_title"></div>
-    <div v-html="t.why_us_title"></div>
-    <div v-html="t.client_title"></div>
-    <!-- <div v-html="t.team"></div> -->
-    <router-link :to="{ query: { lang: 'fr' }}">FR</router-link>
-    <router-link :to="{ query: { lang: 'en' }}">EN</router-link>
+  <header row>
+    <a href="/" class="logo"><img alt="100M" src="/img/logo.svg" /></a>
+    <span class="menu">
+      <ul>
+        <li v-html="t.home"></li>
+        <li v-html="t.product"></li>
+        <li v-html="t.use_case_title"></li>
+        <li v-html="t.why_us_title"></li>
+        <li v-html="t.client_title"></li>
+        <!-- <li v-html="t.team"></li> -->
+      </ul>
+      <ul class="lang">
+        <li><router-link :to="{ query: { lang: 'fr' }}">FR</router-link></li>
+        <li><router-link :to="{ query: { lang: 'en' }}">EN</router-link></li>
+      </ul>
+    </span>
   </header>
 
   <section class="home" row>
-    <div f1>
-    <h1 v-html="t.title"></h1>
-    <h2 v-html="t.subtitle"></h2>
+    <div f1 class="home_body">
+      <h1 v-html="t.title"></h1>
+      <h2 v-html="t.subtitle"></h2>
     </div>
     <div f1 class="multi-device">
       <img class="desktop" src="/img/desktop.png" />
@@ -293,10 +354,11 @@ h2 {
       <img full src="/img/bg-clients.png" />
     </section>
   </div>
+
   <section class="contact">
     <h2 txt=c><em v-html="t.contact_title"></em></h2>
     <img src="/img/map.png" />
-    <div row>
+    <div row class="contact_body">
       <div f1>
         <h3 v-html="t.email_title"></h3>
         <div v-html="t.email"></div>
