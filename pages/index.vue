@@ -3,7 +3,7 @@ html { font-family: Lato; }
 body { font-size: 1.6rem; }
 h1 { font-size: 2em;line-height: 1.33;margin: 30px 0; }
 em { font-style: normal;border-bottom: 3px solid #fd4; }
-section { position: relative; width:1300px;}
+section { position: relative; width:1200px;}
 header, .home { color: white;font-weight: 700; }
 header {margin-top: -800px}
 @media (min-width: 1000px){
@@ -144,6 +144,16 @@ h2 {
   height: 400px;
 }
 
+.why_us {
+    background-image: url('/img/bg-why-us.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.client {
+  background-color: rgb(239,242,247);
+}
+
 @media (max-width: 600px){
   [row] { flex-direction: column }
   [row][reverse] { flex-direction: column }
@@ -264,9 +274,9 @@ h2 {
     </section>
   </div>
 
-  <section class="why_us">
-    <div row>
-      <div f1>
+  <div class="why_us">
+    <section row>
+      <div f1 class="why_us_body">
         <h2><em v-html="t.why_us_title"></em></h2>
         <h3 v-html="t.why_us_subtitle"></h3>
         <div v-html="t.why_us_text"></div>
@@ -274,14 +284,15 @@ h2 {
       <div f1>
         <img src="/img/why-us.png"/>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
-  <section class="client">
-    <h2 txt=c><em v-html="t.client_title"></em></h2>
-    <img src="/img/clients.png"/>
-  </section>
-
+  <div class="client">
+    <section>
+      <h2 txt=c><em v-html="t.client_title"></em></h2>
+      <img full src="/img/bg-clients.png" />
+    </section>
+  </div>
   <section class="contact">
     <h2 txt=c><em v-html="t.contact_title"></em></h2>
     <img src="/img/map.png" />
