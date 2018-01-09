@@ -231,12 +231,12 @@ h2 {
     <a href="/" class="logo"><img alt="100M" src="/img/logo.svg" /></a>
     <span class="menu">
       <ul>
-        <li v-html="t.home"></li>
-        <li v-html="t.product"></li>
-        <li v-html="t.use_case_title"></li>
-        <li v-html="t.why_us_title"></li>
-        <li v-html="t.client_title"></li>
-        <!-- <li v-html="t.team"></li> -->
+        <a href="#home"><li v-html="t.home"></li></a>
+        <a href="#product"><li v-html="t.product"></li></a>
+        <a href="#use_case"><li v-html="t.use_case_title"></li></a>
+        <a href="#why_us"><li v-html="t.why_us_title"></li></a>
+        <a href="#client"><li v-html="t.client_title"></li></a>
+        <!-- <a href="#"><li v-html="t.team"></li></a> -->
       </ul>
       <ul class="lang">
         <li><router-link :to="{ query: { lang: 'fr' }}">FR</router-link></li>
@@ -245,7 +245,7 @@ h2 {
     </span>
   </header>
 
-  <section class="home" row>
+  <section id="home" class="home" row>
     <div f1 class="home_body">
       <h1 v-html="t.title"></h1>
       <h2 v-html="t.subtitle"></h2>
@@ -257,7 +257,7 @@ h2 {
     </div>
   </section>
 
-  <div class="product">
+  <div id="product" class="product">
     <section>
       <h2 txt=c><em  v-html="t.product"></em></h2>
       <div row>
@@ -304,7 +304,7 @@ h2 {
     </section>
   </div>
 
-  <div class="use_case">
+  <div id="use_case" class="use_case">
     <img src="/img/bg2.png" class="background_img_overlap"/>
     <section class="use_case_section" white>
       <h2><em v-html="t.use_case_title"></em></h2>
@@ -335,7 +335,7 @@ h2 {
     </section>
   </div>
 
-  <div class="why_us">
+  <div id="why_us" class="why_us">
     <section row>
       <div f1 class="why_us_body">
         <h2><em v-html="t.why_us_title"></em></h2>
@@ -348,14 +348,14 @@ h2 {
     </section>
   </div>
 
-  <div class="client">
+  <div id="client" class="client">
     <section>
       <h2 txt=c><em v-html="t.client_title"></em></h2>
       <img full src="/img/bg-clients.png" />
     </section>
   </div>
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2 txt=c><em v-html="t.contact_title"></em></h2>
     <img src="/img/map.png" />
     <div row class="contact_body">
@@ -421,7 +421,43 @@ export default {
           phone: "+33 (0)6 77 73 68 74",
           phone_title: "Phone",
         },
-        en: {},
+        en: {
+          title: "ENGLISH solution digitale<br>pour expliquer<br><em>votre performance.</em>",
+          subtitle: "100M simplifie la production du reporting traditionnel,<br> digitalise le suivi de portefeuille et vous aide à mieux<br>communiquer.",
+          home: "Accueil",
+          product: "Produits",
+          team: "L'équipe",
+          reporting_title: "100M Reporting",
+          reporting_subtitle: "Un outil de production flexible",
+          reporting_text: "Gérez simplement le reporting des fonds de tout type, avec un support multilingue et multi juridiction. Créez facilement des reportings sur-mesure et soyez réactifs face aux requêtes spécifiques de clients",
+          analytics_title: "100M Analytics",
+          analytics_subtitle: "Un moteur de calcul intégré",
+          analytics_text: "100M dispose également d’un module de calcul de contribution et attribution de performance. Générez dynamiquement des rapports de date à date",
+          digital_title: "100M Digital",
+          digital_subtitle: "Une application intuitive pour suivre vos portefeuille",
+          digital_text: "Vos clients, vos commerciaux et collaborateurs vous demandent une information simple et claire? Renforcez votre discours en mettant à leur disposition des interfaces conçues pour eux.",
+          use_case_title: "Use cases",
+          use_case_subtitle: "Une application qui vous accompagne de la gestion à la relation client.",
+          use_case_card_1_title: "Performance, Reporting, and Client Service Manager",
+          use_case_card_1_bullet: "<ul><li>Automatisez la génération de vos reportings quels que soient la classe d’actifs, la langue ou le disclaimer</li><li>Générez en un clic des reporting sur-mesure pour vos clients institutionnels</li><li>Offrez à vos équipes et clients une valorisation actualisée quotidiennement (si le sous-jacent le permet)</li></ul>",
+          use_case_card_2_title: "Portfolio Management",
+          use_case_card_2_bullet: "<ul><li>Revenez sur vos performances passées via un outil analytique et visuel</li><li>Améliorez la collaboration interne via un outil de suivi de portefeuille commun à tous</li>",
+          use_case_card_3_title: "Sales",
+          use_case_card_3_bullet: "<ul><li>Simplifiez vos interactions au quotidien avec les clients existants et augmentez votre taux de rétention</li><li>Soyez réactifs face à des demandes d’informations spécifiques de clients</li><li>Différenciez votre offre et convertissez davantage de prospects</li></ul>",
+          why_us_title: "Why us",
+          why_us_subtitle: "Vos données centralisées pour une information cohérente",
+          why_us_text: "Nous centralisons et historisons l’ensemble de vos données (positions, mouvements, risques et référentiels). Cette même donnée peut ensuite alimenter application digitale, reporting traditionnel et votre site web.",
+          client_title: "Our clients",
+          contact_title: "Contact",
+          footer_text: "© Copyright 100M. All Rights Reserved.",
+          email: "contact@100m.io",
+          email_title: "Email",
+          mail: "Station F – 5 parvis Alan Turing 75013 Paris, France",
+          mail_title: "Mail",
+          phone: "+33 (0)6 77 73 68 74",
+          phone_title: "Phone",
+
+        },
       },
     }
   },
