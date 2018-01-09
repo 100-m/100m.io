@@ -213,6 +213,10 @@ h2 {
   padding-right: 3em;
 }
 
+.bg-mobile {
+  display: none;
+}
+
 @media (max-width: 600px){
   [row] { flex-direction: column }
   [row][reverse] { flex-direction: column }
@@ -225,6 +229,11 @@ h2 {
   header {text-align: center}
   .navi {display: none !important;}
   .logo img {margin: 0;}
+  .home {padding-top: 0;}
+  .home_body h1 {margin-top: 0}
+  .bg {display: none;}
+  .bg-mobile {display: block; height: 700px;}
+  header {margin-top: -690px;}
 }
 
 </style>
@@ -232,6 +241,7 @@ h2 {
 <template>
 <main>
   <img class="bg" src="/img/bg.png"/>
+  <img class="bg-mobile" src="/img/bg-mobile.png"/>
 
   <header row>
     <a href="/" class="logo"><img alt="100M" src="/img/logo.svg" /></a>
