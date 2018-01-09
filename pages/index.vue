@@ -17,6 +17,7 @@ a:before {
 }
 
 .logo img {
+  margin-left: 3em;
   width: 150px;
 }
 
@@ -83,6 +84,10 @@ a:before {
   top: 30px;
   left: 30px;
   position: absolute;
+}
+
+.home {
+  padding-top: 5em;
 }
 
 .home_body {
@@ -213,12 +218,12 @@ h2 {
   [reverse] .circle_icon {margin-left: 0}
   [txt=r] {text-align: left}
   .product_image {margin: 0}
-  .product {background: none;}
+  .product {background: none;margin-top: 10px;}
   .multi-device {min-height: 300px}
-  .product {margin-top: 10px}
   .card {margin-left: 0; margin-right: 0;}
-  .menu {display: none}
   header {text-align: center}
+  .navi {display: none !important;}
+  .logo img {margin: 0;}
 }
 
 </style>
@@ -230,7 +235,7 @@ h2 {
   <header row>
     <a href="/" class="logo"><img alt="100M" src="/img/logo.svg" /></a>
     <span class="menu">
-      <ul>
+      <ul class="navi">
         <a href="#home"><li v-html="t.home"></li></a>
         <a href="#product"><li v-html="t.product"></li></a>
         <a href="#use_case"><li v-html="t.use_case_title"></li></a>
