@@ -6,7 +6,6 @@ em { font-style: normal;border-bottom: 3px solid #fd4; }
 section { position: relative; width:1200px;}
 header, .home { color: white;font-weight: 700; }
 header {margin-top: -800px}
-.multi-device { display: none; }
 @media (min-width: 1000px){
   body { font-size: 1.8rem; }
   h1 { font-size: 3em; }
@@ -14,6 +13,34 @@ header {margin-top: -800px}
 
 .bg {
   height: 800px;
+}
+
+.multi-device {
+  position: relative;
+}
+
+.multi-device .desktop {
+  margin: 10%;
+  width: 80%;
+  position: absolute;
+}
+
+.ipad {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 8%;
+  width: 60%;
+  z-index: 3;
+}
+
+.mobile {
+  margin: 8%;
+  width: 20%;
+  z-index: 4;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
 }
 
 .icon {
@@ -119,6 +146,10 @@ h2 {
   [reverse] .circle_icon {margin-left: 0}
   [txt=r] {text-align: left}
   .product_image {margin: 0}
+  .desktop { display: none}
+  .ipad, .mobile {position: relative; width: 100%; margin: 0; top: 0px; left: 0}
+  .mobile {width: 30%; top: -30vw}
+  .product {margin-top: 10px}
 }
 
 </style>
@@ -139,10 +170,12 @@ h2 {
     <router-link :to="{ query: { lang: 'en' }}">EN</router-link>
   </header>
 
-  <section class="home">
+  <section class="home" row>
+    <div f1>
     <h1 v-html="t.title"></h1>
     <h2 v-html="t.subtitle"></h2>
-    <div class="multi-device">
+    </div>
+    <div f1 class="multi-device">
       <img class="desktop" src="/img/desktop.png" />
       <img class="ipad" src="/img/ipad.png" />
       <img class="mobile" src="/img/iphone.png" />
