@@ -27,6 +27,7 @@ a:before {
   padding-top: 5px;
   text-align: right;
   margin-left: auto;
+  font-size: 14px;
 }
 
 .menu ul {
@@ -413,18 +414,18 @@ export default {
           use_case_card_2_bullet: "<ul><li>Revenez sur vos performances passées via un outil analytique et visuel</li><li>Améliorez la collaboration interne via un outil de suivi de portefeuille commun à tous</li>",
           use_case_card_3_title: "Comerciaux",
           use_case_card_3_bullet: "<ul><li>Simplifiez vos interactions au quotidien avec les clients existants et augmentez votre taux de rétention</li><li>Soyez réactifs face à des demandes d’informations spécifiques de clients</li><li>Différenciez votre offre et convertissez davantage de prospects</li></ul>",
-          why_us_title: "Why us",
+          why_us_title: "Pourquoi nous",
           why_us_subtitle: "Vos données centralisées pour une information cohérente",
           why_us_text: "Nous centralisons et historisons l’ensemble de vos données (positions, mouvements, risques et référentiels). Cette même donnée peut ensuite alimenter application digitale, reporting traditionnel et votre site web.",
-          client_title: "Our clients",
+          client_title: "Nos clients",
           contact_title: "Contact",
           footer_text: "© Copyright 100M. All Rights Reserved.",
           email: "contact@100m.io",
           email_title: "Email",
           mail: "Station F – 5 parvis Alan Turing 75013 Paris, France",
-          mail_title: "Mail",
+          mail_title: "Adresse",
           phone: "+33 (0)6 77 73 68 74",
-          phone_title: "Phone",
+          phone_title: "Téléphone",
         },
         en: {
           title: "A digital solution <br>to explain<br><em>your performance.</em>",
@@ -434,7 +435,7 @@ export default {
           team: "Team",
           reporting_title: "100M Reporting",
           reporting_subtitle: "A flexible reporting tool",
-          reporting_text: "Easily manage fund reporting of any kind, with multi language and jurisdiction support. Easily create taylored reporting and be reactive for specific client requests.",
+          reporting_text: "Easily manage fund reporting of any kind, with multi-language and multi-jurisdiction support. Easily create taylored reporting and be reactive for specific client requests.",
           analytics_title: "100M Analytics",
           analytics_subtitle: "Integrated calculation engine",
           analytics_text: "100M also has a calculation engine for contribution and performance attribution. Dynamically generate reports for custom dates.",
@@ -451,7 +452,7 @@ export default {
           use_case_card_3_bullet: "<ul><li>Simplify your daily interaction with external clients and increase your retention.</li><li>Be reactive for specific client requests</li><li>Differenciate your offer and convert more prospects</li></ul>",
           why_us_title: "Why us",
           why_us_subtitle: "Your data centralized for coherent information",
-          why_us_text: "We centralize and historiez all of your data (positions, movements, risks and reference data). The same data can then feed digital application, traditional reporting and your website.",
+          why_us_text: "We centralize and keep track of all your data (positions, movements, risks and reference data). The same data can then feed digital application, traditional reporting and your website.",
           client_title: "Our clients",
           contact_title: "Contact",
           footer_text: "© Copyright 100M. All Rights Reserved.",
