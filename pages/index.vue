@@ -3,7 +3,7 @@ html { font-family: Lato; }
 body { font-size: 1.6rem; }
 h1 { font-size: 2em;line-height: 1.33;margin: 30px 0; }
 em { font-style: normal;border-bottom: 3px solid #fd4; }
-section { position: relative; width:1200px;}
+section { position: relative; width:1300px;}
 header, .home { color: white;font-weight: 700; }
 header {margin-top: -800px}
 @media (min-width: 1000px){
@@ -13,6 +13,7 @@ header {margin-top: -800px}
 
 .bg {
   height: 800px;
+  min-width: 100%;
 }
 
 .multi-device {
@@ -65,7 +66,10 @@ header {margin-top: -800px}
 
 .product {
     margin-top: 200px;
+    background-image: url('/img/bg-product.png');
+    background-size: 100%;
 }
+
 .product_subtitle {
   color: #707c8b;
   font-weight: bold;
@@ -148,7 +152,7 @@ h2 {
   .product_image {margin: 0}
   .desktop { display: none}
   .ipad, .mobile {position: relative; width: 100%; margin: 0; top: 0px; left: 0}
-  .mobile {width: 30%; top: -30vw}
+  .mobile {width: 30%; top: -50vw}
   .product {margin-top: 10px}
 }
 
@@ -182,50 +186,52 @@ h2 {
     </div>
   </section>
 
-  <section class="product">
-    <h2 txt=c><em  v-html="t.product"></em></h2>
-    <div row>
-      <div f1 center class="product_image">
-        <img src="/img/product1.png"/>
-      </div>
-      <div f1 class="product_text">
-        <div class="circle_icon">
-          <img src="/img/smart-icon1.png" class="icon" style="top: 25px"/>
+  <div class="product">
+    <section>
+      <h2 txt=c><em  v-html="t.product"></em></h2>
+      <div row>
+        <div f1 center class="product_image">
+          <img src="/img/product1.png"/>
         </div>
-        <h3 v-html="t.reporting_title"></h3>
-        <div class="product_subtitle" v-html="t.reporting_subtitle"></div>
-        <div v-html="t.reporting_text"></div>
+        <div f1 class="product_text">
+          <div class="circle_icon">
+            <img src="/img/smart-icon1.png" class="icon" style="top: 25px"/>
+          </div>
+          <h3 v-html="t.reporting_title"></h3>
+          <div class="product_subtitle" v-html="t.reporting_subtitle"></div>
+          <div v-html="t.reporting_text"></div>
+        </div>
       </div>
-    </div>
 
-    <div row reverse txt=r>
-      <div f1 center class="product_image">
-        <img src="/img/product2.png"/>
-      </div>
-      <div f1 class="product_text">
-        <div class="circle_icon">
-          <img src="/img/smart-icon2.png" class="icon"/>
+      <div row reverse txt=r>
+        <div f1 center class="product_image">
+          <img src="/img/product2.png"/>
         </div>
-        <h3 v-html="t.analytics_title"></h3>
-        <div class="product_subtitle" v-html="t.analytics_subtitle"></div>
-        <div v-html="t.analytics_text"></div>
+        <div f1 class="product_text">
+          <div class="circle_icon">
+            <img src="/img/smart-icon2.png" class="icon"/>
+          </div>
+          <h3 v-html="t.analytics_title"></h3>
+          <div class="product_subtitle" v-html="t.analytics_subtitle"></div>
+          <div v-html="t.analytics_text"></div>
+        </div>
       </div>
-    </div>
 
-    <div row>
-      <div f1 center class="product_image">
-        <img src="/img/product3.png"/>
-      </div>
-      <div f1 class="product_text">
-        <div class="circle_icon">
-          <img src="/img/smart-icon3.png" class="icon"/>
+      <div row>
+        <div f1 center class="product_image">
+          <img src="/img/product3.png"/>
         </div>
-        <h3 v-html="t.digital_title"></h3>
-        <div class="product_subtitle" v-html="t.digital_subtitle"></div>
-        <div v-html="t.digital_text"></div>
+        <div f1 class="product_text">
+          <div class="circle_icon">
+            <img src="/img/smart-icon3.png" class="icon"/>
+          </div>
+          <h3 v-html="t.digital_title"></h3>
+          <div class="product_subtitle" v-html="t.digital_subtitle"></div>
+          <div v-html="t.digital_text"></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <div class="use_case">
     <img src="/img/bg2.png" class="background_img_overlap"/>
