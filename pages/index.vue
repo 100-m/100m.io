@@ -43,8 +43,14 @@ a:before {
 }
 
 .lang li {
-  font-weight: 600;
+  font-weight: 500;
   padding: 0px 5px;
+  color: #9bebff;
+}
+
+.lang .active {
+  font-weight: 600;
+  color: white;
 }
 
 .bg {
@@ -101,7 +107,7 @@ a:before {
 .card {
  margin: 15px;
  box-shadow: 0 24px 49px 0 rgba(34, 49, 79, 0.14);
- border-radius: 10px;
+ border-radius: 13px;
  background-color: #fff;
 }
 
@@ -221,6 +227,15 @@ h2 {
   width: 100%;
 }
 
+.contact_icon {
+  width: 18px;
+}
+
+.contact h3 {
+  display: inline;
+  padding-left: 10px;
+}
+
 @media (max-width: 600px){
   [row] { flex-direction: column }
   [row][reverse] { flex-direction: column }
@@ -229,14 +244,13 @@ h2 {
   .product_image {margin: 0}
   .product {background: none;margin-top: 10px;}
   .product_text {margin: 0; margin-top: 40px; margin-bottom: 20px;}
-  .multi-device {min-height: 300px}
+  .multi-device {min-height: 300px;}
   .card {margin-left: 0; margin-right: 0;}
-  .navi {display: none !important;}
   .logo img {margin: 0;}
   .home {padding-top: 0;}
   .home_body h1 {margin-top: 0}
-  .bg {display: none;}
-  .bg-mobile {display: block; height: 700px;}
+  .bg {display: none; min-width: 100%;}
+  .bg-mobile {display: block; height: 700px; margin: 0; min-width: 100%;}
   .circle_icon {height: 80px; width: 80px; margin: 0 auto; margin-bottom: 40px; box-shadow: 0 15px 24px 0 rgba(34, 49, 79, 0.23);}
   header {margin-top: -690px; text-align: center}
   #map { min-height: 90vw;}
@@ -244,6 +258,10 @@ h2 {
 
 @media (max-width: 900px){
   #map { min-height: 50vw;}
+  .navi {display: none !important;}
+  .use_case [row] { flex-direction: column }
+  .cards { margin-left: 10%; margin-right: 10%;}
+  .card {margin-bottom: 50px;}
 }
 
 </style>
@@ -265,8 +283,8 @@ h2 {
         <!-- <a href="#"><li v-html="t.team"></li></a> -->
       </ul>
       <ul class="lang">
-        <li><router-link :to="{ query: { lang: 'fr' }}">FR</router-link></li>
-        <li><router-link :to="{ query: { lang: 'en' }}">EN</router-link></li>
+        <li :class="{ active: $route.query.lang != 'en' }"><router-link :to="{ query: { lang: 'fr' }}">FR</router-link></li>
+        <li :class="{ active: $route.query.lang === 'en' }"><router-link :to="{ query: { lang: 'en' }}">EN</router-link></li>
       </ul>
     </span>
   </header>
@@ -386,14 +404,17 @@ h2 {
     <div id="map" full></div>
     <div row class="contact_body">
       <div f1>
+        <img src="/img/email-icon.png" class="contact_icon"/>
         <h3 v-html="t.email_title"></h3>
         <div v-html="t.email"></div>
       </div>
       <div f1>
+        <img src="/img/phone-icon.png" class="contact_icon"/>
         <h3 v-html="t.phone_title"></h3>
         <div v-html="t.phone"></div>
       </div>
       <div f1>
+        <img src="/img/mail-icon.png" class="contact_icon"/>
         <h3 v-html="t.mail_title"></h3>
         <div v-html="t.mail"></div>
       </div>
@@ -432,7 +453,7 @@ export default {
           use_case_card_1_bullet: "<ul><li>Automatisez la génération de vos reportings quels que soient la classe d’actifs, la langue ou le disclaimer</li><li>Générez en un clic des reporting sur-mesure pour vos clients institutionnels</li><li>Offrez à vos équipes et clients une valorisation actualisée quotidiennement (si le sous-jacent le permet)</li></ul>",
           use_case_card_2_title: "Suivi de portefeuille",
           use_case_card_2_bullet: "<ul><li>Revenez sur vos performances passées via un outil analytique et visuel</li><li>Améliorez la collaboration interne via un outil de suivi de portefeuille commun à tous</li>",
-          use_case_card_3_title: "Comerciaux",
+          use_case_card_3_title: "Commerciaux",
           use_case_card_3_bullet: "<ul><li>Simplifiez vos interactions au quotidien avec les clients existants et augmentez votre taux de rétention</li><li>Soyez réactifs face à des demandes d’informations spécifiques de clients</li><li>Différenciez votre offre et convertissez davantage de prospects</li></ul>",
           why_us_title: "Pourquoi nous",
           why_us_subtitle: "Vos données centralisées pour une information cohérente",
