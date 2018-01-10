@@ -80,11 +80,8 @@ a:before {
 }
 
 .icon {
-  width: 40px;
+  width: 40%;
   background-color: #fff;
-  top: 30px;
-  left: 30px;
-  position: absolute;
 }
 
 .home {
@@ -136,7 +133,7 @@ a:before {
   margin-right: 60px;
 }
 
-[reverse] .circle_icon {
+.right_icon {
   margin-left: calc(100%-100px);
 }
 
@@ -174,6 +171,7 @@ h2 {
   position: relative;
   border-radius: 100px;
   margin-bottom: 60px;
+  background: white;
 }
 
 [white] {
@@ -217,23 +215,30 @@ h2 {
   display: none;
 }
 
+#map {
+  height: 50%;
+  min-height: 600px;
+  width: 100%;
+}
+
 @media (max-width: 600px){
   [row] { flex-direction: column }
   [row][reverse] { flex-direction: column }
-  [reverse] .circle_icon {margin-left: 0}
   [txt=r] {text-align: left}
+  .right_icon {margin-left: 0}
   .product_image {margin: 0}
   .product {background: none;margin-top: 10px;}
+  .product_text {margin: 0; margin-top: 40px; margin-bottom: 20px;}
   .multi-device {min-height: 300px}
   .card {margin-left: 0; margin-right: 0;}
-  header {text-align: center}
   .navi {display: none !important;}
   .logo img {margin: 0;}
   .home {padding-top: 0;}
   .home_body h1 {margin-top: 0}
   .bg {display: none;}
   .bg-mobile {display: block; height: 700px;}
-  header {margin-top: -690px;}
+  .circle_icon {height: 80px; width: 80px; margin: 0 auto; margin-bottom: 40px; box-shadow: 0 15px 24px 0 rgba(34, 49, 79, 0.23);}
+  header {margin-top: -690px; text-align: center}
 }
 
 </style>
@@ -276,45 +281,45 @@ h2 {
   <div id="product" class="product">
     <section>
       <h2 txt=c><em  v-html="t.product"></em></h2>
-      <div row>
-        <div f1 center class="product_image">
-          <img src="/img/product1.png"/>
-        </div>
+      <div row reverse>
         <div f1 class="product_text">
-          <div class="circle_icon">
-            <img src="/img/smart-icon1.png" class="icon" style="top: 25px"/>
+          <div row center class="circle_icon">
+            <img src="/img/smart-icon1.png" class="icon"/>
           </div>
           <h3 v-html="t.reporting_title"></h3>
           <div class="product_subtitle" v-html="t.reporting_subtitle"></div>
           <div v-html="t.reporting_text"></div>
         </div>
+        <div f1 center class="product_image">
+          <img src="/img/product1.png"/>
+        </div>
       </div>
 
-      <div row reverse txt=r>
-        <div f1 center class="product_image">
-          <img src="/img/product2.png"/>
-        </div>
+      <div row txt=r>
         <div f1 class="product_text">
-          <div class="circle_icon">
+          <div row center class="circle_icon right_icon">
             <img src="/img/smart-icon2.png" class="icon"/>
           </div>
           <h3 v-html="t.analytics_title"></h3>
           <div class="product_subtitle" v-html="t.analytics_subtitle"></div>
           <div v-html="t.analytics_text"></div>
         </div>
+        <div f1 center class="product_image">
+          <img src="/img/product2.png"/>
+        </div>
       </div>
 
-      <div row>
-        <div f1 center class="product_image">
-          <img src="/img/product3.png"/>
-        </div>
+      <div row reverse>
         <div f1 class="product_text">
-          <div class="circle_icon">
+          <div row center class="circle_icon">
             <img src="/img/smart-icon3.png" class="icon"/>
           </div>
           <h3 v-html="t.digital_title"></h3>
           <div class="product_subtitle" v-html="t.digital_subtitle"></div>
           <div v-html="t.digital_text"></div>
+        </div>
+        <div f1 center class="product_image">
+          <img src="/img/product3.png"/>
         </div>
       </div>
     </section>
