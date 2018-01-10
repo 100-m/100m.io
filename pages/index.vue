@@ -118,7 +118,7 @@ a:before {
 }
 
 .product {
-    margin-top: 150px;
+    margin-top: 2em;
     background-image: url('/img/bg-product.png');
     background-size: 100%;
 }
