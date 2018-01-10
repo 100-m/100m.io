@@ -1,11 +1,11 @@
 <style>
 html { font-family: Lato; }
-body { font-size: 1.6rem; }
+body { font-size: 1.6rem; min-width:370px;}
 h1 { font-size: 2em;line-height: 1.33;margin: 30px 0; }
 em { font-style: normal;border-bottom: 3px solid #fd4; }
 section { position: relative; width:1200px;}
 header, .home { color: white;font-weight: 700; }
-header {margin-top: -800px; padding: 1em; text-align: right;}
+header {padding: 1em; text-align: right;}
 @media (min-width: 1000px){
   body { font-size: 1.8rem; }
   h1 { font-size: 3em; }
@@ -91,11 +91,12 @@ a:before {
 }
 
 .home {
-  padding-top: 5em;
+  background-image: url('/img/bg.png');
+  background-size: 100% 100%;
 }
 
 .home_body {
-  padding-left: 10px;
+  padding-top: 5em;
 }
 
 .home h2 {
@@ -236,6 +237,16 @@ h2 {
   padding-left: 10px;
 }
 
+@media (max-width: 900px){
+  #map { min-height: 50vw;}
+  .navi {display: none !important;}
+  .use_case [row] { flex-direction: column }
+  .home {background-size: 120% 100%; background-position: center;}
+  .cards { margin-left: 10%; margin-right: 10%;}
+  .card {margin-bottom: 50px;}
+  .home_body {padding-top: 0}
+}
+
 @media (max-width: 600px){
   [row] { flex-direction: column }
   [row][reverse] { flex-direction: column }
@@ -245,61 +256,55 @@ h2 {
   .product {background: none;margin-top: 10px;}
   .product_text {margin: 0; margin-top: 40px; margin-bottom: 20px;}
   .multi-device {min-height: 300px;}
-  .card {margin-left: 0; margin-right: 0;}
   .logo img {margin: 0;}
-  .home {padding-top: 0;}
+  .home {padding-top: 0; background-size: 1000% 90vh; background-position: top; background-repeat: no-repeat;}
   .home_body h1 {margin-top: 0}
   .bg {display: none; min-width: 100%;}
   .bg-mobile {display: block; height: 700px; margin: 0; min-width: 100%;}
   .circle_icon {height: 80px; width: 80px; margin: 0 auto; margin-bottom: 40px; box-shadow: 0 15px 24px 0 rgba(34, 49, 79, 0.23);}
-  header {margin-top: -690px; text-align: center}
+  header {text-align: center}
   #map { min-height: 90vw;}
+  .cards {margin-left: 0; margin-right: 0;}
+  .card {margin-left: 0; margin-right: 0;}
 }
-
-@media (max-width: 900px){
-  #map { min-height: 50vw;}
-  .navi {display: none !important;}
-  .use_case [row] { flex-direction: column }
-  .cards { margin-left: 10%; margin-right: 10%;}
-  .card {margin-bottom: 50px;}
-}
-
 </style>
 
 <template>
 <main>
-  <img class="bg" src="/img/bg.png"/>
-  <img class="bg-mobile" src="/img/bg-mobile.png"/>
 
-  <header row>
-    <a href="/" class="logo"><img alt="100M" src="/img/logo.svg" /></a>
-    <span class="menu">
-      <ul class="navi">
-        <a href="#home"><li v-html="t.home"></li></a>
-        <a href="#product"><li v-html="t.product"></li></a>
-        <a href="#use_case"><li v-html="t.use_case_title"></li></a>
-        <a href="#why_us"><li v-html="t.why_us_title"></li></a>
-        <a href="#client"><li v-html="t.client_title"></li></a>
-        <!-- <a href="#"><li v-html="t.team"></li></a> -->
-      </ul>
-      <ul class="lang">
-        <li :class="{ active: $route.query.lang != 'en' }"><router-link :to="{ query: { lang: 'fr' }}">FR</router-link></li>
-        <li :class="{ active: $route.query.lang === 'en' }"><router-link :to="{ query: { lang: 'en' }}">EN</router-link></li>
-      </ul>
-    </span>
-  </header>
+  <div id="home" class="home">
+    <!-- <img class="bg" src="/img/bg.png"/>
+    <img class="bg-mobile" src="/img/bg-mobile.png"/> -->
 
-  <section id="home" class="home" row>
-    <div f1 class="home_body">
-      <h1 v-html="t.title"></h1>
-      <h2 v-html="t.subtitle"></h2>
-    </div>
-    <div f1 class="multi-device">
-      <img class="desktop" src="/img/desktop.png" />
-      <img class="ipad" src="/img/ipad.png" />
-      <img class="mobile" src="/img/iphone.png" />
-    </div>
-  </section>
+    <header row>
+      <a href="/" class="logo"><img alt="100M" src="/img/logo.svg" /></a>
+      <span class="menu">
+        <ul class="navi">
+          <a href="#home"><li v-html="t.home"></li></a>
+          <a href="#product"><li v-html="t.product"></li></a>
+          <a href="#use_case"><li v-html="t.use_case_title"></li></a>
+          <a href="#why_us"><li v-html="t.why_us_title"></li></a>
+          <a href="#client"><li v-html="t.client_title"></li></a>
+          <!-- <a href="#"><li v-html="t.team"></li></a> -->
+        </ul>
+        <ul class="lang">
+          <li :class="{ active: $route.query.lang != 'en' }"><router-link :to="{ query: { lang: 'fr' }}">FR</router-link></li>
+          <li :class="{ active: $route.query.lang === 'en' }"><router-link :to="{ query: { lang: 'en' }}">EN</router-link></li>
+        </ul>
+      </span>
+    </header>
+    <section row class="home_body">
+      <div f1>
+        <h1 v-html="t.title"></h1>
+        <h2 v-html="t.subtitle"></h2>
+      </div>
+      <div f1 class="multi-device">
+        <img class="desktop" src="/img/desktop.png" />
+        <img class="ipad" src="/img/ipad.png" />
+        <img class="mobile" src="/img/iphone.png" />
+      </div>
+    </section>
+  </div>
 
   <div id="product" class="product">
     <section>
