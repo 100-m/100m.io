@@ -239,6 +239,11 @@ h2 {
   .bg-mobile {display: block; height: 700px;}
   .circle_icon {height: 80px; width: 80px; margin: 0 auto; margin-bottom: 40px; box-shadow: 0 15px 24px 0 rgba(34, 49, 79, 0.23);}
   header {margin-top: -690px; text-align: center}
+  #map { min-height: 90vw;}
+}
+
+@media (max-width: 900px){
+  #map { min-height: 50vw;}
 }
 
 </style>

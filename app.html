@@ -204,8 +204,9 @@
         }, function(results, status) {
           console.log(results, status)
           if (status == google.maps.GeocoderStatus.OK) {
+            var zoom = screen.width > 600 ? 15: 13;
             var myOptions = {
-              zoom: 15,
+              zoom: zoom,
               center: results[0].geometry.location,
             }
             map = new google.maps.Map(document.getElementById("map"), myOptions);
@@ -218,7 +219,12 @@
             });
           }
       });
-}
+
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      initMap();
+    }, false);
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp5mltPKzfDLJVls86cKEeP_ScU7aSL2o&callback=initMap"
     async defer>
