@@ -314,7 +314,7 @@ h2 {
 
   <div id="home" class="home">
     <header row>
-      <a href="/" class="logo"><img alt="100M" src="/img/logo.svg" /></a>
+      <a href="/" class="logo"><img alt="100M logo" src="/img/logo.svg" /></a>
       <span class="menu">
         <ul class="navi">
           <a href="#home"><li v-html="t.home"></li></a>
@@ -337,9 +337,9 @@ h2 {
         <h2 v-html="t.subtitle"></h2>
       </div>
       <div f1 class="multi-device">
-        <img class="desktop" src="/img/desktop.png" />
-        <img class="ipad" src="/img/ipad.png" />
-        <img class="mobile" src="/img/iphone.png" />
+        <img alt="100M dashboard desktop" class="desktop" src="/img/desktop.png" />
+        <img alt="100M dashboard tablet" class="ipad" src="/img/ipad.png" />
+          <img alt="100M dashboard mobile" class="mobile" src="/img/iphone.png" />
       </div>
     </section>
   </div>
@@ -350,69 +350,69 @@ h2 {
       <div row reverse>
         <div f1 class="product_text">
           <div row center class="circle_icon">
-            <img src="/img/smart-icon1.png" class="icon"/>
+            <img alt="icon" src="/img/smart-icon1.png" class="icon"/>
           </div>
           <h3 v-html="t.reporting_title"></h3>
           <div class="product_subtitle" v-html="t.reporting_subtitle"></div>
           <div v-html="t.reporting_text"></div>
         </div>
         <div f1 center class="product_image">
-          <img src="/img/product1.png"/>
+          <img alt="Product screenshot" src="/img/product1.png"/>
         </div>
       </div>
 
       <div row txt=r>
         <div f1 class="product_text">
           <div row center class="circle_icon right_icon">
-            <img src="/img/smart-icon2.png" class="icon"/>
+            <img alt="icon" src="/img/smart-icon2.png" class="icon"/>
           </div>
           <h3 v-html="t.analytics_title"></h3>
           <div class="product_subtitle" v-html="t.analytics_subtitle"></div>
           <div v-html="t.analytics_text"></div>
         </div>
         <div f1 center class="product_image">
-          <img src="/img/product2.png"/>
+          <img alt="Product screenshot" src="/img/product2.png"/>
         </div>
       </div>
 
       <div row reverse>
         <div f1 class="product_text">
           <div row center class="circle_icon">
-            <img src="/img/smart-icon3.png" class="icon"/>
+            <img alt="icon" src="/img/smart-icon3.png" class="icon"/>
           </div>
           <h3 v-html="t.digital_title"></h3>
           <div class="product_subtitle" v-html="t.digital_subtitle"></div>
           <div v-html="t.digital_text"></div>
         </div>
         <div f1 center class="product_image">
-          <img src="/img/product3.png"/>
+          <img alt="Product screenshot" src="/img/product3.png"/>
         </div>
       </div>
     </section>
   </div>
 
   <div id="use_case" class="use_case">
-    <img src="/img/bg2.png" class="background_img_overlap"/>
+    <img alt="background image" src="/img/bg2.png" class="background_img_overlap"/>
     <section class="use_case_section" white>
       <h2><em v-html="t.use_case_title"></em></h2>
       <div v-html="t.use_case_subtitle" class="use_case_subtitle"></div>
       <div class="cards" row>
         <div f1 class="card">
-          <img src="img/card1.png"/>
+          <img alt="company photo" src="img/card1.png"/>
           <div class="card_body">
             <h3 v-html="t.use_case_card_1_title"></h3>
             <div v-html="t.use_case_card_1_bullet"></div>
           </div>
         </div>
         <div f1 class="card">
-          <img src="img/card2.png"/>
+          <img alt="company photo" src="img/card2.png"/>
           <div class="card_body">
             <h3 v-html="t.use_case_card_2_title"></h3>
             <div v-html="t.use_case_card_2_bullet"></div>
           </div>
         </div>
         <div f1 class="card">
-          <img src="img/card3.png"/>
+          <img alt="company photo" src="img/card3.png"/>
           <div class="card_body">
             <h3 v-html="t.use_case_card_3_title"></h3>
             <div v-html="t.use_case_card_3_bullet"></div>
@@ -430,7 +430,7 @@ h2 {
         <div v-html="t.why_us_text"></div>
       </div>
       <div f1>
-        <img src="/img/why-us.png"/>
+        <img alt="100M pipeline" src="/img/why-us.png"/>
       </div>
     </section>
   </div>
@@ -438,7 +438,7 @@ h2 {
   <div id="client" class="client">
     <section>
       <h2 txt=c><em v-html="t.client_title"></em></h2>
-      <img full src="/img/bg-clients.png" />
+      <img alt="Background client" full src="/img/bg-clients.png" />
     </section>
   </div>
 
@@ -447,17 +447,17 @@ h2 {
     <div id="map" full></div>
     <div row class="contact_body">
       <div f1>
-        <img src="/img/email-icon.png" class="contact_icon"/>
+        <img alt="email icon" src="/img/email-icon.png" class="contact_icon"/>
         <h3 v-html="t.email_title"></h3>
         <div v-html="t.email"></div>
       </div>
       <div f1>
-        <img src="/img/phone-icon.png" class="contact_icon"/>
+        <img alt="phone icon" src="/img/phone-icon.png" class="contact_icon"/>
         <h3 v-html="t.phone_title"></h3>
         <div v-html="t.phone"></div>
       </div>
       <div f1>
-        <img src="/img/mail-icon.png" class="contact_icon"/>
+        <img alt="mail icon" src="/img/mail-icon.png" class="contact_icon"/>
         <h3 v-html="t.mail_title"></h3>
         <div v-html="t.mail"></div>
       </div>
@@ -568,7 +568,7 @@ export default {
           use_case_card_2_title: "Portfolio Management",
           use_case_card_2_bullet: "<ul><li>Go back on your past performances through a visual and analytic tool.</li><li>Improve internal collaboration thanks to a shared portfolio monitoring tool.</li>",
           use_case_card_3_title: "Sales",
-          use_case_card_3_bullet: "<ul><li>Simplify your daily interaction with external clients and increase your retention.</li><li>Be reactive for specific client requests</li><li>Differenciate your offer and convert more prospects</li></ul>",
+          use_case_card_3_bullet: "<ul><li>Simplify your daily interactions with external clients and increase your retention.</li><li>Be reactive for specific client requests</li><li>Differenciate your offer and convert more prospects</li></ul>",
           why_us_title: "Why us",
           why_us_subtitle: "Your data centralized for coherent information",
           why_us_text: "We centralize and keep track of all your data (positions, movements, risks and reference data). The same data can then feed digital application, traditional reporting and your website.",
