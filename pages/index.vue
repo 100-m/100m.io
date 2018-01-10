@@ -99,6 +99,10 @@ a:before {
   padding-top: 5em;
 }
 
+.home h1 {
+  padding-bottom: 1em;
+}
+
 .home h2 {
    color: #90cfff;
    font-weight: 400;
@@ -237,6 +241,42 @@ h2 {
   padding-left: 10px;
 }
 
+.title {
+  padding-bottom: 2em;
+}
+
+.slidingVertical span{
+	animation: topToBottom 12.5s linear infinite 0s;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.slidingVertical span:nth-child(2){
+	animation-delay: 2.5s;
+
+}
+.slidingVertical span:nth-child(3){
+	animation-delay: 5s;
+
+}
+.slidingVertical span:nth-child(4){
+	animation-delay: 7.5s;
+
+}
+.slidingVertical span:nth-child(5){
+	animation-delay: 10s;
+}
+
+@keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; transform: translateY(-50px); }
+	10% { opacity: 1; transform: translateY(0px); }
+	25% { opacity: 1; transform: translateY(0px); }
+	30% { opacity: 0; transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
 @media (max-width: 900px){
   #map { min-height: 50vw;}
   .navi {display: none !important;}
@@ -273,9 +313,6 @@ h2 {
 <main>
 
   <div id="home" class="home">
-    <!-- <img class="bg" src="/img/bg.png"/>
-    <img class="bg-mobile" src="/img/bg-mobile.png"/> -->
-
     <header row>
       <a href="/" class="logo"><img alt="100M" src="/img/logo.svg" /></a>
       <span class="menu">
@@ -285,7 +322,6 @@ h2 {
           <a href="#use_case"><li v-html="t.use_case_title"></li></a>
           <a href="#why_us"><li v-html="t.why_us_title"></li></a>
           <a href="#client"><li v-html="t.client_title"></li></a>
-          <!-- <a href="#"><li v-html="t.team"></li></a> -->
         </ul>
         <ul class="lang">
           <li :class="{ active: $route.query.lang != 'en' }"><router-link :to="{ query: { lang: 'fr' }}">FR</router-link></li>
@@ -295,7 +331,9 @@ h2 {
     </header>
     <section row class="home_body">
       <div f1>
-        <h1 v-html="t.title"></h1>
+        <h1>
+          <span v-html="t.title"></span>
+        </h1>
         <h2 v-html="t.subtitle"></h2>
       </div>
       <div f1 class="multi-device">
@@ -438,7 +476,27 @@ export default {
     return {
       translation: {
         fr: {
-          title: "Une solution digitale<br>pour expliquer<br><em>votre performance.</em>",
+          title: `Une solution digitale<br>pour <span class="slidingVertical">
+            <span>expliquer</span>
+            <span>centraliser</span>
+            <span>reinventer</span>
+            <span>supporter votre</span>
+            <span>automatiser</span>
+          </span>
+          <br>
+          <span class="slidingVertical">
+            <span><em>votre performance.</em></span>
+            <span><em>vos données.</em></span>
+            <span><em>l’expérience client.</em></span>
+            <span><em>effort commercial.</em></span>
+            <span><em>votre reporting.</em></span>
+          </span>
+          `,
+          title_complement_1: "pour expliquer<br><em>votre performance.</em>",
+          title_complement_2: "pour centraliser<br><em>vos données.</em>",
+          title_complement_3: "pour reinventer<br><em>l’expérience client.</em>",
+          title_complement_4: "pour supporter<br><em>votre effort commercial.</em>",
+          title_complement_5: "pour automatiser<br><em>votre reporting</em>",
           subtitle: "100M simplifie la production du reporting traditionnel,<br> digitalise le suivi de portefeuille et vous aide à mieux<br>communiquer.",
           home: "Accueil",
           product: "Produits",
@@ -474,7 +532,22 @@ export default {
           phone_title: "Téléphone",
         },
         en: {
-          title: "A digital solution <br>to explain<br><em>your performance.</em>",
+          title: `A digital solution<br>to <span class="slidingVertical">
+            <span>explain</span>
+            <span>centralize</span>
+            <span>reinvent</span>
+            <span>help your</span>
+            <span>automate</span>
+          </span>
+          <br>
+          <span class="slidingVertical">
+            <span><em>your performance.</em></span>
+            <span><em>your data.</em></span>
+            <span><em>client experience.</em></span>
+            <span><em>sales effort.</em></span>
+            <span><em>your reporting.</em></span>
+          </span>
+          `,
           subtitle: "100M simplifies traditional reporting,<br> digitalizes portfolio monitoring and helps you to better <br>communicate.",
           home: "Home",
           product: "Product",
