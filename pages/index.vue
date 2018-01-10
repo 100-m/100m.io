@@ -378,7 +378,7 @@ h2 {
 
   <section id="contact" class="contact">
     <h2 txt=c><em v-html="t.contact_title"></em></h2>
-    <img src="/img/map.png" />
+    <div id="map" full></div>
     <div row class="contact_body">
       <div f1>
         <h3 v-html="t.email_title"></h3>
