@@ -198,7 +198,7 @@ h2 {
 }
 
 .background_img_overlap {
-  min-width: 100vw;
+  width: 100vw;
   height: 400px;
 }
 
@@ -230,6 +230,9 @@ h2 {
   height: 50%;
   min-height: 600px;
   width: 100%;
+  background-image: url("/img/map-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contact_icon {
@@ -243,6 +246,27 @@ h2 {
 
 .title {
   padding-bottom: 2em;
+}
+
+.screenshot_wrapper img {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 24px 49px 0 rgba(34, 49, 79, 0.14);
+}
+
+.browser_tab {
+  height: 20px;
+	background-image: linear-gradient(to right, #dde4ec, #dde4ec, #e8ebf1), linear-gradient(#fbdb45, #fbdb45);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.browser_button {
+  display: inline;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: grey;
 }
 
 .slidingVertical span{
@@ -350,14 +374,21 @@ h2 {
       <div row reverse>
         <div f1 class="product_text">
           <div row center class="circle_icon">
-            <img alt="icon" src="/img/smart-icon1.png" class="icon"/>
+            <img alt="icon" src="/img/smart-icon3.png" class="icon"/>
           </div>
-          <h3 v-html="t.reporting_title"></h3>
-          <div class="product_subtitle" v-html="t.reporting_subtitle"></div>
-          <div v-html="t.reporting_text"></div>
+          <h3 v-html="t.digital_title"></h3>
+          <div class="product_subtitle" v-html="t.digital_subtitle"></div>
+          <div v-html="t.digital_text"></div>
         </div>
         <div f1 center class="product_image">
-          <img alt="Product screenshot" src="/img/product1.png"/>
+          <div class="screenshot_wrapper">
+            <div class="browser_tab">
+              <!-- <div class="browser_button"></div>
+              <div class="browser_button"></div>
+              <div class="browser_button"></div> -->
+            </div>
+            <img alt="Product screenshot" src="/img/product.gif"/>
+          </div>
         </div>
       </div>
 
@@ -371,21 +402,35 @@ h2 {
           <div v-html="t.analytics_text"></div>
         </div>
         <div f1 center class="product_image">
-          <img alt="Product screenshot" src="/img/product2.png"/>
+          <div class="screenshot_wrapper">
+            <div class="browser_tab">
+              <div class="browser_button"></div>
+              <div class="browser_button"></div>
+              <div class="browser_button"></div>
+            </div>
+            <img alt="Product screenshot" src="/img/analytics.gif"/>
+          </div>
         </div>
       </div>
 
       <div row reverse>
         <div f1 class="product_text">
           <div row center class="circle_icon">
-            <img alt="icon" src="/img/smart-icon3.png" class="icon"/>
+            <img alt="icon" src="/img/smart-icon1.png" class="icon"/>
           </div>
-          <h3 v-html="t.digital_title"></h3>
-          <div class="product_subtitle" v-html="t.digital_subtitle"></div>
-          <div v-html="t.digital_text"></div>
+          <h3 v-html="t.reporting_title"></h3>
+          <div class="product_subtitle" v-html="t.reporting_subtitle"></div>
+          <div v-html="t.reporting_text"></div>
         </div>
         <div f1 center class="product_image">
-          <img alt="Product screenshot" src="/img/product3.png"/>
+          <div class="screenshot_wrapper">
+            <div class="browser_tab">
+              <div class="browser_button"></div>
+              <div class="browser_button"></div>
+              <div class="browser_button"></div>
+            </div>
+            <img alt="Product screenshot" src="/img/reporting.gif"/>
+          </div>
         </div>
       </div>
     </section>
@@ -588,8 +633,9 @@ export default {
   },
   computed: {
     t() {
+      // if (initMap) setTimeout(() => initMap(), 100)
       return this.translation[this.$route.query.lang === 'en' ? 'en' : 'fr']
     },
-  }
+  },
 }
 </script>

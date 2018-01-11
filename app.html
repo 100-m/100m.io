@@ -28,6 +28,8 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     {{ APP }}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp5mltPKzfDLJVls86cKEeP_ScU7aSL2o">
+    </script>
     <script>
       var geocoder, map;
       function initMap() {
@@ -225,12 +227,7 @@
 
     }
 
-    document.addEventListener('DOMContentLoaded', function() {
-      initMap();
-    }, false);
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp5mltPKzfDLJVls86cKEeP_ScU7aSL2o&callback=initMap"
-    async defer>
+    initMap();
     </script>
   </body>
 </html>
