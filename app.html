@@ -33,6 +33,14 @@
     <script>
       var geocoder, map;
       function initMap() {
+        // HACK: function should be in another function
+        document.querySelectorAll('a').forEach(function(el) {
+          if (el.getAttribute('href')[0] === '#') el.onclick = function(e) {
+            e.preventDefault()
+            window.scroll({ behavior: 'smooth', left: 0, top: document.querySelector(el.getAttribute('href')).offsetTop })
+          }
+        })
+
         var styledMapType = new google.maps.StyledMapType([
           {
             "elementType": "geometry",
