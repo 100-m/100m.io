@@ -553,7 +553,7 @@ export default {
           analytics_subtitle: "Un moteur de calcul intégré",
           analytics_text: "100M dispose également d’un module de calcul de contribution et attribution de performance. Générez dynamiquement des rapports de date à date.",
           digital_title: "100M Digital",
-          digital_subtitle: "Une application intuitive pour suivre vos portefeuille",
+          digital_subtitle: "Une application intuitive pour suivre vos portefeuilles",
           digital_text: "Vos clients, vos commerciaux et collaborateurs vous demandent une information simple et claire? Renforcez votre discours en mettant à leur disposition des interfaces conçues pour eux.",
           use_case_title: "Cas d'usages",
           use_case_subtitle: "Une application qui vous accompagne de la gestion à la relation client.",
