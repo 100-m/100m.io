@@ -1,10 +1,15 @@
 # *Voltrade* Documentation
 
-This documentation is divided into:
-- <a href="#-setup-script" target="_self">***Setup*** script</a>
-- <a href="#-software-usages-commands-api" target="_self">***Software*** usages/commands/api</a>
-- <a href="#-code-architecture" target="_self">***Code*** architecture</a>
-- <a href="#-code-snippets" target="_self">***Code*** snippets</a>
+This documentation is provided by [100M](https://100m.io) for [Voltrade Capital](https://www.linkedin.com/company/voltrade-capital/). It is divided into 2 parts:
+
+***Setup*** informations, to automatically install windows softwares and utilities
+- <a href="#-setup-script" target="_self">Setup script</a>
+- <a href="#-setup-utilities" target="_self">Setup utilities</a>
+
+***Code*** informations, to understand code architecture and python tools
+- <a href="#-code-architecture" target="_self">Code architecture</a>
+- <a href="#-command-scheduling" target="_self">Command scheduling</a>
+- <a href="#-code-snippets" target="_self">Code snippets</a>
 
 ---
 
@@ -12,23 +17,19 @@ This documentation is divided into:
 
 The windows installation script is available [here](https://github.com/vbrajon/dotfiles/blob/master/setup/install-windows.ps1).  
 Scripting tool chosen was powershell/bash.  
-An Ansible script will be provided if multiple machines needs to be setup.
+An other scripting tool will be provided if multiple machines needs to be setup.
 
-***Install*** Procédure:
+***Install*** Procedure:
 - Open a powershell terminal **as Admin**
 - Run the following command:
   `iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/vbrajon/dotfiles/master/setup/install-windows.ps1'))`
-
-***Update*** Procédure:
-- Re-run the command
-- Answer the prompt with <kbd>u</kbd> for **Update**
 
 ***Software*** Installed & Configured:
 - googlechrome / atom / nodejs / git / putty / python2 / python3 / office365proplus / adobereader / winrar / 7zip / pyxll / sshfs / z / vim
 
 ---
 
-# ***Software*** usages/commands/api
+# ***Setup*** utilities
 
 Atom ***Shortcuts***:<small style="float: right;">Replace <kbd>Ctrl</kbd> by <kbd>Cmd</kbd> on Mac</small>
 
@@ -87,7 +88,8 @@ SSHFS ***Usage***
 
 # ***Code*** architecture
 
-The code is available at [https://github.com/100-m/back-voltrade](https://github.com/100-m/back-voltrade).
+The code is available at [https://github.com/100-m/back-voltrade](https://github.com/100-m/back-voltrade).  
+The code is located in a shared drive VOCFS01 > `S:/CODE/`.
 
 #### Folder structure
 
@@ -110,14 +112,35 @@ The Bloomberg connector should only be used for initial and incremental automati
 To add a *ticker*, edit `voltrade/tickers.csv` file and run command update_ticker.  
 To add a *field*, edit static_fields or historical_fields list in `voltrade/__init__.py` file and run  command update_ticker.  
 
-#### Scheduling
+---
+
+# ***Command*** scheduling
 
 Scheduled commands are run via [**commandr**](https://github.com/vbrajon/commandr).  
-The commandr interface is the following: http://127.0.0.1:1111  
+The commandr tool is run with `S:\CODE\commandr\api.js`.  
+Command list and logs are user based and stored in `~/.commandr.json`.  
+The commandr interface is accessible on Abacus Citrix Network on this url: http://127.0.0.1:1111  
 The process to schedule a command is the following:
-- Add a command: `ipython 'S:\CODE\back-voltrade\cron\update_ticker.py'`
+- Add a command, example: `ipython 'S:\CODE\back-voltrade\cron\update_ticker.py'`
 - Click on newly added command name to edit advanced settings
-- Edit schedule input: `R/2017-01-01T02:00/PT24H` (see [ISO8601](https://en.wikipedia.org/wiki/ISO_8601#Repeating_intervals) format)
+- See [ISO8601](https://en.wikipedia.org/wiki/ISO_8601#Repeating_intervals) format for schedule input: `R/2017-01-01T02:00/PT24H`
+
+The commandr tool accept the following configuration (in .env file or commandline variable):
+- ENV: null || 'dev' for frontend development purpose
+- AUTH0_DOMAIN
+- SENDGRID_API_KEY
+- COMMANDR_EMAIL
+
+The commandr interface contains the following security logic:
+- Every API calls sent from 127.0.0.1 are accepted, without authentication.
+- Command creation/deletion API calls are accessible only from 127.0.0.1.
+- Every API calls sent from a remote machine needs authentication.
+- The authentication service used is Auth0, User Administration is done through [Auth0 Dashboard](https://manage.auth0.com/).
+
+The following command can be used to expose the app through 100m network,
+from any machine (behind proxy, local dev, etc...):
+`ssh -nNT -R 10000:localhost:1111 tunnel@surface.100m.io`  
+An ssh key must be provided and authorized beforehand.
 
 ---
 
@@ -161,7 +184,7 @@ email.send(['valentin@100m.io'], 'Subject', '<h1>Text or HTML<br>content here</h
 ***Commandr*** connector
 ```python
 from voltrade import commandr
-commadr.add(command="ipython ~/update_ticker.py", schedule="R/2017-01-01T02:00/PT24H", runhook="#1", onsuccess="echo log >> /log.txt", onsuccess="echo error >> /error.txt")
+commandr.add(command="ipython ~/update_ticker.py", schedule="R/2017-01-01T02:00/PT24H", runhook="#1", onsuccess="echo log >> /log.txt", onsuccess="echo error >> /error.txt")
 commandr.delete('#2')
 commandr.run('#3')
 commandr.kill('#3')
