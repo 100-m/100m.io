@@ -346,6 +346,7 @@ h2 {
           <a href="#use_case"><li v-html="t.use_case_title"></li></a>
           <a href="#why_us"><li v-html="t.why_us_title"></li></a>
           <a href="#client"><li v-html="t.client_title"></li></a>
+          <a href="https://www.welcometothejungle.co/companies/100m-io" target="_blank"><li v-html="t.careers"></li></a>
         </ul>
         <ul class="lang">
           <li :class="{ active: $route.query.lang != 'en' }"><router-link :to="{ query: { lang: 'fr' }}">FR</router-link></li>
@@ -575,6 +576,7 @@ export default {
           mail_title: "Adresse",
           phone: "+33 (0)6 77 73 68 74",
           phone_title: "Téléphone",
+          careers: "Jobs",
         },
         en: {
           title: `A digital solution<br>to <span class="slidingVertical">
@@ -626,6 +628,7 @@ export default {
           mail_title: "Mail",
           phone: "+33 (0)6 77 73 68 74",
           phone_title: "Phone",
+          careers: "Careers",
 
         },
       },
