@@ -1,0 +1,119 @@
+<!--
+Chronos is a project scheduling / following tool
+
+It should:
+
+Retrive information from:
+- 1 board
+- 4 calendars
+- 2 github response_type
+With Trello + Google + Github Auth
+
+Display information of:
+- Period (1Y / 1Q / 1M / 1W)
+- Projects
+- Man Days
+- Forecast
+
+Allow input:
+- Forecast (1Q > Futur projects)
+- Planning (2W > Allocation)
+
+Trello:
+https://trello.com/1/authorize?expiration=never&name=Chronos&scope=read&response_type=token&key=046e2330907f0ebb73bd1f18947a4308
+https://api.trello.com/1/members/me/?key=046e2330907f0ebb73bd1f18947a4308&token=b9a259e4ee2d0923b563e963196163bfbd988a4633f54b7916d26752f2d3315c
+https://api.trello.com/b/A2C5zxQN/100m-production.json?key=046e2330907f0ebb73bd1f18947a4308&token=b9a259e4ee2d0923b563e963196163bfbd988a4633f54b7916d26752f2d3315c&fields=all&actions=all&action_fields=all&actions_limit=1000&cards=all&card_fields=all&card_attachments=true&lists=all&list_fields=all&members=all&member_fields=all&checklists=all&checklist_fields=all&organization=false
+-->
+<style>
+@import url(//rawcss.com/raw.css);
+@import url(//fonts.googleapis.com/css?family=Montserrat:100,400,700);
+body { font-family: 'Montserrat', sans-serif; }
+main { display: flex;flex-direction: column;align-items: center;width: 100%;height: 100%;min-height: fit-content;padding: 40px; }
+main > h1 { font-size: 80px; }
+main > hr { width: 400px; }
+.filters { display: flex;align-items: center;justify-content: center; }
+.filters > * { margin: 4px; }
+.filters input { width: 40px;padding: 2px; }
+.filters hr { height: 24px;border-left: var(--border); }
+.member { display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border-radius: 50%;background: #d9d9d9;font-size: 12px; }
+.report { max-width: 400px; }
+b { display: block; }
+.report > b { text-align: center; }
+.report > div > b { margin-top: 10px; }
+.report .line { display: flex;margin-left: 20px; }
+.report .line > :first-child { flex: 1;word-break: break-word;hyphens: auto; }
+.report .line > * { min-width: 40px; }
+</style>
+<script src="//unpkg.com/vue"></script>
+<script src="//unpkg.com/xtendjs"></script>
+<main>
+  <h1>Chronos</h1>
+  <div class="filters">
+    <template v-for="member in trello.members">
+      <img class="member" :src="member.avatarUrl + '/50.png'" :title="member.fullName" v-if="member.avatarUrl">
+      <div class="member" v-text="member.initials" :title="member.fullName" v-else></div>
+    </template>
+    <hr>
+    <a v-for="week in weeks">{{ week }}</a>
+    <label>W<input /></label>
+    <hr>
+    <a v-for="project in projects">{{ project }}</a>
+    <label>#<input /></label>
+  </div>
+  <hr>
+  <div class="report">
+    <b>CHRONOS - {{ this.weeks[0] }}</b>
+    <div v-for="group, project in cards.groupBy('project')">
+      <b>{{ project }} - {{ group.map('time').sum() }}j</b>
+      <div class="line" v-for="card in group">
+        <div>- {{ card.task }}</div>
+        <div>{{ card.members.map('initials').join('+') }}</div>
+        <div>{{ card.time }}j</div>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+xtend()
+const doy = d => (Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - Date.UTC(d.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000
+const week = d => Math.round(doy(d) / 7)
+const weeknum = week(new Date())
+new Vue({
+  el: 'main',
+  data: {
+    trello: {},
+    weeks: ['W' + weeknum, 'W' + (weeknum - 1)],
+  },
+  computed: {
+    cards() {
+      try {
+        const trello = this.trello
+        return trello.cards
+          .filter(d => /([^-]*)-(.*)\[([.0-9]+).*\]/.exec(d.name))
+          .map(card => {
+            const matches = /([^-]*)-(.*)\[([.0-9]+).*\]/.exec(card.name)
+            const project = matches[1].trim()
+            const task = matches[2].trim()
+            const time = +matches[3]
+            const week = trello.lists.find(d => d.id === card.idList).name
+            const members = card.idMembers.map(mid => trello.members.find(d => d.id === mid))
+            return { project, task, time, week, members }
+          })
+          .filter(d => d.week === this.weeks[0])
+      } catch(e) { return [] }
+    },
+    projects() {
+      try {
+        return this.cards
+          .map('project').unique()
+          .filter(d => d.length <= 4 && !['100M', 'SPEC'].includes(d))
+      } catch(e) { return [] }
+    },
+  },
+  mounted() {
+    fetch('https://trello.com/b/A2C5zxQN/100m-production.json?key=046e2330907f0ebb73bd1f18947a4308&token=b9a259e4ee2d0923b563e963196163bfbd988a4633f54b7916d26752f2d3315c&cards=all&lists=all&members=all')
+    .then(r => r.json())
+    .then(json => window.trello = this.trello = json)
+  },
+})
+</script>
