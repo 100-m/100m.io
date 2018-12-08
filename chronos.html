@@ -36,8 +36,8 @@ main > hr { width: 400px; }
 .filters input { width: 40px;padding: 2px; }
 .filters hr { height: 24px;border-left: var(--border); }
 .member { display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border-radius: 50%;background: #d9d9d9;font-size: 12px; }
-.report { max-width: 400px; }
-b { display: block; }
+.report { width: 400px; }
+.report b { display: block; }
 .report > b { text-align: center; }
 .report > div > b { margin-top: 10px; }
 .report .line { display: flex;margin-left: 20px; }
@@ -49,20 +49,22 @@ b { display: block; }
 <main>
   <h1>Chronos</h1>
   <div class="filters">
-    <template v-for="member in trello.members">
+    <a v-href="{ member: member.initials }" v-for="member in trello.members.filter(d => !['CM', 'D', 'WV'].includes(d.initials))">
       <img class="member" :src="member.avatarUrl + '/50.png'" :title="member.fullName" v-if="member.avatarUrl">
       <div class="member" v-text="member.initials" :title="member.fullName" v-else></div>
-    </template>
+    </a>
     <hr>
-    <a v-for="week in weeks">{{ week }}</a>
-    <label>W<input /></label>
+    <a v-href="{ week }" v-for="week in [week, week - 1]">W{{ week }}</a>
+    <label>W<input :value="router.state.week" @input="router.state = Object.assign({}, router.state, { week: $event.target.value })" /></label>
     <hr>
-    <a v-for="project in projects">{{ project }}</a>
-    <label>#<input /></label>
+    <a v-href="{ project }" v-for="project in projects">{{ project }}</a>
+    <label>#<input :value="router.state.project" @input="router.state = Object.assign({}, router.state, { project: $event.target.value })" /></label>
+    <hr>
+    <a v-href>RESET</a>
   </div>
   <hr>
   <div class="report">
-    <b>CHRONOS - {{ this.weeks[0] }}</b>
+    <b>CHRONOS</b>
     <hr>
     <div class="row between">
       <div class="row" v-for="v, k in breakdown">
@@ -88,20 +90,86 @@ b { display: block; }
 </main>
 <script>
 xtend()
+// Mini Vue router
+window.router = {
+  pathname: location.pathname,
+  search: location.search,
+}
+window.addEventListener('click', e => {
+  let el = e.target
+  while (el.parentNode !== document.body) {
+    if (el.href) {
+      window.history.pushState({}, null, el.href)
+      window.dispatchEvent(new Event('router'))
+      return e.preventDefault()
+    }
+    el = el.parentNode
+  }
+})
+window.addEventListener('popstate', e => window.dispatchEvent(new Event('router')))
+window.addEventListener('router', e => {
+  router.pathname = location.pathname
+  router.search = location.search
+})
+// TODO: v-href should be equal to:
+// :href="fn(...)"
+// :class="{ active: fn(...) }"
+// N2H: an input shortcut similar to v-model
+// :value="router.state.week"
+// @input="router.state = Object.assign({}, router.state, { week: $event.target.value })"
+const vhref = {} // href elements
+const uhref = ({ el, binding }) => {
+  let link
+  if (!binding.value) link = location.pathname
+  if (is(String, binding.value)) link = binding.value
+  if (is(Object, binding.value)) {
+    const state = router.state.map()
+    el.classList[binding.value.keys().every(k => state[k] === binding.value[k]) ? 'add' : 'remove']('active')
+    binding.value.map((v, k) => state[k] === v ? delete state[k] : state[k] = v)
+    link = state.reduce((acc, v, k) => `${acc}&${k}=${v}`, '?').replace('?&', '?').replace(/^\?$/, location.pathname)
+  }
+  el.classList[[location.pathname + location.search, location.search].includes(link) ? 'add' : 'remove']('exact')
+  el.setAttribute('href', link)
+} // update href element
+Vue.directive('href', (el, binding, vnode) => uhref(vhref[vnode.key] = { el, binding }))
+Vue.mixin({
+  data() {
+    router.state = {}
+    return { router }
+  },
+  watch: {
+    'router.search': {
+      handler(next) {
+        router.state = (router.search || '?').slice(1).split('&').filter().reduce((acc, str) => { const [k, v] = str.split('=');acc[k] = v;return acc }, {})
+      },
+      immediate: true,
+    },
+    'router.state': {
+      handler(next) {
+        if (same({}, next)) return
+        const link = next.reduce((acc, v, k) => `${acc}&${k}=${v}`, '?').replace('?&', '?').replace(/^\?$/, location.pathname)
+        if (link === router.search) return
+        window.history.pushState({}, null, link)
+        window.dispatchEvent(new Event('router'))
+      },
+      deep: true,
+    },
+  },
+})
+
 const doy = d => (Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - Date.UTC(d.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000
 const week = d => Math.round(doy(d) / 7)
-const weeknum = week(new Date())
 new Vue({
   el: 'main',
   data: {
     trello: {},
-    weeks: ['W' + weeknum, 'W' + (weeknum - 1)],
+    week: week(new Date()),
   },
   computed: {
     cards() {
       try {
         const trello = this.trello
-        return trello.cards
+        const cards = trello.cards
           .filter(d => /([^-]*)-(.*)\[([.0-9]+).*\]/.exec(d.name))
           .map(card => {
             const matches = /([^-]*)-(.*)\[([.0-9]+).*\]/.exec(card.name)
@@ -112,13 +180,21 @@ new Vue({
             const members = card.idMembers.map(mid => trello.members.find(d => d.id === mid))
             return { project, task, time, week, members }
           })
-          .filter(d => d.week === this.weeks[0])
+          .filter(d => /^W\d+/.test(d.week))
+        if (router.state.project) return cards.filter(d => d.project === router.state.project)
+        if (router.state.member) return cards.filter(d => d.members[0] && d.members[0].initials === router.state.member)
+        return cards.filter(d => d.week === ('W' + (router.state.week || this.week)))
       } catch(e) { return [] }
     },
     projects() {
       try {
-        return this.cards
-          .map('project').unique()
+        const trello = this.trello
+        const idList = trello.lists.find(d => d.name === ('W' + this.week)).id
+        return trello.cards
+          .filter(d => d.idList === idList)
+          .filter(d => /([^-]*)-(.*)\[([.0-9]+).*\]/.exec(d.name))
+          .map(d => d.name.split(' - ')[0])
+          .unique()
           .filter(d => d.length <= 4 && !['100M', 'SPEC'].includes(d))
           .sort()
       } catch(e) { return [] }
@@ -128,14 +204,14 @@ new Vue({
         const support_id = this.trello.lists.find(d => d.name === 'SUPPORT').id
         const run_projects = this.trello.cards.filter(d => d.idList === support_id).map(d => d.name.split(' - ')[0]).filter(d => d.length <= 4)
         const INVEST = this.cards.filter(d => d.project.length > 4 || ['100M', 'SPEC'].includes(d.project))
-        const RUN = this.cards.filter(d => !INVEST.includes(d)).filter(d => run_projects.includes(d.name))
+        const RUN = this.cards.filter(d => !INVEST.includes(d)).filter(d => run_projects.includes(d.project))
         const PROD = this.cards.filter(d => !INVEST.includes(d) && !RUN.includes(d))
         return {
           INVEST: INVEST.map('time').sum(),
           PROD: PROD.map('time').sum(),
           RUN: RUN.map('time').sum()
         }
-      } catch(e) { console.log(e);return {} }
+      } catch(e) { return {} }
     },
   },
   mounted() {
