@@ -63,8 +63,21 @@ b { display: block; }
   <hr>
   <div class="report">
     <b>CHRONOS - {{ this.weeks[0] }}</b>
-    <div v-for="group, project in cards.groupBy('project')">
-      <b>{{ project }} - {{ group.map('time').sum() }}j</b>
+    <hr>
+    <div class="row between">
+      <div class="row" v-for="v, k in breakdown">
+        <b>{{ k }}: {{ v }}j</b>
+      </div>
+    </div>
+    <hr>
+    <div class="row between">
+      <div class="row" v-for="grp in cards.sortBy(d => d.members[0].initials).groupBy(d => d.members[0].initials)">
+        <b>{{ grp[0].members[0].initials }}: {{ grp.map('time').sum() }}j</b>
+      </div>
+    </div>
+    <hr>
+    <div v-for="group in cards.groupBy('project').values().sortBy(grp => -grp.map('time').sum())">
+      <b>{{ group[0].project }}: {{ group.map('time').sum() }}j</b>
       <div class="line" v-for="card in group">
         <div>- {{ card.task }}</div>
         <div>{{ card.members.map('initials').join('+') }}</div>
@@ -107,7 +120,22 @@ new Vue({
         return this.cards
           .map('project').unique()
           .filter(d => d.length <= 4 && !['100M', 'SPEC'].includes(d))
+          .sort()
       } catch(e) { return [] }
+    },
+    breakdown() {
+      try {
+        const support_id = this.trello.lists.find(d => d.name === 'SUPPORT').id
+        const run_projects = this.trello.cards.filter(d => d.idList === support_id).map(d => d.name.split(' - ')[0]).filter(d => d.length <= 4)
+        const INVEST = this.cards.filter(d => d.project.length > 4 || ['100M', 'SPEC'].includes(d.project))
+        const RUN = this.cards.filter(d => !INVEST.includes(d)).filter(d => run_projects.includes(d.name))
+        const PROD = this.cards.filter(d => !INVEST.includes(d) && !RUN.includes(d))
+        return {
+          INVEST: INVEST.map('time').sum(),
+          PROD: PROD.map('time').sum(),
+          RUN: RUN.map('time').sum()
+        }
+      } catch(e) { console.log(e);return {} }
     },
   },
   mounted() {
