@@ -33,7 +33,8 @@ main > h1 { font-size: 80px; }
 main > hr { width: 400px; }
 .filters { display: flex;align-items: center;justify-content: center; }
 .filters > * { margin: 4px; }
-.filters input { width: 40px;padding: 2px; }
+.filters input { width: 34px;padding: 2px; }
+.filters select { width: 60px;padding: 2px; }
 .filters hr { height: 24px;border-left: var(--border); }
 .member { display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border-radius: 50%;background: #d9d9d9;font-size: 12px; }
 .report { width: 400px; }
@@ -42,7 +43,7 @@ main > hr { width: 400px; }
 .report > div > b { margin-top: 10px; }
 .report .line { display: flex;margin-left: 20px; }
 .report .line > :first-child { flex: 1;word-break: break-word;hyphens: auto; }
-.report .line > * { min-width: 40px; }
+.report .line > * { min-width: 40px;padding: 0 2px; }
 </style>
 <script src="//unpkg.com/vue"></script>
 <script src="//unpkg.com/xtendjs"></script>
@@ -54,11 +55,12 @@ main > hr { width: 400px; }
       <div class="member" v-text="member.initials" :title="member.fullName" v-else></div>
     </a>
     <hr>
-    <a v-href="{ week }" v-for="week in [week, week - 1]">W{{ week }}</a>
-    <label>W<input :value="router.state.week" @input="router.state = Object.assign({}, router.state, { week: $event.target.value })" /></label>
+    <a v-href="{ period }" v-for="period in [week, 'W' + (week.slice(1) - 1), quarter, 'Q' + (quarter.slice(1) - 1), year]">{{ period }}</a>
+    <label><input :value="router.state.period" @input="router.state = Object.assign({}, router.state, { period: $event.target.value })" /></label>
     <hr>
-    <a v-href="{ project }" v-for="project in projects">{{ project }}</a>
-    <label>#<input :value="router.state.project" @input="router.state = Object.assign({}, router.state, { project: $event.target.value })" /></label>
+    #<select :value="router.state.project" @input="router.state = Object.assign({}, router.state, { project: $event.target.value })">
+      <option :value="project" v-for="project in projects">{{ project }}</option>
+    </select>
     <hr>
     <a v-href>RESET</a>
   </div>
@@ -157,19 +159,27 @@ Vue.mixin({
   },
 })
 
-const doy = d => (Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - Date.UTC(d.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000
-const week = d => Math.round(doy(d) / 7)
+const doy = (d = new Date()) => (Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - Date.UTC(d.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000
+const week = (d = new Date()) => Math.round(doy(d) / 7)
+const quarter = (d = new Date()) => Math.round(doy(d) / 365 * 4)
 new Vue({
   el: 'main',
   data: {
     trello: {},
-    week: week(new Date()),
+    week: 'W' + week(),
+    quarter: 'Q' + quarter(),
+    year: new Date().getFullYear(),
   },
   computed: {
     cards() {
       try {
         const trello = this.trello
-        const cards = trello.cards
+        let period
+        if (same({}, router.state)) period = [this.week]
+        if (/W\d/.test(router.state.period)) period = [router.state.period]
+        if (/Q\d/.test(router.state.period)) period = Array(13).fill(0).map((d, i) => 'W' + (13 * (router.state.period.slice(1) - 1) + i + 1))
+        if (/\d{4}/.test(router.state.period)) period = Array(52).fill(0).map((d, i) => 'W' + (i + 1))
+        return trello.cards
           .filter(d => /([^-]*)-(.*)\[([.0-9]+).*\]/.exec(d.name))
           .map(card => {
             const matches = /([^-]*)-(.*)\[([.0-9]+).*\]/.exec(card.name)
@@ -180,22 +190,21 @@ new Vue({
             const members = card.idMembers.map(mid => trello.members.find(d => d.id === mid))
             return { project, task, time, week, members }
           })
-          .filter(d => /^W\d+/.test(d.week))
-        if (router.state.project) return cards.filter(d => d.project === router.state.project)
-        if (router.state.member) return cards.filter(d => d.members[0] && d.members[0].initials === router.state.member)
-        return cards.filter(d => d.week === ('W' + (router.state.week || this.week)))
+          .filter(d => /^W\d+$/.test(d.week))
+          .filter(d => d.members.length) // TODO: clean cards without assignment
+          .filter(d => !router.state.project || d.project === router.state.project) // TODO: clean cards without assignment
+          .filter(d => !router.state.member || d.members[0].initials === router.state.member)
+          .filter(d => !period || period.includes(d.week))
       } catch(e) { return [] }
     },
     projects() {
       try {
         const trello = this.trello
-        const idList = trello.lists.find(d => d.name === ('W' + this.week)).id
         return trello.cards
-          .filter(d => d.idList === idList)
+          .filter(d => /^W\d+$/.test(trello.lists.find(list => list.id === d.idList).name))
           .filter(d => /([^-]*)-(.*)\[([.0-9]+).*\]/.exec(d.name))
-          .map(d => d.name.split(' - ')[0])
+          .map(d => d.name.split('-')[0].trim())
           .unique()
-          .filter(d => d.length <= 4 && !['100M', 'SPEC'].includes(d))
           .sort()
       } catch(e) { return [] }
     },
