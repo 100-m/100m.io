@@ -3,7 +3,7 @@ Chronos is a project scheduling / following tool
 
 It should:
 
-Retrive information from:
+Retrieve information from:
 - 1 board
 - 4 calendars
 - 2 github response_type
@@ -55,10 +55,11 @@ main > hr { width: 400px; }
       <div class="member" v-text="member.initials" :title="member.fullName" v-else></div>
     </a>
     <hr>
-    <a v-href="{ period }" v-for="period in [week, 'W' + (week.slice(1) - 1), quarter, 'Q' + (quarter.slice(1) - 1), year]">{{ period }}</a>
+    <a v-href="{ period }" v-for="period in [week, 'W' + (week.slice(1) - 1), quarter, 'Q' + (quarter.slice(1) - 1), year].filter(d => !/(W|Q)0/.test(d))">{{ period }}</a>
     <label><input :value="router.state.period" @input="router.state = Object.assign({}, router.state, { period: $event.target.value })" /></label>
     <hr>
     #<select :value="router.state.project" @input="router.state = Object.assign({}, router.state, { project: $event.target.value })">
+      <option></option>
       <option :value="project" v-for="project in projects">{{ project }}</option>
     </select>
     <hr>
@@ -160,8 +161,8 @@ Vue.mixin({
 })
 
 const doy = (d = new Date()) => (Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - Date.UTC(d.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000
-const week = (d = new Date()) => Math.round(doy(d) / 7)
-const quarter = (d = new Date()) => Math.round(doy(d) / 365 * 4)
+const week = (d = new Date()) => Math.ceil(doy(d) / 7)
+const quarter = (d = new Date()) => Math.ceil(doy(d) / 365 * 4)
 new Vue({
   el: 'main',
   data: {
@@ -174,11 +175,11 @@ new Vue({
     cards() {
       try {
         const trello = this.trello
-        let period
+        let period, year
         if (same({}, router.state)) period = [this.week]
         if (/W\d/.test(router.state.period)) period = [router.state.period]
         if (/Q\d/.test(router.state.period)) period = Array(13).fill(0).map((d, i) => 'W' + (13 * (router.state.period.slice(1) - 1) + i + 1))
-        if (/\d{4}/.test(router.state.period)) period = Array(52).fill(0).map((d, i) => 'W' + (i + 1))
+        if (/\d{4}/.test(router.state.period)) year = +router.state.period
         return trello.cards
           .filter(d => /([^-]*)-(.*)\[([.0-9]+).*\]/.exec(d.name))
           .map(card => {
@@ -187,14 +188,16 @@ new Vue({
             const task = matches[2].trim()
             const time = +matches[3]
             const week = trello.lists.find(d => d.id === card.idList).name
+            const year = +card.dateLastActivity.slice(0, 4) - (week >= 'W50' && card.dateLastActivity.slice(5, 7) === '01' ? 1 : 0)
             const members = card.idMembers.map(mid => trello.members.find(d => d.id === mid))
-            return { project, task, time, week, members }
+            return { project, task, time, week, year, members }
           })
           .filter(d => /^W\d+$/.test(d.week))
           .filter(d => d.members.length) // TODO: clean cards without assignment
           .filter(d => !router.state.project || d.project === router.state.project) // TODO: clean cards without assignment
           .filter(d => !router.state.member || d.members[0].initials === router.state.member)
           .filter(d => !period || period.includes(d.week))
+          .filter(d => !year || d.year === year)
       } catch(e) { return [] }
     },
     projects() {
