@@ -6,38 +6,40 @@
   <table class="body" style="font-size: 14px;font-weight: 300;line-height: 1.4;" v-for="member in team">
     <tr>
       <th class="face">
-        <a :href="member.linkedin">
-          <img class="face" style="margin-top: 10px;" width="100" height="100" :src="member.photo" /><br/>
-        </a>
-        <a href="https://100m.io/">
-          <img class="logo" style="margin-top: 15px;" width="100" height="25" src="https://100m.io/img/team/logo.png" />
-        </a>
+        <div><a href="https://neoxam.com/">
+          <img class="logo" style="margin-top: 5px;" width="126" height="30" src="https://100m.io/img/team/logo.png" />
+        </a></div>
+        <div><a :href="member.linkedin">
+          <img class="face" style="margin-top: 5px;" width="100" height="100" :src="member.photo" /><br/>
+        </a></div>
+        <div><a href="https://neoxam.com/">
+          <img class="logo" style="margin-top: 5px;" width="126" height="45" src="https://100m.io/img/team/neoxam-lab.png" />
+        </a></div>
       </th>
       <th valign="top" style="padding-left: 20px;">
         <div class="text" style="font-family: Lato, sans-serif;text-align: left;font-weight: 500;margin-left: 20px;">
-          <h1 style="color: #252D38;padding-top: 2px;font-family: Lato, sans-serif;line-height: 1.6em;font-size: 1.6em;margin: 0;">
+          <h1 style="color: #222;padding-top: 2px;font-family: Lato, sans-serif;line-height: 1.6em;font-size: 1.6em;margin: 0;">
             {{ member.name }}
           </h1>
-          <div style="color: #252D38;padding-top: 2px;">
+          <div style="color: #222;padding-top: 2px;">
             {{ member.role }}
           </div>
           <div>
-            <a href="https://100m.io/" style="color: #1155cc;">
+            <a href="https://neoxam.com/" style="color: #0ED8B8;padding-top: 2px;">
               Website
             </a>
           </div>
           <div style="color: #848BA2;padding-top: 2px;">
-            Station F (Incubateur HEC)<br/>
-            Parvis Alan Turing<br/>
-            75013 Paris
+            46 Rue Notre Dame des Victoires<br/>
+            75002 Paris
           </div>
           <div style="padding-top: 2px;">
-            <a :href="'tel:' + member.phone.replace('+', '00').replace(' ', '')" style="color: #1155cc;">
+            <a :href="'tel:' + member.phone.replace('+', '00').replace(' ', '')" style="color: #0ED8B8;">
               {{ member.phone }}
             </a>
           </div>
           <div style="padding-top: 2px;">
-            <a :href="'mailto:' + member.email" style="color: #1155cc;">
+            <a :href="'mailto:' + member.email" style="color: #0ED8B8;">
               {{ member.email }}
             </a>
           </div>
@@ -56,7 +58,7 @@ new Vue({
           name: 'William Vidal',
           role: 'Business Développement',
           phone: '+33 7 82 86 58 58',
-          email: 'william.vidal@100m.io',
+          email: 'william.vidal@neoxam.com',
           linkedin: 'https://www.linkedin.com/in/william-vidal-2b101a1a/',
           photo: 'https://100m.io/img/team/will.png',
         },
@@ -64,7 +66,7 @@ new Vue({
           name: 'Clément Miglietti',
           role: 'Co-founder & CEO',
           phone: '+33 6 77 73 68 74',
-          email: 'clement.miglietti@100m.io',
+          email: 'clement.miglietti@neoxam.com',
           linkedin: 'https://www.linkedin.com/in/clement-miglietti-05a3203/',
           photo: 'https://100m.io/img/team/clem.png',
         },
@@ -72,7 +74,7 @@ new Vue({
           name: 'Valentin Brajon',
           role: 'Co-founder & CTO',
           phone: '+33 6 85 40 38 87',
-          email: 'valentin.brajon@100m.io',
+          email: 'valentin.brajon@neoxam.com',
           linkedin: 'https://www.linkedin.com/in/vbrajon/',
           photo: 'https://100m.io/img/team/val.png',
         },
@@ -80,7 +82,7 @@ new Vue({
           name: 'Vincent Despeisse',
           role: 'Data Scientist',
           phone: '+33 6 84 46 65 96',
-          email: 'vincent.despeisse@100m.io',
+          email: 'vincent.despeisse@neoxam.com',
           linkedin: 'https://www.linkedin.com/in/vincent-despeisse-072b65136/',
           photo: 'https://100m.io/img/team/vinc.png',
         },
@@ -88,9 +90,25 @@ new Vue({
           name: 'Clément Joudet',
           role: 'Software Engineer',
           phone: '+33 6 77 63 75 16',
-          email: 'clement.joudet@100m.io',
+          email: 'clement.joudet@neoxam.com',
           linkedin: 'https://www.linkedin.com/in/clément-joudet-55b83789/',
           photo: 'https://100m.io/img/team/jood.png',
+        },
+        {
+          name: 'Laurent Gauthier',
+          role: 'Software Engineer',
+          phone: '+33 6 18 54 71 67',
+          email: 'laurent.gauthier@neoxam.com',
+          linkedin: 'https://www.linkedin.com/in/laurent-gauthier-a989a430/',
+          photo: 'https://100m.io/img/team/lau.png',
+        },
+        {
+          name: 'Guillaume Daury',
+          role: 'Software Engineer',
+          phone: '+33 6 22 02 50 56',
+          email: 'guillaume.daury@neoxam.com',
+          linkedin: 'https://www.linkedin.com/in/guillaumedaury/',
+          photo: 'https://100m.io/img/team/gui.png',
         },
       ],
     }
