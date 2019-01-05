@@ -31,6 +31,8 @@ body { font-family: 'Montserrat', sans-serif; }
 main { display: flex;flex-direction: column;align-items: center;width: 100%;height: 100%;min-height: fit-content;padding: 40px; }
 main > h1 { font-size: 80px; }
 main > hr { width: 400px; }
+table { width: 100%;border-spacing: 0;font: inherit; }
+td, tr { padding: 0; }
 .filters { display: flex;align-items: center;justify-content: center; }
 .filters > * { margin: 4px; }
 .filters input { width: 34px;padding: 2px; }
@@ -38,19 +40,15 @@ main > hr { width: 400px; }
 .filters hr { height: 24px;border-left: var(--border); }
 .member { display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border-radius: 50%;background: #d9d9d9;font-size: 12px; }
 .report { width: 400px; }
-.report b { display: block; }
-.report > b { text-align: center; }
-.report > div > b { margin-top: 10px; }
-.report .line { display: flex;margin-left: 20px; }
 .report .line > :first-child { flex: 1;word-break: break-word;hyphens: auto; }
-.report .line > * { min-width: 40px;padding: 0 2px; }
+.report .line > :nth-child(n+2) { width: 40px; }
 </style>
 <script src="//unpkg.com/vue"></script>
 <script src="//unpkg.com/xtendjs"></script>
 <main>
   <h1>Chronos</h1>
   <div class="filters">
-    <a v-href="{ member: member.initials }" v-for="member in trello.members.filter(d => !['CM', 'D', 'WV'].includes(d.initials))">
+    <a v-href="{ member: member.initials }" v-for="member in trello.members.filter(d => !['CM', 'VD', 'WV'].includes(d.initials))">
       <img class="member" :src="member.avatarUrl + '/50.png'" :title="member.fullName" v-if="member.avatarUrl">
       <div class="member" v-text="member.initials" :title="member.fullName" v-else></div>
     </a>
@@ -67,28 +65,31 @@ main > hr { width: 400px; }
   </div>
   <hr>
   <div class="report">
-    <b>CHRONOS</b>
+    <table>
+      <tr>
+        <td style="font-weight: 600;">BRK/TYPE</td>
+        <td v-for="v, k in breakdown">{{ k }}: {{ v }}j</td>
+      </tr>
+    </table>
+    <table style="margin-top: 10px">
+      <tr>
+        <td style="font-weight: 600;">BRK/DEV</td>
+        <td v-for="grp in cards.sortBy(d => d.members[0].initials).groupBy(d => d.members[0].initials)">{{ grp[0].members[0].initials }}: {{ grp.map('time').sum() }}j</td>
+      </tr>
+    </table>
     <hr>
-    <div class="row between">
-      <div class="row" v-for="v, k in breakdown">
-        <b>{{ k }}: {{ v }}j</b>
-      </div>
-    </div>
-    <hr>
-    <div class="row between">
-      <div class="row" v-for="grp in cards.sortBy(d => d.members[0].initials).groupBy(d => d.members[0].initials)">
-        <b>{{ grp[0].members[0].initials }}: {{ grp.map('time').sum() }}j</b>
-      </div>
-    </div>
-    <hr>
-    <div v-for="group in cards.groupBy('project').values().sortBy(grp => -grp.map('time').sum())">
-      <b>{{ group[0].project }}: {{ group.map('time').sum() }}j</b>
-      <div class="line" v-for="card in group">
-        <div>- {{ card.task }}</div>
-        <div>{{ card.members.map('initials').join('+') }}</div>
-        <div>{{ card.time }}j</div>
-      </div>
-    </div>
+    <table style="margin-top: 20px" v-for="group in cards.groupBy('project').values().sortBy(grp => -grp.map('time').sum())">
+      <tr>
+        <td style="font-weight: 600;">{{ group[0].project }}: {{ group.map('time').sum() }}j</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="line" v-for="card in group">
+        <td style="padding-left: 20px">- {{ card.task }}</td>
+        <td>{{ card.members.map('initials').join('+') }}</td>
+        <td>{{ card.time }}j</td>
+      </tr>
+    </table>
   </div>
 </main>
 <script>
