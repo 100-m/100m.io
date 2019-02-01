@@ -31,8 +31,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 var url = location.search.replace('?', '/extra/docs/')
 if(!url || url === '/extra/docs/') url = '/extra/docs/embed-v2.md'
 if(!/.md$/.test(url)) url += '.md'
-axios
-.get(url)
+axios.get(url)
 .then(function(res) { return res.data })
 .then(function(md) { return marked(md) })
 .then(function(html) { return document.querySelector('main').innerHTML = '<section>' + html.replace(/<hr>/g, '</section><section>') + '</section>' })
