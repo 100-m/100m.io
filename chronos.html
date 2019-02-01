@@ -48,7 +48,7 @@ td, tr { padding: 0; }
 <main>
   <h1>Chronos</h1>
   <div class="filters">
-    <a v-href="{ member: member.initials }" v-for="member in trello.members.filter(d => !['CM', 'VD', 'WV'].includes(d.initials))">
+    <a v-href="{ member: member.initials }" v-for="member in trello && trello.members && trello.members.filter(d => !['CM', 'VD', 'WV'].includes(d.initials))">
       <img class="member" :src="member.avatarUrl + '/50.png'" :title="member.fullName" v-if="member.avatarUrl">
       <div class="member" v-text="member.initials" :title="member.fullName" v-else></div>
     </a>
@@ -156,14 +156,19 @@ Vue.mixin({
   },
 })
 
-const week = (d = new Date()) => Math.ceil((new Date(d.getFullYear()).getDay() - 1 + d.getUTCDate()) / 7)
-const quarter = (d = new Date()) => Math.ceil((new Date(d).getMonth() + 1) / 3)
+Date.prototype.getWeek = function() {
+  const onejan = new Date(this.getFullYear(), 0, 1)
+  return Math.ceil(((this - onejan) / 86400000 + onejan.getDay() + 1) / 7)
+}
+Date.prototype.getQuarter = function() {
+  return Math.ceil((this.getMonth() + 1) / 3)
+}
 new Vue({
   el: 'main',
   data: {
-    trello: {},
-    week: 'W' + week(),
-    quarter: 'Q' + quarter(),
+    trello: null,
+    week: 'W' + new Date().getWeek(),
+    quarter: 'Q' + new Date().getQuarter(),
     year: new Date().getFullYear(),
   },
   computed: {
@@ -223,50 +228,53 @@ new Vue({
       } catch(e) { console.error(e);return {} }
     },
     display() {
-      const perproject = this.cards.groupBy('project').values().sortBy(grp => -grp.map('time').sum())
-      if (/^W\d+$/.test(router.state.period) || /^\d{4}$/.test(router.state.period) || router.state.project) return perproject
-      if (/^Q\d+$/.test(router.state.period)) {
-        const forecast = trello.cards.find(card => card.name === 'Q1').desc.split('-').filter().map(d => d.trim().split(' '))
-        const other = this.cards.filter(d => !forecast.map(d => d[0]).includes(d.project)).map(d => ({ ...d, day: 'OTHER' }))
-        return [forecast.map(d => ({ project: 'FORECAST', task: d[0], member: this.cards.filter(card => card.project === d[0]).map('time').sum(), time: +d[1] })), other]
-      }
+      try {
+        const trello = this.trello
+        const perproject = this.cards.groupBy('project').values().sortBy(grp => -grp.map('time').sum())
+        if (/^W\d+$/.test(router.state.period) || /^\d{4}$/.test(router.state.period) || router.state.project) return perproject
+        if (/^Q\d+$/.test(router.state.period)) {
+          const forecast = trello.cards.find(card => card.name === 'Q1').desc.split('-').filter().map(d => d.trim().split(' '))
+          const other = this.cards.filter(d => !forecast.map(d => d[0]).includes(d.project)).map(d => Object.assign(d, { day: 'OTHER' }))
+          return [forecast.map(d => ({ project: 'FORECAST', task: d[0], member: this.cards.filter(card => card.project === d[0]).map('time').sum(), time: +d[1] })), other]
+        }
 
-      const perday = this.cards
-        .filter(d => !router.state.member || d.member === router.state.member)
-        .sortBy(d => d.member)
-        .reduce((acc, card) => {
-          const mandays = acc.flat(Infinity).filter(d => d.member === card.member).map('time').sum()
-          const i = Math.floor(mandays)
-          const decimal = mandays - i
-          card.day = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'][i]
-          if (!acc[i]) acc[i] = []
-          if (decimal + card.time > 1) {
-            const rest = 1 - decimal
-            if (rest) acc[i].push({ ...card, time: rest })
-            if (!acc[i + 1]) acc[i + 1] = []
-            card.day = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'][i + 1]
-            acc[i + 1].push({ ...card, time: card.time - rest })
+        const perday = this.cards
+          .filter(d => !router.state.member || d.member === router.state.member)
+          .sortBy(d => d.member)
+          .reduce((acc, card) => {
+            const mandays = acc.flat(Infinity).filter(d => d.member === card.member).map('time').sum()
+            const i = Math.floor(mandays)
+            const decimal = mandays - i
+            card.day = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'][i]
+            if (!acc[i]) acc[i] = []
+            if (decimal + card.time > 1) {
+              const rest = 1 - decimal
+              if (rest) acc[i].push({ ...card, time: rest })
+              if (!acc[i + 1]) acc[i + 1] = []
+              card.day = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'][i + 1]
+              acc[i + 1].push({ ...card, time: card.time - rest })
+              return acc
+            }
+            acc[i].push(card)
             return acc
-          }
-          acc[i].push(card)
-          return acc
-        }, [])
-      const doing_id = trello.lists.find(d => d.name === 'DOING').id
-      const doing = trello.cards
-        .filter(card => card.idList === doing_id)
-        .map(card => {
-          const project = card.name.split(' - ')[0]
-          const task = card.name.split(' - ')[1].replace(/\[([.0-9]+).*\]/, '').trim()
-          const timematch = /\[([.0-9]+).*\]/.exec(card.name)
-          const time = timematch ? +timematch[1] : 0
-          const day = 'DOING'
-          const members = (card.idMembers || []).map(mid => trello.members.find(d => d.id === mid))
-          const member = (members[0] || {}).initials
-          return { project, task, time, day, members, member }
-        })
-        .filter(d => d.members.length)
-        .filter(d => !router.state.member || d.member === router.state.member)
-      return perday.concat([doing]).filter(d => d.length).reverse()
+          }, [])
+        const doing_id = trello.lists.find(d => d.name === 'DOING').id
+        const doing = trello.cards
+          .filter(card => card.idList === doing_id)
+          .map(card => {
+            const project = card.name.split(' - ')[0]
+            const task = card.name.split(' - ')[1].replace(/\[([.0-9]+).*\]/, '').trim()
+            const timematch = /\[([.0-9]+).*\]/.exec(card.name)
+            const time = timematch ? +timematch[1] : 0
+            const day = 'DOING'
+            const members = (card.idMembers || []).map(mid => trello.members.find(d => d.id === mid))
+            const member = (members[0] || {}).initials
+            return { project, task, time, day, members, member }
+          })
+          .filter(d => d.members.length)
+          .filter(d => !router.state.member || d.member === router.state.member)
+        return perday.concat([doing]).filter(d => d.length).reverse()
+      } catch(e) { console.log(e);return [] }
     }
   },
   mounted() {
