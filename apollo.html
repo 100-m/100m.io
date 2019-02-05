@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>APOLLO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>APOLLO</title>
   <!--
   Apollo is a support analysis tool
 
@@ -50,9 +50,9 @@
   <main>
     <h1>Apollo</h1>
     <div class="filters">
-      <a v-href="{ member: member.initials }" v-for="member in cards.map(d=> d.map(d=>d.members).filter(d=>d.length>0)).flat(Infinity).reduce((acc,curr)=>{acc[curr.id]=curr;return acc},{})">
-        <img class="member" :src="member.avatarUrl + '/50.png'" :title="member.fullName" v-if="member.avatarUrl && member.fullName!=='Unassigned'">
-        <i class="material-icons" style="color:orange;" v-else-if="member.initials==='UA'">warning</i>
+      <a v-href="{ member: member.initials }" v-for="member in cards.map(d => d.members).filter(d => d.length > 0).flat().reduce((acc, curr) => { acc[curr.id] = curr ; return acc },{})">
+        <img class="member" :src="member.avatarUrl + '/50.png'" :title="member.fullName" v-if="member.avatarUrl && member.fullName !== 'Unassigned'">
+        <i class="material-icons" style="color:orange;" v-else-if="member.initials === 'UA'">warning</i>
         <div class="member" v-text="member.initials" :title="member.fullName" v-else></div>
       </a>
       <hr>
@@ -68,17 +68,22 @@
     </div>
     <hr>
     <div class="report">
-      <b>TOTAL</b>: {{ cards.map(d=>d.map('time')).flat(Infinity).sum() }}j
+      <b>TOTAL</b>: {{ cards.map('time').sum() }}j
       <table style="margin-top: 10px" v-for="breakdown, name in breakdowns">
         <tr>
           <td><b>BRK/{{ name }}</b></td>
-          <td v-for="v, k in breakdown" :tt="v.desc">{{ k }}: <a v-href="v.filter" > {{ v.length }} <a> </td>
+          <td v-for="v, k in breakdown" :tt="v.desc"> {{ k }}: <a v-href="v.filter"> {{ v.length }} <a> </td>
         </tr>
       </table>
       <hr>
       <table style="margin-top: 20px" v-for="cards in display">
         <tr>
-          <td><b>{{ cards[0].day || cards[0].project }}: {{ cards.filter(d=>d.member==='UA').length }} UA, {{ cards.filter(d=>d.time===0).length }} NE, {{ cards.filter(d=>d.due_date==='no').length }} UC, {{ cards.filter(d=> d.due_date!=='no' ? (new Date().toISOString().slice(0,10))>d.due_date : 0).length }} LATE </b></td>
+          <td><b>{{ cards[0].day || cards[0].project }}:</b>
+            {{ cards.filter(d => d.member === 'UA').length }} UA,
+            {{ cards.filter(d => d.time === 0).length }} NE,
+            {{ cards.filter(d => d.due_date === 'no').length }} UC,
+            {{ cards.filter(d => d.due_date !== 'no' ? (new Date().toISOString().slice(0,10) ) >d.due_date : 0).length }} LATE</td>
+          <td></td>
           <td></td>
           <td></td>
         </tr>
@@ -87,8 +92,8 @@
           <td>{{ card.size === 'no' ? '--' : card.size }}</td>
           <td>{{ card.due_date === 'no' ? '--' : card.due_date }}</td>
           <td>
-            <img class="member" :src="card.members[0].avatarUrl + '/50.png'" :title="card.members[0].fullName" v-if="card.members[0].avatarUrl && card.members[0].fullName!=='Unassigned'">
-            <i class="material-icons" style="color:orange;" v-else-if="card.members[0].initials==='UA'">warning</i>
+            <img class="member" :src="card.members[0].avatarUrl + '/50.png'" :title="card.members[0].fullName" v-if="card.members[0].avatarUrl && card.members[0].fullName !== 'Unassigned'">
+            <i class="material-icons" style="color:orange;" v-else-if="card.members[0].initials === 'UA'">warning</i>
             <div class="member" v-text="card.members[0].initials" :title="card.members[0].fullName" v-else></div>
           </td>
 
@@ -185,7 +190,6 @@
         try {
           const trello = this.trello
           let period, year
-          //if (!router.state.period && !router.state.project) period = [this.week]
           if (/W\d/.test(router.state.period)) period = [router.state.period]
           if (/Q\d/.test(router.state.period)) period = Array(13).fill(0).map((d, i) => 'W' + (13 * (router.state.period.slice(1) - 1) + i + 1))
           if (/\d{4}/.test(router.state.period)) year = +router.state.period
@@ -200,13 +204,13 @@
                 const time = size === 'S' ? 0.25 : size === 'M' ? 0.5 : size === 'L' ? 1 : size === 'XL' ? 2 : 0
                 const status = board.lists.find(d => d.id === card.idList).name
                 const due_date = card.due ? card.due.slice(0, 10) : 'no'
-                const members = card.idMembers.length>0 ? (card.idMembers || []).map(mid => board.members.find(d => d.id === mid)) : [{ "id": "Unassigned", "initials": "UA", "fullName": "Unassigned" }]
+                const members = card.idMembers.length > 0 ? (card.idMembers || []).map(mid => board.members.find(d => d.id === mid)) : [{ "id": "Unassigned", "initials": "UA", "fullName": "Unassigned" }]
                 const member = (members[0] || { "id": "Unassigned", "initials": "UA", "fullName": "Unassigned" }).initials
                 const week = card.due ? 'W'+ new Date(card.due).getWeek() : ''
                 const year = card.due ? +card.due.slice(0, 4) - (week >= 'W50' && card.due.slice(5, 7) === '01' ? 1 : 0) : ''
                 const closed = card.closed
                 return { project, task, url, size, time, status, due_date, members, member, week, year, closed }
-              }).flat(Infinity)
+              })
               .filter(d => !router.state.project || d.project === router.state.project)
               .filter(d => !router.state.member || d.member === router.state.member)
               .filter(d => !period || period.includes(d.week))
@@ -215,7 +219,7 @@
               .filter(d => !router.state.due_date || (d.due_date === 'no' ? router.state.due_date : ''))
               .filter(d => !d.closed)
               .filter(d => d.status.toUpperCase() !== 'DONE' && d.status.toUpperCase() !== 'VALIDATED' && !d.status.toUpperCase().startsWith('FEATURE'))
-            })
+            }).flat(Infinity)
         } catch(e) { return [] }
       },
       projects() {
@@ -229,28 +233,25 @@
       },
       breakdowns() {
         try {
-          const today = new Date().toISOString().slice(0,10)
-          const UA = this.cards.flat(Infinity).filter(d=> d.member==='UA')
-          const NE = this.cards.flat(Infinity).filter(d=> d.time===0)
-          const NC = this.cards.flat(Infinity).filter(d=> d.due_date==='no')
-          const LATE = this.cards.flat(Infinity).filter(d=> today>d.due_date)
+          const today = new Date().toISOString().slice(0, 10)
+          const UA = this.cards.filter(d => d.member === 'UA')
+          const NE = this.cards.filter(d => d.time === 0)
+          const NC = this.cards.filter(d => d.due_date === 'no')
+          const LATE = this.cards.filter(d => today > d.due_date)
           return {
             TYPE: {
-              UA: {length: UA.length, filter: {member: "UA"}, desc:'These tickets need to be assigned.'},
-              NE: {length: NE.length, filter: {size: "no"}, desc:'These tickets need to be estimated.'},
-              NC: {length: NC.length, filter: {due_date: "no"}, desc:'These tickets need an ETA.'},
-              LATE: {length: LATE.length, filter: {due_date: today}, desc:'Unlucky... SLA is missed for those tickets.'},
+              UA: { length: UA.length, filter: { member: "UA" }, desc: 'These tickets need to be assigned.' },
+              NE: { length: NE.length, filter: { size: "no" }, desc: 'These tickets need to be estimated.' },
+              NC: { length: NC.length, filter: {due_date: "no" }, desc: 'These tickets need an ETA.' },
+              LATE: { length: LATE.length, filter: { due_date: today }, desc: 'Unlucky... SLA is missed for those tickets.' },
             },
           }
         } catch(e) { console.error(e);return {} }
       },
       display() {
-
         try {
           const trello = this.trello
           const perproject = this.cards.flat().groupBy('project').values().sortBy(grp => -grp.map('time').sum())
-//          if (/^W\d+$/.test(router.state.period) || /^\d{4}$/.test(router.state.period) || router.state.project) return perproject
-
           return perproject
         } catch(e) { console.log(e);return [] }
       }
@@ -258,14 +259,13 @@
     mounted() {
       const token = '046e2330907f0ebb73bd1f18947a4308&token=b9a259e4ee2d0923b563e963196163bfbd988a4633f54b7916d26752f2d3315c'
       const teams = 'https://api.trello.com/1/members/me/organizations?key='+token
-
+      const monitored_team = '100msupport'
       fetch(teams)
         .then(r => r.json())
-        .then(json => json.filter(d => d.name === '100msupport')[0].idBoards.map(d => 'https://api.trello.com/1/boards/' + d + '?key=' + token + '&cards=all&lists=all&members=all'))
+        .then(json => json.filter(d => d.name === monitored_team)[0].idBoards.map(d => 'https://api.trello.com/1/boards/' + d + '?key=' + token + '&cards=all&lists=all&members=all'))
         .then(boards => Promise.all(boards.map(d => fetch(d))).then(r => Promise.all(r.map(res => res.json()))))
         .then(r => window.trello = this.trello = r)
     },
   })
   </script>
-
 </body>
