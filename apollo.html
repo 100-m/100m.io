@@ -72,7 +72,7 @@
       <table style="margin-top: 10px" v-for="breakdown, name in breakdowns">
         <tr>
           <td><b>BRK/{{ name }}</b></td>
-          <td v-for="v, k in breakdown">{{ k }}: <a v-href="v.filter" > {{ v.length }} <a> </td>
+          <td v-for="v, k in breakdown" :tt="v.desc">{{ k }}: <a v-href="v.filter" > {{ v.length }} <a> </td>
         </tr>
       </table>
       <hr>
@@ -236,10 +236,10 @@
           const LATE = this.cards.flat(Infinity).filter(d=> today>d.due_date)
           return {
             TYPE: {
-              UA: {length: UA.length, filter: {member: "UA"}},
-              NE: {length: NE.length, filter: {size: "no"}},
-              NC: {length: NC.length, filter: {due_date: "no"}},
-              LATE: {length: LATE.length, filter: {due_date: today}},
+              UA: {length: UA.length, filter: {member: "UA"}, desc:'These tickets need to be assigned.'},
+              NE: {length: NE.length, filter: {size: "no"}, desc:'These tickets need to be estimated.'},
+              NC: {length: NC.length, filter: {due_date: "no"}, desc:'These tickets need an ETA.'},
+              LATE: {length: LATE.length, filter: {due_date: today}, desc:'Unlucky... SLA is missed for those tickets.'},
             },
           }
         } catch(e) { console.error(e);return {} }
