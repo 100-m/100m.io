@@ -157,8 +157,8 @@ Vue.mixin({
 })
 
 Date.prototype.getWeek = function() {
-  const onejan = new Date(this.getFullYear(), 0, 1)
-  return Math.ceil(((this - onejan) / 86400000 + onejan.getDay() + 1) / 7)
+  const dec31 = new Date(this.getFullYear(), 0, 0)
+  return Math.ceil(((this - dec31) / 86400000 + (dec31.getDay() > 3 ? dec31.getDay() - 7 : dec31.getDay())) / 7)
 }
 Date.prototype.getQuarter = function() {
   return Math.ceil((this.getMonth() + 1) / 3)
