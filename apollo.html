@@ -177,6 +177,10 @@
   Date.prototype.getQuarter = function() {
     return Math.ceil((this.getMonth() + 1) / 3)
   }
+  String.prototype.computeEfficiency = function(size) {
+    const efficiency={ "VB": 2, "CJ": 1, "D": 0.75, "LG": 0.75, "MK": 0.5 }
+    return size === 'S' ? efficiency[this]||1 * 0.25 : size === 'M' ? efficiency[this]||1 * 0.5 : size === 'L' ? efficiency[this]||1 * 1 : size === 'XL' ? efficiency[this]||1 * 2 : 0
+  }
 
   window.vm = new Vue({
     el: 'main',
@@ -201,12 +205,12 @@
                 const task = card.name
                 const url = card.shortUrl
                 const project = board.name.split('-')[1].trim()
-                const size = card.labels[0] ? card.labels[0].name : 'no'
-                const time = size === 'S' ? 0.25 : size === 'M' ? 0.5 : size === 'L' ? 1 : size === 'XL' ? 2 : 0
-                const status = board.lists.find(d => d.id === card.idList).name
-                const due_date = card.due ? card.due.slice(0, 10) : 'no'
                 const members = card.idMembers.length > 0 ? (card.idMembers || []).map(mid => board.members.find(d => d.id === mid)) : [{ "id": "Unassigned", "initials": "UA", "fullName": "Unassigned" }]
                 const member = (members[0] || { "id": "Unassigned", "initials": "UA", "fullName": "Unassigned" }).initials
+                const size = card.labels[0] ? card.labels[0].name : 'no'
+                const time = member.computeEfficiency(size)
+                const status = board.lists.find(d => d.id === card.idList).name
+                const due_date = card.due ? card.due.slice(0, 10) : 'no'
                 const week = card.due ? 'W'+ new Date(card.due).getWeek() : ''
                 const year = card.due ? +card.due.slice(0, 4) - (week >= 'W50' && card.due.slice(5, 7) === '01' ? 1 : 0) : ''
                 const closed = card.closed
