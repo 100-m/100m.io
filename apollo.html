@@ -38,7 +38,7 @@
   .member { display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border-radius: 50%;background: #d9d9d9;font-size: 12px; }
   .report { width: 500px;margin: 16px; }
   .report .line > :first-child { flex: 1;word-break: break-word;hyphens: auto; }
-  .report .line > :nth-child(2) { text-align: center; }
+  .report .line > :nth-child(2) { text-align: center;width: 15px; }
   .report .line > :nth-child(3) { width: 100px;text-align: center; }
   </style>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -96,11 +96,11 @@
             <i class="material-icons" style="color:orange;" v-else-if="card.members[0].initials === 'UA'">warning</i>
             <div class="member" v-text="card.members[0].initials" :title="card.members[0].fullName" v-else></div>
           </td>
-
         </tr>
       </table>
     </div>
   </main>
+
   <script>
   xtend()
   // Mini Vue router
@@ -177,6 +177,7 @@
   Date.prototype.getQuarter = function() {
     return Math.ceil((this.getMonth() + 1) / 3)
   }
+
   window.vm = new Vue({
     el: 'main',
     data: {
@@ -193,7 +194,7 @@
           if (/W\d/.test(router.state.period)) period = [router.state.period]
           if (/Q\d/.test(router.state.period)) period = Array(13).fill(0).map((d, i) => 'W' + (13 * (router.state.period.slice(1) - 1) + i + 1))
           if (/\d{4}/.test(router.state.period)) year = +router.state.period
-          return window.cards = trello
+          return trello
             .map(board => {
               board.members.push({ "id": "Unassigned", "initials": "UA", "fullName": "Unassigned" })
               return board.cards.map(card => {
@@ -216,7 +217,7 @@
               .filter(d => !period || period.includes(d.week))
               .filter(d => !year || d.year === year)
               .filter(d => !router.state.size || d.size === router.state.size)
-              .filter(d => !router.state.due_date || (d.due_date === 'no' ? router.state.due_date : ''))
+              .filter(d => !router.state.due_date || (d.due_date !== 'no' ? router.state.due_date > d.due_date : false))
               .filter(d => !d.closed)
               .filter(d => d.status.toUpperCase() !== 'DONE' && d.status.toUpperCase() !== 'VALIDATED' && !d.status.toUpperCase().startsWith('FEATURE'))
             }).flat(Infinity)
@@ -264,7 +265,7 @@
         .then(r => r.json())
         .then(json => json.filter(d => d.name === monitored_team)[0].idBoards.map(d => 'https://api.trello.com/1/boards/' + d + '?key=' + token + '&cards=all&lists=all&members=all'))
         .then(boards => Promise.all(boards.map(d => fetch(d))).then(r => Promise.all(r.map(res => res.json()))))
-        .then(r => window.trello = this.trello = r)
+        .then(r => this.trello = r)
     },
   })
   </script>
