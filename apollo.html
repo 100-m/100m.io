@@ -37,9 +37,12 @@
   .filters hr { height: 24px;border-left: var(--border); }
   .member { display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border-radius: 50%;background: #d9d9d9;font-size: 12px; }
   .report { width: 500px;margin: 16px; }
-  .report .line > :first-child { flex: 1;word-break: break-word;hyphens: auto; }
-  .report .line > :nth-child(2) { text-align: center;width: 15px; }
-  .report .line > :nth-child(3) { width: 100px;text-align: center; }
+  .card { margin-bottom: 8px; }
+  .card :first-child { word-break: break-word;hyphens: auto;width: 82%; }
+  .card :nth-child(2) { text-align: center;width: 10%; }
+  .card :nth-child(3) { text-align: center;width: 8%; }
+  .card::before { color: var(--cat5);font-weight: 900;content: "\27A5";margin-right: 8px; }
+
   </style>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="//unpkg.com/vue"></script>
@@ -67,7 +70,7 @@
       <a v-href>RESET</a>
     </div>
     <hr>
-    <div class="report">
+    <div>
       <b>TOTAL</b>: {{ cards.map('time').sum() }}j
       <table style="margin-top: 10px" v-for="breakdown, name in breakdowns">
         <tr>
@@ -76,29 +79,31 @@
         </tr>
       </table>
       <hr>
-      <table style="margin-top: 20px" v-for="cards in display">
-        <tr>
-          <td><b>{{ cards[0].day || cards[0].project }}:</b>
-            {{ cards.filter(d => d.member === 'UA').length }} UA,
-            {{ cards.filter(d => d.time === 0).length }} NE,
-            {{ cards.filter(d => d.due_date === 'no').length }} UC,
-            {{ cards.filter(d => d.due_date !== 'no' ? (new Date().toISOString().slice(0,10) ) >d.due_date : 0).length }} LATE</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="line" v-for="card in cards.flat(Infinity)" >
-          <td style="padding-left: 20px"><a v-href="card.url" target="_blank">{{ card.task }}</a></td>
-          <td>{{ card.size === 'no' ? '--' : card.size }}</td>
-          <td>{{ card.due_date === 'no' ? '--' : card.due_date }}</td>
-          <td>
-            <img class="member" :src="card.members[0].avatarUrl + '/50.png'" :title="card.members[0].fullName" v-if="card.members[0].avatarUrl && card.members[0].fullName !== 'Unassigned'">
-            <i class="material-icons" style="color:orange;" v-else-if="card.members[0].initials === 'UA'">warning</i>
-            <div class="member" v-text="card.members[0].initials" :title="card.members[0].fullName" v-else></div>
-          </td>
-        </tr>
-      </table>
-    </div>
+      <div style="margin-top: 20px" v-for="project in display">
+        <div class="report">
+          <div>
+            <b>{{ project.values().map(d => d.map(d => d.project)).flat().unique()[0] }}: </b>
+            UA: {{ project.reduce((acc, curr) => acc = acc + curr.reduce((acc, curr) => curr.member === 'UA' ? acc = acc + 1 : acc, 0 ), 0 ) }},
+            NE: {{ project.reduce((acc, curr) => acc = acc + curr.reduce((acc, curr) => curr.size === 'NE' ? acc = acc + 1 : acc, 0 ), 0 ) }},
+            NC: {{ project.reduce((acc, curr) => acc = acc + curr.reduce((acc, curr) => curr.due_date === 'NC' ? acc = acc + 1 : acc, 0 ), 0 ) }},
+            LATE: {{ project.reduce((acc, curr) => acc = acc + curr.reduce((acc, curr) => curr.due_date !== 'NC' & (new Date()).toISOString().slice(0, 10) > curr.due_date ? acc = acc + 1 : acc, 0 ), 0 ) }}.
+          </div>
+          <div class="column" v-for="(data, due_date) in project" >
+            <div style="padding-left: 20px">
+              <div class="row"> <em>{{ due_date }}</em></div>
+              <div class="row card" v-for="card in data" style="padding-left: 20px">
+                <div><a v-href="card.url" target="_blank">{{ card.task }}</a></div>
+                <div>{{ card.size }}</div>
+                <div class="due_date">
+                  <img class="member" :src="card.members[0].avatarUrl + '/50.png'" :title="card.members[0].fullName" v-if="card.members[0].avatarUrl && card.members[0].fullName !== 'Unassigned'">
+                  <i class="material-icons" style="color:orange;" v-else-if="card.members[0].initials === 'UA'">warning</i>
+                  <div class="member" v-text="card.members[0].initials" :title="card.members[0].fullName" v-else></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </main>
 
   <script>
@@ -207,10 +212,10 @@
                 const project = board.name.split('-')[1].trim()
                 const members = card.idMembers.length > 0 ? (card.idMembers || []).map(mid => board.members.find(d => d.id === mid)) : [{ "id": "Unassigned", "initials": "UA", "fullName": "Unassigned" }]
                 const member = (members[0] || { "id": "Unassigned", "initials": "UA", "fullName": "Unassigned" }).initials
-                const size = card.labels[0] ? card.labels[0].name : 'no'
+                const size = card.labels[0] ? card.labels[0].name : 'NE'
                 const time = member.computeEfficiency(size)
                 const status = board.lists.find(d => d.id === card.idList).name
-                const due_date = card.due ? card.due.slice(0, 10) : 'no'
+                const due_date = card.due ? card.due.slice(0, 10) : 'NC'
                 const week = card.due ? 'W'+ new Date(card.due).getWeek() : ''
                 const year = card.due ? +card.due.slice(0, 4) - (week >= 'W50' && card.due.slice(5, 7) === '01' ? 1 : 0) : ''
                 const closed = card.closed
@@ -221,7 +226,7 @@
               .filter(d => !period || period.includes(d.week))
               .filter(d => !year || d.year === year)
               .filter(d => !router.state.size || d.size === router.state.size)
-              .filter(d => !router.state.due_date || (d.due_date !== 'no' ? router.state.due_date > d.due_date : false))
+              .filter(d => !router.state.due_date || (d.due_date !== 'NC' ? router.state.due_date > d.due_date : false))
               .filter(d => !d.closed)
               .filter(d => d.status.toUpperCase() !== 'DONE' && d.status.toUpperCase() !== 'VALIDATED' && !d.status.toUpperCase().startsWith('FEATURE'))
             }).flat(Infinity)
@@ -241,13 +246,13 @@
           const today = new Date().toISOString().slice(0, 10)
           const UA = this.cards.filter(d => d.member === 'UA')
           const NE = this.cards.filter(d => d.time === 0)
-          const NC = this.cards.filter(d => d.due_date === 'no')
+          const NC = this.cards.filter(d => d.due_date === 'NC')
           const LATE = this.cards.filter(d => today > d.due_date)
           return {
             TYPE: {
               UA: { length: UA.length, filter: { member: "UA" }, desc: 'These tickets need to be assigned.' },
-              NE: { length: NE.length, filter: { size: "no" }, desc: 'These tickets need to be estimated.' },
-              NC: { length: NC.length, filter: {due_date: "no" }, desc: 'These tickets need an ETA.' },
+              NE: { length: NE.length, filter: { size: "NE" }, desc: 'These tickets need to be estimated.' },
+              NC: { length: NC.length, filter: {due_date: "NC" }, desc: 'These tickets need an ETA.' },
               LATE: { length: LATE.length, filter: { due_date: today }, desc: 'Unlucky... SLA is missed for those tickets.' },
             },
           }
@@ -256,7 +261,7 @@
       display() {
         try {
           const trello = this.trello
-          const perproject = this.cards.flat().groupBy('project').values().sortBy(grp => -grp.map('time').sum())
+          const perproject = this.cards.groupBy('project').values().sortBy(grp => -grp.length).map(proj => proj.sortBy('due_date').groupBy('due_date'))
           return perproject
         } catch(e) { console.log(e);return [] }
       }
