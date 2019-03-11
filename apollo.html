@@ -28,21 +28,18 @@
   main { display: flex;flex-direction: column;align-items: center;width: 100%;height: 100%;min-height: fit-content;padding: 40px; }
   main > h1 { font-size: 80px; }
   main > hr { width: 400px; }
-  table { width: 100%;border-spacing: 0;font: inherit; }
-  td, tr { padding: 0; }
   .filters { display: flex;align-items: center;justify-content: center; }
   .filters > * { margin: 4px; }
   .filters input { width: 34px;padding: 2px; }
   .filters select { width: 60px;padding: 2px; }
   .filters hr { height: 24px;border-left: var(--border); }
   .member { display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border-radius: 50%;background: #d9d9d9;font-size: 12px; }
-  .report { width: 500px;margin: 16px; }
+  .report { width: 600px; }
   .card { margin-bottom: 8px; }
   .card :first-child { word-break: break-word;hyphens: auto;width: 82%; }
   .card :nth-child(2) { text-align: center;width: 10%; }
   .card :nth-child(3) { text-align: center;width: 8%; }
   .card::before { color: var(--cat5);font-weight: 900;content: "\27A5";margin-right: 8px; }
-
   </style>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="/vue.js"></script>
@@ -139,8 +136,8 @@
   const uhref = ({ el, binding }) => {
     let link
     if (!binding.value) link = location.pathname
-    if (is(String, binding.value)) link = binding.value
-    if (is(Object, binding.value)) {
+    if (typeof binding.value === 'string') link = binding.value
+    if (typeof binding.value === 'object') {
       const state = router.state.map()
       el.classList[binding.value.keys().every(k => state[k] === binding.value[k]) ? 'add' : 'remove']('active')
       binding.value.map((v, k) => state[k] === v ? delete state[k] : state[k] = v)
@@ -261,7 +258,7 @@
       display() {
         try {
           const trello = this.trello
-          const perproject = this.cards.groupBy('project').values().sortBy(grp => -grp.length).map(proj => proj.sortBy('due_date').groupBy('due_date'))
+          const perproject = this.cards.group('project').values().sort(grp => -grp.length).map(proj => proj.sort('due_date').group('due_date'))
           return perproject
         } catch(e) { console.log(e);return [] }
       }

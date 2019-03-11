@@ -31,15 +31,13 @@ body { font-family: 'Montserrat', sans-serif; }
 main { display: flex;flex-direction: column;align-items: center;width: 100%;height: 100%;min-height: fit-content;padding: 40px; }
 main > h1 { font-size: 80px; }
 main > hr { width: 400px; }
-table { width: 100%;border-spacing: 0;font: inherit; }
-td, tr { padding: 0; }
 .filters { display: flex;align-items: center;justify-content: center; }
 .filters > * { margin: 4px; }
 .filters input { width: 34px;padding: 2px; }
 .filters select { width: 60px;padding: 2px; }
 .filters hr { height: 24px;border-left: var(--border); }
 .member { display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border-radius: 50%;background: #d9d9d9;font-size: 12px; }
-.report { width: 400px; }
+.report { width: 600px; }
 .report .line > :first-child { flex: 1;word-break: break-word;hyphens: auto; }
 .report .line > :nth-child(n+2) { width: 40px; }
 </style>
@@ -120,8 +118,8 @@ const vhref = {} // href elements
 const uhref = ({ el, binding }) => {
   let link
   if (!binding.value) link = location.pathname
-  if (is(String, binding.value)) link = binding.value
-  if (is(Object, binding.value)) {
+  if (typeof binding.value === 'string') link = binding.value
+  if (typeof binding.value === 'object') {
     const state = router.state.map()
     el.classList[binding.value.keys().every(k => state[k] === binding.value[k]) ? 'add' : 'remove']('active')
     binding.value.map((v, k) => state[k] === v ? delete state[k] : state[k] = v)
@@ -223,14 +221,14 @@ new Vue({
             PROD: PROD.map('time').sum(),
             RUN: RUN.map('time').sum(),
           },
-          DEV: this.cards.sortBy(d => d.member).groupBy(d => d.member).map(grp => grp.map('time').sum())
+          DEV: this.cards.sort(d => d.member).group(d => d.member).map(grp => grp.map('time').sum())
         }
       } catch(e) { console.error(e);return {} }
     },
     display() {
       try {
         const trello = this.trello
-        const perproject = this.cards.groupBy('project').values().sortBy(grp => -grp.map('time').sum())
+        const perproject = this.cards.group('project').values().sort(grp => -grp.map('time').sum())
         if (/^W\d+$/.test(router.state.period) || /^\d{4}$/.test(router.state.period) || router.state.project) return perproject
         if (/^Q\d+$/.test(router.state.period)) {
           const forecast = trello.cards.find(card => card.name === 'Q1').desc.split('-').filter().map(d => d.trim().split(' '))
@@ -240,7 +238,7 @@ new Vue({
 
         const perday = this.cards
           .filter(d => !router.state.member || d.member === router.state.member)
-          .sortBy(d => d.member)
+          .sort(d => d.member)
           .reduce((acc, card) => {
             const mandays = acc.flat(Infinity).filter(d => d.member === card.member).map('time').sum()
             const i = Math.floor(mandays)
