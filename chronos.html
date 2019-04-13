@@ -143,7 +143,7 @@ Vue.mixin({
     },
     'router.state': {
       handler(next) {
-        if (same({}, next)) return
+        if (!next.keys().length) return
         const link = next.reduce((acc, v, k) => `${acc}&${k}=${v}`, '?').replace('?&', '?').replace(/^\?$/, location.pathname)
         if (link === router.search) return
         window.history.pushState({}, null, link)
@@ -212,7 +212,7 @@ new Vue({
     },
     breakdowns() {
       try { // $('main').__vue__.cards
-        const INVEST = this.cards.filter(d => d.project.length > 4 || ['100M', 'SPEC'].includes(d.project))
+        const INVEST = this.cards.filter(d => ['100M', 'NX'].includes(d.project))
         const RUN = this.cards.filter(d => !INVEST.includes(d)).filter(d => d.project === 'RUN')
         const PROD = this.cards.filter(d => !INVEST.includes(d)).filter(d => d.project !== 'RUN')
         return {
@@ -223,7 +223,7 @@ new Vue({
           },
           DEV: this.cards.sort(d => d.member).group(d => d.member).map(grp => grp.map('time').sum())
         }
-      } catch(e) { console.error(e);return {} }
+      } catch(e) { return {} }
     },
     display() {
       try {
@@ -231,8 +231,16 @@ new Vue({
         const perproject = this.cards.group('project').values().sort(grp => -grp.map('time').sum())
         if (/^W\d+$/.test(router.state.period) || /^\d{4}$/.test(router.state.period) || router.state.project) return perproject
         if (/^Q\d+$/.test(router.state.period)) {
-          const forecast = trello.cards.find(card => card.name === 'Q1').desc.split('-').filter().map(d => d.trim().split(' '))
-          const other = this.cards.filter(d => !forecast.map(d => d[0]).includes(d.project)).map(d => Object.assign(d, { day: 'OTHER' }))
+          const forecast = trello.cards.find(card => card.name === router.state.period).desc.split('-').filter().map(d => d.trim().split(' '))
+          const other = this.cards
+            .filter(d => !forecast.map(d => d[0]).includes(d.project))
+            .group('project')
+            .values().map(grp => ({
+              member: '',
+              project: 'OTHER',
+              task: grp[0].project,
+              time: grp.map('time').sum(),
+            })).sort('-time')
           return [forecast.map(d => ({ project: 'FORECAST', task: d[0], member: this.cards.filter(card => card.project === d[0]).map('time').sum(), time: +d[1] })), other]
         }
 
@@ -272,7 +280,7 @@ new Vue({
           .filter(d => d.members.length)
           .filter(d => !router.state.member || d.member === router.state.member)
         return perday.concat([doing]).filter(d => d.length).reverse()
-      } catch(e) { console.log(e);return [] }
+      } catch(e) { return [] }
     }
   },
   mounted() {
