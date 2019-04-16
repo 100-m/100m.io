@@ -78,7 +78,7 @@ main > hr { width: 400px; }
         <td></td>
       </tr>
       <tr class="line" v-for="card in cards">
-        <td style="padding-left: 20px">- {{ card.task }}<b style="float: right;margin-right: 10px;" v-if="card.day">{{ card.project }}</b></td>
+        <td style="padding-left: 20px">- <a target="_blank" :href="card.url">{{ card.task }}</a><b style="float: right;margin-right: 10px;" v-if="card.day">{{ card.project }}</b></td>
         <td>{{ card.member }}</td>
         <td>{{ card.time }}j</td>
       </tr>
@@ -181,6 +181,7 @@ new Vue({
         return trello.cards
           .filter(d => /([^-]*)-(.*)\[([.0-9]+).*\]/.exec(d.name))
           .map(card => {
+            const url = card.shortUrl
             const matches = /([^-]*)-(.*)\[([.0-9]+).*\]/.exec(card.name)
             const project = matches[1].trim()
             const task = matches[2].trim()
@@ -189,7 +190,7 @@ new Vue({
             const year = +card.dateLastActivity.slice(0, 4) - (week >= 'W50' && card.dateLastActivity.slice(5, 7) === '01' ? 1 : 0)
             const members = (card.idMembers || []).map(mid => trello.members.find(d => d.id === mid))
             const member = (members[0] || {}).initials
-            return { project, task, time, week, year, members, member }
+            return { url, project, task, time, week, year, members, member }
           })
           .filter(d => /^W\d+$/.test(d.week))
           .filter(d => d.members.length) // TODO: clean cards without assignment
