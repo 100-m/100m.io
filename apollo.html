@@ -35,10 +35,10 @@
   .filters hr { height: 24px;border-left: var(--border); }
   .member { display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border-radius: 50%;background: #d9d9d9;font-size: 12px; }
   .report { width: 600px; }
-  .card { margin-bottom: 8px; }
-  .card :first-child { word-break: break-word;hyphens: auto;width: 82%; }
-  .card :nth-child(2) { text-align: center;width: 10%; }
-  .card :nth-child(3) { text-align: center;width: 8%; }
+  .card { display: flex; margin-bottom: 8px;align-items: center; }
+  .card :first-child { word-break: break-word;hyphens: auto;flex: 3;justify-content: flex-start; }
+  .card :nth-child(2) { text-align: center;margin-left: 16px; }
+  .card :nth-child(3) { text-align: center;margin-left: 16px; }
   .card::before { color: var(--cat5);font-weight: 900;content: "\27A5";margin-right: 8px; }
   </style>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
